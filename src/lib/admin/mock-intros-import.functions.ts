@@ -649,20 +649,50 @@ export const commitMockIntrosImport = createServerFn({ method: "POST" })
     if (parsed.rows.length === 0) throw new Error("No valid rows found in CSV.");
 
     try {
-      const existing = await getFile(FILE_PATH);
-      if (!existing) throw new Error(`File not found in repo: ${FILE_PATH}`);
+      // Always merge against the LIVE GitHub file, never the bundled
+      // snapshot. loadLiveIntros() also fetches the SHA we'll use for
+      // the optimistic-concurrency check on commit.
+      const { current, related, existing } = await loadLiveIntros();
       if (data.expectedSha && data.expectedSha !== existing.sha) {
         throw new Error("This file changed after preview. Refresh and preview again.");
       }
 
-      const current = cloneIntros(PER_MOCK_INTROS as IntrosMap);
       const affectedTopics = new Set(parsed.rows.map((r) => r.topicSlug));
       const next = applyRows(current, parsed.rows, mode, affectedTopics);
 
-      const newContent = serializePerMockIntrosFile(
-        next,
-        RELATED_GUIDE_BY_TOPIC as Record<string, RelatedGuide>,
-      );
+      // SAFETY: no commit may ever silently drop a topic that wasn't
+      // part of this CSV. Compare topic sets before/after; the only
+      // allowed difference is *new* topics from the CSV.
+      const currentTopics = new Set(Object.keys(current));
+      const nextTopics = new Set(Object.keys(next));
+      const dropped: string[] = [];
+      for (const t of currentTopics) {
+        if (!nextTopics.has(t)) dropped.push(t);
+      }
+      if (dropped.length > 0) {
+        throw new Error(
+          `Refusing to commit: ${dropped.length} topic(s) would be removed ` +
+            `that were not part of this CSV: ${dropped.slice(0, 10).join(", ")}${
+              dropped.length > 10 ? `, …(+${dropped.length - 10})` : ""
+            }. This is the bug-guard for stale-snapshot wipes.`,
+        );
+      }
+      // In replace mode, applyRows already restricts the wipe to
+      // affectedTopics only — but assert it just in case the caller
+      // somehow widens the affected set.
+      if (mode === "replace") {
+        for (const t of affectedTopics) {
+          if (!nextTopics.has(t) || Object.keys(next[t] ?? {}).length === 0) {
+            // This means the CSV produced no rows for a topic it claimed
+            // to affect — block rather than ship an empty topic.
+            throw new Error(
+              `Refusing to commit: replace-mode CSV produced no rows for topic "${t}".`,
+            );
+          }
+        }
+      }
+
+      const newContent = serializePerMockIntrosFile(next, related);
 
       const topicList = Array.from(affectedTopics).sort().join(", ");
       const commitMessage = `Update per-mock intros (${parsed.rows.length} row${parsed.rows.length === 1 ? "" : "s"}, ${affectedTopics.size} topic${affectedTopics.size === 1 ? "" : "s"}: ${topicList}) from admin CSV`;
