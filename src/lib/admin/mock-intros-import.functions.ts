@@ -711,8 +711,10 @@ export const commitMockIntrosImport = createServerFn({ method: "POST" })
           topic: HISTORY_TOPIC,
           filename: data.filename,
           // Store the literal source so rollback is exact.
-          previous_json: { kind: HISTORY_KIND, source: existing.content } as never,
-          new_json: { kind: HISTORY_KIND, source: newContent } as never,
+          // Store only blob sha references — the JSON file is ~3.7 MB and
+          // inserting it inline times out Postgres. Rollback fetches by sha.
+          previous_json: { kind: HISTORY_KIND, blobSha: existing.sha, path: FILE_PATH } as never,
+          new_json: { kind: HISTORY_KIND, commitSha, path: FILE_PATH } as never,
           commit_sha: commitSha,
           commit_url: commitUrl,
           row_count: parsed.rows.length,
