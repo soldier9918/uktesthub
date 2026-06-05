@@ -831,7 +831,7 @@ export const rollbackMockIntrosImport = createServerFn({ method: "POST" })
         topic: HISTORY_TOPIC,
         filename: `[rollback of ${String(row.commit_sha ?? "").slice(0, 7)}]`,
         previous_json: null,
-        new_json: { kind: HISTORY_KIND, source: prev.source } as never,
+        new_json: { kind: HISTORY_KIND, commitSha, path: FILE_PATH } as never,
         commit_sha: commitSha,
         commit_url: commitUrl,
         row_count: null,
