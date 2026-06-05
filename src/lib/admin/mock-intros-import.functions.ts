@@ -25,17 +25,51 @@ import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { commitFile, getFile, nudgeSync } from "@/lib/admin/github.server";
 import { categories } from "@/data/categories";
 import {
-  PER_MOCK_INTROS,
-  RELATED_GUIDE_BY_TOPIC,
   type PerMockIntro,
   type PerMockFaq,
   type Difficulty,
   type RelatedGuide,
 } from "@/data/per-mock-intros";
 
-const FILE_PATH = "src/data/per-mock-intros.ts";
+// The data source of truth is the JSON file. The TS file is a thin
+// re-export that imports the JSON and adds types — we never touch it
+// from the importer. Reading and writing JSON means we always merge
+// against the LIVE file content fetched from GitHub, not a stale
+// in-memory snapshot bundled into the worker.
+const FILE_PATH = "src/data/per-mock-intros.json";
 const HISTORY_TOPIC = "_per_mock_intros_";
 const HISTORY_KIND = "mock_intros";
+
+type IntrosFileShape = {
+  intros: Record<string, Record<string, PerMockIntro>>;
+  related: Record<string, RelatedGuide>;
+};
+
+/** Parse the JSON file content fetched from GitHub. Returns null on parse failure. */
+function parseIntrosFile(content: string): IntrosFileShape | null {
+  try {
+    const parsed = JSON.parse(content);
+    if (!parsed || typeof parsed !== "object") return null;
+    const intros = (parsed.intros && typeof parsed.intros === "object") ? parsed.intros : {};
+    const related = (parsed.related && typeof parsed.related === "object") ? parsed.related : {};
+    return { intros, related };
+  } catch {
+    return null;
+  }
+}
+
+/** Coerce JSON shape (string mock keys) to in-memory shape (number mock keys). */
+function jsonToIntrosMap(intros: Record<string, Record<string, PerMockIntro>>): IntrosMap {
+  const out: IntrosMap = {};
+  for (const [topic, byMock] of Object.entries(intros)) {
+    out[topic] = {};
+    for (const [mockStr, intro] of Object.entries(byMock)) {
+      const n = Number(mockStr);
+      if (Number.isInteger(n)) out[topic][n] = intro;
+    }
+  }
+  return out;
+}
 
 const LIVE_ORIGIN = "https://www.uktesthub.com";
 const VERIFY_MAX_ROWS = 20;
@@ -455,121 +489,69 @@ function diffIntros(
   return { rows: result, addedCount: added, changedCount: changed, unchangedCount: unchanged };
 }
 
-// -------- File serializer --------
+// -------- File serializer (JSON) --------
 
+/**
+ * Serialize the in-memory intros map back to the JSON-on-disk shape.
+ * Keys are sorted for deterministic diffs.
+ */
 function serializePerMockIntrosFile(
   intros: IntrosMap,
   related: Record<string, RelatedGuide>,
 ): string {
-  const j = (v: unknown) => JSON.stringify(v);
+  const sortedIntros: Record<string, Record<string, PerMockIntro>> = {};
+  for (const topic of Object.keys(intros).sort()) {
+    const byMock = intros[topic] ?? {};
+    const mockNums = Object.keys(byMock)
+      .map((n) => Number(n))
+      .filter((n) => Number.isInteger(n))
+      .sort((a, b) => a - b);
+    const inner: Record<string, PerMockIntro> = {};
+    for (const n of mockNums) inner[String(n)] = byMock[n];
+    sortedIntros[topic] = inner;
+  }
+  const sortedRelated: Record<string, RelatedGuide> = {};
+  for (const t of Object.keys(related).sort()) sortedRelated[t] = related[t];
 
-  const topicEntries = Object.keys(intros).sort();
-  const intrasBody = topicEntries
-    .map((topicSlug) => {
-      const byMock = intros[topicSlug] ?? {};
-      const mockNums = Object.keys(byMock)
-        .map((n) => Number(n))
-        .filter((n) => Number.isInteger(n))
-        .sort((a, b) => a - b);
-      const inner = mockNums
-        .map((n) => {
-          const v = byMock[n];
-          const mistakes = v.commonMistakes
-            .map((m) => `        ${j(m)},`)
-            .join("\n");
-          const optional: string[] = [];
-          if (v.topicsIncluded && v.topicsIncluded.length > 0) {
-            const lines = v.topicsIncluded.map((t) => `        ${j(t)},`).join("\n");
-            optional.push(`      topicsIncluded: [\n${lines}\n      ],`);
-          }
-          if (v.whoFor && v.whoFor.trim().length > 0) {
-            optional.push(`      whoFor: ${j(v.whoFor)},`);
-          }
-          if (v.faqs && v.faqs.length > 0) {
-            const faqLines = v.faqs
-              .map(
-                (f) =>
-                  `        {\n          q: ${j(f.q)},\n          a: ${j(f.a)},\n        },`,
-              )
-              .join("\n");
-            optional.push(`      faqs: [\n${faqLines}\n      ],`);
-          }
-          const optionalBlock = optional.length > 0 ? "\n" + optional.join("\n") : "";
-          return `    ${n}: {
-      difficulty: ${j(v.difficulty)},
-      covers: ${j(v.covers)},
-      commonMistakes: [
-${mistakes}
-      ],${optionalBlock}
-    },`;
-        })
-        .join("\n");
-      return `  ${j(topicSlug)}: {
-${inner}
-  },`;
-    })
-    .join("\n");
+  return JSON.stringify({ intros: sortedIntros, related: sortedRelated }, null, 2) + "\n";
+}
 
-  const relatedEntries = Object.keys(related).sort();
-  const relatedBody = relatedEntries
-    .map((topicSlug) => {
-      const r = related[topicSlug];
-      return `  ${j(topicSlug)}: {
-    label: ${j(r.label)},
-    href: ${j(r.href)},
-    intro: ${j(r.intro)},
-  },`;
-    })
-    .join("\n");
-
-  return `/**
- * Per-mock intro content shown on individual mock test start pages.
- * Keyed by topic slug then mock number. Used to give each mock page
- * unique body content for SEO and learner guidance.
+/**
+ * Fetch + parse the LIVE intros JSON from GitHub. This is the merge base
+ * for every preview and commit — never use the bundled PER_MOCK_INTROS
+ * import, because that is whatever was baked into the deployed worker
+ * and goes stale after every CSV import.
  *
- * THIS FILE IS GENERATED by the admin "Mock Intros CSV Import" tool.
- * Edits made by hand will be overwritten on the next CSV commit unless
- * exported back through CSV first.
+ * Returns { current, related, existing } so callers can also reuse the
+ * GitHub blob `sha` for optimistic concurrency on commit.
  */
-
-export type Difficulty = "Beginner" | "Intermediate" | "Exam-ready";
-
-export type PerMockFaq = { q: string; a: string };
-
-export type PerMockIntro = {
-  difficulty: Difficulty;
-  covers: string;
-  commonMistakes: string[];
-  /** Optional per-mock topic bullets. Falls back to the topic-level intro list. */
-  topicsIncluded?: string[];
-  /** Optional per-mock "Who this mock is for" wording. */
-  whoFor?: string;
-  /** Optional per-mock FAQs (prepended ahead of topic-level FAQs at render time). */
-  faqs?: PerMockFaq[];
-};
-
-export type RelatedGuide = { label: string; href: string; intro: string };
-
-export const RELATED_GUIDE_BY_TOPIC: Record<string, RelatedGuide> = {
-${relatedBody}
-};
-
-export const PER_MOCK_INTROS: Record<string, Record<number, PerMockIntro>> = {
-${intrasBody}
-};
-
-export function getPerMockIntro(
-  topicSlug: string,
-  mockNumber: number,
-): PerMockIntro | undefined {
-  return PER_MOCK_INTROS[topicSlug]?.[mockNumber];
+async function loadLiveIntros(): Promise<{
+  current: IntrosMap;
+  related: Record<string, RelatedGuide>;
+  existing: { content: string; sha: string };
+}> {
+  const existing = await getFile(FILE_PATH);
+  if (!existing) {
+    throw new Error(
+      `File not found in repo: ${FILE_PATH}. ` +
+        `The source of truth must exist before imports can run.`,
+    );
+  }
+  const parsed = parseIntrosFile(existing.content);
+  if (!parsed) {
+    throw new Error(
+      `Could not parse ${FILE_PATH} as JSON. Refusing to import — ` +
+        `the file may have been hand-edited or corrupted.`,
+    );
+  }
+  return {
+    current: jsonToIntrosMap(parsed.intros),
+    related: parsed.related,
+    existing,
+  };
 }
 
-export function getRelatedGuide(topicSlug: string): RelatedGuide | undefined {
-  return RELATED_GUIDE_BY_TOPIC[topicSlug];
-}
-`;
-}
+
 
 // -------- Server functions --------
 
@@ -609,9 +591,11 @@ export const previewMockIntrosImport = createServerFn({ method: "POST" })
 
       const mode = data.mode ?? "patch";
       const parsed = parseIntrosCsv(data.csvText, data.topicSlug ?? null);
-      const existing = await getFile(FILE_PATH);
-
-      const current = cloneIntros(PER_MOCK_INTROS as IntrosMap);
+      // Fetch the LIVE file from GitHub and use that as the merge base.
+      // Never use the bundled PER_MOCK_INTROS — it goes stale after every
+      // deployment and was the cause of the old "imports wipe other topics"
+      // bug.
+      const { current, existing } = await loadLiveIntros();
       const affectedTopics = new Set(parsed.rows.map((r) => r.topicSlug));
       const next = applyRows(current, parsed.rows, mode, affectedTopics);
       const diff = diffIntros(current, next, parsed.rows);
@@ -623,7 +607,7 @@ export const previewMockIntrosImport = createServerFn({ method: "POST" })
         rowCount: parsed.rows.length,
         hasTopicColumn: parsed.hasTopicColumn,
         diff,
-        existingSha: existing?.sha,
+        existingSha: existing.sha,
         filePath: FILE_PATH,
         mode,
         affectedTopics: Array.from(affectedTopics).sort(),
@@ -663,20 +647,50 @@ export const commitMockIntrosImport = createServerFn({ method: "POST" })
     if (parsed.rows.length === 0) throw new Error("No valid rows found in CSV.");
 
     try {
-      const existing = await getFile(FILE_PATH);
-      if (!existing) throw new Error(`File not found in repo: ${FILE_PATH}`);
+      // Always merge against the LIVE GitHub file, never the bundled
+      // snapshot. loadLiveIntros() also fetches the SHA we'll use for
+      // the optimistic-concurrency check on commit.
+      const { current, related, existing } = await loadLiveIntros();
       if (data.expectedSha && data.expectedSha !== existing.sha) {
         throw new Error("This file changed after preview. Refresh and preview again.");
       }
 
-      const current = cloneIntros(PER_MOCK_INTROS as IntrosMap);
       const affectedTopics = new Set(parsed.rows.map((r) => r.topicSlug));
       const next = applyRows(current, parsed.rows, mode, affectedTopics);
 
-      const newContent = serializePerMockIntrosFile(
-        next,
-        RELATED_GUIDE_BY_TOPIC as Record<string, RelatedGuide>,
-      );
+      // SAFETY: no commit may ever silently drop a topic that wasn't
+      // part of this CSV. Compare topic sets before/after; the only
+      // allowed difference is *new* topics from the CSV.
+      const currentTopics = new Set(Object.keys(current));
+      const nextTopics = new Set(Object.keys(next));
+      const dropped: string[] = [];
+      for (const t of currentTopics) {
+        if (!nextTopics.has(t)) dropped.push(t);
+      }
+      if (dropped.length > 0) {
+        throw new Error(
+          `Refusing to commit: ${dropped.length} topic(s) would be removed ` +
+            `that were not part of this CSV: ${dropped.slice(0, 10).join(", ")}${
+              dropped.length > 10 ? `, …(+${dropped.length - 10})` : ""
+            }. This is the bug-guard for stale-snapshot wipes.`,
+        );
+      }
+      // In replace mode, applyRows already restricts the wipe to
+      // affectedTopics only — but assert it just in case the caller
+      // somehow widens the affected set.
+      if (mode === "replace") {
+        for (const t of affectedTopics) {
+          if (!nextTopics.has(t) || Object.keys(next[t] ?? {}).length === 0) {
+            // This means the CSV produced no rows for a topic it claimed
+            // to affect — block rather than ship an empty topic.
+            throw new Error(
+              `Refusing to commit: replace-mode CSV produced no rows for topic "${t}".`,
+            );
+          }
+        }
+      }
+
+      const newContent = serializePerMockIntrosFile(next, related);
 
       const topicList = Array.from(affectedTopics).sort().join(", ");
       const commitMessage = `Update per-mock intros (${parsed.rows.length} row${parsed.rows.length === 1 ? "" : "s"}, ${affectedTopics.size} topic${affectedTopics.size === 1 ? "" : "s"}: ${topicList}) from admin CSV`;
@@ -777,6 +791,17 @@ export const rollbackMockIntrosImport = createServerFn({ method: "POST" })
     }
 
     try {
+      // GUARD: history rows from before the JSON migration stored the
+      // old TypeScript file source. Committing that source to
+      // per-mock-intros.json would corrupt the file. Detect by trying
+      // to JSON-parse the snapshot; reject if it isn't JSON.
+      if (!parseIntrosFile(prev.source)) {
+        throw new Error(
+          "This history snapshot pre-dates the JSON migration and " +
+            "cannot be rolled back to the new JSON source of truth. " +
+            "Re-import the CSV instead.",
+        );
+      }
       const existing = await getFile(FILE_PATH);
       const { commitSha, commitUrl } = await commitFile({
         filePath: FILE_PATH,
