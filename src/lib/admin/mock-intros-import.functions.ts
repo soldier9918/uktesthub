@@ -782,8 +782,8 @@ export const rollbackMockIntrosImport = createServerFn({ method: "POST" })
       .single();
     if (error || !row) throw new Error("Import history row not found");
     if (row.topic !== HISTORY_TOPIC) throw new Error("This history entry is not a mock-intros import.");
-    const prev = row.previous_json as { kind?: string; source?: string } | null;
-    if (!prev?.source) throw new Error("This import has no snapshot to roll back to");
+    const prev = row.previous_json as { kind?: string; source?: string; blobSha?: string } | null;
+    if (!prev?.source && !prev?.blobSha) throw new Error("This import has no snapshot to roll back to");
     if ((row.status === "rolled_back" || row.status === "failed") && !data.force) {
       throw new Error(
         row.status === "rolled_back"
@@ -793,11 +793,12 @@ export const rollbackMockIntrosImport = createServerFn({ method: "POST" })
     }
 
     try {
+      // Resolve the previous file content: either inline (legacy rows) or
+      // by fetching the git blob via sha (current rows).
+      const prevSource = prev.source ?? (prev.blobSha ? await getBlob(prev.blobSha) : "");
       // GUARD: history rows from before the JSON migration stored the
-      // old TypeScript file source. Committing that source to
-      // per-mock-intros.json would corrupt the file. Detect by trying
-      // to JSON-parse the snapshot; reject if it isn't JSON.
-      if (!parseIntrosFile(prev.source)) {
+      // old TypeScript file source. Reject if it isn't JSON.
+      if (!parseIntrosFile(prevSource)) {
         throw new Error(
           "This history snapshot pre-dates the JSON migration and " +
             "cannot be rolled back to the new JSON source of truth. " +
@@ -807,7 +808,7 @@ export const rollbackMockIntrosImport = createServerFn({ method: "POST" })
       const existing = await getFile(FILE_PATH);
       const { commitSha, commitUrl } = await commitFile({
         filePath: FILE_PATH,
-        content: prev.source,
+        content: prevSource,
         message: `Rollback per-mock intros to commit ${String(row.commit_sha ?? "").slice(0, 7)}`,
         sha: existing?.sha,
       });
