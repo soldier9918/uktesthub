@@ -237,6 +237,43 @@ export function invalidateTopicFileCache(topic?: string) {
   else fileCache.clear();
 }
 
+function isValidRawQuestion(q: RawQuestion): boolean {
+  const t = (q as { type?: string }).type ?? "mcq";
+  switch (t) {
+    case "mcq":
+    case "multiple_choice":
+    case "image-question":
+    case "image_question":
+      return Array.isArray((q as RawMcq).options) && (q as RawMcq).options.length > 0;
+    case "multiple-response":
+    case "multiple_response":
+      return (
+        Array.isArray((q as RawMultiResponse).options) &&
+        Array.isArray((q as RawMultiResponse).correctAnswers)
+      );
+    case "fill-blanks":
+    case "dropdown_blanks":
+    case "drag-drop-blanks":
+    case "drag_drop_blanks":
+      return Array.isArray((q as RawFillBlanks).blanks);
+    case "hot-spot":
+    case "hot_spot":
+      return (
+        typeof (q as RawHotSpot).image === "string" &&
+        Array.isArray((q as RawHotSpot).spots) &&
+        (q as RawHotSpot).spots.length > 0
+      );
+    case "true-false":
+    case "true_false":
+      return typeof (q as RawTrueFalse).correctAnswer === "boolean";
+    case "numeric-entry":
+    case "numeric_entry":
+      return typeof (q as RawNumeric).correctAnswer === "number";
+    default:
+      return false;
+  }
+}
+
 function extractMockFromFile(
   file: MockFile,
   mockNumber: number,
@@ -248,7 +285,7 @@ function extractMockFromFile(
     const questions: RawQuestion[] = [];
     for (const qid of m.questionIds) {
       const q = bankById.get(qid);
-      if (q) questions.push(q);
+      if (q && isValidRawQuestion(q)) questions.push(q);
     }
     return {
       slug: `${file.topic}-mock-${mockNumber}`,
@@ -259,9 +296,13 @@ function extractMockFromFile(
     };
   }
   const t = file.tests.find((x) => x.mockNumber === mockNumber);
-  return t
-    ? { ...t, slug: t.slug ?? `${file.topic}-mock-${mockNumber}`, topic: file.topic }
-    : undefined;
+  if (!t) return undefined;
+  return {
+    ...t,
+    slug: t.slug ?? `${file.topic}-mock-${mockNumber}`,
+    topic: file.topic,
+    questions: (t.questions ?? []).filter(isValidRawQuestion),
+  };
 }
 
 /**
