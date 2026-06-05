@@ -65,10 +65,28 @@ export async function getFile(filePath: string): Promise<{ content: string; sha:
   const res = await fetch(url, { headers: authHeaders() });
   if (res.status === 404) return null;
   if (!res.ok) throw explainGitHubError(res.status, await res.text(), `getFile ${filePath}`);
-  const data = (await res.json()) as { content: string; sha: string; encoding: string };
-  const content = data.encoding === "base64"
-    ? Buffer.from(data.content, "base64").toString("utf8")
-    : data.content;
+  const data = (await res.json()) as {
+    content: string;
+    sha: string;
+    encoding: string;
+    size?: number;
+  };
+  // GitHub Contents API truncates files >1MB: it returns encoding "none" with
+  // empty content. Fall back to the Git Blobs API (100MB limit) using the sha.
+  if (data.encoding === "base64" && data.content) {
+    return { content: Buffer.from(data.content, "base64").toString("utf8"), sha: data.sha };
+  }
+  const blobRes = await fetch(
+    `${API}/repos/${OWNER}/${REPO}/git/blobs/${data.sha}`,
+    { headers: authHeaders() },
+  );
+  if (!blobRes.ok) {
+    throw explainGitHubError(blobRes.status, await blobRes.text(), `getFile(blob) ${filePath}`);
+  }
+  const blob = (await blobRes.json()) as { content: string; encoding: string; sha: string };
+  const content = blob.encoding === "base64"
+    ? Buffer.from(blob.content, "base64").toString("utf8")
+    : blob.content;
   return { content, sha: data.sha };
 }
 
