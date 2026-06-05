@@ -33,9 +33,45 @@ import {
   type RelatedGuide,
 } from "@/data/per-mock-intros";
 
-const FILE_PATH = "src/data/per-mock-intros.ts";
+// The data source of truth is the JSON file. The TS file is a thin
+// re-export that imports the JSON and adds types — we never touch it
+// from the importer. Reading and writing JSON means we always merge
+// against the LIVE file content fetched from GitHub, not a stale
+// in-memory snapshot bundled into the worker.
+const FILE_PATH = "src/data/per-mock-intros.json";
 const HISTORY_TOPIC = "_per_mock_intros_";
 const HISTORY_KIND = "mock_intros";
+
+type IntrosFileShape = {
+  intros: Record<string, Record<string, PerMockIntro>>;
+  related: Record<string, RelatedGuide>;
+};
+
+/** Parse the JSON file content fetched from GitHub. Returns null on parse failure. */
+function parseIntrosFile(content: string): IntrosFileShape | null {
+  try {
+    const parsed = JSON.parse(content);
+    if (!parsed || typeof parsed !== "object") return null;
+    const intros = (parsed.intros && typeof parsed.intros === "object") ? parsed.intros : {};
+    const related = (parsed.related && typeof parsed.related === "object") ? parsed.related : {};
+    return { intros, related };
+  } catch {
+    return null;
+  }
+}
+
+/** Coerce JSON shape (string mock keys) to in-memory shape (number mock keys). */
+function jsonToIntrosMap(intros: Record<string, Record<string, PerMockIntro>>): IntrosMap {
+  const out: IntrosMap = {};
+  for (const [topic, byMock] of Object.entries(intros)) {
+    out[topic] = {};
+    for (const [mockStr, intro] of Object.entries(byMock)) {
+      const n = Number(mockStr);
+      if (Number.isInteger(n)) out[topic][n] = intro;
+    }
+  }
+  return out;
+}
 
 const LIVE_ORIGIN = "https://www.uktesthub.com";
 const VERIFY_MAX_ROWS = 20;
