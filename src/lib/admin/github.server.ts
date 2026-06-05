@@ -90,6 +90,18 @@ export async function getFile(filePath: string): Promise<{ content: string; sha:
   return { content, sha: data.sha };
 }
 
+/** Fetch a git blob's decoded UTF-8 content by sha. */
+export async function getBlob(sha: string): Promise<string> {
+  const res = await fetch(`${API}/repos/${OWNER}/${REPO}/git/blobs/${sha}`, {
+    headers: authHeaders(),
+  });
+  if (!res.ok) throw explainGitHubError(res.status, await res.text(), `getBlob ${sha}`);
+  const blob = (await res.json()) as { content: string; encoding: string };
+  return blob.encoding === "base64"
+    ? Buffer.from(blob.content, "base64").toString("utf8")
+    : blob.content;
+}
+
 /** Creates or updates a file at `filePath`. Returns the new commit sha + html_url. */
 export async function commitFile(opts: {
   filePath: string;
