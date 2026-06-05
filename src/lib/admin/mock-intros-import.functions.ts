@@ -24,6 +24,7 @@ import Papa from "papaparse";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { commitFile, getBlob, getFile, nudgeSync } from "@/lib/admin/github.server";
 import { categories } from "@/data/categories";
+import { allEnglishLevelTriples } from "@/data/english/categories";
 import {
   type PerMockIntro,
   type PerMockFaq,
