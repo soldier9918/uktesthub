@@ -793,6 +793,17 @@ export const rollbackMockIntrosImport = createServerFn({ method: "POST" })
     }
 
     try {
+      // GUARD: history rows from before the JSON migration stored the
+      // old TypeScript file source. Committing that source to
+      // per-mock-intros.json would corrupt the file. Detect by trying
+      // to JSON-parse the snapshot; reject if it isn't JSON.
+      if (!parseIntrosFile(prev.source)) {
+        throw new Error(
+          "This history snapshot pre-dates the JSON migration and " +
+            "cannot be rolled back to the new JSON source of truth. " +
+            "Re-import the CSV instead.",
+        );
+      }
       const existing = await getFile(FILE_PATH);
       const { commitSha, commitUrl } = await commitFile({
         filePath: FILE_PATH,
