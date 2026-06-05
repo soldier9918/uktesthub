@@ -593,9 +593,11 @@ export const previewMockIntrosImport = createServerFn({ method: "POST" })
 
       const mode = data.mode ?? "patch";
       const parsed = parseIntrosCsv(data.csvText, data.topicSlug ?? null);
-      const existing = await getFile(FILE_PATH);
-
-      const current = cloneIntros(PER_MOCK_INTROS as IntrosMap);
+      // Fetch the LIVE file from GitHub and use that as the merge base.
+      // Never use the bundled PER_MOCK_INTROS — it goes stale after every
+      // deployment and was the cause of the old "imports wipe other topics"
+      // bug.
+      const { current, existing } = await loadLiveIntros();
       const affectedTopics = new Set(parsed.rows.map((r) => r.topicSlug));
       const next = applyRows(current, parsed.rows, mode, affectedTopics);
       const diff = diffIntros(current, next, parsed.rows);
@@ -607,7 +609,7 @@ export const previewMockIntrosImport = createServerFn({ method: "POST" })
         rowCount: parsed.rows.length,
         hasTopicColumn: parsed.hasTopicColumn,
         diff,
-        existingSha: existing?.sha,
+        existingSha: existing.sha,
         filePath: FILE_PATH,
         mode,
         affectedTopics: Array.from(affectedTopics).sort(),
