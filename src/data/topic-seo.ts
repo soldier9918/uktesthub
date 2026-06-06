@@ -1390,15 +1390,17 @@ export const topicSeo: Record<string, TopicSeo> = {
       "Complete TfL SERU assessment guide. Format, pass mark, the 10 syllabus areas and study tips — with free mock tests reflecting the real TfL exam.",
     tagline: "The TfL Safety, Equality and Regulatory Understanding test for London PHV drivers.",
     intro: [
-      "The TfL SERU assessment is mandatory for every new London private hire driver since October 2021. It's a 1-hour, 60-question multiple-choice test taken at a TfL-approved centre and you must pass it before TfL will issue your PHV licence.",
-      "The pass mark is 36 out of 60 (60%). Roughly 40% of candidates fail their first attempt, almost always on the safeguarding and equality sections. This guide covers every syllabus area and the most efficient way to prepare.",
+      "The TfL SERU assessment is mandatory for every new London private hire driver since October 2021. It's a 45-minute, 36-question multiple-choice test taken at a TfL-approved centre and you must pass it before TfL will issue your PHV licence.",
+      "The pass mark is 60% (22 out of 36). Roughly 40% of candidates fail their first attempt, almost always on the safeguarding and equality sections. This guide covers every syllabus area and the most efficient way to prepare.",
+      "On this site you can choose a TfL-style mini mock test — 24 questions for quick practice — or switch to EXAM MODE, which mirrors the real test-day pressure with 36 questions, 45 minutes and the same 60% pass mark.",
     ],
     sections: [
       {
         heading: "Format and pass mark",
         body: [
-          "60 multiple-choice questions in 60 minutes at a TfL-approved centre. Pass mark 36/60. Fee around £36 each attempt. Up to three attempts in any 18-month period before TfL pause your application.",
+          "36 multiple-choice questions in 45 minutes at a TfL-approved centre. Pass mark 60% (22/36). Fee around £36 each attempt. Up to three attempts in any 18-month period before TfL pause your application.",
           "Questions are scenario-based: 'A passenger asks you to do X — what do you do?' The right answer is almost always the safest, most legally compliant and most respectful option. Common-sense alone won't get you 60% — you need to know the specific TfL rules.",
+          "Our EXAM MODE recreates the real test-day structure exactly — 36 questions, 45 minutes, 60% pass mark — so you can practise under realistic pressure. The 24-question mini mocks are ideal for shorter, focused sessions.",
         ],
       },
       {
