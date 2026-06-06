@@ -45,7 +45,7 @@
           "options": [
             "where",
             "when",
-            "if"
+            "how"
           ]
         },
         {
@@ -396,17 +396,17 @@
         {
           "correctIndex": 1,
           "options": [
-            "disruptive",
             "vulnerable",
-            "unlicensed"
+            "being",
+            "criminally"
           ]
         },
         {
-          "correctIndex": 2,
+          "correctIndex": 0,
           "options": [
+            "risk",
             "home",
-            "work",
-            "risk"
+            "work"
           ]
         }
       ],
@@ -580,7 +580,7 @@
           "correctIndex": 2,
           "options": [
             "Public",
-            "Optional",
+            "Secure",
             "Confidential"
           ]
         }
@@ -743,11 +743,11 @@
           "options": [
             "precedence",
             "preference",
-            "account"
+            "authority"
           ]
         },
         {
-          "correctIndex": 0,
+          "correctIndex": 1,
           "options": [
             "device",
             "instruction",
@@ -924,9 +924,9 @@
         {
           "correctIndex": 1,
           "options": [
-            "Assumptions",
-            "Adjustments",
-            "Excuses"
+            "assumptions",
+            "adjustments",
+            "excuses"
           ]
         }
       ],
@@ -973,7 +973,7 @@
           "options": [
             "confidential",
             "public",
-            "optional"
+            "accessible"
           ]
         },
         {
@@ -1094,8 +1094,8 @@
         {
           "correctIndex": 1,
           "options": [
-            "speed",
             "distance",
+            "speed",
             "care"
           ]
         }
@@ -1199,15 +1199,15 @@
       "explanation": "Drivers should stop only where it is safe and legal.",
       "blanks": [
         {
-          "correctIndex": 1,
+          "correctIndex": 0,
           "options": [
-            "annoyance",
             "obstruction",
-            "delay"
+            "delay",
+            "annoyance"
           ]
         },
         {
-          "correctIndex": 0,
+          "correctIndex": 2,
           "options": [
             "drivers",
             "vehicles",
@@ -1317,8 +1317,8 @@
           "correctIndex": 0,
           "options": [
             "exploitation",
-            "navigation",
-            "parking"
+            "bullying",
+            "discrimination"
           ]
         },
         {
@@ -1556,7 +1556,7 @@
           "options": [
             "promptly",
             "smoothly",
-            "abruptly"
+            "safely"
           ]
         }
       ],
@@ -2179,12 +2179,11 @@
       "explanation": "Equality awareness is a core part of SERU.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
-            "Engine",
-            "Fare",
-            "Parking",
-            "Equality"
+            "Safety",
+            "Equality",
+            "Disability"
           ]
         }
       ],
@@ -2295,12 +2294,11 @@
       "explanation": "Safeguarding procedures support the protection of vulnerable people.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
-            "Discount",
-            "Marketing",
-            "Refuelling",
-            "Safeguarding"
+            "Reporting",
+            "Safeguarding",
+            "Health and safety"
           ]
         }
       ],
@@ -2411,11 +2409,10 @@
       "explanation": "Confidentiality is part of professional and lawful information handling.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Public",
-            "Decorative",
-            "Optional",
+            "Secure",
             "Confidential"
           ]
         }
@@ -2461,17 +2458,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Safeguarding",
-            "Parking",
-            "Luggage"
+            "safeguarding",
+            "welfare",
+            "disciplinary"
           ]
         },
         {
           "correctIndex": 0,
           "options": [
-            "reported Immediately",
-            "Ignored",
-            "forgotten"
+            "reported immediately",
+            "ignored",
+            "investigated personally"
           ]
         }
       ],
@@ -2527,11 +2524,10 @@
       "explanation": "Calm communication can reduce conflict and support safety.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Increase",
-            "Advertise",
-            "Hide",
+            "Avoid",
             "Reduce"
           ]
         }
@@ -2578,16 +2574,16 @@
           "correctIndex": 0,
           "options": [
             "licensed",
-            "painted",
-            "cleaned"
+            "designed",
+            "registered"
           ]
         },
         {
           "correctIndex": 0,
           "options": [
             "illegal",
-            "slow",
-            "expensive"
+            "expensive",
+            "uninsurable"
           ]
         }
       ],
@@ -2643,12 +2639,11 @@
       "explanation": "Licensing duties should be checked using official guidance.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 0,
           "options": [
-            "Fashion",
-            "Gardening",
-            "Restaurant",
-            "Licensing"
+            "Licensing",
+            "Safeguarding",
+            "Equality"
           ]
         }
       ],
@@ -2699,11 +2694,11 @@
           ]
         },
         {
-          "correctIndex": 2,
+          "correctIndex": 1,
           "options": [
-            "noise",
+            "confusion",
             "danger",
-            "hazard"
+            "delay"
           ]
         }
       ],
@@ -2759,11 +2754,10 @@
       "explanation": "Reasonable adjustments help provide fair and accessible service.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
-            "Excuses",
-            "Delays",
             "Assumptions",
+            "Excuses",
             "Adjustments"
           ]
         }
@@ -2875,11 +2869,10 @@
       "explanation": "SERU focuses on safety, equality and regulatory understanding.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Route",
-            "Retail",
-            "Random",
+            "Road",
             "Regulatory"
           ]
         }
@@ -2926,15 +2919,15 @@
           "correctIndex": 0,
           "options": [
             "roadworthy",
-            "popular",
-            "expensive"
+            "safe",
+            "legal"
           ]
         },
         {
           "correctIndex": 0,
           "options": [
             "use",
-            "inspection",
+            "driving",
             "sale"
           ]
         }
@@ -2991,10 +2984,9 @@
       "explanation": "Private hire journeys must be booked rather than accepted as street hails.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Hailed",
-            "Bartered",
             "Advertised",
             "Booked"
           ]
@@ -3041,9 +3033,9 @@
         {
           "correctIndex": 0,
           "options": [
-            "Injuries",
-            "Discounts",
-            "Reviews"
+            "injuries",
+            "damage",
+            "witnesses"
           ]
         },
         {
@@ -3051,7 +3043,7 @@
           "options": [
             "required",
             "optional",
-            "irrelevant"
+            "advised"
           ]
         }
       ],
@@ -3107,11 +3099,10 @@
       "explanation": "Equality awareness is a core part of SERU.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
-            "Engine",
-            "Fare",
-            "Parking",
+            "Safety",
+            "Accessibility",
             "Equality"
           ]
         }
@@ -3223,12 +3214,11 @@
       "explanation": "Safeguarding procedures support the protection of vulnerable people.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
-            "Discount",
-            "Marketing",
-            "Refuelling",
-            "Safeguarding"
+            "Reporting",
+            "Safeguarding",
+            "Disciplinary"
           ]
         }
       ],
@@ -3274,7 +3264,7 @@
           "correctIndex": 0,
           "options": [
             "communication",
-            "pressure",
+            "directions",
             "fare"
           ]
         },
@@ -3457,11 +3447,10 @@
       "explanation": "Calm communication can reduce conflict and support safety.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Increase",
-            "Advertise",
-            "Hide",
+            "Prevent",
             "Reduce"
           ]
         }
@@ -3507,9 +3496,9 @@
         {
           "correctIndex": 1,
           "options": [
-            "Safe",
-            "Nearest",
-            "Hidden"
+            "Convenient",
+            "Available",
+            "Signposted"
           ]
         },
         {
@@ -3517,7 +3506,7 @@
           "options": [
             "Reverse",
             "Stop",
-            "Slow"
+            "Turn"
           ]
         }
       ],
@@ -3624,17 +3613,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Times",
-            "Fares",
-            "Brands"
+            "times",
+            "hours",
+            "days"
           ]
         },
         {
-          "correctIndex": 1,
+          "correctIndex": 0,
           "options": [
             "rules",
-            "colors",
-            "songs"
+            "instructions",
+            "markings"
           ]
         }
       ],
@@ -3691,12 +3680,11 @@
       "explanation": "Reasonable adjustments help provide fair and accessible service.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
-            "Excuses",
-            "Delays",
             "Assumptions",
-            "Adjustments"
+            "Adjustments",
+            "Excuses"
           ]
         }
       ],
@@ -3860,7 +3848,7 @@
           "options": [
             "999",
             "101",
-            "411"
+            "111"
           ]
         },
         {
@@ -3925,10 +3913,9 @@
       "explanation": "Private hire journeys must be booked rather than accepted as street hails.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Hailed",
-            "Bartered",
             "Advertised",
             "Booked"
           ]
@@ -3984,7 +3971,7 @@
           "correctIndex": 0,
           "options": [
             "fares",
-            "sleep",
+            "passengers",
             "repairs"
           ]
         }
@@ -4090,15 +4077,15 @@
           "correctIndex": 0,
           "options": [
             "Blind spots",
-            "Receipts",
-            "Apps"
+            "Headlights",
+            "Sat nav"
           ]
         },
         {
           "correctIndex": 2,
           "options": [
-            "trees",
-            "pavements",
+            "drivers",
+            "pedestrians",
             "road users"
           ]
         }
@@ -4201,11 +4188,10 @@
       "explanation": "SERU focuses on safety, equality and regulatory understanding.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Route",
-            "Retail",
-            "Random",
+            "Rights",
             "Regulatory"
           ]
         }
@@ -4308,12 +4294,11 @@
       "explanation": "Private hire journeys must be booked rather than accepted as street hails.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 0,
           "options": [
+            "Booked",
             "Hailed",
-            "Bartered",
-            "Advertised",
-            "Booked"
+            "Advertised"
           ]
         }
       ],
@@ -4415,11 +4400,10 @@
       "explanation": "Equality awareness is a core part of SERU.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
-            "Engine",
+            "Safety",
             "Fare",
-            "Parking",
             "Equality"
           ]
         }
@@ -4522,12 +4506,11 @@
       "explanation": "Safeguarding procedures support the protection of vulnerable people.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
-            "Discount",
-            "Marketing",
-            "Refuelling",
-            "Safeguarding"
+            "Disciplinary",
+            "Safeguarding",
+            "Refuelling"
           ]
         }
       ],
@@ -4629,11 +4612,10 @@
       "explanation": "Confidentiality is part of professional and lawful information handling.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Public",
-            "Decorative",
-            "Optional",
+            "Up-to-date",
             "Confidential"
           ]
         }
@@ -4736,11 +4718,10 @@
       "explanation": "Calm communication can reduce conflict and support safety.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Increase",
-            "Advertise",
-            "Hide",
+            "Escalate",
             "Reduce"
           ]
         }
@@ -4843,12 +4824,11 @@
       "explanation": "Licensing duties should be checked using official guidance.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
-            "Fashion",
-            "Gardening",
-            "Restaurant",
-            "Licensing"
+            "Safeguarding",
+            "Licensing",
+            "Parking"
           ]
         }
       ],
@@ -5057,11 +5037,10 @@
       "explanation": "SERU focuses on safety, equality and regulatory understanding.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Route",
-            "Retail",
-            "Random",
+            "Rights",
             "Regulatory"
           ]
         }
@@ -5164,10 +5143,9 @@
       "explanation": "Private hire journeys must be booked rather than accepted as street hails.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Hailed",
-            "Bartered",
             "Advertised",
             "Booked"
           ]
@@ -5271,12 +5249,11 @@
       "explanation": "Equality awareness is a core part of SERU.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
-            "Engine",
-            "Fare",
-            "Parking",
-            "Equality"
+            "Safety",
+            "Equality",
+            "Disability"
           ]
         }
       ],
@@ -5378,12 +5355,11 @@
       "explanation": "Safeguarding procedures support the protection of vulnerable people.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
-            "Discount",
-            "Marketing",
-            "Refuelling",
-            "Safeguarding"
+            "Reporting",
+            "Safeguarding",
+            "Escalation"
           ]
         }
       ],
@@ -5485,11 +5461,10 @@
       "explanation": "Confidentiality is part of professional and lawful information handling.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Public",
-            "Decorative",
-            "Optional",
+            "Accessible",
             "Confidential"
           ]
         }
@@ -5592,11 +5567,10 @@
       "explanation": "Calm communication can reduce conflict and support safety.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Increase",
-            "Advertise",
-            "Hide",
+            "Escalate",
             "Reduce"
           ]
         }
@@ -5699,11 +5673,10 @@
       "explanation": "Licensing duties should be checked using official guidance.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
-            "Fashion",
-            "Gardening",
-            "Restaurant",
+            "Safety",
+            "Legal",
             "Licensing"
           ]
         }
@@ -5806,11 +5779,10 @@
       "explanation": "Reasonable adjustments help provide fair and accessible service.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
-            "Excuses",
-            "Delays",
             "Assumptions",
+            "Excuses",
             "Adjustments"
           ]
         }
@@ -5913,11 +5885,10 @@
       "explanation": "SERU focuses on safety, equality and regulatory understanding.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Route",
-            "Retail",
-            "Random",
+            "Road",
             "Regulatory"
           ]
         }
@@ -6020,12 +5991,11 @@
       "explanation": "Private hire journeys must be booked rather than accepted as street hails.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
             "Hailed",
-            "Bartered",
-            "Advertised",
-            "Booked"
+            "Booked",
+            "Advertised"
           ]
         }
       ],
@@ -6127,12 +6097,11 @@
       "explanation": "Equality awareness is a core part of SERU.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 0,
           "options": [
-            "Engine",
-            "Fare",
-            "Parking",
-            "Equality"
+            "Equality",
+            "Safety",
+            "Safeguarding"
           ]
         }
       ],
@@ -6234,12 +6203,11 @@
       "explanation": "Safeguarding procedures support the protection of vulnerable people.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
-            "Discount",
-            "Marketing",
-            "Refuelling",
-            "Safeguarding"
+            "Reporting",
+            "Safeguarding",
+            "Disciplinary"
           ]
         }
       ],
@@ -6448,12 +6416,11 @@
       "explanation": "Calm communication can reduce conflict and support safety.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
             "Increase",
-            "Advertise",
-            "Hide",
-            "Reduce"
+            "Reduce",
+            "Provoke"
           ]
         }
       ],
@@ -6555,12 +6522,11 @@
       "explanation": "Licensing duties should be checked using official guidance.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
-            "Fashion",
-            "Gardening",
-            "Restaurant",
-            "Licensing"
+            "Contractual",
+            "Licensing",
+            "Safeguarding"
           ]
         }
       ],
@@ -6662,12 +6628,11 @@
       "explanation": "Reasonable adjustments help provide fair and accessible service.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 0,
           "options": [
-            "Excuses",
-            "Delays",
+            "Adjustments",
             "Assumptions",
-            "Adjustments"
+            "Excuses"
           ]
         }
       ],
@@ -6876,10 +6841,9 @@
       "explanation": "Private hire journeys must be booked rather than accepted as street hails.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Hailed",
-            "Bartered",
             "Advertised",
             "Booked"
           ]
@@ -6983,12 +6947,11 @@
       "explanation": "Equality awareness is a core part of SERU.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 0,
           "options": [
-            "Engine",
-            "Fare",
-            "Parking",
-            "Equality"
+            "Equality",
+            "Safety",
+            "Fare"
           ]
         }
       ],
@@ -7090,11 +7053,10 @@
       "explanation": "Safeguarding procedures support the protection of vulnerable people.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
-            "Discount",
-            "Marketing",
-            "Refuelling",
+            "Complaint",
+            "Escalation",
             "Safeguarding"
           ]
         }
@@ -7197,11 +7159,10 @@
       "explanation": "Confidentiality is part of professional and lawful information handling.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
             "Public",
-            "Decorative",
-            "Optional",
+            "Secure",
             "Confidential"
           ]
         }
@@ -7304,12 +7265,11 @@
       "explanation": "Calm communication can reduce conflict and support safety.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 1,
           "options": [
             "Increase",
-            "Advertise",
-            "Hide",
-            "Reduce"
+            "Reduce",
+            "Escalate"
           ]
         }
       ],
@@ -7411,11 +7371,10 @@
       "explanation": "Licensing duties should be checked using official guidance.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
-            "Fashion",
-            "Gardening",
-            "Restaurant",
+            "Contractual",
+            "Safety",
             "Licensing"
           ]
         }
@@ -7518,11 +7477,10 @@
       "explanation": "Reasonable adjustments help provide fair and accessible service.",
       "blanks": [
         {
-          "correctIndex": 3,
+          "correctIndex": 2,
           "options": [
-            "Excuses",
-            "Delays",
             "Assumptions",
+            "Delays",
             "Adjustments"
           ]
         }
