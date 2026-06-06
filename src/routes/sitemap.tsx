@@ -24,7 +24,7 @@ export const Route = createFileRoute("/sitemap")({
 
 function SitemapPage() {
   return (
-    <PageLayout title="Sitemap" intro="Every page on UK Test Hub, in one place.">
+    <PageLayout title="Sitemap" intro="Main sitemap for UK Test Hub.">
       <h2>Test categories</h2>
       <ul>
         {categories.map((c) => (
