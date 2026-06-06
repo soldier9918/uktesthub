@@ -289,7 +289,7 @@ export const categories: Category[] = [
     heroImage: heroHealthcareEntry,
     topics: [
       { slug: "ucat", title: "UCAT Practice" },
-      { slug: "bmat", title: "BMAT Practice" },
+      { slug: "bmat", title: "BMAT Legacy Practice" },
       { slug: "oet", title: "OET (Healthcare English)" },
       { slug: "plab-1", title: "PLAB 1 Sample Questions" },
     ],
