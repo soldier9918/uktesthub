@@ -173,7 +173,7 @@ function HomePage() {
                 <span className="font-bold">330,480</span> Practice Questions
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
-                <span className="font-bold">13,770</span> mock tests
+                <span className="font-bold whitespace-pre-line text-center">13,770{"\n"}Mock Tests</span>
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
                 <span className="font-bold">139</span> Test Topics
