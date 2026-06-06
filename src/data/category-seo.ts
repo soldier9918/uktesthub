@@ -945,11 +945,11 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   "healthcare-entry": {
-    title: "UCAT, BMAT & PLAB Tests | UK Test Hub",
+    title: "UCAT, OET & PLAB Tests | UK Test Hub",
     description:
-      "Free UCAT, BMAT, OET and PLAB 1 practice tests for medical school applicants and overseas-trained doctors. UK exam-style questions with full explanations.",
+      "Free UCAT, OET and PLAB 1 practice for healthcare admissions and registration, plus BMAT legacy biomedical admissions-style practice. UK exam-style questions with full explanations.",
     intro: [
-      "The UK route into medicine is gated by a small number of high-stakes admissions and registration tests. UCAT decides who gets a Russell Group medical interview; BMAT (now retired but still required by some courses transitioning), OET and PLAB 1 do the equivalent for international applicants and overseas-trained doctors. A single percentile band on UCAT can be the difference between Cambridge and a Foundation Year offer at a less competitive medical school.",
+      "Practice for healthcare admissions and registration — UCAT, OET and PLAB 1, plus BMAT legacy biomedical admissions-style practice.",
       "Our free healthcare entry mocks mirror the official UCAT subtests, OET medicine sub-tests and PLAB 1 single-best-answer format — UK English, NICE-aligned scenarios and current syllabuses. Practice is the only proven lever for these tests; raw IQ matters far less than exam familiarity.",
     ],
     sections: [
