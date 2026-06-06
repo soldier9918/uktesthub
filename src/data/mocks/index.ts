@@ -253,8 +253,30 @@ function isValidRawQuestion(q: RawQuestion): boolean {
       );
     case "fill-blanks":
     case "dropdown-blanks":
-    case "drag-drop-blanks":
-      return Array.isArray((q as RawFillBlanks).blanks);
+    case "drag-drop-blanks": {
+      const blanks = (q as RawFillBlanks).blanks;
+      if (!Array.isArray(blanks)) return false;
+      const text =
+        (q as RawFillBlanks & { question?: string; template?: string }).question ??
+        (q as RawFillBlanks & { template?: string }).template ??
+        "";
+      const placeholderIndices = [...text.matchAll(/\{\{(\d+)\}\}/g)].map((m) =>
+        Number(m[1]),
+      );
+      const placeholderCount = placeholderIndices.length
+        ? Math.max(...placeholderIndices) + 1
+        : 0;
+      // Reject malformed entries where placeholder count and blank count disagree.
+      if (placeholderCount !== blanks.length) {
+        if (typeof console !== "undefined") {
+          console.warn(
+            `[mocks] Dropping malformed ${t} question ${(q as { id?: string }).id ?? "?"}: ${placeholderCount} placeholders vs ${blanks.length} blanks`,
+          );
+        }
+        return false;
+      }
+      return true;
+    }
     case "hot-spot":
       return (
         typeof (q as RawHotSpot).image === "string" &&
