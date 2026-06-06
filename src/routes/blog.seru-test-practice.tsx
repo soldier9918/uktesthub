@@ -14,7 +14,7 @@ const DESCRIPTION =
 const faqs: FaqItem[] = [
   {
     q: "What is the SERU test?",
-    a: "SERU stands for Safety, Equality and Regulatory Understanding. It is a one-on-one assessment that Transport for London uses for new private hire driver applicants in London, covering safeguarding, equality law, vehicle and licensing rules and how to handle real driving scenarios.",
+    a: "SERU stands for Safety, Equality and Regulatory Understanding. It is an assessment that Transport for London uses for new private hire driver applicants in London, covering safety, equality, regulatory understanding and passenger protection, based on the PHV Driver's Handbook.",
   },
   {
     q: "How many questions are in the SERU assessment?",
