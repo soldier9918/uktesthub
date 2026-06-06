@@ -165,15 +165,18 @@ function HomePage() {
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-foreground/90 md:text-lg">
               Practise UK mock tests online with instant results. Prepare for Driving Theory,
-              Life in the UK, English, CSCS, NHS, SIA and professional exams. Study anytime, anywhere across 110+ topics.
+              Life in the UK, English, CSCS, NHS, SIA and professional exams. Study anytime, anywhere across 139 tests.
             </p>
 
             <div className="mt-5 flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
-                <span className="font-bold">96,000+</span> mock questions
+                <span className="font-bold">330,480</span> mock questions
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
-                <span className="font-bold">110+</span> topics
+                <span className="font-bold">13,770</span> mock tests
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
+                <span className="font-bold">139</span> tests
               </span>
             </div>
 
