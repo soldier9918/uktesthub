@@ -304,8 +304,8 @@ export const categories: Category[] = [
     accent: "gold",
     heroImage: heroTeaching,
     topics: [
-      { slug: "qts-numeracy", title: "QTS Numeracy Skills Test" },
-      { slug: "qts-literacy", title: "QTS Literacy Skills Test" },
+      { slug: "qts-numeracy", title: "QTS Numeracy Skills Test (Legacy)" },
+      { slug: "qts-literacy", title: "QTS Literacy Skills Test (Legacy)" },
       { slug: "professional-skills-teachers", title: "Professional Skills for Teachers" },
       { slug: "safeguarding-schools", title: "Safeguarding in Schools" },
     ],
