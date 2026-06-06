@@ -238,36 +238,32 @@ export function invalidateTopicFileCache(topic?: string) {
 }
 
 function isValidRawQuestion(q: RawQuestion): boolean {
-  const t = (q as { type?: string }).type ?? "mcq";
+  // Normalise underscore variants from the spreadsheet/AI to the hyphen
+  // variants used at runtime so both shapes validate identically.
+  const t = ((q as { type?: string }).type ?? "mcq").replace(/_/g, "-");
   switch (t) {
     case "mcq":
-    case "multiple_choice":
+    case "multiple-choice":
     case "image-question":
-    case "image_question":
       return Array.isArray((q as RawMcq).options) && (q as RawMcq).options.length > 0;
     case "multiple-response":
-    case "multiple_response":
       return (
         Array.isArray((q as RawMultiResponse).options) &&
         Array.isArray((q as RawMultiResponse).correctAnswers)
       );
     case "fill-blanks":
-    case "dropdown_blanks":
+    case "dropdown-blanks":
     case "drag-drop-blanks":
-    case "drag_drop_blanks":
       return Array.isArray((q as RawFillBlanks).blanks);
     case "hot-spot":
-    case "hot_spot":
       return (
         typeof (q as RawHotSpot).image === "string" &&
         Array.isArray((q as RawHotSpot).spots) &&
         (q as RawHotSpot).spots.length > 0
       );
     case "true-false":
-    case "true_false":
       return typeof (q as RawTrueFalse).correctAnswer === "boolean";
     case "numeric-entry":
-    case "numeric_entry":
       return typeof (q as RawNumeric).correctAnswer === "number";
     default:
       return false;
