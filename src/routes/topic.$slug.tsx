@@ -69,11 +69,15 @@ function MockCard({
   mockNumber,
   available,
   stats,
+  questionsCount = QUESTIONS_PER_MOCK,
+  minutes = QUESTIONS_PER_MOCK,
 }: {
   slug: string;
   mockNumber: number;
   available: boolean;
   stats: MockStats | null;
+  questionsCount?: number;
+  minutes?: number;
 }) {
   const bestScore = stats?.best ?? null;
   const attempts = stats?.attempts ?? 0;
@@ -100,8 +104,8 @@ function MockCard({
         )}
       </div>
       <p className="mt-1 text-xs text-muted-foreground">
-        {QUESTIONS_PER_MOCK} questions ·{" "}
-        <Clock className="inline h-3 w-3" /> ~{QUESTIONS_PER_MOCK} min
+        {questionsCount} questions ·{" "}
+        <Clock className="inline h-3 w-3" /> ~{minutes} min
       </p>
 
       {available && (
@@ -317,7 +321,9 @@ function TopicPage() {
               mockNumber={s.mockNumber}
               available={s.available}
               stats={statsByMock[s.slug] ?? null}
+              minutes={topic.slug === "life-in-the-uk" ? 45 : QUESTIONS_PER_MOCK}
             />
+
           ))}
         </div>
         <IndependentDisclaimer />
