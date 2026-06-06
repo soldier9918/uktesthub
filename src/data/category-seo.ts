@@ -1003,10 +1003,10 @@ export const categorySeo: Record<string, CategorySeo> = {
     faqs: [
       { q: "What is a good UCAT score in 2026?", a: "Scores above 2700 (across the four cognitive subtests, with Band 1 or 2 on SJT) are competitive at most UK medical schools." },
       { q: "How much does PLAB 1 cost in 2026?", a: "£255 per sitting, paid to the GMC. PLAB 2 in the UK is around £935." },
-      { q: "Is BMAT still required in 2026?", a: "BMAT was discontinued by Cambridge Assessment Admissions Testing in 2024. A small number of programmes have transitioned to other admissions tests — check directly with the medical school." },
+      { q: "Is BMAT still required in 2026?", a: "BMAT has been discontinued and is included here only as legacy biomedical admissions-style practice. It is no longer used for current UK medicine admissions; former BMAT universities have moved to other admissions tests, mainly UCAT." },
       { q: "What OET grade do I need to register with the GMC?", a: "Grade B in all four sub-tests is the GMC's English language requirement, equivalent to IELTS 7.5." },
       { q: "Can UCAT be retaken?", a: "Only once per admissions cycle (and only if you didn't sit it earlier in the same year)." },
-      { q: "Are these healthcare entry mocks free?", a: "Yes. UCAT, BMAT, OET and PLAB 1 mocks on UK Test Hub are all free to use." },
+      { q: "Are these healthcare entry mocks free?", a: "Yes. UCAT, OET and PLAB 1 mocks on UK Test Hub are all free to use, plus BMAT legacy practice." },
     ],
   },
 
