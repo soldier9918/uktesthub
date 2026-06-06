@@ -241,6 +241,9 @@ function TopicPage() {
             {topic.slug === "driving-theory" && (
               <> Want the real test-day feel? Switch to <strong>EXAM MODE</strong> — 50 questions, 57 minutes, pass mark 43/50.</>
             )}
+            {topic.slug === "life-in-the-uk" && (
+              <> Want the real test-day feel? Switch to <strong>EXAM MODE</strong> — 24 questions, 45 minutes, pass mark 18/24.</>
+            )}
           </p>
         </div>
       </section>
