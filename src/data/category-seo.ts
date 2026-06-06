@@ -956,7 +956,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       {
         heading: "What the tests actually involve",
         body: [
-          "UCAT runs two hours and contains five subtests: Verbal Reasoning, Decision Making, Quantitative Reasoning, Abstract Reasoning and Situational Judgement. The first four return scaled scores (300–900 each); SJT is reported as a band (1 to 4).",
+          "UCAT now has three cognitive subtests — Verbal Reasoning, Decision Making and Quantitative Reasoning — plus Situational Judgement. Abstract Reasoning was removed from the test from 2025. The cognitive subtests return scaled scores (300–900 each); SJT is reported as a band (1 to 4). The full sitting runs around two hours at Pearson VUE.",
           "OET (Healthcare English) is a four-skill test (Listening, Reading, Writing, Speaking) lasting around three hours. The Writing and Speaking sub-tests are profession-specific — doctors write referral letters, nurses write discharge summaries.",
           "PLAB 1 is a 180-question single-best-answer paper sat over three hours at British Council centres worldwide and at Pearson VUE in the UK. The pass mark is set per sitting using a modified Angoff method, typically around 60–65%.",
         ],
