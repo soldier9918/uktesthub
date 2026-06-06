@@ -989,7 +989,7 @@ export const categorySeo: Record<string, CategorySeo> = {
         heading: "Why active practice testing works",
         body: [
           "These exams are speed tests as much as knowledge tests. Mocks build the timing reflexes that no amount of textbook reading can.",
-          "PLAB fees change regularly. Check the official GMC fees page before booking.",
+          "PLAB fees change regularly. From 1 April 2026, the GMC lists PLAB 1 at £283 and PLAB 2 at £1,036, but candidates should always check the official GMC fees page before booking.",
         ],
       },
       {
@@ -1002,7 +1002,7 @@ export const categorySeo: Record<string, CategorySeo> = {
     ],
     faqs: [
       { q: "What is a good UCAT score in 2026?", a: "Scores above 2700 (across the four cognitive subtests, with Band 1 or 2 on SJT) are competitive at most UK medical schools." },
-      { q: "How much does PLAB 1 cost in 2026?", a: "PLAB fees change regularly. Check the official GMC fees page before booking." },
+      { q: "How much does PLAB 1 cost in 2026?", a: "PLAB fees change regularly. From 1 April 2026, the GMC lists PLAB 1 at £283 and PLAB 2 at £1,036, but candidates should always check the official GMC fees page before booking." },
       { q: "Is BMAT still required in 2026?", a: "BMAT has been discontinued and is included here only as legacy biomedical admissions-style practice. It is no longer used for current UK medicine admissions; former BMAT universities have moved to other admissions tests, mainly UCAT." },
       { q: "What OET grade do I need to register with the GMC?", a: "Grade B in all four sub-tests is the GMC's English language requirement, equivalent to IELTS 7.5." },
       { q: "Can UCAT be retaken?", a: "Only once per admissions cycle (and only if you didn't sit it earlier in the same year)." },
