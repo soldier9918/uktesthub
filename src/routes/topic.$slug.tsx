@@ -248,6 +248,38 @@ function TopicPage() {
               <> Want the real test-day feel? Switch to <strong>EXAM MODE</strong> — 36 questions, 45 minutes, pass mark 60%.</>
             )}
           </p>
+
+          {topic.slug === "bmat" && (
+            <div className="mt-6 max-w-3xl rounded-2xl border border-coral/40 bg-coral/10 p-5 text-sm leading-relaxed text-navy-foreground/90 backdrop-blur">
+              <p className="text-xs font-bold uppercase tracking-wider text-coral">
+                Legacy exam — no longer in use
+              </p>
+              <p className="mt-2">
+                <strong>BMAT has been discontinued.</strong> Cambridge Assessment Admissions
+                Testing withdrew the Biomedical Admissions Test from the 2024 application
+                cycle (for 2025 entry onwards). It is no longer used for current UK
+                medicine admissions — former BMAT universities have moved to other
+                admissions tests, mainly UCAT. These questions are kept for historical
+                practice only.
+              </p>
+              <p className="mt-3 flex flex-wrap gap-3">
+                <Link
+                  to="/topic/$slug"
+                  params={{ slug: "ucat" }}
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-coral px-3 py-1.5 text-xs font-semibold text-white hover:bg-coral/90"
+                >
+                  Practise UCAT mocks <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+                <Link
+                  to="/guide/$slug"
+                  params={{ slug: "ucat" }}
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-white/30 bg-white/10 px-3 py-1.5 text-xs font-semibold text-white hover:bg-white/20"
+                >
+                  Read the UCAT guide
+                </Link>
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
