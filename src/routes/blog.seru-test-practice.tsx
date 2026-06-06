@@ -146,16 +146,18 @@ function SeruLanding() {
           heading: "How the SERU assessment is scored",
           body: (
             <p>
-              The official pass mark set by TfL is 60%. Our mock tests set a
-              practice target of 75% — this is for mock tests only and gives
-              you a safety margin so you are comfortable on the day. Because
-              the real assessment is scenario-based, your answers need to be
-              specific — saying "I would call someone" is not enough, you must
-              say who you would call (for example, the police on 999 in an
-              emergency, or TfL via the licensing email for non-urgent issues)
-              and why. Practising with realistic SERU questions before your
-              appointment helps you give the level of detail TfL is looking
-              for.
+              TfL treats SERU as a competency assessment of safety, equality
+              and regulatory understanding rather than a simple percentage-pass
+              paper. On UK Test Hub we set a practice target of 75% on every
+              24-question SERU practice mock — this is a practice target only,
+              and it gives you a safety margin so you are comfortable on the
+              day. Because the real assessment is scenario-based, your answers
+              need to be specific — saying "I would call someone" is not
+              enough, you must say who you would call (for example, the police
+              on 999 in an emergency, or TfL via the licensing email for
+              non-urgent issues) and why. Practising with realistic SERU
+              questions before your appointment helps you give the level of
+              detail TfL is looking for.
             </p>
           ),
         },
