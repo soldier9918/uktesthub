@@ -30,10 +30,16 @@
     },
     {
       "id": "rds-hs-0001",
-      "type": "hot-spot",
-      "question": "Identify the East Cardinal mark from these buoyage topmarks",
-      "explanation": "East Cardinal marks have two cones pointing away from each other (base to base). Pass to the East of this mark for safe water",
-      "imageAlt": "A yellow and black buoy with two cone topmarks"
+      "type": "mcq",
+      "question": "Which topmark correctly identifies an East Cardinal mark?",
+      "explanation": "East Cardinal marks have two cones pointing away from each other (base to base). Pass to the East of this mark for safe water.",
+      "options": [
+        "Two cones pointing away from each other (base to base).",
+        "Two cones pointing towards each other (point to point).",
+        "A single sphere.",
+        "A single cone pointing upwards."
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0143",
@@ -76,10 +82,16 @@
     },
     {
       "id": "rds-hs-0002",
-      "type": "hot-spot",
-      "question": "Click on the line that represents a 'Clearing Bearing' used to safely pass the drying rock",
-      "explanation": "A clearing bearing is a pre-planned line on a chart that ensures a vessel stays clear of a specific hazard, such as a submerged rock or shallow bank",
-      "imageAlt": "A nautical chart showing a coastline, a lighthouse, and a submerged drying rock"
+      "type": "mcq",
+      "question": "What is the purpose of a 'Clearing Bearing' in navigation?",
+      "explanation": "A clearing bearing is a pre-planned line on a chart that ensures a vessel stays clear of a specific hazard, such as a submerged rock or shallow bank.",
+      "options": [
+        "To provide a precise line for a vessel to follow into a harbour.",
+        "To ensure a vessel stays clear of a specific hazard, such as a submerged rock or shallow bank.",
+        "To determine the vessel's speed over ground.",
+        "To indicate the direction of the strongest tidal flow."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0145",
@@ -122,10 +134,16 @@
     },
     {
       "id": "rds-hs-0003",
-      "type": "hot-spot",
-      "question": "In this crossing situation between two power-driven vessels, click on the 'Give-Way' vessel",
-      "explanation": "Under ColRegs Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her own starboard side must keep out of the way",
-      "imageAlt": "Two motorboats on a collision course at sea. Boat A is to the left, Boat B is to the right"
+      "type": "mcq",
+      "question": "In a crossing situation between two power-driven vessels, which vessel is the 'Give-Way' vessel according to ColRegs Rule 15?",
+      "explanation": "Under ColRegs Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her own starboard side must keep out of the way.",
+      "options": [
+        "The vessel on the port side of the other vessel.",
+        "The vessel which has the other on her own port side.",
+        "The vessel which has the other on her own starboard side.",
+        "The vessel that is going faster."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0147",
@@ -168,10 +186,16 @@
     },
     {
       "id": "rds-hs-0004",
-      "type": "hot-spot",
-      "question": "Select the diagram that represents an 'Occulting' light characteristic",
-      "explanation": "An occulting light is a rhythmic light in which the total duration of light in each period is longer than the total duration of darkness",
-      "imageAlt": "Three different graphs showing light timing patterns"
+      "type": "mcq",
+      "question": "Which of the following describes an 'Occulting' light characteristic?",
+      "explanation": "An occulting light is a rhythmic light in which the total duration of light in each period is longer than the total duration of darkness.",
+      "options": [
+        "A light that flashes at regular intervals, but with a longer period of darkness than light.",
+        "A light that has a total duration of light in each period longer than the total duration of darkness.",
+        "A light that shows a continuous light with no interruptions.",
+        "A light that rapidly flashes five times followed by a longer flash."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0149",
@@ -214,10 +238,16 @@
     },
     {
       "id": "rds-hs-0005",
-      "type": "hot-spot",
-      "question": "You are entering a UK harbour in the direction of the flood tide. Click on the Port Hand lateral mark",
-      "explanation": "In IALA Region A (UK), the Port hand lateral mark is red with a cylindrical (can) topmark",
-      "imageAlt": "Four different buoyage marks in IALA Region A"
+      "type": "mcq",
+      "question": "When entering a UK harbour in the direction of the flood tide, what are the characteristics of a Port Hand lateral mark?",
+      "explanation": "In IALA Region A (UK), the Port hand lateral mark is red with a cylindrical (can) topmark.",
+      "options": [
+        "It is green with a conical topmark.",
+        "It is red with a spherical topmark.",
+        "It is red with a cylindrical (can) topmark.",
+        "It is green with a cylindrical (can) topmark."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0151",
@@ -260,10 +290,16 @@
     },
     {
       "id": "rds-hs-0006",
-      "type": "hot-spot",
-      "question": "Identify the West Cardinal mark which indicates that safe water lies to the West of the mark",
-      "explanation": "A West Cardinal mark has topmark cones pointing 'in' towards each other and a yellow band in the middle of a black body",
-      "imageAlt": "Four different cardinal marks showing topmarks and colour patterns"
+      "type": "mcq",
+      "question": "Which description correctly identifies a West Cardinal mark?",
+      "explanation": "A West Cardinal mark has topmark cones pointing 'in' towards each other and a yellow band in the middle of a black body. It indicates that safe water lies to the West of the mark.",
+      "options": [
+        "Topmark cones pointing away from each other (base to base) and a yellow band in the middle of a black body.",
+        "Topmark cones pointing 'in' towards each other, a yellow band in the middle of a black body, and indicates safe water to the West.",
+        "Topmark cones pointing 'in' towards each other, a black band in the middle of a yellow body, and indicates safe water to the East.",
+        "A black body with a single red horizontal band and two black spheres as a topmark."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0153",
@@ -306,10 +342,16 @@
     },
     {
       "id": "rds-hs-0007",
-      "type": "hot-spot",
-      "question": "Select the buoy that marks a hazard of limited size that has navigable water all around it",
-      "explanation": "An isolated danger mark is black with one or more red horizontal bands and two black spheres as a topmark",
-      "imageAlt": "An Admiralty chart snippet showing various buoy icons and depth contours"
+      "type": "mcq",
+      "question": "Which buoy marks a hazard of limited size that has navigable water all around it?",
+      "explanation": "An isolated danger mark is black with one or more red horizontal bands and two black spheres as a topmark.",
+      "options": [
+        "A red cylindrical buoy with a can topmark.",
+        "A green conical buoy with a cone topmark.",
+        "A black buoy with one or more red horizontal bands and two black spheres as a topmark.",
+        "A yellow buoy with a spherical topmark."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0155",
@@ -352,10 +394,16 @@
     },
     {
       "id": "rds-hs-0008",
-      "type": "hot-spot",
-      "question": "In this Course To Steer (CTS) diagram, click on the line that represents the vessel's Water Track (the heading the boat is steered through the water)",
-      "explanation": "The Course To Steer (CTS) is the heading the vessel must point to counteract the tide and wind (leeway) to achieve the intended Ground Track",
-      "imageAlt": "A vector diagram showing the water track, tidal stream, and ground track"
+      "type": "mcq",
+      "question": "In a Course To Steer (CTS) diagram, what does the Course To Steer represent?",
+      "explanation": "The Course To Steer (CTS) is the heading the vessel must point to counteract the tide and wind (leeway) to achieve the intended Ground Track.",
+      "options": [
+        "The actual path the vessel makes over the ground.",
+        "The direction and speed of the tidal current.",
+        "The vessel's Water Track, which is the heading the boat is steered through the water to counteract tide and wind.",
+        "The desired destination of the vessel."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0157",
@@ -398,10 +446,16 @@
     },
     {
       "id": "rds-hs-0009",
-      "type": "hot-spot",
-      "question": "Look at these two power-driven vessels crossing at night. Click on the vessel that is the 'Stand-on' vessel",
-      "explanation": "According to ColRegs Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her own starboard side shall keep out of the way",
-      "imageAlt": "Two powerboats on a collision course at night. Vessel A sees a red sidelight; Vessel B sees a green sidelight"
+      "type": "mcq",
+      "question": "According to ColRegs Rule 15, in a crossing situation between two power-driven vessels, which vessel is the 'Stand-on' vessel?",
+      "explanation": "According to ColRegs Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her own starboard side shall keep out of the way. Therefore, the vessel which sees the other on her own port side is the stand-on vessel.",
+      "options": [
+        "The vessel that sees the other on her own starboard side.",
+        "The vessel that is to the port side of the other vessel.",
+        "The vessel that has the other on her own starboard side.",
+        "The vessel that sounds a prolonged blast."
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0159",
@@ -444,10 +498,16 @@
     },
     {
       "id": "rds-hs-0010",
-      "type": "hot-spot",
-      "question": "In this chart extract, a skipper is using a 'Transit' to stay in the deep water channel. Click on the front mark (the object closest to the observer) of the transit",
-      "explanation": "A Transit (or Leading Line) uses two fixed objects aligned in a row to provide a highly accurate position line; in this case, the tower and the chimney",
-      "imageAlt": "A nautical chart snippet showing a church, a tower, and a chimney. A dashed line connects the tower and chimney"
+      "type": "mcq",
+      "question": "When using a 'Transit' or 'Leading Line' to stay in a deep water channel, what is the role of the 'front mark'?",
+      "explanation": "A Transit (or Leading Line) uses two fixed objects aligned in a row to provide a highly accurate position line; in this case, the tower and the chimney. The front mark is the object closest to the observer.",
+      "options": [
+        "It is the object furthest from the observer, used to establish depth.",
+        "It is the object closest to the observer, which, when aligned with the back mark, provides a precise position line.",
+        "It indicates the direction of the prevailing wind.",
+        "It acts as a warning for submerged hazards."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0161",
@@ -490,10 +550,16 @@
     },
     {
       "id": "rds-hs-0011",
-      "type": "hot-spot",
-      "question": "You want to leave the pontoon by 'springing the bow off' using slow ahead gear and fenders. Click on the mooring line that must remain attached to act as the pivot point",
-      "explanation": "The aft spring prevents the vessel from moving forward while the engine is in gear, allowing the bow to swing out away from the pontoon",
-      "imageAlt": "A yacht moored alongside a pontoon with four lines labeled: Bow line, Stern line, Forward Spring, and Aft Spring"
+      "type": "mcq",
+      "question": "You want to leave a pontoon by 'springing the bow off' using slow ahead gear and fenders. Which mooring line must remain attached to act as the pivot point?",
+      "explanation": "The aft spring prevents the vessel from moving forward while the engine is in gear, allowing the bow to swing out away from the pontoon.",
+      "options": [
+        "Aft spring",
+        "Forward breastline",
+        "Aft breastline",
+        "Bow line"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0163",
@@ -536,10 +602,16 @@
     },
     {
       "id": "rds-hs-0012",
-      "type": "hot-spot",
-      "question": "You are navigating near a dangerous sandbank. The chart indicates the safe water is to the South of the hazard. Click on the correct buoy to look for",
-      "explanation": "A South Cardinal mark has two downward-pointing cones as its topmark and a yellow-over-black colour sequence on the buoy body",
-      "imageAlt": "An array of four cardinal marks with varying topmarks and yellow/black bands"
+      "type": "mcq",
+      "question": "You are navigating near a dangerous sandbank. The chart indicates that safe water is to the South of the hazard. Which buoy should you look for?",
+      "explanation": "A South Cardinal mark has two downward-pointing cones as its topmark and a yellow-over-black colour sequence on the buoy body.",
+      "options": [
+        "A South Cardinal mark",
+        "An East Cardinal mark",
+        "A Lateral mark (starboard hand)",
+        "An Isolated Danger mark"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0165",
@@ -582,10 +654,16 @@
     },
     {
       "id": "rds-hs-0013",
-      "type": "hot-spot",
-      "question": "You are navigating around a hazard. Click on the North Cardinal mark",
-      "explanation": "A North Cardinal mark has two cones pointing upwards and indicates that the safest water is to the North of the buoy",
-      "imageAlt": "Four cardinal buoys with different cone topmark arrangements"
+      "type": "mcq",
+      "question": "You are navigating around a hazard. Which of these describes a North Cardinal mark?",
+      "explanation": "A North Cardinal mark has two cones pointing upwards and indicates that the safest water is to the North of the buoy.",
+      "options": [
+        "Two cones pointing upwards",
+        "Two cones pointing downwards",
+        "Two spheres",
+        "A single upright cone"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0167",
@@ -628,10 +706,16 @@
     },
     {
       "id": "rds-hs-0014",
-      "type": "hot-spot",
-      "question": "Look at this plot. Click on the symbol that represents a 'Dead Reckoning' (DR) position",
-      "explanation": "A Dead Reckoning (DR) position is calculated using only your course steered and distance through the water, marked on a chart with a single line across the track",
-      "imageAlt": "A nautical chart plot showing a starting position, a line representing the course, and two marked positions"
+      "type": "mcq",
+      "question": "A 'Dead Reckoning' (DR) position is calculated using only your course steered and distance through the water. How is it typically represented on a chart?",
+      "explanation": "A Dead Reckoning (DR) position is calculated using only your course steered and distance through the water, marked on a chart with a single line across the track.",
+      "options": [
+        "With a single line across the track",
+        "With a circle around the intersection of position lines",
+        "With an arrow pointing to the vessel's estimated position",
+        "With a square symbol"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0169",
@@ -674,10 +758,16 @@
     },
     {
       "id": "rds-hs-0015",
-      "type": "hot-spot",
-      "question": "You are departing a pontoon and want to 'spring the stern out' using slow astern gear. Click on the Stern Spring line",
-      "explanation": "To spring the stern out from a pontoon while in reverse gear, you should use a stern spring to hold the aft part of the boat while the bow swings out",
-      "imageAlt": "A sailing yacht alongside a pontoon with four mooring lines labelled"
+      "type": "mcq",
+      "question": "You are departing a pontoon and want to 'spring the stern out' using slow astern gear. Which line should you use?",
+      "explanation": "To spring the stern out from a pontoon while in reverse gear, you should use a stern spring to hold the aft part of the boat while the bow swings out.",
+      "options": [
+        "Stern spring",
+        "Bow line",
+        "Forward breastline",
+        "Aft breastline"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0171",
@@ -720,10 +810,16 @@
     },
     {
       "id": "rds-hs-0016",
-      "type": "hot-spot",
-      "question": "You see a vessel at night displaying these lights. Click on the diagram showing a vessel 'Not Under Command' (NUC)",
-      "explanation": "Under IRPCS Rule 27, a vessel 'Not Under Command' shows two all-round red lights in a vertical line when making way at night",
-      "imageAlt": "Four different navigation light configurations for vessels at night"
+      "type": "mcq",
+      "question": "You see a vessel at night displaying lights. Which configuration indicates a vessel 'Not Under Command' (NUC)?",
+      "explanation": "Under IRPCS Rule 27, a vessel 'Not Under Command' shows two all-round red lights in a vertical line when making way at night.",
+      "options": [
+        "Two all-round red lights in a vertical line",
+        "A red light over a white light",
+        "Two red lights with a white light between them",
+        "Three white lights in a vertical line"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0173",
@@ -766,10 +862,16 @@
     },
     {
       "id": "rds-hs-0017",
-      "type": "hot-spot",
-      "question": "You are moored port-side to a pontoon and wish to spring the bow off using 'Slow Ahead' power. Click on the Aft Spring",
-      "explanation": "The aft spring runs from the stern of the boat forward to the pontoon, preventing the vessel from moving ahead while in gear",
-      "imageAlt": "A diagram of a sailing yacht moored alongside a pontoon with multiple mooring lines labeled"
+      "type": "mcq",
+      "question": "You are moored port-side to a pontoon and wish to spring the bow off using 'Slow Ahead' power. Which line is the Aft Spring?",
+      "explanation": "The aft spring runs from the stern of the boat forward to the pontoon, preventing the vessel from moving ahead while in gear.",
+      "options": [
+        "The line running from the stern of the boat forward to the pontoon",
+        "The line running from the bow of the boat forward to the pontoon",
+        "The line running perpendicular from the bow to the pontoon",
+        "The line running perpendicularly from the stern to the pontoon"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0175",
@@ -812,10 +914,16 @@
     },
     {
       "id": "rds-hs-0018",
-      "type": "hot-spot",
-      "question": "Click on the topmark used for an Isolated Danger Mark",
-      "explanation": "The Isolated Danger mark features two black spheres as a topmark and is placed directly over a hazard that has navigable water all around it",
-      "imageAlt": "Four different buoy topmarks: a cone, a cylinder, two spheres, and a single sphere"
+      "type": "mcq",
+      "question": "What is the topmark used for an Isolated Danger Mark?",
+      "explanation": "The Isolated Danger mark features two black spheres as a topmark and is placed directly over a hazard that has navigable water all around it.",
+      "options": [
+        "Two black spheres",
+        "Two cones pointing upwards",
+        "A single red sphere",
+        "A single black cone"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0177",
@@ -858,9 +966,16 @@
     },
     {
       "id": "rds-hs-0019",
-      "type": "hot-spot",
-      "question": "After taking two bearings with a hand-bearing compass, you have plotted your position. Click on the symbol representing a 'Fix'",
-      "explanation": "A 'Fix' is represented on a chart by the intersection of position lines, usually identified by a circle around the intersection or a cross with the time written it"
+      "type": "mcq",
+      "question": "After taking two bearings with a hand-bearing compass, you have plotted your position. Which symbol represents a 'Fix'?",
+      "explanation": "A 'Fix' is represented on a chart by the intersection of position lines, usually identified by a circle around the intersection or a cross with the time written beside it.",
+      "options": [
+        "A circle around the intersection of position lines or a cross with the time written beside it",
+        "A single line crossing the vessel's track",
+        "A square symbol with the time written inside",
+        "A dashed line indicating an estimated position"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0179",
@@ -903,10 +1018,16 @@
     },
     {
       "id": "rds-hs-0020",
-      "type": "hot-spot",
-      "question": "You are navigating at night and see lights ahead. Click on the light configuration for a vessel 'Engaged in Trawling'",
-      "explanation": "A trawler displays green over white 'all-round' lights, while a vessel engaged in fishing other than trawling displays red over white",
-      "imageAlt": "Four sets of vertical navigation lights shown against a black background"
+      "type": "mcq",
+      "question": "You are navigating at night and see lights ahead. Which light configuration indicates a vessel 'Engaged in Trawling'?",
+      "explanation": "A trawler displays green over white 'all-round' lights, while a vessel engaged in fishing other than trawling displays red over white.",
+      "options": [
+        "Green over white all-round lights",
+        "Red over white all-round lights",
+        "Two red all-round lights in a vertical line",
+        "White over red all-round lights"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0181",
@@ -949,10 +1070,16 @@
     },
     {
       "id": "rds-hs-0021",
-      "type": "hot-spot",
-      "question": "You need to make a routine initial call to another vessel or monitor for distress signals. Click on the internationally recognised hailing and distress channel",
-      "explanation": "Channel 16 is the international distress, safety, and calling frequency used for initial contact before moving to a working channel",
-      "imageAlt": "A close-up of a fixed DSC VHF marine radio interface with various buttons and a digital display showing multiple channel numbers"
+      "type": "mcq",
+      "question": "Which channel is the internationally recognised hailing and distress frequency for routine initial calls or monitoring for distress signals?",
+      "explanation": "Channel 16 is the international distress, safety, and calling frequency used for initial contact before moving to a working channel.",
+      "options": [
+        "Channel 16",
+        "Channel 68",
+        "Channel 70",
+        "Channel 72"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0183",
@@ -995,10 +1122,16 @@
     },
     {
       "id": "rds-hs-0022",
-      "type": "hot-spot",
-      "question": "When plotting an Estimated Position (EP), you must account for the wind's effect on the hull. Click on the vector that represents 'Leeway'",
-      "explanation": "The Leeway vector is applied to the Water Track (the direction the boat is pointed) to account for the wind pushing the vessel sideways",
-      "imageAlt": "A vector diagram used for an Estimated Position (EP). It shows a line for the water track, a small perpendicular arrow for leeway, and a tidal stream vector"
+      "type": "mcq",
+      "question": "When plotting an Estimated Position (EP) and accounting for the wind's effect on the hull, which vector represents 'Leeway'?",
+      "explanation": "The Leeway vector is applied to the Water Track (the direction the boat is pointed) to account for the wind pushing the vessel sideways.",
+      "options": [
+        "The vector applied to the Water Track to account for sideways wind push",
+        "The vector indicating the boat's speed through the water",
+        "The vector representing the current's effect on the boat",
+        "The vector for the boat's intended direction over ground"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0185",
@@ -1041,10 +1174,16 @@
     },
     {
       "id": "rds-hs-0023",
-      "type": "hot-spot",
-      "question": "You are approaching a landfall after a cross-channel passage. Click on the topmark that identifies a 'Safe Water Mark'",
-      "explanation": "The Safe Water Mark is identified by a single red sphere topmark and vertical red and white stripes on the body",
-      "imageAlt": "Four different buoy topmarks: two black cones pointing up, a red can, a red sphere, and a yellow 'X'"
+      "type": "mcq",
+      "question": "Which topmark identifies a 'Safe Water Mark' when approaching a landfall after a cross-channel passage?",
+      "explanation": "The Safe Water Mark is identified by a single red sphere topmark and vertical red and white stripes on the body.",
+      "options": [
+        "A single red sphere",
+        "Two black cones pointing upwards",
+        "Two black cones pointing away from each other",
+        "A single green can"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0187",
@@ -1087,10 +1226,16 @@
     },
     {
       "id": "rds-hs-0024",
-      "type": "hot-spot",
-      "question": "You are look-out at night. You see a single white light directly ahead, which you confirm is not a steaming light. Click on the light indicating you are the 'Overtaking' vessel",
-      "explanation": "A vessel is deemed to be overtaking when approaching another from a direction more than 22.5 degrees abaft her beam, where only the stern light would be visible",
-      "imageAlt": "A night view of the sea showing four different configurations of single or grouped navigation lights"
+      "type": "mcq",
+      "question": "As a look-out at night, you see a single white light directly ahead, which you confirm is not a steaming light. Which light indicates you are the 'Overtaking' vessel?",
+      "explanation": "A vessel is deemed to be overtaking when approaching another from a direction more than 22.5 degrees abaft her beam, where only the stern light would be visible.",
+      "options": [
+        "A single white stern light",
+        "A white masthead light with side lights",
+        "A single flashing yellow light",
+        "Two vertical white lights"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0189",
@@ -1133,10 +1278,16 @@
     },
     {
       "id": "rds-hs-0025",
-      "type": "hot-spot",
-      "question": "You are entering a UK harbour at night. Click on the Port Hand lateral mark",
-      "explanation": "When entering a harbour with the flood tide, Port hand marks are red with square topmarks and should be left on the port (left) side",
-      "imageAlt": "Four different lateral marks on the water"
+      "type": "mcq",
+      "question": "When entering a UK harbour at night, which description matches a Port Hand lateral mark?",
+      "explanation": "When entering a harbour with the flood tide, Port hand marks are red with square topmarks and should be left on the port (left) side.",
+      "options": [
+        "Red with a square topmark, to be left on the port (left) side",
+        "Green with a conical topmark, to be left on the starboard (right) side",
+        "Red and white vertically striped with a spherical topmark",
+        "Yellow with an 'X' shape topmark"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0191",
@@ -1179,10 +1330,16 @@
     },
     {
       "id": "rds-hs-0026",
-      "type": "hot-spot",
-      "question": "You are navigating near a rock. The chart tells you to pass to the East of the hazard. Click on the East Cardinal mark",
-      "explanation": "An East Cardinal mark has two cones pointing away from each other (bases together) and indicates safe water to the East",
-      "imageAlt": "Four different cardinal marks"
+      "type": "mcq",
+      "question": "You are navigating near a rock and the chart indicates to pass to the East of the hazard. Which description identifies an East Cardinal mark?",
+      "explanation": "An East Cardinal mark has two cones pointing away from each other (bases together) and indicates safe water to the East.",
+      "options": [
+        "Two cones pointing away from each other (bases together)",
+        "Two cones pointing upwards",
+        "Two cones pointing downwards",
+        "Two cones pointing towards each other (points together)"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0193",
@@ -1225,10 +1382,16 @@
     },
     {
       "id": "rds-hs-0027",
-      "type": "hot-spot",
-      "question": "In this Course to Steer (CTS) diagram, click on the vector representing the Ground Track (the intended path over the seabed)",
-      "explanation": "In a Course to Steer (CTS) diagram, the line with two arrows represents the 'Course Over Ground' (COG) or Ground Track",
-      "imageAlt": "A standard RYA CTS vector diagram showing water track, tidal stream, and ground track"
+      "type": "mcq",
+      "question": "In a Course to Steer (CTS) diagram, which vector represents the Ground Track (the intended path over the seabed)?",
+      "explanation": "In a Course to Steer (CTS) diagram, the line with two arrows represents the 'Course Over Ground' (COG) or Ground Track.",
+      "options": [
+        "The line with two arrows",
+        "The line representing the boat's heading",
+        "The line indicating the effect of current",
+        "The line showing the effect of leeway"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0195",
@@ -1271,10 +1434,16 @@
     },
     {
       "id": "rds-hs-0028",
-      "type": "hot-spot",
-      "question": "You see a vessel at night and observe its masthead lights. Click on the configuration for a 'Sailing Vessel' under way",
-      "explanation": "A sailing vessel seen from the side at night shows a red (port) or green (starboard) sidelight; if over 20m or using optional lights, it may show red over green at the masthead",
-      "imageAlt": "Four sets of vessel lights at night"
+      "type": "mcq",
+      "question": "You observe a vessel at night. Which masthead light configuration signifies a 'Sailing Vessel' under way?",
+      "explanation": "A sailing vessel seen from the side at night shows a red (port) or green (starboard) sidelight; if over 20m or using optional lights, it may show red over green at the masthead.",
+      "options": [
+        "Red over green at the masthead (if over 20m or using optional lights)",
+        "Three all-round white lights in a vertical line",
+        "Three all-round red lights in a vertical line",
+        "A single white masthead light with side lights"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0198",
@@ -1317,10 +1486,16 @@
     },
     {
       "id": "rds-hs-0029",
-      "type": "hot-spot",
-      "question": "You need to monitor the international distress frequency. Which channel button should you select?",
-      "explanation": "Channel 16 is the international distress, safety, and calling frequency used to establish initial contact before switching to a working channel",
-      "imageAlt": "Close up of a marine VHF radio interface with several numbered buttons including 16, 06, 13, and 72"
+      "type": "mcq",
+      "question": "Which channel button should you select to monitor the international distress frequency?",
+      "explanation": "Channel 16 is the international distress, safety, and calling frequency used to establish initial contact before switching to a working channel.",
+      "options": [
+        "Channel 16",
+        "Channel 68",
+        "Channel 70",
+        "Channel 72"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0200",
@@ -1363,10 +1538,16 @@
     },
     {
       "id": "rds-hs-0030",
-      "type": "hot-spot",
-      "question": "You are approaching a cluster of rocks. To stay in safe water, you must pass to the West of the hazard. Click on the West Cardinal mark",
-      "explanation": "A West Cardinal mark has two cones point-to-point (forming a 'waist' shape) and indicates safe water is to the West of the mark",
-      "imageAlt": "Four different cardinal marks showing their specific black and yellow band patterns and cone topmarks"
+      "type": "mcq",
+      "question": "You are approaching a cluster of rocks and must pass to the West of the hazard. Which description identifies a West Cardinal mark?",
+      "explanation": "A West Cardinal mark has two cones point-to-point (forming a 'waist' shape) and indicates safe water is to the West of the mark.",
+      "options": [
+        "Two cones point-to-point (forming a 'waist' shape)",
+        "Two cones pointing upwards",
+        "Two cones pointing downwards",
+        "Two cones pointing away from each other (bases together)"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0202",
@@ -1409,10 +1590,16 @@
     },
     {
       "id": "rds-hs-0031",
-      "type": "hot-spot",
-      "question": "You are planning a passage and have drawn your vector triangle. Click on the vector that represents the Course to Steer (heading through the water)",
-      "explanation": "In a Course to Steer (CTS) triangle, the vector with one arrow represents the path through the water (vessel's heading and speed)",
-      "imageAlt": "A navigation triangle showing three vectors: the ground track (intended path), the tide (set and drift), and the course to steer"
+      "type": "mcq",
+      "question": "When planning a passage and using a vector triangle, which vector represents the Course to Steer (heading through the water)?",
+      "explanation": "In a Course to Steer (CTS) triangle, the vector with one arrow represents the path through the water (vessel's heading and speed).",
+      "options": [
+        "The vector showing leeway",
+        "The vector with a single arrow indicating the vessel's heading and speed",
+        "The vector representing the true course over the ground",
+        "The vector indicating tidal set and drift"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0204",
@@ -1455,10 +1642,16 @@
     },
     {
       "id": "rds-hs-0032",
-      "type": "hot-spot",
-      "question": "In this crossing situation between two power-driven vessels in sight of one another, click on the 'Give-way' vessel",
-      "explanation": "Rule 15 states that when two power-driven vessels are crossing, the vessel which has the other on her own starboard side shall keep out of the way. Vessel B is on the starboard side of Vessel A",
-      "imageAlt": "A bird's-eye view diagram of two motorboats on crossing courses. Vessel B is approaching from the right (starboard) of Vessel A"
+      "type": "mcq",
+      "question": "In a crossing situation between two power-driven vessels, where Vessel A has Vessel B on her starboard side, which vessel is the give-way vessel?",
+      "explanation": "Rule 15 states that when two power-driven vessels are crossing, the vessel which has the other on her own starboard side shall keep out of the way. Therefore, Vessel A is the give-way vessel as Vessel B is on her starboard side.",
+      "options": [
+        "Vessel B",
+        "Both vessels are give-way vessels",
+        "Vessel A",
+        "Neither vessel is a give-way vessel"
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0206",
@@ -1501,10 +1694,16 @@
     },
     {
       "id": "rds-hs-0033",
-      "type": "hot-spot",
-      "question": "You are approaching a shallow bank and must pass to the south of it. Click on the South Cardinal mark",
-      "explanation": "A South Cardinal mark features two cones pointing downwards and a yellow-over-black colour scheme",
-      "imageAlt": "A diagram showing four different cardinal marks in a circle around a hazard"
+      "type": "mcq",
+      "question": "You are approaching a shallow bank and must pass to the south of it. Which cardinal mark indicates the safe water lies to the south?",
+      "explanation": "A South Cardinal mark features two cones pointing downwards and a yellow-over-black colour scheme, indicating safe water to the south.",
+      "options": [
+        "A West Cardinal mark",
+        "An East Cardinal mark",
+        "A North Cardinal mark",
+        "A South Cardinal mark"
+      ],
+      "correctAnswer": 3
     },
     {
       "id": "rds-mc-0208",
@@ -1547,10 +1746,16 @@
     },
     {
       "id": "rds-hs-0034",
-      "type": "hot-spot",
-      "question": "You are plotting an Estimated Position (EP). Based on the DR line already drawn, click on the vector representing the 'Tide' (Set and Drift)",
-      "explanation": "When plotting an Estimated Position (EP), the tidal vector is drawn from the DR position in the direction the tide is setting",
-      "imageAlt": "A navigation plot showing a starting point, a water track (DR), and a resulting position after tide"
+      "type": "mcq",
+      "question": "When plotting an Estimated Position (EP) based on a DR line, which vector represents the 'Tide' (Set and Drift)?",
+      "explanation": "When plotting an Estimated Position (EP), the tidal vector is drawn from the DR position in the direction the tide is setting.",
+      "options": [
+        "The vector showing the vessel's course over ground",
+        "The vector drawn from the DR position in the direction the tide is setting",
+        "The vector representing the vessel's speed through the water",
+        "The vector indicating leeway caused by wind"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0210",
@@ -1593,10 +1798,16 @@
     },
     {
       "id": "rds-hs-0035",
-      "type": "hot-spot",
-      "question": "You are in a narrow channel. Click on the vessel that is 'Constrained by her Draught' and unable to deviate from her course",
-      "explanation": "A vessel constrained by her draught displays three red all-round lights in a vertical line at night",
-      "imageAlt": "Four different sets of vertical navigation lights seen on vessel silhouettes"
+      "type": "mcq",
+      "question": "Which lighting configuration at night indicates a vessel that is 'Constrained by her Draught' and unable to deviate from her course?",
+      "explanation": "A vessel constrained by her draught displays three red all-round lights in a vertical line at night.",
+      "options": [
+        "Two green all-round lights in a vertical line",
+        "Three red all-round lights in a vertical line",
+        "A single flashing yellow light",
+        "Three white masthead lights in a vertical line"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0212",
@@ -1639,10 +1850,16 @@
     },
     {
       "id": "rds-hs-0036",
-      "type": "hot-spot",
-      "question": "You are moored alongside in a cross-wind. Click on the 'Stern Breast' line used to keep the aft of the boat tight against the pontoon",
-      "explanation": "The breast back is a short line led roughly at 90 degrees to the pontoon to hold the stern in close",
-      "imageAlt": "Top-down diagram of a boat alongside a pontoon with several mooring lines labelled"
+      "type": "mcq",
+      "question": "When moored alongside a pontoon in a cross-wind, which line is described as a 'Stern Breast' used to keep the aft of the boat tight against the pontoon?",
+      "explanation": "The breast back is a short line led roughly at 90 degrees to the pontoon to hold the stern in close.",
+      "options": [
+        "A bow spring line",
+        "A line led from the bow to the shore",
+        "A short line led roughly at 90 degrees to the pontoon to hold the stern in close",
+        "An aft spring line"
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0215",
@@ -1685,10 +1902,16 @@
     },
     {
       "id": "rds-hs-0037",
-      "type": "hot-spot",
-      "question": "You are securing your vessel to a metal ring on a harbour wall. Click on the knot most suitable for this task that is least likely to jam under tension",
-      "explanation": "The Round Turn and Two Half Hitches is the most reliable knot for securing a boat to a ring or post under load as it won't jam and is easy to untie",
-      "imageAlt": "A selection of four common nautical knots: a Bowline, a Clove Hitch, a Round Turn and Two Half Hitches, and a Figure of Eight"
+      "type": "mcq",
+      "question": "Which knot is most suitable for securing a vessel to a metal ring on a harbour wall, as it's least likely to jam under tension and is easy to untie?",
+      "explanation": "The Round Turn and Two Half Hitches is the most reliable knot for securing a boat to a ring or post under load as it won't jam and is easy to untie.",
+      "options": [
+        "A Reef Knot",
+        "A Bowline",
+        "A Clove hitch",
+        "The Round Turn and Two Half Hitches"
+      ],
+      "correctAnswer": 3
     },
     {
       "id": "rds-mc-0217",
@@ -1731,10 +1954,16 @@
     },
     {
       "id": "rds-hs-0038",
-      "type": "hot-spot",
-      "question": "In this crossing situation between two power-driven vessels, which vessel is the 'Stand-on' vessel according to the ColRegs?",
-      "explanation": "Under IRPCS Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her own starboard side shall keep out of the way",
-      "imageAlt": "Two motorboats on a collision course. Boat A is seeing the port side of Boat B. Boat B is seeing the starboard side of Boat A"
+      "type": "mcq",
+      "question": "In a crossing situation between two power-driven vessels, according to ColRegs Rule 15, which vessel is the 'Stand-on' vessel?",
+      "explanation": "Under IRPCS Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her own starboard side shall keep out of the way. Therefore, the vessel that does NOT have the other on her starboard side (i.e., has the other on her port side) is the stand-on vessel.",
+      "options": [
+        "The vessel which has the other on her own port side",
+        "The vessel which has the other on her own starboard side",
+        "The vessel travelling at a higher speed",
+        "The vessel that sounds a warning signal first"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0219",
@@ -1777,10 +2006,16 @@
     },
     {
       "id": "rds-hs-0039",
-      "type": "hot-spot",
-      "question": "You are navigating near a submerged wreck. To stay in safe water, the chart indicates you must pass to the North. Click on the correct Cardinal Mark",
-      "explanation": "A North Cardinal mark indicates that the deepest or safest water lies to the North; its topmark consists of two cones pointing upwards",
-      "imageAlt": "Four cardinal marks: North, South, East, and West"
+      "type": "mcq",
+      "question": "You are navigating near a submerged wreck and the chart indicates you must pass to the North for safe water. Which Cardinal Mark would you look for?",
+      "explanation": "A North Cardinal mark indicates that the deepest or safest water lies to the North; its topmark consists of two cones pointing upwards.",
+      "options": [
+        "An East Cardinal mark",
+        "A West Cardinal mark",
+        "A North Cardinal mark",
+        "A South Cardinal mark"
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0221",
@@ -1823,10 +2058,16 @@
     },
     {
       "id": "rds-hs-0040",
-      "type": "hot-spot",
-      "question": "You are identifying a lighthouse from the chart with the characteristic 'Oc 10s'. Click on the diagram that represents an 'Occulting' light",
-      "explanation": "An occulting light is one where the total duration of light in each period is longer than the total duration of darkness",
-      "imageAlt": "Four light phase diagrams: Flashing, Occulting, Isophase, and Quick Flashing"
+      "type": "mcq",
+      "question": "Which light characteristic describes an 'Occulting' light, such as a lighthouse with the characteristic 'Oc 10s'?",
+      "explanation": "An occulting light is one where the total duration of light in each period is longer than the total duration of darkness.",
+      "options": [
+        "A light where the total duration of darkness is longer than the total duration of light in each period",
+        "A light that flashes at irregular intervals",
+        "A light that shows a single continuous light for 10 seconds",
+        "A light where the total duration of light in each period is longer than the total duration of darkness"
+      ],
+      "correctAnswer": 3
     },
     {
       "id": "rds-mc-0223",
@@ -1869,10 +2110,16 @@
     },
     {
       "id": "rds-hs-0041",
-      "type": "hot-spot",
-      "question": "You are moored alongside a pontoon with a strong tide pushing your boat 'ahead' (forward). Click on the Aft Spring line which prevents the boat from moving forward",
-      "explanation": "The aft spring prevents the vessel from moving forward while moored alongside",
-      "imageAlt": "A diagram of a sailing yacht moored alongside a pontoon with multiple lines numbered"
+      "type": "mcq",
+      "question": "Which type of line prevents a boat from moving forward when moored alongside a pontoon, especially with a strong tide pushing it ahead?",
+      "explanation": "The aft spring prevents the vessel from moving forward while moored alongside.",
+      "options": [
+        "Aft spring line",
+        "Forward breast line",
+        "Bow line",
+        "Stern line"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0225",
@@ -1915,10 +2162,16 @@
     },
     {
       "id": "rds-hs-0042",
-      "type": "hot-spot",
-      "question": "You are navigating in open water and see a buoy marking a specific, small hazard such as a submerged rock or wreck. Click on the 'Isolated Danger' topmark",
-      "explanation": "The Isolated Danger mark is placed directly over a hazard of limited extent and is identified by two black spheres",
-      "imageAlt": "Four different types of buoyage topmarks"
+      "type": "mcq",
+      "question": "When navigating in open water, which buoy topmark indicates an 'Isolated Danger' marking a specific, small hazard such as a submerged rock or wreck?",
+      "explanation": "The Isolated Danger mark is placed directly over a hazard of limited extent and is identified by two black spheres.",
+      "options": [
+        "Two black spheres",
+        "Two red cones, points together",
+        "A single black can",
+        "A yellow 'X' shape"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0227",
@@ -1961,10 +2214,16 @@
     },
     {
       "id": "rds-hs-0043",
-      "type": "hot-spot",
-      "question": "When allowing for the wind's effect on your vessel's heading, you apply a 'Leeway' angle. Click on the vector representing the boat's path through the water AFTER leeway has been applied",
-      "explanation": "Leeway is applied 'downwind' from the Water Track to find the Course Made Good through the water",
-      "imageAlt": "A navigation diagram showing a Course to Steer triangle with an extra vector for wind"
+      "type": "mcq",
+      "question": "When allowing for the wind's effect on a vessel's heading, which vector represents the boat's path through the water AFTER leeway has been applied?",
+      "explanation": "Leeway is applied 'downwind' from the Water Track to find the Course Made Good through the water.",
+      "options": [
+        "Course Made Good",
+        "Water Track",
+        "Ground Track",
+        "Heading"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0229",
@@ -2007,10 +2266,16 @@
     },
     {
       "id": "rds-hs-0044",
-      "type": "hot-spot",
-      "question": "You see a vessel at night displaying two all-round lights in a vertical line, the top one being red and the lower one being white. Click on this 'Fishing' vessel",
-      "explanation": "The 'Red over White' lights indicate a vessel engaged in fishing other than trawling",
-      "imageAlt": "Four different night-time light configurations for vessels"
+      "type": "mcq",
+      "question": "At night, a vessel displaying two all-round lights in a vertical line, the top one red and the lower one white, indicates which type of vessel?",
+      "explanation": "The 'Red over White' lights indicate a vessel engaged in fishing other than trawling.",
+      "options": [
+        "A fishing vessel (other than trawling)",
+        "A vessel at anchor",
+        "A power-driven vessel underway",
+        "A vessel restricted in its ability to manoeuvre"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0231",
@@ -2053,10 +2318,16 @@
     },
     {
       "id": "rds-hs-0045",
-      "type": "hot-spot",
-      "question": "In this situation where both vessels are 'in sight of one another', click on the vessel that is required to give way",
-      "explanation": "Under COLREGs Rule 18, a power-driven vessel must keep out of the way of a sailing vessel. Vessel B is the power-driven give-way vessel",
-      "imageAlt": "A diagram of two boats on a collision course. Vessel A is under sail. Vessel B is a motorboat"
+      "type": "mcq",
+      "question": "Under COLREGs, if a power-driven vessel (Vessel B) and a sailing vessel (Vessel A) are in sight of one another, which vessel is required to give way?",
+      "explanation": "Under COLREGs Rule 18, a power-driven vessel must keep out of the way of a sailing vessel. Vessel B is the power-driven give-way vessel.",
+      "options": [
+        "Vessel B (power-driven)",
+        "Vessel A (sailing)",
+        "Neither, they both must alter course",
+        "The vessel on the starboard side"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0233",
@@ -2099,10 +2370,16 @@
     },
     {
       "id": "rds-hs-0046",
-      "type": "hot-spot",
-      "question": "You are entering a port and the channel divides. You want to follow the main channel by keeping the 'Preferred Channel to Starboard'. Click on the correct buoy",
-      "explanation": "A Preferred Channel to Starboard mark is a red lateral buoy with one horizontal green band. It is used when a channel divides",
-      "imageAlt": "Three lateral marks: a red can, a green cone, and a red can with a green horizontal band"
+      "type": "mcq",
+      "question": "When entering a port where the channel divides, which buoy indicates a 'Preferred Channel to Starboard'?",
+      "explanation": "A Preferred Channel to Starboard mark is a red lateral buoy with one horizontal green band. It is used when a channel divides.",
+      "options": [
+        "A red lateral buoy with one horizontal green band",
+        "A green lateral buoy with one horizontal red band",
+        "A red and white vertically striped buoy",
+        "A yellow cardinal buoy"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0235",
@@ -2145,10 +2422,16 @@
     },
     {
       "id": "rds-hs-0047",
-      "type": "hot-spot",
-      "question": "You are plotting an Estimated Position (EP). Click on the vector that represents the tidal 'Set and Drift'",
-      "explanation": "In an Estimated Position (EP) plot, the 'Set and Drift' vector represents the direction and distance the tide has moved the vessel during the period",
-      "imageAlt": "A navigation plot showing a Dead Reckoning (DR) line and a tidal vector resulting in an Estimated Position (EP)"
+      "type": "mcq",
+      "question": "When plotting an Estimated Position (EP), which vector represents the tidal 'Set and Drift'?",
+      "explanation": "In an Estimated Position (EP) plot, the 'Set and Drift' vector represents the direction and distance the tide has moved the vessel during the period.",
+      "options": [
+        "The vector showing the direction and distance the tide has moved the vessel",
+        "The vector showing the boat's speed through the water",
+        "The vector showing the vessel's intended course",
+        "The vector showing the effect of wind on the vessel"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0237",
@@ -2191,10 +2474,16 @@
     },
     {
       "id": "rds-hs-0048",
-      "type": "hot-spot",
-      "question": "You need to attach a halyard to the head of a sail using a knot that forms a fixed loop. Click on the Bowline",
-      "explanation": "A bowline creates a secure, non-slipping loop at the end of a line, making it the most reliable knot for securing a halyard to a sail",
-      "imageAlt": "Four different common knots: a clove hitch, a bowline, a figure-of-eight, and a round turn and two half hitches"
+      "type": "mcq",
+      "question": "Which knot, forming a fixed loop, is most reliable for attaching a halyard to the head of a sail?",
+      "explanation": "A bowline creates a secure, non-slipping loop at the end of a line, making it the most reliable knot for securing a halyard to a sail.",
+      "options": [
+        "Bowline",
+        "Figure-of-eight knot",
+        "Reef knot",
+        "Clove hitch"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0239",
@@ -2237,10 +2526,16 @@
     },
     {
       "id": "rds-hs-0049",
-      "type": "hot-spot",
-      "question": "You are navigating in open water and see a buoy marking a small hazard with navigable water all around it. Click the correct topmark for this buoy",
-      "explanation": "An Isolated Danger mark features two black spheres as its topmark and indicates a hazard with navigable water all around it",
-      "imageAlt": "Four various maritime buoy topmarks: two black spheres, a single red cylinder, a yellow cross, and two black cones pointing towards each other"
+      "type": "mcq",
+      "question": "What is the correct topmark for an 'Isolated Danger' buoy, indicating a small hazard with navigable water all around it?",
+      "explanation": "An Isolated Danger mark features two black spheres as its topmark and indicates a hazard with navigable water all around it.",
+      "options": [
+        "Two black spheres",
+        "A single red sphere",
+        "Two black cones, points up",
+        "A single black column"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0241",
@@ -2283,10 +2578,16 @@
     },
     {
       "id": "rds-hs-0050",
-      "type": "hot-spot",
-      "question": "You are approaching a vessel in a narrow channel. Click on the vessel displaying the day shape indicating she is 'Restricted in her Ability to Manoeuvre'",
-      "explanation": "A vessel engaged in a towing operation that is unable to deviate from its course is 'Restricted in her Ability to Manoeuvre' and shows the Ball-Diamond-Ball day shape",
-      "imageAlt": "Silhouettes of four vessels displaying day shapes: one with a cylinder, one with a ball, one with a diamond, and one with a ball-diamond-ball"
+      "type": "mcq",
+      "question": "Which day shape indicates a vessel that is 'Restricted in her Ability to Manoeuvre'?",
+      "explanation": "A vessel engaged in a towing operation that is unable to deviate from its course is 'Restricted in her Ability to Manoeuvre' and shows the Ball-Diamond-Ball day shape.",
+      "options": [
+        "Ball-Diamond-Ball",
+        "Cylinder",
+        "Cone, point down",
+        "Two balls in a vertical line"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-mc-0243",
@@ -2329,10 +2630,16 @@
     },
     {
       "id": "rds-hs-0051",
-      "type": "hot-spot",
-      "question": "You have plotted your Course to Steer and applied the tide. Click on the vector representing your 'Ground Track' (Course Over Ground)",
-      "explanation": "The Course Over Ground (COG) or 'Ground Track' is represented by the vector with two arrows, showing the boat's actual path relative to the seabed",
-      "imageAlt": "A vector triangle showing the relationship between Water Track (Heading), Tide, and Ground Track"
+      "type": "mcq",
+      "question": "Which vector represents the 'Ground Track' (Course Over Ground) after you have plotted your Course to Steer and applied the tide?",
+      "explanation": "The Course Over Ground (COG) or 'Ground Track' is represented by the vector with two arrows, showing the boat's actual path relative to the seabed.",
+      "options": [
+        "A vector showing a single arrow, indicating the intended heading relative to the water.",
+        "A vector showing two arrows, indicating the vessel's actual path relative to the seabed.",
+        "A vector indicating the direction and speed of the tidal stream.",
+        "A vector indicating the direction and speed of the wind."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0245",
@@ -2375,10 +2682,16 @@
     },
     {
       "id": "rds-hs-0052",
-      "type": "hot-spot",
-      "question": "You are identifying a cardinal mark at night. Click on the light characteristic diagram that identifies an East Cardinal mark",
-      "explanation": "An East Cardinal mark flashes in groups of 3 (representing 3 o'clock on a clock face) to assist with quick identification",
-      "imageAlt": "Four light sequence diagrams showing different flashing patterns: Q, Q(3) 10s, Q(6)+LFl 15s, and Q(9) 15s"
+      "type": "mcq",
+      "question": "When identifying a cardinal mark at night, which light characteristic identifies an East Cardinal mark?",
+      "explanation": "An East Cardinal mark flashes in groups of 3 (representing 3 o'clock on a clock face) to assist with quick identification.",
+      "options": [
+        "Continuous quick or very quick flashes.",
+        "Groups of 9 quick or very quick flashes.",
+        "Groups of 3 quick or very quick flashes.",
+        "Groups of 6 quick or very quick flashes followed by a long flash."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0247",
@@ -2421,10 +2734,16 @@
     },
     {
       "id": "rds-hs-0053",
-      "type": "hot-spot",
-      "question": "You are in a narrow channel and hear a power-driven vessel sound two short blasts. Click on the sound signal symbol that indicates they are altering their course to port",
-      "explanation": "Under ColRegs, two short blasts indicate 'I am altering my course to port'",
-      "imageAlt": "Four speech bubbles containing different sound signal symbols"
+      "type": "mcq",
+      "question": "You are in a narrow channel and hear a power-driven vessel sound two short blasts. What does this sound signal indicate?",
+      "explanation": "Under ColRegs, two short blasts indicate 'I am altering my course to port'.",
+      "options": [
+        "I am altering my course to starboard.",
+        "I intend to overtake you on your starboard side.",
+        "I am altering my course to port.",
+        "I am operating astern propulsion."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0249",
@@ -2467,10 +2786,16 @@
     },
     {
       "id": "rds-hs-0054",
-      "type": "hot-spot",
-      "question": "You are navigating near a sandbar. You need to pass to the West of the hazard. Click on the West Cardinal mark",
-      "explanation": "A West Cardinal mark has cones pointing point-to-point (forming a wine glass or 'W' shape) and a yellow band between two black bands",
-      "imageAlt": "Four different types of cardinal buoys standing in the water"
+      "type": "mcq",
+      "question": "You are navigating near a sandbar and need to pass to the West of the hazard. How is a West Cardinal mark identified?",
+      "explanation": "A West Cardinal mark has cones pointing point-to-point (forming a wine glass or 'W' shape) and a yellow band between two black bands.",
+      "options": [
+        "Cones pointing upward, black over yellow, with continuous quick flashes.",
+        "Cones pointing downward, yellow over black, with 9 quick flashes.",
+        "Cones pointing point-to-point (forming a 'W' shape), with a yellow band between two black bands, and 9 quick flashes.",
+        "Cones pointing base-to-base, black over yellow, with 3 quick flashes."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0251",
@@ -2513,10 +2838,16 @@
     },
     {
       "id": "rds-hs-0055",
-      "type": "hot-spot",
-      "question": "You are planning a passage across a tidal stream. Click on the vector that represents your Course to Steer (Water Track)",
-      "explanation": "The Course to Steer (heading) vector is represented by a line with one arrow, used to counteract tide and leeway",
-      "imageAlt": "A vector triangle diagram used for Course to Steer calculations"
+      "type": "mcq",
+      "question": "When planning a passage across a tidal stream, which vector represents your Course to Steer (Water Track)?",
+      "explanation": "The Course to Steer (heading) vector is represented by a line with one arrow, used to counteract tide and leeway.",
+      "options": [
+        "A vector showing two arrows, indicating the vessel's path relative to the seabed.",
+        "A vector showing a single arrow, indicating the intended heading relative to the water.",
+        "A vector representing the direction and speed of the tidal current.",
+        "A vector representing the direction and speed of the wind and waves."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0255",
@@ -2559,10 +2890,16 @@
     },
     {
       "id": "rds-hs-0056",
-      "type": "hot-spot",
-      "question": "At night, you see a vessel displaying three white masthead lights in a vertical line. Click on the vessel that is towing another and where the length of the tow exceeds 200 metres",
-      "explanation": "A vessel towing with a tow length exceeding 200m displays three vertical white masthead lights in addition to sidelights and a stern light",
-      "imageAlt": "Four different silhouettes of vessels at night showing navigation lights"
+      "type": "mcq",
+      "question": "At night, you see a vessel displaying three white masthead lights in a vertical line. What does this indicate?",
+      "explanation": "A vessel towing with a tow length exceeding 200m displays three vertical white masthead lights in addition to sidelights and a stern light.",
+      "options": [
+        "A vessel at anchor.",
+        "A vessel pushing ahead or towing alongside.",
+        "A vessel towing another where the length of the tow exceeds 200 metres.",
+        "A vessel constrained by her draught."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0257",
@@ -2605,10 +2942,16 @@
     },
     {
       "id": "rds-hs-0057",
-      "type": "hot-spot",
-      "question": "You are planning to anchor on a sandy seabed. Click on the CQR (Plough) anchor, known for its good holding power in this ground",
-      "explanation": "The CQR (or plough) anchor is a versatile, high-holding-power anchor that is excellent for use in sand and mud",
-      "imageAlt": "Four different types of small boat anchors"
+      "type": "mcq",
+      "question": "Which anchor is known for its good holding power in sandy seabeds?",
+      "explanation": "The CQR (or plough) anchor is a versatile, high-holding-power anchor that is excellent for use in sand and mud.",
+      "options": [
+        "The Danforth anchor, designed for mud and sand.",
+        "The Grapnel anchor, primarily used for dinghies.",
+        "The CQR (or plough) anchor, excellent for sand and mud.",
+        "The Fisherman's anchor, good for rocky ground."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0259",
@@ -2651,10 +2994,16 @@
     },
     {
       "id": "rds-hs-0058",
-      "type": "hot-spot",
-      "question": "You are entering a harbour in the UK (IALA Region A). Click on the Port Hand lateral mark you should keep to your left",
-      "explanation": "On a chart, the 'Port' hand lateral mark (IALA Region A) is red, has a can shape, and a flat top",
-      "imageAlt": "A diagram showing four different navigation buoys"
+      "type": "mcq",
+      "question": "When entering a harbour in the UK (IALA Region A), which port hand lateral mark should you keep to your left?",
+      "explanation": "On a chart, the 'Port' hand lateral mark (IALA Region A) is red, has a can shape, and a flat top.",
+      "options": [
+        "A spherical mark, red and white vertical stripes.",
+        "A pillar mark, black and yellow, with cones pointing upwards.",
+        "A can-shaped mark, red, with a flat top.",
+        "A conical mark, green, with a pointed top."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0261",
@@ -2697,10 +3046,16 @@
     },
     {
       "id": "rds-hs-0059",
-      "type": "hot-spot",
-      "question": "According to ColRegs, click on the vessel displaying the day shape for a vessel Constrained By her Draught",
-      "explanation": "A vessel constrained by her draught, which can only navigate within a narrow channel, displays a cylinder day shape",
-      "imageAlt": "Three vessels displaying different black day shapes"
+      "type": "mcq",
+      "question": "According to ColRegs, which day shape is displayed by a vessel Constrained By her Draught?",
+      "explanation": "A vessel constrained by her draught, which can only navigate within a narrow channel, displays a cylinder day shape.",
+      "options": [
+        "A ball day shape.",
+        "A diamond day shape.",
+        "A cylinder day shape.",
+        "Two cones, apexes together (hourglass shape)."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0263",
@@ -2743,10 +3098,16 @@
     },
     {
       "id": "rds-hs-0060",
-      "type": "hot-spot",
-      "question": "You need to quickly secure a fender to a horizontal guard rail. Click on the Clove Hitch",
-      "explanation": "A clove hitch is the standard knot for temporarily securing a line to a rail or post",
-      "imageAlt": "Diagrams of four common nautical knots"
+      "type": "mcq",
+      "question": "Which knot is best suited for quickly securing a fender to a horizontal guard rail?",
+      "explanation": "A clove hitch is the standard knot for temporarily securing a line to a rail or post.",
+      "options": [
+        "A Bowline.",
+        "A Clove Hitch.",
+        "A Figure-of-Eight knot.",
+        "A Round Turn and Two Half Hitches."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0265",
@@ -2789,10 +3150,16 @@
     },
     {
       "id": "rds-hs-0061",
-      "type": "hot-spot",
-      "question": "You are moored alongside. Click on the 'Stern Line' (also known as the Aft Breast Back) used to hold the back of the boat into the pontoon",
-      "explanation": "The aft breast back (or stern line) runs perpendicular to the pontoon from the stern to prevent the boat moving away from the dock",
-      "imageAlt": "Diagram of a yacht moored alongside a pontoon with several lines attached"
+      "type": "mcq",
+      "question": "When moored alongside, which line is known as the 'Stern Line' or 'Aft Breast Back' and is used to hold the back of the boat into the pontoon?",
+      "explanation": "The aft breast back (or stern line) runs perpendicular to the pontoon from the stern to prevent the boat moving away from the dock.",
+      "options": [
+        "A line running from the bow perpendicular to the pontoon.",
+        "A line running from the stern parallel to the pontoon.",
+        "A line running from the stern perpendicular to the pontoon.",
+        "A spring line running from midships forward to the pontoon."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0267",
@@ -2835,10 +3202,16 @@
     },
     {
       "id": "rds-hs-0062",
-      "type": "hot-spot",
-      "question": "You are navigating in the Solent and need to pass to the South of a hazard. Click on the South Cardinal Mark",
-      "explanation": "A South Cardinal mark has two cones pointing downwards and a yellow-over-black colour scheme",
-      "imageAlt": "Four different cardinal marks in a row"
+      "type": "mcq",
+      "question": "When navigating in the Solent and needing to pass to the South of a hazard, which cardinal mark should you look for?",
+      "explanation": "A South Cardinal mark has two cones pointing downwards and a yellow-over-black colour scheme.",
+      "options": [
+        "A mark with two cones pointing upwards and a yellow-over-black colour scheme.",
+        "A mark with two cones pointing downwards and a yellow-over-black colour scheme.",
+        "A mark with a single cone pointing upwards and a red-over-black colour scheme.",
+        "A mark with a single cone pointing downwards and a black-over-yellow colour scheme."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0269",
@@ -2881,10 +3254,16 @@
     },
     {
       "id": "rds-hs-0063",
-      "type": "hot-spot",
-      "question": "When plotting an Estimated Position (EP), identify the vector representing the tidal stream. Click on the line marked with three arrows",
-      "explanation": "In an Estimated Position (EP) plot, the tidal set and drift is represented by a vector with three arrows",
-      "imageAlt": "A navigation plot showing a Fix, a Water Track, and an EP"
+      "type": "mcq",
+      "question": "When plotting an Estimated Position (EP), how is the vector representing the tidal stream identified?",
+      "explanation": "In an Estimated Position (EP) plot, the tidal set and drift is represented by a vector with three arrows.",
+      "options": [
+        "A line marked with a single arrow.",
+        "A line marked with two arrows.",
+        "A line marked with three arrows.",
+        "A dotted line with no arrows."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0271",
@@ -2927,10 +3306,16 @@
     },
     {
       "id": "rds-hs-0064",
-      "type": "hot-spot",
-      "question": "You see a vessel ahead that has suffered an engine failure and cannot manoeuvre. Click on the lights representing a vessel 'Not Under Command'",
-      "explanation": "A vessel 'Not Under Command' displays two red all-round lights in a vertical line at night",
-      "imageAlt": "Four different sets of navigation lights against a black background"
+      "type": "mcq",
+      "question": "What lights represent a vessel 'Not Under Command' at night?",
+      "explanation": "A vessel 'Not Under Command' displays two red all-round lights in a vertical line at night.",
+      "options": [
+        "Two green all-round lights in a vertical line.",
+        "Two red all-round lights in a vertical line.",
+        "One red and one green all-round light in a vertical line.",
+        "One white all-round light and one red all-round light in a vertical line."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0274",
@@ -2973,10 +3358,16 @@
     },
     {
       "id": "rds-hs-0065",
-      "type": "hot-spot",
-      "question": "You are approaching a wreck and need to pass to the North to remain in safe water. Click on the correct Cardinal Mark",
-      "explanation": "A North Cardinal mark has two cones pointing upwards and is black over yellow; you must pass to the north of it",
-      "imageAlt": "Four different IALA cardinal marks"
+      "type": "mcq",
+      "question": "If you are approaching a wreck and need to pass to the North to remain in safe water, which cardinal mark should you look for?",
+      "explanation": "A North Cardinal mark has two cones pointing upwards and is black over yellow; you must pass to the north of it.",
+      "options": [
+        "A mark with two cones pointing downwards and a black over yellow body.",
+        "A mark with two cones pointing upwards and a black over yellow body.",
+        "A mark with a single cone pointing upwards and a yellow over black body.",
+        "A mark with two cones pointing upwards and a yellow over black body."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0276",
@@ -3019,10 +3410,16 @@
     },
     {
       "id": "rds-hs-0066",
-      "type": "hot-spot",
-      "question": "You are calculating an Estimated Position. Click on the angle that represents the 'Leeway' caused by the wind pushing the boat sideways",
-      "explanation": "Leeway is the angle between the heading (the direction the boat is pointing) and the water track (the path through the water due to wind)",
-      "imageAlt": "A navigation diagram showing heading, water track, and ground track"
+      "type": "mcq",
+      "question": "What does 'Leeway' represent when calculating an Estimated Position?",
+      "explanation": "Leeway is the angle between the heading (the direction the boat is pointing) and the water track (the path through the water due to wind).",
+      "options": [
+        "The angle between the magnetic north and true north.",
+        "The angle of the boat's heel due to wind pressure.",
+        "The angle between the heading (direction the boat is pointing) and the water track (path through the water due to wind).",
+        "The angle between the boat's speed through the water and its speed over the ground."
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0279",
@@ -3065,10 +3462,16 @@
     },
     {
       "id": "rds-hs-0067",
-      "type": "hot-spot",
-      "question": "You are securing your boat to a metal ring on a harbor wall. Click on the knot that is best for this as it does not jam and is very secure",
-      "explanation": "The Round Turn and Two Half Hitches is the most secure knot for tying a boat to a ring or post under load",
-      "imageAlt": "Four different nautical knots"
+      "type": "mcq",
+      "question": "Which knot is best for securing a boat to a metal ring on a harbour wall, as it does not jam and is very secure?",
+      "explanation": "The Round Turn and Two Half Hitches is the most secure knot for tying a boat to a ring or post under load.",
+      "options": [
+        "A Clove Hitch.",
+        "A Bowline.",
+        "A Figure-of-Eight knot.",
+        "A Round Turn and Two Half Hitches."
+      ],
+      "correctAnswer": 3
     },
     {
       "id": "rds-mc-0281",
@@ -3111,10 +3514,16 @@
     },
     {
       "id": "rds-hs-0068",
-      "type": "hot-spot",
-      "question": "You see a vessel ahead. Click on the day shape that indicates the vessel is 'Engaged in Fishing' (other than trawling)",
-      "explanation": "A vessel engaged in fishing (other than trawling) displays two cones with apexes together in a vertical line",
-      "imageAlt": "Various day shapes used by vessels"
+      "type": "mcq",
+      "question": "What day shape indicates a vessel is 'Engaged in Fishing' (other than trawling)?",
+      "explanation": "A vessel engaged in fishing (other than trawling) displays two cones with apexes together in a vertical line.",
+      "options": [
+        "A single sphere.",
+        "Two cones with apexes together in a vertical line.",
+        "Two cones with bases together in a vertical line.",
+        "A diamond shape."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0283",
@@ -3157,10 +3566,16 @@
     },
     {
       "id": "rds-hs-0069",
-      "type": "hot-spot",
-      "question": "You are navigating in open water and see a hazard on the chart with deep water on all sides. Click on the buoy used to mark this specific hazard",
-      "explanation": "An Isolated Danger mark is positioned over a hazard that has navigable water all around it. It is identified by two black spheres and a red and black horizontal striped body",
-      "imageAlt": "Diagram showing four different types of sea marks: an Isolated Danger mark, a Safe Water mark, an Emergency Wreck buoy, and a Special Mark"
+      "type": "mcq",
+      "question": "When navigating in open water, which buoy is used to mark a hazard on the chart with deep water on all sides?",
+      "explanation": "An Isolated Danger mark is positioned over a hazard that has navigable water all around it. It is identified by two black spheres and a red and black horizontal striped body.",
+      "options": [
+        "A Lateral Mark (red cylindrical).",
+        "An Isolated Danger Mark.",
+        "A Safe Water Mark (red sphere).",
+        "A Special Mark (yellow cross)."
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0285",
@@ -3203,10 +3618,16 @@
     },
     {
       "id": "rds-hs-0070",
-      "type": "hot-spot",
-      "question": "You need to tie a secure loop in the end of a line that will not slip or jam. Click on the Bowline knot",
-      "explanation": "The Bowline is the most common knot used to form a secure, fixed loop at the end of a rope that will not slip or jam under load",
-      "imageAlt": "Four different knots: a Bowline, a Round Turn and Two Half Hitches, a Figure-of-Eight, and a Reef Knot"
+      "type": "mcq",
+      "question": "Which knot is used to tie a secure loop in the end of a line that will not slip or jam?",
+      "explanation": "The Bowline is the most common knot used to form a secure, fixed loop at the end of a rope that will not slip or jam under load.",
+      "options": [
+        "A Reef Knot.",
+        "A Figure-of-Eight knot.",
+        "A Sheet Bend.",
+        "A Bowline."
+      ],
+      "correctAnswer": 3
     },
     {
       "id": "rds-mc-0287",
@@ -3249,10 +3670,16 @@
     },
     {
       "id": "rds-hs-0071",
-      "type": "hot-spot",
-      "question": "At night, you see a vessel showing two all-round lights in a vertical line: the top is green and the bottom is white. Click on the vessel engaged in trawling",
-      "explanation": "A vessel engaged in trawling displays a green light over a white light in a vertical line (Green over White, Trawling Night)",
-      "imageAlt": "Graphic showing four different sets of navigation lights for vessels over 50m"
+      "type": "mcq",
+      "question": "At night, what type of vessel is indicated by two all-round lights in a vertical line, where the top light is green and the bottom light is white?",
+      "explanation": "A vessel engaged in trawling displays a green light over a white light in a vertical line (Green over White, Trawling Night).",
+      "options": [
+        "A vessel engaged in fishing",
+        "A vessel engaged in trawling",
+        "A vessel not under command",
+        "A vessel restricted in her ability to manoeuvre"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0289",
@@ -3295,10 +3722,16 @@
     },
     {
       "id": "rds-hs-0072",
-      "type": "hot-spot",
-      "question": "You are moored alongside a pontoon. Click on the 'Aft Spring' used to prevent the boat from moving forward",
-      "explanation": "The Aft Spring runs from the stern of the boat forward to the pontoon to prevent the vessel from moving forward",
-      "imageAlt": "Drawing of a yacht moored alongside a pontoon with several mooring lines labeled"
+      "type": "mcq",
+      "question": "When moored alongside a pontoon, which line prevents the boat from moving forward?",
+      "explanation": "The Aft Spring runs from the stern of the boat forward to the pontoon to prevent the vessel from moving forward.",
+      "options": [
+        "A bow spring",
+        "A stern line",
+        "An aft spring",
+        "A breast line"
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-mc-0291",
@@ -3341,10 +3774,16 @@
     },
     {
       "id": "rds-hs-0073",
-      "type": "hot-spot",
-      "question": "You are navigating in open water and see a hazard on the chart that has deep water on all sides. Click on the Isolated Danger Mark",
-      "explanation": "An Isolated Danger Mark is placed over a hazard with navigable water all around it; it is identified by two black spheres",
-      "imageAlt": "A group of four different sea marks: a safe water mark, an isolated danger mark, an emergency wreck buoy, and a special mark"
+      "type": "mcq",
+      "question": "You are navigating in open water and see a hazard on the chart that has deep water on all sides. Which navigation mark indicates this type of hazard?",
+      "explanation": "An Isolated Danger Mark is placed over a hazard with navigable water all around it; it is identified by two black spheres.",
+      "options": [
+        "A safe water mark",
+        "An isolated danger mark",
+        "A cardinal mark",
+        "A special mark"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-mc-0293",
@@ -3387,10 +3826,16 @@
     },
     {
       "id": "rds-hs-0074",
-      "type": "hot-spot",
-      "question": "According to ColRegs Rule 13, click on the sector into which another vessel must enter for it to be considered an 'overtaking' vessel",
-      "explanation": "A vessel is deemed to be overtaking when she approaches another from a direction more than 22.5 degrees abaft her beam",
-      "imageAlt": "A diagram showing a power-driven vessel viewed from above with surrounding colored sectors indicating light visibility"
+      "type": "mcq",
+      "question": "According to ColRegs Rule 13, into which sector must another vessel enter for it to be considered an 'overtaking' vessel?",
+      "explanation": "A vessel is deemed to be overtaking when she approaches another from a direction more than 22.5 degrees abaft her beam.",
+      "options": [
+        "More than 90 degrees abaft her beam",
+        "More than 22.5 degrees abaft her beam",
+        "Less than 22.5 degrees abaft her beam",
+        "Between her beam and the bow"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-im-0002",
@@ -3433,10 +3878,16 @@
     },
     {
       "id": "rds-hs-0075",
-      "type": "hot-spot",
-      "question": "You see a vessel in a channel during the day and notice it is stuck on a sandbank. Click on the vessel displaying the correct day shape for a vessel aground",
-      "explanation": "A vessel aground must display three black balls in a vertical line during daylight hours",
-      "imageAlt": "Four different vessels displaying black day shapes: one with a sphere, one with a cylinder, one with three spheres, and one with a diamond"
+      "type": "mcq",
+      "question": "Which day shape correctly indicates a vessel aground?",
+      "explanation": "A vessel aground must display three black balls in a vertical line during daylight hours.",
+      "options": [
+        "One black ball",
+        "Two black diamonds in a vertical line",
+        "Three black balls in a vertical line",
+        "One black cylinder"
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-im-0004",
@@ -3479,10 +3930,16 @@
     },
     {
       "id": "rds-hs-0076",
-      "type": "hot-spot",
-      "question": "You need to join the end of your thick mooring line to a thinner heaving line to pass it to a quay. Click on the Sheet Bend",
-      "explanation": "A sheet bend is the standard knot used to securely join two ropes of different diameters",
-      "imageAlt": "Four different knots side-by-side: a figure-of-eight, a sheet bend, a reef knot, and a round turn and two half hitches"
+      "type": "mcq",
+      "question": "Which knot is best used to join the end of a thick mooring line to a thinner heaving line?",
+      "explanation": "A sheet bend is the standard knot used to securely join two ropes of different diameters.",
+      "options": [
+        "A reef knot",
+        "A sheet bend",
+        "A bowline",
+        "A clove hitch"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-im-0006",
@@ -3525,10 +3982,16 @@
     },
     {
       "id": "rds-hs-0077",
-      "type": "hot-spot",
-      "question": "You are entering a UK harbour from the sea. Click on the Starboard Hand lateral mark",
-      "explanation": "In IALA Region A, when returning to harbor (moving with the direction of buoyage), Starboard hand marks are green conical buoys",
-      "imageAlt": "A selection of four lateral buoyage marks including red cans and green cones"
+      "type": "mcq",
+      "question": "When entering a UK harbour from the sea (IALA Region A), what is typically used as a Starboard Hand lateral mark?",
+      "explanation": "In IALA Region A, when returning to harbour (moving with the direction of buoyage), Starboard hand marks are green conical buoys.",
+      "options": [
+        "A red can buoy",
+        "A green conical buoy",
+        "A yellow spherical buoy",
+        "A black pillar buoy"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-im-0008",
@@ -3571,10 +4034,16 @@
     },
     {
       "id": "rds-hs-0078",
-      "type": "hot-spot",
-      "question": "According to ColRegs Rule 13, click on the vessel that is the 'Give-way' vessel in this overtaking situation",
-      "explanation": "Under Rule 13, any vessel approaching another from more than 22.5 degrees abaft her beam is the overtaking vessel and must keep out of the way",
-      "imageAlt": "Two yachts, A and B, where B is approaching A from professional behind the stern"
+      "type": "mcq",
+      "question": "According to ColRegs Rule 13, which vessel is the 'Give-way' vessel in an overtaking situation?",
+      "explanation": "Under Rule 13, any vessel approaching another from more than 22.5 degrees abaft her beam is the overtaking vessel and must keep out of the way.",
+      "options": [
+        "The vessel being overtaken",
+        "The overtaking vessel",
+        "The vessel to starboard",
+        "The vessel to port"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-im-0010",
@@ -3617,10 +4086,16 @@
     },
     {
       "id": "rds-hs-0079",
-      "type": "hot-spot",
-      "question": "You are securing your boat to a heavy mooring ring on a sea wall. Click on the Round Turn and Two Half Hitches",
-      "explanation": "A Round Turn and Two Half Hitches is the preferred knot for securing a line to a heavy metal ring as it is easy to undo even after being heavily loaded",
-      "imageAlt": "Four different knots tied to a metal ring: a bowline, a round turn and two half hitches, a clove hitch, and a reef knot"
+      "type": "mcq",
+      "question": "Which knot is preferred for securing a line to a heavy mooring ring on a sea wall, especially when it needs to be easily undone after being heavily loaded?",
+      "explanation": "A Round Turn and Two Half Hitches is the preferred knot for securing a line to a heavy metal ring as it is easy to undo even after being heavily loaded.",
+      "options": [
+        "A cleat hitch",
+        "A figure-of-eight knot",
+        "A round turn and two half hitches",
+        "A fisherman's bend"
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-im-0012",
@@ -3663,10 +4138,16 @@
     },
     {
       "id": "rds-hs-0080",
-      "type": "hot-spot",
-      "question": "You are navigating near a sandbank and need to pass to the East. Click on the East Cardinal Mark",
-      "explanation": "The East Cardinal mark has two cones pointing away from each other (bases together) and indicates safe water is to the East",
-      "imageAlt": "Four cardinal marks showing different cone arrangements"
+      "type": "mcq",
+      "question": "You are navigating near a sandbank and need to pass to the East. Which cardinal mark indicates that safe water is to the East?",
+      "explanation": "The East Cardinal mark has two cones pointing away from each other (bases together) and indicates safe water is to the East.",
+      "options": [
+        "A North Cardinal Mark",
+        "A South Cardinal Mark",
+        "An East Cardinal Mark",
+        "A West Cardinal Mark"
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-im-0014",
@@ -3709,10 +4190,16 @@
     },
     {
       "id": "rds-hs-0081",
-      "type": "hot-spot",
-      "question": "You are approaching a submerged reef. To stay in safe water, you must remain to the West of the hazard. Click on the West Cardinal Mark",
-      "explanation": "A West Cardinal mark has two cones point-to-point (waist) and indicates that the safest water lies to the West",
-      "imageAlt": "A row of four different Cardinal Marks on the water"
+      "type": "mcq",
+      "question": "Which of the following describes the shape of a West Cardinal Mark, indicating that the safest water lies to its West?",
+      "explanation": "A West Cardinal mark has two cones point-to-point (waist) and indicates that the safest water lies to the West.",
+      "options": [
+        "Two cones pointing towards each other (waist)",
+        "Two cones pointing upwards",
+        "Two cones pointing downwards",
+        "A single spherical topmark"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0016",
@@ -3755,10 +4242,16 @@
     },
     {
       "id": "rds-hs-0082",
-      "type": "hot-spot",
-      "question": "While sailing in the English Channel, you see a vessel ahead. Click on the vessel that is displaying the day shape for a vessel engaged in trawling",
-      "explanation": "A vessel engaged in trawling displays two cones with their apexes together (hourglass shape)",
-      "imageAlt": "Four small vessels displaying different black day shapes"
+      "type": "mcq",
+      "question": "Which of the following day shapes indicates a vessel engaged in trawling?",
+      "explanation": "A vessel engaged in trawling displays two cones with their apexes together (hourglass shape).",
+      "options": [
+        "Two cones with their apexes together (hourglass shape)",
+        "A single black diamond shape",
+        "Three black balls in a vertical line",
+        "Two black cylinders in a vertical line"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0018",
@@ -3801,10 +4294,16 @@
     },
     {
       "id": "rds-hs-0083",
-      "type": "hot-spot",
-      "question": "You want to temporarily hang a fender from a horizontal rail. Click on the Clove Hitch",
-      "explanation": "The Clove Hitch is used for temporary attachments to a rail or piling but can slip or jam if used for permanent mooring",
-      "imageAlt": "Three different knots tied around a horizontal wooden rail"
+      "type": "mcq",
+      "question": "Which knot is best suited for temporarily hanging a fender from a horizontal rail, though it can slip if used for permanent mooring?",
+      "explanation": "The Clove Hitch is used for temporary attachments to a rail or piling but can slip or jam if used for permanent mooring.",
+      "options": [
+        "Clove Hitch",
+        "Bowline",
+        "Figure-of-Eight Knot",
+        "Sheet Bend"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0020",
@@ -3847,10 +4346,16 @@
     },
     {
       "id": "rds-hs-0084",
-      "type": "hot-spot",
-      "question": "You have just taken three visual bearings with your hand-bearing compass and plotted them on the chart. Click on the symbol used to represent this 'Fix'",
-      "explanation": "A 'Fix' is a position derived from two or more external observations (like bearings) and is traditionally marked with a circle around a dot",
-      "imageAlt": "A section of a coastal chart with three different position symbols"
+      "type": "mcq",
+      "question": "After taking three visual bearings with a hand-bearing compass and plotting them on a chart, which symbol is traditionally used to represent this 'Fix'?",
+      "explanation": "A 'Fix' is a position derived from two or more external observations (like bearings) and is traditionally marked with a circle around a dot.",
+      "options": [
+        "A circle around a dot",
+        "A square around a cross",
+        "A triangle with a dot inside",
+        "A single cross mark"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0022",
@@ -3893,10 +4398,16 @@
     },
     {
       "id": "rds-hs-0085",
-      "type": "hot-spot",
-      "question": "You are navigating at night and see a power-driven vessel crossing from your port side to your starboard side. Click on the light sector that represents the boat's Starboard Sidelight",
-      "explanation": "A vessel under power between 7m and 20m must show a masthead light, sidelights, and a sternlight. The green sidelight is visible on the starboard side",
-      "imageAlt": "A diagram of a power-driven vessel showing light sectors"
+      "type": "mcq",
+      "question": "When navigating at night and observing a power-driven vessel crossing from your port to starboard, which light colour represents the vessel's Starboard Sidelight?",
+      "explanation": "A vessel under power between 7m and 20m must show a masthead light, sidelights, and a sternlight. The green sidelight is visible on the starboard side.",
+      "options": [
+        "Green",
+        "Red",
+        "White",
+        "Yellow"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0024",
@@ -3939,10 +4450,16 @@
     },
     {
       "id": "rds-hs-0086",
-      "type": "hot-spot",
-      "question": "You are moored alongside in a tidal current. Click on the Forward Spring",
-      "explanation": "The forward spring runs from the bow of the boat aft to the pontoon, preventing the vessel from moving forward",
-      "imageAlt": "A boat moored alongside a pontoon with several mooring lines"
+      "type": "mcq",
+      "question": "When moored alongside in a tidal current, which line prevents the vessel from moving forward and runs from the bow of the boat aft to the pontoon?",
+      "explanation": "The forward spring runs from the bow of the boat aft to the pontoon, preventing the vessel from moving forward.",
+      "options": [
+        "Forward Spring",
+        "After Spring",
+        "Bow Line",
+        "Stern Line"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0026",
@@ -3985,10 +4502,16 @@
     },
     {
       "id": "rds-hs-0087",
-      "type": "hot-spot",
-      "question": "You are navigating near a hazard and your chart indicates you must stay to the South of the mark. Click on the South Cardinal Mark",
-      "explanation": "A South Cardinal mark has two cones pointing downwards and a yellow over black colour scheme. It indicates safe water is to the South",
-      "imageAlt": "Four different cardinal marks in a row"
+      "type": "mcq",
+      "question": "When navigating near a hazard, if a chart indicates you must stay to the South of the mark, which Cardinal mark should you look for, characterised by two cones pointing downwards and a yellow over black colour scheme?",
+      "explanation": "A South Cardinal mark has two cones pointing downwards and a yellow over black colour scheme. It indicates safe water is to the South.",
+      "options": [
+        "South Cardinal Mark",
+        "North Cardinal Mark",
+        "East Cardinal Mark",
+        "West Cardinal Mark"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0028",
@@ -4031,10 +4554,16 @@
     },
     {
       "id": "rds-hs-0088",
-      "type": "hot-spot",
-      "question": "You have performed a 'Running Fix' by taking a bearing of a lighthouse, sailing for an hour, and taking a second bearing. Click on the symbol used to denote the Transferred Position Line",
-      "explanation": "A 'running fix' uses a transferred position line, which is traditionally marked with two arrows at each end of the line",
-      "imageAlt": "A nautical chart showing various navigation symbols and plotted lines"
+      "type": "mcq",
+      "question": "After performing a 'Running Fix' by taking two bearings of a lighthouse at different times, which symbol is used to denote the Transferred Position Line?",
+      "explanation": "A 'running fix' uses a transferred position line, which is traditionally marked with two arrows at each end of the line.",
+      "options": [
+        "Two arrows at each end of the line",
+        "A single arrow at one end of the line",
+        "A 'T' at each end of the line",
+        "A dashed line without arrows"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0030",
@@ -4077,10 +4606,16 @@
     },
     {
       "id": "rds-hs-0089",
-      "type": "hot-spot",
-      "question": "You are finishing your mooring process. Click on the knot correctly used to secure a rope to a deck cleat",
-      "explanation": "The Cleat Hitch is the standard and most secure way to fasten a line to a deck cleat",
-      "imageAlt": "Four different knots used in boating"
+      "type": "mcq",
+      "question": "Which knot is correctly used to securely fasten a rope to a deck cleat during the mooring process?",
+      "explanation": "The Cleat Hitch is the standard and most secure way to fasten a line to a deck cleat.",
+      "options": [
+        "Cleat Hitch",
+        "Reef Knot",
+        "Round Turn and Two Half Hitches",
+        "Fisherman's Bend"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0032",
@@ -4123,10 +4658,16 @@
     },
     {
       "id": "rds-hs-0090",
-      "type": "hot-spot",
-      "question": "You are approaching a hazard and need to pass it on the Northern side. Click on the correct Cardinal Mark you should look for",
-      "explanation": "A North Cardinal mark has two cones pointing upwards and indicates that the safest water lies to the North of the mark",
-      "imageAlt": "Four different cardinal marks used in maritime buoyage"
+      "type": "mcq",
+      "question": "When approaching a hazard and needing to pass it on the Northern side, which Cardinal Mark should you look for, indicated by two cones pointing upwards?",
+      "explanation": "A North Cardinal mark has two cones pointing upwards and indicates that the safest water lies to the North of the mark.",
+      "options": [
+        "North Cardinal Mark",
+        "South Cardinal Mark",
+        "East Cardinal Mark",
+        "West Cardinal Mark"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0034",
@@ -4169,10 +4710,16 @@
     },
     {
       "id": "rds-hs-0091",
-      "type": "hot-spot",
-      "question": "You are sailing at night and see multiple lights. Click on the light configuration that indicates a vessel engaged in trawling",
-      "explanation": "A vessel engaged in trawling shows a green light over a white light. Memory aid: 'Green over white, trawling by night'",
-      "imageAlt": "Four different sets of navigation lights shown by vessels at night"
+      "type": "mcq",
+      "question": "Which light configuration indicates a vessel engaged in trawling at night?",
+      "explanation": "A vessel engaged in trawling shows a green light over a white light. A useful memory aid is: 'Green over white, trawling by night'.",
+      "options": [
+        "A green light over a white light",
+        "A red light over a white light",
+        "A white light over a green light",
+        "A white light over a red light"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0036",
@@ -4215,10 +4762,16 @@
     },
     {
       "id": "rds-hs-0092",
-      "type": "hot-spot",
-      "question": "You are following a buoyed channel into a UK marina. Click on the 'Topmark' shape that identifies the Starboard side of the channel",
-      "explanation": "In IALA Region A (UK), the Port Hand mark is red/cylindrical and the Starboard Hand mark is green/conical. Click the cone shape",
-      "imageAlt": "Port and Starboard lateral marks used in UK waters"
+      "type": "mcq",
+      "question": "When sailing into a UK marina, what is the 'Topmark' shape that identifies the Starboard side of the channel?",
+      "explanation": "In IALA Region A (UK), the Port Hand mark is red and cylindrical, while the Starboard Hand mark is green and conical. Therefore, a cone shape identifies the Starboard side.",
+      "options": [
+        "A cone shape",
+        "A cylinder shape",
+        "A sphere shape",
+        "A cross shape"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0038",
@@ -4261,10 +4814,16 @@
     },
     {
       "id": "rds-hs-0093",
-      "type": "hot-spot",
-      "question": "You are returning to a UK port from the sea. Click on the shape that represents the Port Hand lateral mark",
-      "explanation": "In IALA Region A (UK), the Port Hand lateral mark is a red can - remember: 'is there any red port left in the can?'",
-      "imageAlt": "A container of various buoy topmarks and shapes"
+      "type": "mcq",
+      "question": "When returning to a UK port from the sea, which shape represents the Port Hand lateral mark?",
+      "explanation": "In IALA Region A (UK), the Port Hand lateral mark is a red can. A helpful memory cue is: 'is there any red port left in the can?'",
+      "options": [
+        "A red can",
+        "A green cone",
+        "A yellow spear",
+        "A black pillar"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0040",
@@ -4307,10 +4866,16 @@
     },
     {
       "id": "rds-hs-0094",
-      "type": "hot-spot",
-      "question": "You are moored alongside a pontoon. Click on the mooring line that is specifically used as a 'Bow Line' to prevent the vessel moving astern",
-      "explanation": "The bow line prevents the vessel from moving backwards (astern) and keeps the bow close to the pontoon",
-      "imageAlt": "Diagram of a yacht moored alongside a pontoon with four distinct lines labeled A, B, C, and D"
+      "type": "mcq",
+      "question": "Which mooring line is specifically used as a 'Bow Line' to prevent a vessel from moving astern when moored alongside a pontoon?",
+      "explanation": "The bow line prevents the vessel from moving backwards (astern) and also keeps the bow close to the pontoon.",
+      "options": [
+        "A line running from the bow forward to the pontoon",
+        "A line running from the stern aft to the pontoon",
+        "A line running from the midships to the pontoon",
+        "A line running from the stern forward to the pontoon"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0042",
@@ -4353,10 +4918,16 @@
     },
     {
       "id": "rds-hs-0095",
-      "type": "hot-spot",
-      "question": "You need to create a secure loop at the end of a line that will not slip under load. Click on the Bowline",
-      "explanation": "A bowline forms a fixed, non-slipping loop at the end of a rope, which is essential for safety and utility on a boat",
-      "imageAlt": "Four different nautical knots shown side-by-side"
+      "type": "mcq",
+      "question": "Which knot creates a secure loop at the end of a line that will not slip under load?",
+      "explanation": "A bowline forms a fixed, non-slipping loop at the end of a rope, which is essential for safety and utility on a boat.",
+      "options": [
+        "A Bowline",
+        "A Reef Knot",
+        "A Clove Hitch",
+        "A Figure-of-Eight Knot"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0044",
@@ -4399,10 +4970,16 @@
     },
     {
       "id": "rds-hs-0096",
-      "type": "hot-spot",
-      "question": "Two power-driven vessels are on a collision course. Click on the 'Give-way' vessel according to the crossing rule",
-      "explanation": "Under ColRegs Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her starboard side must keep out of the way",
-      "imageAlt": "Bird's-eye view of two powerboats on a crossing course. Boat A is coming from the west, Boat B is coming from the south. Boats are at 90 degrees"
+      "type": "mcq",
+      "question": "According to the crossing rule for two power-driven vessels on a collision course, which vessel is the 'Give-way' vessel?",
+      "explanation": "Under ColRegs Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her starboard side must keep out of the way.",
+      "options": [
+        "The vessel which has the other on her starboard side",
+        "The vessel which has the other on her port side",
+        "The larger vessel",
+        "The vessel travelling at a slower speed"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0046",
@@ -4445,10 +5022,16 @@
     },
     {
       "id": "rds-hs-0097",
-      "type": "hot-spot",
-      "question": "You are entering a UK harbour from the sea. Click on the shape that represents the Starboard Hand Lateral Mark",
-      "explanation": "When entering a harbour in IALA Region A (UK), the starboard side of the channel is marked by green conical buoys",
-      "imageAlt": "Two buoy shapes side by side on a white background"
+      "type": "mcq",
+      "question": "When entering a UK harbour from the sea, which shape represents the Starboard Hand Lateral Mark?",
+      "explanation": "When entering a harbour in IALA Region A (UK), the starboard side of the channel is marked by green conical buoys.",
+      "options": [
+        "A green conical buoy",
+        "A red can buoy",
+        "A yellow spherical buoy",
+        "A white pillar buoy"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0048",
@@ -4491,10 +5074,16 @@
     },
     {
       "id": "rds-hs-0098",
-      "type": "hot-spot",
-      "question": "Two sailing vessels are on the same tack. According to ColRegs Rule 12, click on the vessel that is required to 'Give-way'",
-      "explanation": "Under ColRegs Rule 12, when two sailing vessels have the wind on the same side, the vessel to windward (Vessel B) shall keep out of the way of the vessel to leeward",
-      "imageAlt": "Two yachts sailing on the same tack, one positioned upwind of the other"
+      "type": "mcq",
+      "question": "Under ColRegs Rule 12, when two sailing vessels are on the same tack, which vessel is required to 'Give-way'?",
+      "explanation": "Under ColRegs Rule 12, when two sailing vessels have the wind on the same side, the vessel to windward shall keep out of the way of the vessel to leeward.",
+      "options": [
+        "The vessel to windward",
+        "The vessel to leeward",
+        "The vessel with the main engine running",
+        "The larger vessel"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0050",
@@ -4537,10 +5126,16 @@
     },
     {
       "id": "rds-hs-0099",
-      "type": "hot-spot",
-      "question": "You are moored alongside in a strong wind from astern. Click on the line that prevents the boat from moving forward along the pontoon",
-      "explanation": "The stern spring runs from the stern of the boat forward to the pontoon to prevent the vessel from moving forward",
-      "imageAlt": "A boat moored alongside a pontoon with four primary lines shown"
+      "type": "mcq",
+      "question": "Which line prevents a boat from moving forward along the pontoon when strongly hit by wind from astern?",
+      "explanation": "The stern spring runs from the stern of the boat forward to the pontoon to prevent the vessel from moving or surging forward.",
+      "options": [
+        "The stern spring, running from the stern of the boat forward to the pontoon",
+        "The bow spring, running from the bow of the boat aft to the pontoon",
+        "A bow line, running from the bow forward to the pontoon",
+        "A stern line, running from the stern aft to the pontoon"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0052",
@@ -4583,10 +5178,16 @@
     },
     {
       "id": "rds-hs-0100",
-      "type": "hot-spot",
-      "question": "You are looking for a landfall buoy at the start of a channel where there is deep water in all directions. Click on the Safe Water Mark",
-      "explanation": "The Safe Water Mark (vertical red/white stripes with a red sphere topmark) indicates that there is navigable water all around the mark",
-      "imageAlt": "Four different types of buoy: a port mark, a starboard mark, a safe water mark, and an isolated danger mark"
+      "type": "mcq",
+      "question": "Which buoy marks a landfall at the start of a channel where there is deep water in all directions?",
+      "explanation": "The Safe Water Mark (identified by vertical red/white stripes and a red sphere topmark) indicates that there is navigable water all around the mark, making it suitable as a landfall buoy.",
+      "options": [
+        "A Safe Water Mark",
+        "A Port Hand Mark",
+        "A Starboard Hand Mark",
+        "A Cardinal Mark"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0054",
@@ -4629,10 +5230,16 @@
     },
     {
       "id": "rds-hs-0101",
-      "type": "hot-spot",
-      "question": "You are navigating in open water and see a buoy indicating a small hazard (like a rock) that has navigable water all around it. Click on the Isolated Danger Mark",
-      "explanation": "An Isolated Danger Mark is placed over a hazard surrounded by navigable water and is identified by two black spheres as a topmark",
-      "imageAlt": "A selection of four sea marks including an Isolated Danger, an Emergency Wreck Mark, a Preferred Channel Mark, and a Safe Water Mark"
+      "type": "mcq",
+      "question": "Which type of buoy indicates a small hazard that has navigable water all around it?",
+      "explanation": "An Isolated Danger Mark is placed over a hazard surrounded by navigable water and is identified by two black spheres as a topmark.",
+      "options": [
+        "Isolated Danger Mark",
+        "Lateral Mark",
+        "Safe Water Mark",
+        "Special Mark"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0056",
@@ -4675,10 +5282,16 @@
     },
     {
       "id": "rds-hs-0102",
-      "type": "hot-spot",
-      "question": "You are entering a busy bay at night and scanning for hazards. Click on the vessel that is currently at anchor",
-      "explanation": "Under ColRegs Rule 30, a vessel at anchor must show one all-round white light where it can best be seen (for vessels under 50m)",
-      "imageAlt": "Four digital night-time views of different ship light configurations"
+      "type": "mcq",
+      "question": "According to ColRegs Rule 30, what light configuration indicates a vessel under 50m that is currently at anchor at night?",
+      "explanation": "Under ColRegs Rule 30, a vessel at anchor must show one all-round white light where it can best be seen (for vessels under 50m).",
+      "options": [
+        "One all-round white light",
+        "Two all-round white lights vertically",
+        "One all-round red light",
+        "One masthead light and sidelights"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0058",
@@ -4721,10 +5334,16 @@
     },
     {
       "id": "rds-hs-0103",
-      "type": "hot-spot",
-      "question": "You intend to leave your boat moored to a harbour ring for several days. Click on the knot that is most secure and least likely to jam under heavy load",
-      "explanation": "The Round Turn and Two Half Hitches is the preferred knot for securing a boat to a ring or post because it is easy to undo even after being under heavy load",
-      "imageAlt": "Four different knots tied to a metal ring: a Round Turn and Two Half Hitches, a Clove Hitch, a Figure of Eight, and a Sheet Bend"
+      "type": "mcq",
+      "question": "Which knot is most secure and least likely to jam under heavy load when mooring a boat to a harbour ring for several days?",
+      "explanation": "The Round Turn and Two Half Hitches is the preferred knot for securing a boat to a ring or post because it is easy to undo even after being under heavy load.",
+      "options": [
+        "Round Turn and Two Half Hitches",
+        "Bowline",
+        "Cleat Hitch",
+        "Clove Hitch"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0060",
@@ -4767,10 +5386,16 @@
     },
     {
       "id": "rds-hs-0104",
-      "type": "hot-spot",
-      "question": "You have calculated your position by applying the effects of tide and leeway to your Dead Reckoning (DR) track. Click on the symbol used to plot this 'Estimated Position'",
-      "explanation": "An Estimated Position (EP) is marked on a chart using a triangle with a dot in the centre, often with a line showing the direction of the water track",
-      "imageAlt": "A chart fragment showing a Dead Reckoning (DR) cross, an Estimated Position (EP) triangle, and a Fix (circle/cross-intersection)"
+      "type": "mcq",
+      "question": "What symbol is used on a chart to plot an 'Estimated Position' (EP) after applying the effects of tide and leeway to a Dead Reckoning (DR) track?",
+      "explanation": "An Estimated Position (EP) is marked on a chart using a triangle with a dot in the centre, often with a line showing the direction of the water track.",
+      "options": [
+        "A triangle with a dot in the centre",
+        "A cross",
+        "A circle with a dot in the centre",
+        "A square"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0062",
@@ -4813,10 +5438,16 @@
     },
     {
       "id": "rds-hs-0105",
-      "type": "hot-spot",
-      "question": "You have finished mooring your vessel. Click on the image showing the rope correctly secured with a Cleat Hitch",
-      "explanation": "The Cleat Hitch is the correct way to secure a line to a cleat, involving a full turn around the base followed by a figure-eight pattern",
-      "imageAlt": "Four diagrams of a deck cleat with different knots applied to them"
+      "type": "mcq",
+      "question": "Which description accurately depicts a rope correctly secured with a Cleat Hitch?",
+      "explanation": "The Cleat Hitch is the correct way to secure a line to a cleat, involving a full turn around the base followed by a figure-eight pattern.",
+      "options": [
+        "A full turn around the base followed by a figure-eight pattern",
+        "Multiple figure-eight turns only",
+        "A series of half hitches",
+        "A single round turn"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0064",
@@ -4859,10 +5490,16 @@
     },
     {
       "id": "rds-hs-0106",
-      "type": "hot-spot",
-      "question": "You are moored in a strong current pushing you from ahead. Click on the 'Stern Spring' line (the line that prevents the boat from moving backwards)",
-      "explanation": "The Stern Spring runs from the stern of the boat forward to the pontoon, preventing the vessel from moving aft while moored",
-      "imageAlt": "Layout of a boat moored alongside a pontoon with four primary mooring lines labeled"
+      "type": "mcq",
+      "question": "Which mooring line prevents the boat from moving backward when moored in a strong current pushing from ahead?",
+      "explanation": "The Stern Spring runs from the stern of the boat forward to the pontoon, preventing the vessel from moving aft while moored.",
+      "options": [
+        "Stern Spring",
+        "Bow Spring",
+        "Head line",
+        "Stern line"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0066",
@@ -4905,10 +5542,16 @@
     },
     {
       "id": "rds-hs-0107",
-      "type": "hot-spot",
-      "question": "You are approaching a reef and your chart shows West Cardinal Mark. Click on the buoy that demonstrates the correct 'Topmark' for a West Cardinal",
-      "explanation": "A West Cardinal mark has two black cones pointing towards each other (point-to-point) and indicates the safest water is to the West of the mark",
-      "imageAlt": "Four different cardinal buoys showing different cone configurations (Topmarks)"
+      "type": "mcq",
+      "question": "Which description indicates the correct 'Topmark' for a West Cardinal Mark?",
+      "explanation": "A West Cardinal mark has two black cones pointing towards each other (point-to-point) and indicates the safest water is to the West of the mark.",
+      "options": [
+        "Two black cones pointing towards each other (point-to-point)",
+        "Two black cones pointing upwards",
+        "Two black cones pointing downwards",
+        "A single red sphere"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0068",
@@ -4951,10 +5594,16 @@
     },
     {
       "id": "rds-hs-0108",
-      "type": "hot-spot",
-      "question": "You see a vessel ahead that appears to be drifting and unable to maneuver due to an exceptional circumstance. Click on the light configuration for a vessel 'Not Under Command'",
-      "explanation": "A vessel Not Under Command (NUC) is identified at night by two all-round red lights in a vertical line",
-      "imageAlt": "Four sets of navigation lights as seen from a distance at night"
+      "type": "mcq",
+      "question": "What is the correct light configuration at night for a vessel 'Not Under Command' (NUC)?",
+      "explanation": "A vessel Not Under Command (NUC) is identified at night by two all-round red lights in a vertical line.",
+      "options": [
+        "Two all-round red lights in a vertical line",
+        "One all-round white light",
+        "One masthead light and sidelights",
+        "Two all-round white lights in a vertical line"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0070",
@@ -4997,10 +5646,16 @@
     },
     {
       "id": "rds-hs-0109",
-      "type": "hot-spot",
-      "question": "The wind is blowing strongly from the bow, pushing the boat backwards. Click on the mooring line that primarily prevents the boat from moving astern",
-      "explanation": "The aft spring runs from the stern of the boat forward to the pontoon, preventing the vessel from moving backwards along the berth",
-      "imageAlt": "A diagram of a yacht moored alongside a pontoon with four lines labeled: Bow Line, Forward Spring, Aft Spring, and Stern Line"
+      "type": "mcq",
+      "question": "Which mooring line primarily prevents the boat from moving astern when the wind is blowing strongly from the bow?",
+      "explanation": "The aft spring runs from the stern of the boat forward to the pontoon, preventing the vessel from moving backwards along the berth.",
+      "options": [
+        "Aft spring",
+        "Forward spring",
+        "Head line",
+        "Stern line"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0072",
@@ -5043,10 +5698,16 @@
     },
     {
       "id": "rds-hs-0110",
-      "type": "hot-spot",
-      "question": "You are approaching a sandbank and need to stay to the South of the hazard. Click on the South Cardinal mark",
-      "explanation": "A South Cardinal mark has two cones pointing downwards and a yellow band above a black band on the hull",
-      "imageAlt": "Four yellow and black cardinal marks arranged in a row"
+      "type": "mcq",
+      "question": "Which description correctly identifies a South Cardinal Mark?",
+      "explanation": "A South Cardinal mark has two cones pointing downwards and a yellow band above a black band on the hull.",
+      "options": [
+        "Two cones pointing downwards and a yellow band above a black band on the hull",
+        "Two cones pointing upwards and a black band above a yellow band on the hull",
+        "Two cones pointing towards each other and an all-black hull",
+        "Two cones pointing away from each other and an all-yellow hull"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0074",
@@ -5089,10 +5750,16 @@
     },
     {
       "id": "rds-hs-0111",
-      "type": "hot-spot",
-      "question": "Two sailing vessels are on a collision course with the wind coming from different sides. Click on the vessel that must give way",
-      "explanation": "Under ColRegs Rule 12, when two sailing vessels have the wind on different sides, the vessel with the wind on the port side must give way",
-      "imageAlt": "Two yachts on a collision course. Yacht A has the wind on its starboard side. Yacht B has the wind on its port side"
+      "type": "mcq",
+      "question": "Two sailing vessels are on a collision course with the wind coming from different sides. Which vessel must give way?",
+      "explanation": "Under ColRegs Rule 12, when two sailing vessels have the wind on different sides, the vessel with the wind on the port side must give way.",
+      "options": [
+        "The vessel with the wind on its port side.",
+        "The vessel with the wind on its starboard side.",
+        "The vessel sailing closer to the wind.",
+        "The vessel that is larger."
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0076",
@@ -5135,10 +5802,16 @@
     },
     {
       "id": "rds-hs-0112",
-      "type": "hot-spot",
-      "question": "You want to quickly tie a temporary line to a vertical timber post on a pier. Click on the Clove Hitch",
-      "explanation": "A clove hitch is a quick and effective way to temporarily secure a line to a vertical post or rail",
-      "imageAlt": "Four different knots tied to a wooden piling: a bowline, a clove hitch, a round turn and two half hitches, and a figure eight"
+      "type": "mcq",
+      "question": "You need to quickly tie a temporary line to a vertical timber post on a pier. Which knot is most suitable?",
+      "explanation": "A clove hitch is a quick and effective way to temporarily secure a line to a vertical post or rail.",
+      "options": [
+        "Clove Hitch",
+        "Bowline",
+        "Figure-of-eight knot",
+        "Reef Knot"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0078",
@@ -5181,10 +5854,16 @@
     },
     {
       "id": "rds-hs-0113",
-      "type": "hot-spot",
-      "question": "You are navigating a power-driven vessel and see another power-driven vessel approaching head-on. According to ColRegs, click on the vessel that must alter its course to starboard",
-      "explanation": "Under ColRegs Rule 14, when two power-driven vessels meet on head-on courses, both must alter course to starboard, meaning each passes on the port side of the other",
-      "imageAlt": "Two motorboats approaching each other directly head-on in a channel"
+      "type": "mcq",
+      "question": "You are navigating a power-driven vessel and see another power-driven vessel approaching head-on. According to ColRegs, which vessel(s) must alter course to starboard?",
+      "explanation": "Under ColRegs Rule 14, when two power-driven vessels meet on head-on courses, both must alter course to starboard, meaning each passes on the port side of the other.",
+      "options": [
+        "Both vessels must alter course to starboard.",
+        "Only your vessel must alter course to starboard.",
+        "Only the other vessel must alter course to starboard.",
+        "Neither vessel needs to alter course if they maintain speed."
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0080",
@@ -5227,10 +5906,16 @@
     },
     {
       "id": "rds-hs-0114",
-      "type": "hot-spot",
-      "question": "You need to join two ropes of different diameters together securely. Click on the knot most suitable for this purpose",
-      "explanation": "The Sheet Bend is the standard knot used for joining two ropes together, especially if they are of unequal thickness",
-      "imageAlt": "Four different knots commonly used in sailing"
+      "type": "mcq",
+      "question": "You need to join two ropes of different diameters securely together. Which knot is most suitable for this purpose?",
+      "explanation": "The Sheet Bend is the standard knot used for joining two ropes together, especially if they are of unequal thickness.",
+      "options": [
+        "Sheet Bend",
+        "Reef Knot",
+        "Fisherman's Bend",
+        "Granny Knot"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0082",
@@ -5273,10 +5958,16 @@
     },
     {
       "id": "rds-hs-0115",
-      "type": "hot-spot",
-      "question": "You are navigating near a hazard and need to pass to the East of it. Click on the East Cardinal Mark",
-      "explanation": "An East Cardinal mark has two cones pointing away from each other (base to base) and a black-yellow-black colour sequence",
-      "imageAlt": "A set of four cardinal marks used in maritime navigation"
+      "type": "mcq",
+      "question": "You are navigating near a hazard and need to pass to the East of it. Which cardinal mark indicates the East?",
+      "explanation": "An East Cardinal mark has two cones pointing away from each other (base to base) and a black-yellow-black colour sequence.",
+      "options": [
+        "An East Cardinal mark with two cones pointing away from each other (base to base) and a black-yellow-black colour sequence.",
+        "A North Cardinal mark with two cones pointing upwards.",
+        "A South Cardinal mark with two cones pointing downwards.",
+        "A West Cardinal mark with two cones pointing towards each other (point to point)."
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0084",
@@ -5319,10 +6010,16 @@
     },
     {
       "id": "rds-hs-0116",
-      "type": "hot-spot",
-      "question": "In a distress situation where you must abandon ship, you need to activate your satellite-based emergency beacon. Click on the EPIRB",
-      "explanation": "An EPIRB (Emergency Position Indicating Radio Beacon) is used to alert search and rescue services via satellite in the event of an emergency",
-      "imageAlt": "A collection of safety equipment found on a small yacht"
+      "type": "mcq",
+      "question": "In a distress situation where you must abandon ship, which satellite-based emergency beacon should you activate to alert search and rescue services?",
+      "explanation": "An EPIRB (Emergency Position Indicating Radio Beacon) is used to alert search and rescue services via satellite in the event of an emergency.",
+      "options": [
+        "EPIRB (Emergency Position Indicating Radio Beacon)",
+        "SART (Search and Rescue Transponder)",
+        "PLB (Personal Locator Beacon)",
+        "VHF radio"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0086",
@@ -5365,10 +6062,16 @@
     },
     {
       "id": "rds-hs-0117",
-      "type": "hot-spot",
-      "question": "You are entering a UK harbour from the sea. Click on the Port Hand Lateral Mark",
-      "explanation": "When entering a harbour in the UK (IALA Region A), the Port Hand mark is red and has a cylindrical (can) topmark",
-      "imageAlt": "Four different lateral marks found in IALA Region A"
+      "type": "mcq",
+      "question": "You are entering a UK harbour from the sea. Which description matches a Port Hand Lateral Mark in IALA Region A?",
+      "explanation": "When entering a harbour in the UK (IALA Region A), the Port Hand mark is red and has a cylindrical (can) topmark.",
+      "options": [
+        "It is red and has a cylindrical (can) topmark.",
+        "It is green and has a conical topmark.",
+        "It is red and has a conical topmark.",
+        "It is green and has a cylindrical (can) topmark."
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0088",
@@ -5411,10 +6114,16 @@
     },
     {
       "id": "rds-hs-0118",
-      "type": "hot-spot",
-      "question": "You need to put a fixed, non-slipping loop in a line to secure it over a harbour bollard. Click on the Bowline knot",
-      "explanation": "The Bowline is the standard knot used to form a secure, non-slipping loop at the end of a rope, ideal for securing to a bollard or ring",
-      "imageAlt": "Four different common nautical knots"
+      "type": "mcq",
+      "question": "You need to put a fixed, non-slipping loop in a line to secure it over a harbour bollard. Which knot is most suitable?",
+      "explanation": "The Bowline is the standard knot used to form a secure, non-slipping loop at the end of a rope, ideal for securing to a bollard or ring.",
+      "options": [
+        "Bowline knot",
+        "Figure-of-eight knot",
+        "Clove hitch",
+        "Sheet bend"
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0090",
@@ -5457,10 +6166,16 @@
     },
     {
       "id": "rds-hs-0119",
-      "type": "hot-spot",
-      "question": "You are at sea at night and see the lights of another vessel. Click on the image representing a power-driven vessel engaged in towing (length of tow under 200m) seen from the side",
-      "explanation": "Rule 24 states that a power-driven vessel towing (with a tow length under 200m) must show two masthead lights in a vertical line",
-      "imageAlt": "Night-time light configurations for four different vessels seen from the side"
+      "type": "mcq",
+      "question": "You are at sea at night and see the lights of another vessel. Which configuration indicates a power-driven vessel engaged in towing (length of tow under 200m) when seen from the side?",
+      "explanation": "Rule 24 states that a power-driven vessel towing (with a tow length under 200m) must show two masthead lights in a vertical line.",
+      "options": [
+        "Two masthead lights in a vertical line.",
+        "Three masthead lights in a vertical line.",
+        "One masthead light and one towing light.",
+        "Only side lights and a stern light."
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0092",
@@ -5503,10 +6218,16 @@
     },
     {
       "id": "rds-hs-0120",
-      "type": "hot-spot",
-      "question": "You are navigating near a dangerous wreck and need to pass to the North of it. Click on the North Cardinal Mark",
-      "explanation": "A North Cardinal mark is identified by its topmark of two cones both pointing upwards (North)",
-      "imageAlt": "The four cardinal marks: North, South, East, and West"
+      "type": "mcq",
+      "question": "You are navigating near a dangerous wreck and need to pass to the North of it. Which cardinal mark indicates the North?",
+      "explanation": "A North Cardinal mark is identified by its topmark of two cones both pointing upwards (North).",
+      "options": [
+        "A North Cardinal mark identified by its topmark of two cones both pointing upwards (North).",
+        "An East Cardinal mark with two cones pointing away from each other.",
+        "A South Cardinal mark with two cones pointing downwards.",
+        "A West Cardinal mark with two cones pointing towards each other."
+      ],
+      "correctAnswer": 0
     },
     {
       "id": "rds-im-0094",
@@ -5549,10 +6270,16 @@
     },
     {
       "id": "rds-hs-0121",
-      "type": "hot-spot",
-      "question": "You are approaching a vessel engaged in underwater operations. Click on the day shape that indicates a vessel 'Restricted in her Ability to Manoeuvre'",
-      "explanation": "The V-shaped day shape (two cones, apexes pointing together) indicates a vessel restricted in her ability to manoeuvre. Men at work or diving operations often use this signal",
-      "imageAlt": "Four silhouettes of vessels with various black day shapes on their masts"
+      "type": "mcq",
+      "question": "Which day shape indicates a vessel 'Restricted in her Ability to Manoeuvre', such as one engaged in underwater operations?",
+      "explanation": "The V-shaped day shape (two cones, apexes pointing together) indicates a vessel restricted in her ability to manoeuvre. Men at work or diving operations often use this signal.",
+      "options": [
+        "A cylinder",
+        "Two cones, apexes pointing together (V-shaped)",
+        "A ball, a diamond, and a ball in a vertical line",
+        "Three balls in a vertical line"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-im-0096",
@@ -5595,10 +6322,16 @@
     },
     {
       "id": "rds-hs-0122",
-      "type": "hot-spot",
-      "question": "You have plotted your course and accounted for both leeway and the SET of the tide. Click on the symbol that represents an 'Estimated Position' (EP)",
-      "explanation": "The Estimated Position (EP) is represented by a triangle around the fix, with the track line showing the water track plus the tide (indicated by 3 arrows)",
-      "imageAlt": "A navigation chart diagram showing three different position symbols along a course line"
+      "type": "mcq",
+      "question": "When plotting a course and accounting for both leeway and the set of the tide, what symbol represents an 'Estimated Position' (EP)?",
+      "explanation": "The Estimated Position (EP) is represented by a triangle around the fix, with the track line showing the water track plus the tide (indicated by 3 arrows).",
+      "options": [
+        "A circle around the fix with a single arrow on the track line",
+        "A square around the fix with two arrows on the track line",
+        "A triangle around the fix with three arrows on the track line",
+        "A cross around the fix with no arrows on the track line"
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-im-0098",
@@ -5641,10 +6374,16 @@
     },
     {
       "id": "rds-hs-0123",
-      "type": "hot-spot",
-      "question": "You are motor-sailing (using both sails and engine) during the day. Click on the day shape you are required to display to other vessels",
-      "explanation": "When a yacht is under sail but also using its engine, it is considered a power-driven vessel and must display a conical shape, apex downwards",
-      "imageAlt": "Four black day shapes: a ball, a cone apex down, a diamond, and two balls"
+      "type": "mcq",
+      "question": "Which day shape must be displayed by a motor-sailing vessel (using both sails and engine) during the day?",
+      "explanation": "When a yacht is under sail but also using its engine, it is considered a power-driven vessel and must display a conical shape, apex downwards.",
+      "options": [
+        "A ball",
+        "A cylinder",
+        "A diamond",
+        "A conical shape, apex downwards"
+      ],
+      "correctAnswer": 3
     },
     {
       "id": "rds-im-0100",
@@ -5687,10 +6426,16 @@
     },
     {
       "id": "rds-hs-0124",
-      "type": "hot-spot",
-      "question": "You are moored alongside in a marina with a strong wind blowing from astern. Click on the 'Bow Spring' (the line that stops the boat moving forward)",
-      "explanation": "The bow spring runs from the bow of the vessel to a point further aft on the pontoon, preventing the boat from moving forward",
-      "imageAlt": "A top-down view of a boat moored alongside a pontoon with four main numbered mooring lines"
+      "type": "mcq",
+      "question": "Which line on a boat, moored alongside in a marina, would be the 'Bow Spring' to prevent the boat from moving forward, especially with wind from astern?",
+      "explanation": "The bow spring runs from the bow of the vessel to a point further aft on the pontoon, preventing the boat from moving forward.",
+      "options": [
+        "A line running from the bow to a point forward on the pontoon",
+        "A line running from the stern to a point forward on the pontoon",
+        "A line running from the bow to a point further aft on the pontoon",
+        "A line running from the stern to a point further aft on the pontoon"
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-im-0102",
@@ -5733,10 +6478,16 @@
     },
     {
       "id": "rds-hs-0125",
-      "type": "hot-spot",
-      "question": "You are identifying a light on your chart labelled 'Iso W 4s'. Click on the timing diagram that represents an Isophase light",
-      "explanation": "An Isophase light has equal periods of light and darkness, as shown by the perfectly balanced 2s on/2s off pattern",
-      "imageAlt": "Graphic showing four different light timing diagrams (flash, occulting, isophase, and group flash)"
+      "type": "mcq",
+      "question": "When identifying a light on a chart labelled 'Iso W 4s', which timing characteristic represents an Isophase light?",
+      "explanation": "An Isophase light has equal periods of light and darkness, as shown by the perfectly balanced 2s on/2s off pattern.",
+      "options": [
+        "A light with a single, long flash followed by a period of darkness",
+        "A light with equal periods of light and darkness",
+        "A light with several short flashes in quick succession",
+        "A light that rapidly alternates between red and white"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-im-0104",
@@ -5779,10 +6530,16 @@
     },
     {
       "id": "rds-hs-0126",
-      "type": "hot-spot",
-      "question": "You are navigating towards a channel and wish to find the 'Fairway' or 'Landfall' buoy where the water is safe in all directions. Click on the Safe Water Mark",
-      "explanation": "A Safe Water Mark, characterised by vertical red and white stripes and a single red sphere topmark, indicates there is navigable water all around the buoy",
-      "imageAlt": "A selection of four buoyage marks: a Starboard Hand Mark, a North Cardinal, a Special Mark, and a Safe Water Mark"
+      "type": "mcq",
+      "question": "Which buoy, characterised by vertical red and white stripes and a single red sphere topmark, indicates a 'Fairway' or 'Landfall' where there is safe water all around?",
+      "explanation": "A Safe Water Mark, characterised by vertical red and white stripes and a single red sphere topmark, indicates there is navigable water all around the buoy.",
+      "options": [
+        "A lateral mark",
+        "A special mark",
+        "A cardinal mark",
+        "A safe water mark"
+      ],
+      "correctAnswer": 3
     },
     {
       "id": "rds-im-0106",
@@ -5825,10 +6582,16 @@
     },
     {
       "id": "rds-hs-0127",
-      "type": "hot-spot",
-      "question": "Two sailing vessels are on the same tack (Starboard Tack) on a collision course. Click on the vessel that is the 'Stand-on vessel' (the vessel that should maintain course and speed)",
-      "explanation": "According to IRPCS Rule 12, when two sailing vessels have the wind on the same side, the vessel to windward must keep out of the way of the vessel to leeward",
-      "imageAlt": "Top-down view of two sailing vessels on Starboard Tack; vessel A is upwind of vessel B"
+      "type": "mcq",
+      "question": "According to IRPCS Rule 12, if two sailing vessels on the same tack (Starboard Tack) are on a collision course, which vessel is the 'Stand-on vessel'?",
+      "explanation": "According to IRPCS Rule 12, when two sailing vessels have the wind on the same side, the vessel to windward must keep out of the way of the vessel to leeward.",
+      "options": [
+        "The vessel to windward",
+        "The vessel to leeward",
+        "The vessel with the most experienced crew",
+        "The vessel with the smaller sails"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-im-0108",
@@ -5871,10 +6634,16 @@
     },
     {
       "id": "rds-hs-0128",
-      "type": "hot-spot",
-      "question": "You are navigating visually into a narrow harbour entrance. Click on the line that represents a 'Transit' or 'Leading Line'",
-      "explanation": "A transit (or range) is formed when two fixed objects on the chart are observed to be perfectly in line, providing a very accurate position line",
-      "imageAlt": "Chart snippet showing a boat observing a church tower and a lighthouse in a straight line"
+      "type": "mcq",
+      "question": "Which visual navigation aid is formed when two fixed objects on the chart are observed to be perfectly in line, providing a very accurate position line?",
+      "explanation": "A transit (or range) is formed when two fixed objects on the chart are observed to be perfectly in line, providing a very accurate position line.",
+      "options": [
+        "An estimated position",
+        "A transfer bearing",
+        "A transit or leading line",
+        "A running fix"
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-im-0110",
@@ -5917,10 +6686,16 @@
     },
     {
       "id": "rds-hs-0129",
-      "type": "hot-spot",
-      "question": "You are approaching a rocky outcrop and need to pass to the West of the danger. Click on the West Cardinal Mark",
-      "explanation": "A West Cardinal mark indicates safe water to the West of the hazard and is identified by two cones point-to-point",
-      "imageAlt": "An array of four cardinal marks surrounding a central hazard symbol"
+      "type": "mcq",
+      "question": "When approaching a rocky outcrop and needing to pass to the West of the danger, which cardinal mark would you look for?",
+      "explanation": "A West Cardinal mark indicates safe water to the West of the hazard and is identified by two cones point-to-point.",
+      "options": [
+        "An East Cardinal Mark",
+        "A South Cardinal Mark",
+        "A West Cardinal Mark",
+        "A North Cardinal Mark"
+      ],
+      "correctAnswer": 2
     },
     {
       "id": "rds-im-0112",
@@ -5963,10 +6738,16 @@
     },
     {
       "id": "rds-hs-0130",
-      "type": "hot-spot",
-      "question": "You have completed your secondary port calculation and plotted your Course to Steer (CTS) to account for tidal stream. Click on the line symbol specifically representing the CTS",
-      "explanation": "In RYA navigation, a line with two arrows indicates the Course to Steer (CTS) after correcting for tide and leeway",
-      "imageAlt": "A navigation chart segment showing a course plot with various arrow symbols"
+      "type": "mcq",
+      "question": "In RYA navigation, which line symbol specifically represents the Course to Steer (CTS) after correcting for tidal stream and leeway?",
+      "explanation": "In RYA navigation, a line with two arrows indicates the Course to Steer (CTS) after correcting for tide and leeway.",
+      "options": [
+        "A single arrowed line",
+        "A line with two arrows",
+        "A dashed line",
+        "A dotted line"
+      ],
+      "correctAnswer": 1
     },
     {
       "id": "rds-im-0114",
