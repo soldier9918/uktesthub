@@ -1495,7 +1495,7 @@ export const topicSeo: Record<string, TopicSeo> = {
 
   // -------- HEALTHCARE ENTRY -----------------------------------------
   ucat: generic("UCAT Practice", "the UCAT Consortium", "the University Clinical Aptitude Test for medical and dental school applicants — five sections (verbal, decision making, quantitative, abstract, situational judgement) sat at Pearson VUE"),
-  bmat: generic("BMAT Practice", "Cambridge Assessment Admissions Testing (note: BMAT was withdrawn in 2024 — practice retained for legacy training)", "the Biomedical Admissions Test — three sections covering aptitude, scientific knowledge and a writing task. Many universities have moved to UCAT; check current requirements"),
+  bmat: generic("BMAT Legacy Practice", "Cambridge Assessment Admissions Testing (BMAT was discontinued from the 2024 application cycle for 2025 entry onwards — these questions are historical practice only)", "historical biomedical admissions-style practice. BMAT is no longer used for current UK medicine admissions; former BMAT universities have moved to other admissions tests, mainly UCAT. Use this for general aptitude and science practice only — for current applications, prepare with UCAT"),
   oet: generic("OET (Healthcare English)", "Cambridge Boxhill Language Assessment", "the Occupational English Test — the healthcare-specific English test accepted by the NMC, GMC, GDC and HCPC as proof of English proficiency"),
   "plab-1": generic("PLAB 1 Sample Questions", "the General Medical Council (GMC)", "the Professional and Linguistic Assessments Board Part 1 — a 180-question SBA exam in 3 hours, the first stage of GMC registration for international medical graduates"),
 
