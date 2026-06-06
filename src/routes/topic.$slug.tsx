@@ -249,8 +249,9 @@ function TopicPage() {
               <> Want the real test-day feel? Switch to <strong>EXAM MODE</strong> — 24 questions, 45 minutes, pass mark 18/24.</>
             )}
             {topic.slug === "seru" && (
-              <> Want the real test-day feel? Switch to <strong>EXAM MODE</strong> — 36 questions, 45 minutes, pass mark 60%.</>
+              <> Each mock is a <strong>24-question SERU practice mock</strong> covering safety, equality and regulatory understanding, with multiple-choice and missing-word style questions. Practice target: 75%.</>
             )}
+
           </p>
 
           {topic.slug === "bmat" && (
