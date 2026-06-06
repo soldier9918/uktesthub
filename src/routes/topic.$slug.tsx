@@ -100,8 +100,8 @@ function MockCard({
         )}
       </div>
       <p className="mt-1 text-xs text-muted-foreground">
-        {QUESTIONS_PER_MOCK} questions ·{" "}
-        <Clock className="inline h-3 w-3" /> ~{QUESTIONS_PER_MOCK} min
+        {questionsCount} questions ·{" "}
+        <Clock className="inline h-3 w-3" /> ~{minutes} min
       </p>
 
       {available && (
