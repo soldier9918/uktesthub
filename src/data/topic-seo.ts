@@ -1390,7 +1390,7 @@ export const topicSeo: Record<string, TopicSeo> = {
       "Complete TfL SERU assessment guide. Format, pass mark, the 10 syllabus areas and study tips — with free mock tests reflecting the real TfL exam.",
     tagline: "The TfL Safety, Equality and Regulatory Understanding assessment for London private hire drivers, based on the PHV Driver's Handbook.",
     intro: [
-      "The TfL SERU assessment is mandatory for every new London private hire driver since October 2021. It covers safety, equality and regulatory understanding, is based on the Private Hire Driver's Handbook, and is a competency assessment rather than a simple percentage-pass paper. You must pass it before TfL will issue your PHV licence.",
+      "The TfL SERU assessment is mandatory for every new London private hire driver since October 2021. It covers safety, equality and regulatory understanding and is based on the Private Hire Driver's Handbook. TfL does not publish a fixed percentage pass mark — they judge whether you give the safest, most legally correct response. You must pass it before TfL will issue your PHV licence.",
       "Each of our mocks is a 24-question SERU practice mock with multiple-choice and missing-word style questions. We set a practice target of 75% — that extra margin builds the confidence you need for the real assessment. Roughly 40% of candidates fail their first attempt, almost always on the safeguarding and equality sections.",
       "Use the mocks to drill the syllabus areas TfL focus on, then read the official PHV Driver's Handbook alongside them.",
     ],
@@ -1398,7 +1398,7 @@ export const topicSeo: Record<string, TopicSeo> = {
       {
         heading: "Format and what to expect",
         body: [
-          "SERU is sat at a TfL-approved centre and includes multiple-choice and missing-word / sentence-completion questions drawn from the PHV Driver's Handbook. TfL treats it as a competency assessment of safety, equality and regulatory understanding rather than a simple percentage pass mark, so the focus is on giving the safest, most legally correct response.",
+          "SERU is sat at a TfL-approved centre and includes multiple-choice and missing-word / sentence-completion questions drawn from the PHV Driver's Handbook. TfL does not publish a fixed percentage pass mark — the focus is on giving the safest, most legally correct response to each scenario.",
           "Questions are scenario-based: 'A passenger asks you to do X — what do you do?' The right answer is almost always the safest, most legally compliant and most respectful option. Common-sense alone is not enough — you need to know the specific TfL rules from the PHV Driver's Handbook.",
           "On UK Test Hub each mock is a 24-question SERU practice mock with a practice target of 75%. The practice target is set higher than typical pass thresholds on purpose, to give you a safety margin on the day.",
         ],
@@ -1440,7 +1440,7 @@ export const topicSeo: Record<string, TopicSeo> = {
       },
     ],
     faqs: [
-      { q: "Is SERU scored as a simple percentage?", a: "No — TfL treats SERU as a competency assessment of safety, equality and regulatory understanding rather than a fixed percentage pass mark. The focus is on giving the safest, most legally correct response to each scenario." },
+      { q: "What pass mark does SERU use?", a: "TfL does not publish a fixed percentage pass mark — SERU is judged on whether you give the safest, most legally correct response to each scenario, based on the PHV Driver's Handbook. On UK Test Hub we set a practice target of 75% so you can measure progress and build a safety margin for the real assessment." },
       { q: "What kind of questions does SERU use?", a: "A mix of multiple-choice and missing-word / sentence-completion questions, all drawn from the PHV Driver's Handbook." },
       { q: "How much does the SERU cost?", a: "Around £36 per attempt at a TfL-approved centre — check the current fee on tfl.gov.uk before you book." },
       { q: "How many attempts do I get?", a: "TfL allow a limited number of attempts in a rolling window before they pause your application. Check your applicant portal for current limits." },
