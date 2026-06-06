@@ -1485,9 +1485,8 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
             How to use Exam mode
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-foreground">
-            Exam mode runs the full mock against the clock, hides explanations until the end, and
-            shows your overall score at the end with a question-by-question review. Use it once
-            you feel confident — it's timed exam-style practice for test-day familiarity.
+            Exam mode gives timed practice for revision. Official timings vary by exam provider and
+            skill, so always check the official test format before booking.
           </p>
         </div>
       </div>
