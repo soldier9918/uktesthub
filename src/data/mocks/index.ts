@@ -18,9 +18,10 @@ import { categories, findTopic } from "@/data/categories";
  *   "Private Hire Driver Licence"  -> "Private Hire Driver Licence Mock Test 1"
  */
 export function smartMockTitle(topicTitle: string, n: number): string {
-  const base = topicTitle.replace(/\s+test$/i, "").trim();
+  const base = topicTitle.replace(/\s+(?:mock\s+)?test$/i, "").trim();
   return `${base} Mock Test ${n}`;
 }
+
 
 export function smartMockTitleFromSlug(topicSlug: string, n: number): string {
   const t = findTopic(topicSlug)?.topic.title ?? topicSlug;
