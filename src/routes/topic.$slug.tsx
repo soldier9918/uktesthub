@@ -322,7 +322,7 @@ function TopicPage() {
               mockNumber={s.mockNumber}
               available={s.available}
               stats={statsByMock[s.slug] ?? null}
-              minutes={topic.slug === "life-in-the-uk" ? 45 : QUESTIONS_PER_MOCK}
+              minutes={topic.slug === "life-in-the-uk" ? 45 : topic.slug === "seru" ? 30 : QUESTIONS_PER_MOCK}
             />
 
           ))}
