@@ -299,7 +299,7 @@ export const categories: Category[] = [
     title: "Teaching & QTS",
     short: "Teacher training literacy and numeracy practice, including legacy QTS skills test-style questions, professional skills and safeguarding.",
     description:
-      "Prepare for teacher training and QTS — literacy and numeracy practice, including legacy QTS skills test-style questions, Professional Skills for Teachers and Safeguarding in Schools.",
+      "Prepare for teacher training with literacy, numeracy, professional skills and safeguarding practice. This category includes legacy QTS skills test-style questions, but the official QTS Numeracy and Literacy Skills Tests are no longer current. Teacher training providers now check fundamental English and mathematics themselves.",
     icon: "BookOpen",
     accent: "gold",
     heroImage: heroTeaching,
