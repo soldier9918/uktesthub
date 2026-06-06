@@ -280,6 +280,21 @@ function TopicPage() {
               </p>
             </div>
           )}
+
+          {(topic.slug === "qts-numeracy" || topic.slug === "qts-literacy") && (
+            <div className="mt-6 max-w-3xl rounded-2xl border border-coral/40 bg-coral/10 p-5 text-sm leading-relaxed text-navy-foreground/90 backdrop-blur">
+              <p className="text-xs font-bold uppercase tracking-wider text-coral">
+                Legacy exam — discontinued
+              </p>
+              <p className="mt-2">
+                The official <strong>QTS professional skills tests were discontinued from
+                1 April 2020</strong> and test centres closed that year. Teacher training
+                providers now check fundamental English and maths skills themselves as
+                part of ITT recruitment. These questions are retained as legacy practice
+                only.
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
