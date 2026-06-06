@@ -8,6 +8,7 @@ import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { getCategory, categories } from "@/data/categories";
 import { categorySeo } from "@/data/category-seo";
 import { TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK, listMockSlots } from "@/data/mocks";
+import { getGuideDescription } from "@/data/guide-descriptions";
 import { Home, ChevronRight, ArrowRight, BookOpen } from "lucide-react";
 import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
 
@@ -136,7 +137,7 @@ function CategoryPage() {
                             {t.title} Guide
                           </h3>
                           <p className="mt-1 text-xs text-white/65">
-                            Format, tips and how to pass first time
+                            {getGuideDescription(t.slug)}
                           </p>
                         </div>
                       </div>
