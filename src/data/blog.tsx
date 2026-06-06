@@ -981,7 +981,7 @@ export const blogPosts: BlogPost[] = [
     slug: "seru-tfl-test-guide",
     title: "SERU TfL Test Guide 2026: How to Pass First Time (Free Mocks)",
     description:
-      "Complete SERU TfL test guide for 2026: 36 questions, 80% pass mark, syllabus, booking and free SERU practice tests for London private hire drivers.",
+      "Complete SERU TfL test guide for 2026: format, syllabus, booking and free SERU practice tests for London private hire drivers — multiple-choice and missing-word style questions covering safety, equality and regulatory understanding.",
     excerpt:
       "The SERU TfL test trips up well-prepared drivers because of its wording. Here's how to read the questions correctly first time.",
     datePublished: "2026-02-12",
