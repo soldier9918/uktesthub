@@ -1272,7 +1272,7 @@ export const getQuizMeta = (slug: string): QuizMeta | undefined => {
     category: found?.category.slug ?? "",
     topic,
     questionCount: mock.questionCount || QUESTIONS_PER_MOCK,
-    timeLimit: (mock.questionCount || QUESTIONS_PER_MOCK) * 60,
+    timeLimit: topic === "life-in-the-uk" ? 45 * 60 : (mock.questionCount || QUESTIONS_PER_MOCK) * 60,
     difficulty: "Medium",
   };
 };
