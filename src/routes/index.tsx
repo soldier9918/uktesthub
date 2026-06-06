@@ -46,7 +46,7 @@ export const Route = createFileRoute("/")({
   head: () => {
     const TITLE = "Free UK Mock Tests | UK Test Hub";
     const DESC =
-      "Practise free UK mock tests for Driving Theory, Life in the UK, English, NHS, CSCS, Taxi and more with instant results.";
+      "330,480 free practice questions across 13,770 UK mock tests — Driving Theory, Life in the UK, English, NHS, CSCS, Taxi and more, with instant results.";
     const TWITTER_DESC = DESC;
     const OG_IMAGE = "https://www.uktesthub.com/og-uk-test-hub.jpg";
     return {
