@@ -106,6 +106,7 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "You'll sit at a Pearson VUE workstation with headphones for around 90 minutes from check-in to printed result slip. The test runs in two parts back-to-back: 50 multiple-choice questions in 57 minutes, an optional three-minute break, then 14 video clips containing 15 developing hazards.",
           "The pass mark is 43 out of 50 on multiple choice and 44 out of 75 on hazard perception. Fail one part and you fail the whole test — there's no part-credit and you'll need to rebook the full £23 fee.",
+          "On this site you can choose a DVSA-style mini mock test — 24 questions for quick practice — or switch to EXAM MODE, which mirrors the real test-day pressure with 50 questions, 57 minutes and the same 43/50 pass mark.",
         ],
       },
       {

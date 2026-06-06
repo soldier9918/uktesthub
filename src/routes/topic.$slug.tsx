@@ -238,6 +238,9 @@ function TopicPage() {
           <p className="mt-4 max-w-2xl text-base text-navy-foreground/85 md:text-lg">
             Choose a mock test below. Each test has {QUESTIONS_PER_MOCK} questions
             with detailed explanations. Your best score is saved on this device.
+            {topic.slug === "driving-theory" && (
+              <> Want the real test-day feel? Switch to <strong>EXAM MODE</strong> — 50 questions, 57 minutes, pass mark 43/50.</>
+            )}
           </p>
         </div>
       </section>
