@@ -564,7 +564,7 @@ export function mockToQuiz(category: string, mock: MockTest): Quiz {
     topic: mock.topic,
     quizTitle: smartMockTitleFromSlug(mock.topic, mock.mockNumber),
     description: `Mock test ${mock.mockNumber} — ${mock.questions.length} questions.`,
-    timeLimit: mock.questions.length * 60,
+    timeLimit: mock.topic === "life-in-the-uk" ? 45 * 60 : mock.questions.length * 60,
     difficulty: "Medium",
     passMark: 75,
     questions: mock.questions.map((raw, idx) => {
