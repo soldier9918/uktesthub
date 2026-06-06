@@ -1404,10 +1404,10 @@ export const topicSeo: Record<string, TopicSeo> = {
         ],
       },
       {
-        heading: "The 10 syllabus areas",
+        heading: "What SERU covers",
         body: [
-          "(1) Driver behaviour and conduct. (2) Driving standards. (3) Vehicle safety, security and roadworthiness. (4) Passenger safety, including disabilities and assistance dogs. (5) Equality. (6) Safeguarding. (7) Legislative requirements (Equality Act 2010, Children Act 1989). (8) Notifying TfL of changes. (9) Insurance, MOT, hire and reward. (10) Routes and London geography basics.",
-          "Safeguarding and equality usually account for 15+ of the 60 questions. Drill these areas hardest.",
+          "TfL bases SERU on the PHV Driver's Handbook and groups the content into five core areas: (1) Safety — safeguarding, passenger safety, vehicle safety and roadworthiness. (2) Equality — protected characteristics, reasonable adjustments and the Equality Act 2010. (3) Regulatory understanding — TfL licensing conditions, notification duties, insurance and MOT for hire and reward. (4) Passenger protection — assistance dogs, wheelchair accessibility, vulnerable passengers and how to report concerns. (5) Driver conduct — professional behaviour, lost property, fares and routes.",
+          "Safeguarding and equality usually carry the most weight. Drill these areas hardest.",
         ],
       },
       {
