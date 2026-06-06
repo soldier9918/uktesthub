@@ -137,7 +137,7 @@ function CategoryPage() {
                             {t.title} Guide
                           </h3>
                           <p className="mt-1 text-xs text-white/65">
-                            Format, tips and how to pass first time
+                            {getGuideDescription(t.slug)}
                           </p>
                         </div>
                       </div>
