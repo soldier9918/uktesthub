@@ -409,6 +409,7 @@ export const topicSeo: Record<string, TopicSeo> = {
         heading: "Format and pass mark",
         body: [
           "24 questions in 45 minutes at a Home Office-approved test centre. Pass mark 18/24 (75%). Fee £50, booked at gov.uk/life-in-the-uk-test.",
+          "On this site you can choose a Home Office-style mini mock test — 24 questions for quick practice — or switch to EXAM MODE, which mirrors the real test-day pressure with 24 questions, 45 minutes and the same 18/24 pass mark.",
           "Question types: pick one of four; pick two correct from four; true/false; pick the correct statement from two. The on-screen prompt always tells you which type.",
         ],
       },
