@@ -1299,9 +1299,12 @@ function ModeSelect({
             </span>
           )}
           <span className="rounded-full bg-gold/20 px-3 py-1 font-medium text-foreground">
-            Pass: {quiz.passMark}%
+            {quiz.topic === "life-in-the-uk"
+              ? `Pass ${Math.ceil((quiz.passMark / 100) * quiz.questions.length)}/${quiz.questions.length}`
+              : `Pass: ${quiz.passMark}%`}
           </span>
         </div>
+
 
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           <button
