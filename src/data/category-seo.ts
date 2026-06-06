@@ -964,7 +964,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       {
         heading: "What's covered",
         body: [
-          "UCAT Verbal Reasoning tests reading speed and inference; Quantitative Reasoning tests data interpretation under time pressure; Abstract Reasoning tests pattern recognition; Decision Making tests logical and probabilistic thinking; Situational Judgement tests professional dilemmas mapped to GMC Good Medical Practice.",
+          "UCAT Verbal Reasoning tests reading speed and inference; Quantitative Reasoning tests data interpretation under time pressure; Decision Making tests logical and probabilistic thinking; Situational Judgement tests professional dilemmas mapped to GMC Good Medical Practice. (Abstract Reasoning was withdrawn from 2025 and is no longer part of UCAT.)",
           "OET Medicine covers clinical conversations, patient information leaflets, medical case notes and clinician-to-clinician referrals.",
           "PLAB 1 covers the full UK medical curriculum: cardiology, respiratory, gastroenterology, endocrinology, neurology, paediatrics, obstetrics & gynaecology, psychiatry, ethics and prescribing, all aligned to NICE / BNF guidance.",
         ],
