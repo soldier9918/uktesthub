@@ -447,7 +447,7 @@ export const quizzes: Quiz[] = [
     quizTitle: "Life in the UK — Mock Test 1",
     description:
       "Practice questions covering British history, traditions, government and culture for the Life in the UK Test.",
-    timeLimit: 1500,
+    timeLimit: 2700,
     difficulty: "Medium",
     passMark: 75,
     questions: [
@@ -1272,7 +1272,7 @@ export const getQuizMeta = (slug: string): QuizMeta | undefined => {
     category: found?.category.slug ?? "",
     topic,
     questionCount: mock.questionCount || QUESTIONS_PER_MOCK,
-    timeLimit: (mock.questionCount || QUESTIONS_PER_MOCK) * 60,
+    timeLimit: topic === "life-in-the-uk" ? 45 * 60 : (mock.questionCount || QUESTIONS_PER_MOCK) * 60,
     difficulty: "Medium",
   };
 };
