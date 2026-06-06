@@ -479,9 +479,9 @@ export const categorySeo: Record<string, CategorySeo> = {
       },
     ],
     faqs: [
-      { q: "What is the NMC CBT pass mark?", a: "There's no single percentage — the NMC sets the pass mark per domain using a modified Angoff method, but candidates who score above 70% across all four professional domains generally pass." },
-      { q: "How many questions are in the NMC CBT?", a: "115 multiple-choice questions across four domains: Professional Values, Communication and Interpersonal Skills, Nursing Practice and Decision-Making, and Leadership, Management and Team Working." },
-      { q: "How long is the NMC CBT?", a: "Four hours, including a tutorial and a numeracy section." },
+      { q: "What is the NMC CBT pass mark?", a: "You must pass both parts. Part A numeracy is pass/fail. Part B uses a modified Angoff method to set the pass mark; candidates who score above 70% across all four professional domains generally pass." },
+      { q: "How many questions are in the NMC CBT?", a: "115 questions in total: 15 numeracy questions in Part A and 100 four-option multiple-choice clinical questions in Part B." },
+      { q: "How long is the NMC CBT?", a: "3 hours in total: 30 minutes for Part A numeracy and 2 hours 30 minutes for Part B clinical." },
       { q: "What are NHS Values-Based Recruitment questions like?", a: "Workplace scenarios mapped to the NHS Constitution. You'll be asked which response best reflects NHS values, or to rank responses from most to least appropriate." },
       { q: "What level of maths is on NHS numeracy tests?", a: "Roughly GCSE Foundation level, with a heavy focus on drug calculations, percentages, ratios and unit conversions." },
       { q: "Can overseas nurses take the NMC CBT in their home country?", a: "Yes — the CBT is delivered worldwide via Pearson VUE test centres. The Objective Structured Clinical Examination (OSCE) must be taken in the UK." },
