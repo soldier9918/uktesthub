@@ -169,7 +169,7 @@ function AllTestsPage() {
               />
             </label>
             <div className="text-xs font-semibold text-muted-foreground md:whitespace-nowrap">
-              {matchedCount} of {totalTests} tests
+              Showing {matchedCount} Test Topics
             </div>
             <button
               type="button"
