@@ -989,7 +989,7 @@ export const categorySeo: Record<string, CategorySeo> = {
         heading: "Why active practice testing works",
         body: [
           "These exams are speed tests as much as knowledge tests. Mocks build the timing reflexes that no amount of textbook reading can.",
-          "PLAB 1 re-sits cost £255 in 2026 plus travel; OET re-sits cost around £587; UCAT cannot be retaken in the same admissions cycle. The cost of failure is high enough that thirty hours of free mock practice is one of the most cost-effective study investments in UK medicine.",
+          "PLAB fees change regularly. Check the official GMC fees page before booking.",
         ],
       },
       {
