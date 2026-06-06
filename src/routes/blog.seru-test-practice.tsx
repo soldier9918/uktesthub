@@ -18,7 +18,7 @@ const faqs: FaqItem[] = [
   },
   {
     q: "How many questions are in the SERU assessment?",
-    a: "The official SERU assessment is delivered as a structured oral conversation rather than a fixed multiple-choice paper, but candidates are typically asked around 18 to 21 scenario-based questions covering safety, equality and regulatory topics.",
+    a: "TfL does not publish a fixed question count and treats SERU as a competency assessment rather than a simple percentage-pass paper. Expect a mix of multiple-choice and missing-word / sentence-completion questions drawn from the PHV Driver's Handbook, covering safety, equality and regulatory understanding.",
   },
   {
     q: "How can I prepare for SERU for free?",
