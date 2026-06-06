@@ -1398,8 +1398,9 @@ export const topicSeo: Record<string, TopicSeo> = {
       {
         heading: "Format and pass mark",
         body: [
-          "60 multiple-choice questions in 60 minutes at a TfL-approved centre. Pass mark 36/60. Fee around £36 each attempt. Up to three attempts in any 18-month period before TfL pause your application.",
+          "36 multiple-choice questions in 45 minutes at a TfL-approved centre. Pass mark 60% (22/36). Fee around £36 each attempt. Up to three attempts in any 18-month period before TfL pause your application.",
           "Questions are scenario-based: 'A passenger asks you to do X — what do you do?' The right answer is almost always the safest, most legally compliant and most respectful option. Common-sense alone won't get you 60% — you need to know the specific TfL rules.",
+          "Our EXAM MODE recreates the real test-day structure exactly — 36 questions, 45 minutes, 60% pass mark — so you can practise under realistic pressure. The 24-question mini mocks are ideal for shorter, focused sessions.",
         ],
       },
       {
