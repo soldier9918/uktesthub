@@ -447,7 +447,7 @@ export const quizzes: Quiz[] = [
     quizTitle: "Life in the UK — Mock Test 1",
     description:
       "Practice questions covering British history, traditions, government and culture for the Life in the UK Test.",
-    timeLimit: 1500,
+    timeLimit: 2700,
     difficulty: "Medium",
     passMark: 75,
     questions: [
