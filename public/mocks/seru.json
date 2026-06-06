@@ -43,9 +43,25 @@
         {
           "correctIndex": 0,
           "options": [
-            "Where",
-            "When",
-            "If"
+            "where",
+            "when",
+            "if"
+          ]
+        },
+        {
+          "correctIndex": 1,
+          "options": [
+            "know",
+            "like",
+            "trust"
+          ]
+        },
+        {
+          "correctIndex": 2,
+          "options": [
+            "vehicle",
+            "direction",
+            "journey"
           ]
         }
       ],
@@ -151,9 +167,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Carry",
-            "Hide",
-            "Destroy"
+            "carry",
+            "hide",
+            "destroy"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "maintain",
+            "ignore",
+            "question"
           ]
         }
       ],
@@ -259,9 +283,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Must not",
-            "May",
-            "Should"
+            "must not",
+            "may",
+            "should"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "must not",
+            "can",
+            "might"
           ]
         }
       ],
@@ -367,9 +399,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Vulnerable",
-            "Invisible",
-            "Insured"
+            "vulnerable",
+            "invisible",
+            "insured"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "risk",
+            "home",
+            "work"
           ]
         }
       ],
@@ -475,9 +515,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Pre-booked",
-            "Hailed",
-            "Guessed"
+            "pre-booked",
+            "hailed",
+            "guessed"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "operator",
+            "driver",
+            "journey"
           ]
         }
       ],
@@ -587,6 +635,14 @@
             "Continue",
             "Increase"
           ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "repaired",
+            "used",
+            "driven"
+          ]
         }
       ],
       "template": "If your vehicle has a serious defect, you should {{0}} working until the vehicle is {{1}}"
@@ -694,6 +750,14 @@
             "Priority",
             "Payment",
             "Ownership"
+          ]
+        },
+        {
+          "correctIndex": 1,
+          "options": [
+            "directions",
+            "warnings",
+            "signals"
           ]
         }
       ],
@@ -803,6 +867,14 @@
             "Angrily",
             "Secretly"
           ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "process",
+            "procedure",
+            "method"
+          ]
         }
       ],
       "template": "A complaint should be handled {{0}} and through the proper {{1}} process"
@@ -910,6 +982,14 @@
             "Confidential",
             "Public",
             "Optional"
+          ]
+        },
+        {
+          "correctIndex": 2,
+          "options": [
+            "property",
+            "baggage",
+            "privacy"
           ]
         }
       ],
@@ -1019,6 +1099,14 @@
             "Care",
             "Attention"
           ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "distance",
+            "speed",
+            "visibility"
+          ]
         }
       ],
       "template": "In fog or heavy rain, you should reduce {{0}} and increase your following {{1}}"
@@ -1127,6 +1215,14 @@
             "Profit",
             "Discount"
           ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "drivers",
+            "passengers",
+            "obstacles"
+          ]
         }
       ],
       "template": "A safe pickup point should be legal, visible and not cause {{0}} to pedestrians or other {{1}}"
@@ -1231,9 +1327,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Exploitation",
-            "Navigation",
-            "Parking"
+            "exploitation",
+            "navigation",
+            "parking"
+          ]
+        },
+        {
+          "correctIndex": 2,
+          "options": [
+            "school",
+            "work",
+            "risk"
           ]
         }
       ],
@@ -1343,6 +1447,14 @@
             "Fare",
             "Noise"
           ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "Necessary",
+            "Impossible",
+            "Dangerous"
+          ]
         }
       ],
       "template": "Reasonable assistance may include allowing extra {{0}} or helping with luggage when it is {{1}}"
@@ -1447,9 +1559,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Destination",
-            "Religion",
-            "Age"
+            "destination",
+            "religion",
+            "age"
+          ]
+        },
+        {
+          "correctIndex": 2,
+          "options": [
+            "sadly",
+            "roughly",
+            "smoothly"
           ]
         }
       ],
@@ -1559,6 +1679,14 @@
             "118",
             "555"
           ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "101",
+            "911",
+            "888"
+          ]
         }
       ],
       "template": "If you suspect someone is in immediate danger, call {{0}}; for non-emergency police reports use {{1}}"
@@ -1666,6 +1794,14 @@
             "Hail",
             "Map",
             "Receipt"
+          ]
+        },
+        {
+          "correctIndex": 1,
+          "options": [
+            "Booked in advance",
+            "Paid in cash",
+            "Completed quickly"
           ]
         }
       ],
@@ -1879,9 +2015,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Traffic",
-            "Menus",
-            "Bookings"
+            "road users",
+            "pedestrians",
+            "vehicles"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "accidents",
+            "delays",
+            "inconvenience"
           ]
         }
       ],
@@ -1991,6 +2135,14 @@
             "Entry",
             "Engine"
           ]
+        },
+        {
+          "correctIndex": 1,
+          "options": [
+            "Central",
+            "East",
+            "South"
+          ]
         }
       ],
       "template": "ULEZ stands for Ultra Low {{0}} Zone and the Congestion Charge applies in parts of {{1}} London"
@@ -2095,9 +2247,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Rest",
-            "Race",
-            "Argue"
+            "rest",
+            "race",
+            "argue"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "reaction",
+            "driving",
+            "travel"
           ]
         }
       ],
@@ -2207,6 +2367,14 @@
             "Accent",
             "Age"
           ]
+        },
+        {
+          "correctIndex": 2,
+          "options": [
+            "Preferences",
+            "Instructions",
+            "Procedures"
+          ]
         }
       ],
       "template": "If a passenger changes destination, confirm the new {{0}} and follow operator {{1}}"
@@ -2315,6 +2483,14 @@
             "Parking",
             "Luggage"
           ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "reported Immediately",
+            "Ignored",
+            "forgotten"
+          ]
         }
       ],
       "template": "If a child appears frightened or controlled, this may be a {{0}} concern and should be {{1}}"
@@ -2419,9 +2595,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Licensed",
-            "Painted",
-            "Cleaned"
+            "licensed",
+            "painted",
+            "cleaned"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "illegal",
+            "slow",
+            "expensive"
           ]
         }
       ],
@@ -2531,6 +2715,14 @@
             "Suddenly",
             "Angrily"
           ]
+        },
+        {
+          "correctIndex": 2,
+          "options": [
+            "noise",
+            "danger",
+            "hazard"
+          ]
         }
       ],
       "template": "If an emergency vehicle approaches, make way {{0}} without creating extra {{1}}"
@@ -2639,6 +2831,14 @@
             "Speed",
             "Suspicion"
           ]
+        },
+        {
+          "correctIndex": 2,
+          "options": [
+            "status",
+            "age",
+            "circumstance"
+          ]
         }
       ],
       "template": "Passengers should be treated with dignity, respect and {{0}} regardless of background or {{1}}"
@@ -2743,9 +2943,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Roadworthy",
-            "Popular",
-            "Expensive"
+            "roadworthy",
+            "popular",
+            "expensive"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "use",
+            "inspection",
+            "sale"
           ]
         }
       ],
@@ -2855,6 +3063,14 @@
             "Discounts",
             "Reviews"
           ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "required",
+            "optional",
+            "irrelevant"
+          ]
         }
       ],
       "template": "In a collision, stop safely, check for {{0}} and exchange or report details as {{1}}"
@@ -2963,6 +3179,14 @@
             "Required",
             "Official"
           ]
+        },
+        {
+          "correctIndex": 1,
+          "options": [
+            "Discriminatory",
+            "Necessary",
+            "Polite"
+          ]
         }
       ],
       "template": "Professional drivers should avoid personal comments that could be {{0}} or {{1}}"
@@ -3067,9 +3291,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Communication",
-            "Pressure",
-            "Fare"
+            "communication",
+            "pressure",
+            "fare"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "pleasant",
+            "difficult",
+            "longer"
           ]
         }
       ],
@@ -3180,6 +3412,14 @@
             "Severn",
             "Clyde"
           ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "Parliament",
+            "Commons",
+            "Lords"
+          ]
         }
       ],
       "template": "The River {{0}} runs through central London and Westminster is near the Houses of {{1}}"
@@ -3283,11 +3523,19 @@
       "explanation": "Reversing or turning around on a motorway is extremely dangerous.",
       "blanks": [
         {
-          "correctIndex": 0,
+          "correctIndex": 1,
           "options": [
             "Safe",
             "Nearest",
             "Hidden"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "Reverse",
+            "Stop",
+            "Slow"
           ]
         }
       ],
@@ -3398,6 +3646,14 @@
             "Fares",
             "Brands"
           ]
+        },
+        {
+          "correctIndex": 1,
+          "options": [
+            "rules",
+            "colors",
+            "songs"
+          ]
         }
       ],
       "template": "A bus lane sign shows who may use it and the operating {{0}}; drivers must follow the {{1}}"
@@ -3506,6 +3762,14 @@
             "Discriminatory",
             "Route",
             "Weather"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "Remarks",
+            "Space",
+            "Calls"
           ]
         }
       ],
@@ -3616,6 +3880,14 @@
             "101",
             "411"
           ]
+        },
+        {
+          "correctIndex": 1,
+          "options": [
+            "emergency",
+            "concern",
+            "situation"
+          ]
         }
       ],
       "template": "If a passenger is unconscious or struggling to breathe, stop safely and call {{0}} because it may be a medical {{1}}"
@@ -3721,9 +3993,17 @@
         {
           "correctIndex": 0,
           "options": [
-            "Taxis",
-            "Aircraft",
-            "Bicycles"
+            "taxis",
+            "aircraft",
+            "bicycles"
+          ]
+        },
+        {
+          "correctIndex": 0,
+          "options": [
+            "fares",
+            "sleep",
+            "repairs"
           ]
         }
       ],
@@ -3830,6 +4110,14 @@
             "Blind spots",
             "Receipts",
             "Apps"
+          ]
+        },
+        {
+          "correctIndex": 2,
+          "options": [
+            "trees",
+            "pavements",
+            "road users"
           ]
         }
       ],
