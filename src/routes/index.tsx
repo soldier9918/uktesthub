@@ -216,11 +216,11 @@ function HomePage() {
 
             <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-navy-foreground/90">
               {[
-                { icon: CheckCircle2, label: "96,000+ Questions" },
-                { icon: FileCheck, label: "Realistic Exam Format" },
+                { icon: CheckCircle2, label: "330,480 Questions" },
+                { icon: FileCheck, label: "13,770 Mock Tests" },
                 { icon: Timer, label: "Instant Results" },
                 { icon: CalendarCheck, label: "Updated for 2026" },
-                { icon: ListChecks, label: "110+ Exam Categories" },
+                { icon: ListChecks, label: "139 Tests" },
               ].map((s) => (
                 <li key={s.label} className="inline-flex items-center gap-2">
                   <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#e8c07a]/40 bg-navy-deep/60 text-[#e8c07a]">
