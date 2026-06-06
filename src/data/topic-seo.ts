@@ -1390,17 +1390,17 @@ export const topicSeo: Record<string, TopicSeo> = {
       "Complete TfL SERU assessment guide. Format, pass mark, the 10 syllabus areas and study tips — with free mock tests reflecting the real TfL exam.",
     tagline: "The TfL Safety, Equality and Regulatory Understanding assessment for London private hire drivers, based on the PHV Driver's Handbook.",
     intro: [
-      "The TfL SERU assessment is mandatory for every new London private hire driver since October 2021. It covers safety, equality, regulatory understanding and passenger protection, and is based on the PHV Driver's Handbook. You must pass it before TfL will issue your PHV licence.",
-      "The official pass mark is 60%. On this site we set a practice target of 75% for our mock tests only — that extra margin builds the confidence you need for the real assessment. Roughly 40% of candidates fail their first attempt, almost always on the safeguarding and equality sections. This guide covers every syllabus area and the most efficient way to prepare.",
-      "You can choose a mini mock test — 24 questions for quick practice — or switch to EXAM MODE, which mirrors the real test-day pressure with the same 60% pass mark.",
+      "The TfL SERU assessment is mandatory for every new London private hire driver since October 2021. It covers safety, equality and regulatory understanding, is based on the Private Hire Driver's Handbook, and is a competency assessment rather than a simple percentage-pass paper. You must pass it before TfL will issue your PHV licence.",
+      "Each of our mocks is a 24-question SERU practice mock with multiple-choice and missing-word style questions. We set a practice target of 75% — that extra margin builds the confidence you need for the real assessment. Roughly 40% of candidates fail their first attempt, almost always on the safeguarding and equality sections.",
+      "Use the mocks to drill the syllabus areas TfL focus on, then read the official PHV Driver's Handbook alongside them.",
     ],
     sections: [
       {
-        heading: "Format and pass mark",
+        heading: "Format and what to expect",
         body: [
-          "The official pass mark set by TfL is 60%. Our mock tests set a higher practice target of 75% — this is for practice only and gives you a safety margin so you are comfortable on the day. Fee around £36 each attempt at a TfL-approved centre. Up to three attempts in any 18-month period before TfL pause your application.",
-          "Questions are scenario-based: 'A passenger asks you to do X — what do you do?' The right answer is almost always the safest, most legally compliant and most respectful option. Common-sense alone won't get you 60% — you need to know the specific TfL rules from the PHV Driver's Handbook.",
-          "Our EXAM MODE recreates the real test-day structure with the same 60% pass mark so you can practise under realistic pressure. The 24-question mini mocks are ideal for shorter, focused sessions.",
+          "SERU is sat at a TfL-approved centre and includes multiple-choice and missing-word / sentence-completion questions drawn from the PHV Driver's Handbook. TfL treats it as a competency assessment of safety, equality and regulatory understanding rather than a simple percentage pass mark, so the focus is on giving the safest, most legally correct response.",
+          "Questions are scenario-based: 'A passenger asks you to do X — what do you do?' The right answer is almost always the safest, most legally compliant and most respectful option. Common-sense alone is not enough — you need to know the specific TfL rules from the PHV Driver's Handbook.",
+          "On UK Test Hub each mock is a 24-question SERU practice mock with a practice target of 75%. The practice target is set higher than typical pass thresholds on purpose, to give you a safety margin on the day.",
         ],
       },
       {
@@ -1440,10 +1440,10 @@ export const topicSeo: Record<string, TopicSeo> = {
       },
     ],
     faqs: [
-      { q: "What is the SERU pass mark?", a: "36 out of 60 (60%)." },
-      { q: "How much does the SERU cost?", a: "Around £36 per attempt at a TfL-approved centre." },
-      { q: "How many attempts do I get?", a: "Three attempts within any 18-month rolling window. After three fails TfL will pause your application." },
-      { q: "Can I retake just the parts I failed?", a: "No — every retake is the full 60-question paper." },
+      { q: "Is SERU scored as a simple percentage?", a: "No — TfL treats SERU as a competency assessment of safety, equality and regulatory understanding rather than a fixed percentage pass mark. The focus is on giving the safest, most legally correct response to each scenario." },
+      { q: "What kind of questions does SERU use?", a: "A mix of multiple-choice and missing-word / sentence-completion questions, all drawn from the PHV Driver's Handbook." },
+      { q: "How much does the SERU cost?", a: "Around £36 per attempt at a TfL-approved centre — check the current fee on tfl.gov.uk before you book." },
+      { q: "How many attempts do I get?", a: "TfL allow a limited number of attempts in a rolling window before they pause your application. Check your applicant portal for current limits." },
       { q: "Do I need the Topographical Test as well?", a: "Yes — both SERU and Topographical are mandatory before TfL issues a new PHV licence." },
       { q: "How long does my SERU pass stay valid?", a: "It's valid for the duration of your PHV application and licence — you don't need to retake it at renewal." },
     ],
