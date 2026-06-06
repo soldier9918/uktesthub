@@ -5454,7 +5454,7 @@ export const blogPosts: BlogPost[] = [
 
         <h2>What is SERU?</h2>
         <p>
-          SERU is a computer-based assessment sat at a TfL service centre. It is mandatory for new applicants for a London private hire driver's licence. The assessment lasts around 90 minutes and contains roughly 70 questions across safety, equality, and regulatory understanding.
+          SERU is a computer-based assessment sat at a TfL service centre. It is mandatory for new applicants for a London private hire driver's licence. TfL treats it as a competency assessment of safety, equality and regulatory understanding rather than a simple percentage-pass paper, and uses a mix of multiple-choice and missing-word / sentence-completion questions drawn from the PHV Driver's Handbook.
         </p>
 
         <h2>Question formats</h2>
