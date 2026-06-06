@@ -69,11 +69,15 @@ function MockCard({
   mockNumber,
   available,
   stats,
+  questionsCount = QUESTIONS_PER_MOCK,
+  minutes = QUESTIONS_PER_MOCK,
 }: {
   slug: string;
   mockNumber: number;
   available: boolean;
   stats: MockStats | null;
+  questionsCount?: number;
+  minutes?: number;
 }) {
   const bestScore = stats?.best ?? null;
   const attempts = stats?.attempts ?? 0;
