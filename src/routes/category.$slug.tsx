@@ -8,6 +8,7 @@ import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { getCategory, categories } from "@/data/categories";
 import { categorySeo } from "@/data/category-seo";
 import { TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK, listMockSlots } from "@/data/mocks";
+import { getGuideDescription } from "@/data/guide-descriptions";
 import { Home, ChevronRight, ArrowRight, BookOpen } from "lucide-react";
 import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
 
