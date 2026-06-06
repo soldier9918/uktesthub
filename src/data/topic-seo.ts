@@ -1381,7 +1381,7 @@ export const topicSeo: Record<string, TopicSeo> = {
   "nhs-numeracy": generic("NHS Numeracy Test", "individual NHS Trusts (often using SHL or Capp tests)", "the numerical reasoning test used in NHS recruitment for nursing, midwifery, healthcare assistant and admin roles — drug calculations, percentages and shift-pattern maths"),
   "nhs-literacy": generic("NHS Literacy Test", "individual NHS Trusts", "the verbal reasoning and written-English test used at NHS interview stage to check comprehension and clear written communication"),
   "nhs-values": generic("NHS Values-Based Recruitment", "Health Education England", "a situational judgement test rooted in the six NHS Constitution values — used at shortlisting for almost every NHS clinical and non-clinical role"),
-  "nmc-cbt": generic("NMC CBT (Nurses)", "the Nursing and Midwifery Council, delivered by Pearson VUE", "the Computer Based Test for international nurses and midwives applying for NMC registration — a 115-question multiple-choice paper covering professional values and clinical practice"),
+  "nmc-cbt": generic("NMC CBT (Nurses)", "the Nursing and Midwifery Council, delivered by Pearson VUE", "the Computer Based Test for international nurses and midwives applying for NMC registration — 115 questions over 3 hours with Part A numeracy (15 questions, 30 minutes) and Part B clinical multiple-choice (100 questions, 2 hours 30 minutes)"),
 
   // -------- TAXI / PRIVATE HIRE ---------------------------------------
   seru: {

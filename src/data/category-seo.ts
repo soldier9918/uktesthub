@@ -433,7 +433,7 @@ export const categorySeo: Record<string, CategorySeo> = {
         heading: "What the assessments actually involve",
         body: [
           "NHS numeracy and literacy assessments are usually delivered online before interview, with a 30–45 minute time limit. Drug calculations dominate the numeracy paper. Values-Based Recruitment is delivered either as a written scenario test or as part of a structured interview.",
-          "The NMC CBT is the formal entry test for overseas-trained nurses applying to register in the UK. It runs for four hours, contains 115 multiple-choice questions across four domains, and is taken at a Pearson VUE centre worldwide. You must pass the CBT before you can sit the OSCE in the UK.",
+          "The NMC CBT is the formal entry test for overseas-trained nurses applying to register in the UK. The full test has 115 questions over 3 hours: 15 numeracy questions in Part A and 100 clinical multiple-choice questions in Part B. It is taken at a Pearson VUE centre worldwide. You must pass the CBT before you can sit the OSCE in the UK.",
         ],
       },
       {
@@ -441,7 +441,7 @@ export const categorySeo: Record<string, CategorySeo> = {
         body: [
           "NHS numeracy assessments cover drug calculations (mg/kg, IV infusions, drops per minute), basic arithmetic, percentages, fluid balance and unit conversions.",
           "NHS literacy tests cover comprehension, spelling, grammar and the ability to summarise written information accurately. Many tests include a passage-and-questions section based on a clinical scenario.",
-          "Values-Based Recruitment uses scenarios mapped to the NHS Constitution (compassion, respect, dignity, working together, commitment to quality of care). The NMC CBT covers four professional domains: Professional Values, Communication and Interpersonal Skills, Nursing Practice and Decision-Making, and Leadership, Management and Team Working.",
+          "Values-Based Recruitment uses scenarios mapped to the NHS Constitution (compassion, respect, dignity, working together, commitment to quality of care). The NMC CBT has two parts: Part A is a 15-mark numeracy assessment, and Part B is 100 four-option multiple-choice clinical questions covering Professional Values, Communication and Interpersonal Skills, Nursing Practice and Decision-Making, and Leadership, Management and Team Working.",
         ],
       },
       {
@@ -479,9 +479,9 @@ export const categorySeo: Record<string, CategorySeo> = {
       },
     ],
     faqs: [
-      { q: "What is the NMC CBT pass mark?", a: "There's no single percentage — the NMC sets the pass mark per domain using a modified Angoff method, but candidates who score above 70% across all four professional domains generally pass." },
-      { q: "How many questions are in the NMC CBT?", a: "115 multiple-choice questions across four domains: Professional Values, Communication and Interpersonal Skills, Nursing Practice and Decision-Making, and Leadership, Management and Team Working." },
-      { q: "How long is the NMC CBT?", a: "Four hours, including a tutorial and a numeracy section." },
+      { q: "What is the NMC CBT pass mark?", a: "You must pass both parts. Part A numeracy is pass/fail. Part B uses a modified Angoff method to set the pass mark; candidates who score above 70% across all four professional domains generally pass." },
+      { q: "How many questions are in the NMC CBT?", a: "115 questions in total: 15 numeracy questions in Part A and 100 four-option multiple-choice clinical questions in Part B." },
+      { q: "How long is the NMC CBT?", a: "3 hours in total: 30 minutes for Part A numeracy and 2 hours 30 minutes for Part B clinical." },
       { q: "What are NHS Values-Based Recruitment questions like?", a: "Workplace scenarios mapped to the NHS Constitution. You'll be asked which response best reflects NHS values, or to rank responses from most to least appropriate." },
       { q: "What level of maths is on NHS numeracy tests?", a: "Roughly GCSE Foundation level, with a heavy focus on drug calculations, percentages, ratios and unit conversions." },
       { q: "Can overseas nurses take the NMC CBT in their home country?", a: "Yes — the CBT is delivered worldwide via Pearson VUE test centres. The Objective Structured Clinical Examination (OSCE) must be taken in the UK." },
