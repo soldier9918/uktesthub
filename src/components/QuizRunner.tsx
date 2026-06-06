@@ -1334,7 +1334,7 @@ function ModeSelect({
             <p className="mt-1 text-sm opacity-90">
               {examConfig
                 ? `${examConfig.count} unique random questions · ${Math.round(examConfig.timeLimitSec / 60)} minutes · Pass ${examConfig.passLabel ?? `${examConfig.passScore}/${examConfig.count}`}. Fresh set every time.`
-                : "Timed practice that helps simulate test-day conditions. Results shown at the end with full review."}
+                : "Exam mode gives timed practice for revision. Official timings vary by exam provider and skill, so always check the official test format before booking."}
             </p>
             {examConfig && (
               <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
@@ -1485,9 +1485,8 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
             How to use Exam mode
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-foreground">
-            Exam mode runs the full mock against the clock, hides explanations until the end, and
-            shows your overall score at the end with a question-by-question review. Use it once
-            you feel confident — it's timed exam-style practice for test-day familiarity.
+            Exam mode gives timed practice for revision. Official timings vary by exam provider and
+            skill, so always check the official test format before booking.
           </p>
         </div>
       </div>
