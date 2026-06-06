@@ -1001,7 +1001,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       },
     ],
     faqs: [
-      { q: "What is a good UCAT score in 2026?", a: "Scores above 2700 (across the four cognitive subtests, with Band 1 or 2 on SJT) are competitive at most UK medical schools." },
+      { q: "What is a good UCAT score in 2026?", a: "A strong UCAT score depends on the current year’s cohort. Since 2025, UCAT has three cognitive subtests scored from 900–2700 in total, plus Situational Judgement reported as a band." },
       { q: "How much does PLAB 1 cost in 2026?", a: "PLAB fees change regularly. From 1 April 2026, the GMC lists PLAB 1 at £283 and PLAB 2 at £1,036, but candidates should always check the official GMC fees page before booking." },
       { q: "Is BMAT still required in 2026?", a: "BMAT has been discontinued and is included here only as legacy biomedical admissions-style practice. It is no longer used for current UK medicine admissions; former BMAT universities have moved to other admissions tests, mainly UCAT." },
       { q: "What OET grade do I need to register with the GMC?", a: "Grade B in all four sub-tests is the GMC's English language requirement, equivalent to IELTS 7.5." },
