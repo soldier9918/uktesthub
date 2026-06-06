@@ -281,9 +281,9 @@ export const categories: Category[] = [
   {
     slug: "healthcare-entry",
     title: "Healthcare Entry Exams",
-    short: "UCAT, BMAT, OET & PLAB sample questions",
+    short: "UCAT, OET and PLAB practice, plus BMAT legacy biomedical admissions-style questions.",
     description:
-      "Practice for medical and healthcare admissions — UCAT, BMAT, the OET (Occupational English Test) for healthcare professionals and PLAB 1 sample questions.",
+      "Practice for medical and healthcare admissions — UCAT, the OET (Occupational English Test) for healthcare professionals, PLAB 1 sample questions and BMAT legacy biomedical admissions-style questions.",
     icon: "Stethoscope",
     accent: "coral",
     heroImage: heroHealthcareEntry,
