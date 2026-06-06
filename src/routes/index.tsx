@@ -170,7 +170,7 @@ function HomePage() {
 
             <div className="mt-5 flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
-                <span className="font-bold">330,480</span> Mock Practice Questions
+                <span className="font-bold">330,480</span> Practice Questions
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
                 <span className="font-bold">13,770</span> mock tests
@@ -216,7 +216,7 @@ function HomePage() {
 
             <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-navy-foreground/90">
               {[
-                { icon: CheckCircle2, label: "330,480 Mock Practice Questions" },
+                { icon: CheckCircle2, label: "330,480 Practice Questions" },
                 { icon: FileCheck, label: "13,770 Mock Tests" },
                 { icon: Timer, label: "Instant Results" },
                 { icon: CalendarCheck, label: "Updated for 2026" },
