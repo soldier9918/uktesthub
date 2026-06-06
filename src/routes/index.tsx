@@ -83,7 +83,7 @@ const featured: Array<{
   btn: "coral" | "royal" | "navy";
 }> = [
   { slug: "driving-theory-mock-1", title: "Driving Theory Mock Test 1", img: featDriving, questionCount: 24, minutes: 24, mostPopular: true, btn: "coral" },
-  { slug: "life-in-the-uk-mock-1", title: "Life in the UK Test 2026", img: featFlag, questionCount: 24, minutes: 24, btn: "royal" },
+  { slug: "life-in-the-uk-mock-1", title: "Life in the UK Test 2026", img: featFlag, questionCount: 24, minutes: 45, btn: "royal" },
   { slug: "ielts-grammar-starter", title: "IELTS Listening Practice", img: featHeadphones, questionCount: 24, minutes: 24, btn: "navy" },
   { slug: "gcse-maths-warmup", title: "11+ Maths Practice Test", img: featCalculator, questionCount: 24, minutes: 24, btn: "coral" },
   { slug: "uk-geography-quick", title: "UK Geography Test", img: featTowerBridge, questionCount: 24, minutes: 24, btn: "royal" },
