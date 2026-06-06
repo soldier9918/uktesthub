@@ -565,7 +565,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       {
         heading: "Why we built a dedicated SERU practice bank",
         body: [
-          "The SERU assessment is the single biggest hurdle most London PHV applicants face. It is sat at a TfL service centre, includes around 70 questions in fill-the-gap and multiple-choice formats, and tests how well you understand safety, equality and the regulatory framework — not just whether you can recite facts.",
+          "The SERU assessment is the single biggest hurdle most London PHV applicants face. It is sat at a TfL service centre and is based on the Private Hire Driver's Handbook, covering safety, equality and regulatory understanding. Questions are a mix of multiple-choice and missing-word / sentence-completion style — they test whether you can apply the rules to real passenger scenarios, not whether you can recite facts.",
           "Our SERU mock tests follow the same wording style as the real paper: short scenarios, exact terminology and traps for candidates who guess. Every answer comes with an explanation that links the right behaviour back to the underlying law, such as the Equality Act 2010, the Private Hire Vehicles (London) Act 1998 or TfL's standards for drivers and operators.",
           "We strongly recommend taking each SERU mock at least twice — once cold to expose gaps, and once after revising — before you book the official assessment. TfL charges a fee for each attempt, and waiting times for resits can easily push your start date back by weeks.",
         ],
