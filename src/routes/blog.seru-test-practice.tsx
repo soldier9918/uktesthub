@@ -14,7 +14,7 @@ const DESCRIPTION =
 const faqs: FaqItem[] = [
   {
     q: "What is the SERU test?",
-    a: "SERU stands for Safety, Equality and Regulatory Understanding. It is a one-on-one assessment that Transport for London uses for new private hire driver applicants in London, covering safeguarding, equality law, vehicle and licensing rules and how to handle real driving scenarios.",
+    a: "SERU stands for Safety, Equality and Regulatory Understanding. It is an assessment that Transport for London uses for new private hire driver applicants in London, covering safety, equality, regulatory understanding and passenger protection, based on the PHV Driver's Handbook.",
   },
   {
     q: "How many questions are in the SERU assessment?",
@@ -146,18 +146,16 @@ function SeruLanding() {
           heading: "How the SERU assessment is scored",
           body: (
             <p>
-              At the assessment centre you will sit with an assessor who works
-              through a structured set of scenario questions. You answer
-              verbally, and the assessor scores each response against a clear
-              marking scheme. To pass, you usually need to score around 80% or
-              above and you cannot fail any of the safety-critical
-              questions outright. Because the format is conversational, your
-              answers need to be specific — saying "I would call someone" is
-              not enough, you must say who you would call (for example, the
-              police on 999 in an emergency, or TfL via the licensing email
-              for non-urgent issues) and why. Practising with realistic SERU
-              questions before your appointment helps you give the level of
-              detail TfL is looking for.
+              The official pass mark set by TfL is 60%. Our mock tests set a
+              practice target of 75% — this is for mock tests only and gives
+              you a safety margin so you are comfortable on the day. Because
+              the real assessment is scenario-based, your answers need to be
+              specific — saying "I would call someone" is not enough, you must
+              say who you would call (for example, the police on 999 in an
+              emergency, or TfL via the licensing email for non-urgent issues)
+              and why. Practising with realistic SERU questions before your
+              appointment helps you give the level of detail TfL is looking
+              for.
             </p>
           ),
         },

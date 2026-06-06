@@ -1388,26 +1388,26 @@ export const topicSeo: Record<string, TopicSeo> = {
     title: "SERU TfL Mock Test Guide | UK Test Hub",
     description:
       "Complete TfL SERU assessment guide. Format, pass mark, the 10 syllabus areas and study tips — with free mock tests reflecting the real TfL exam.",
-    tagline: "The TfL Safety, Equality and Regulatory Understanding test for London PHV drivers.",
+    tagline: "The TfL Safety, Equality and Regulatory Understanding assessment for London private hire drivers, based on the PHV Driver's Handbook.",
     intro: [
-      "The TfL SERU assessment is mandatory for every new London private hire driver since October 2021. It's a 45-minute, 36-question multiple-choice test taken at a TfL-approved centre and you must pass it before TfL will issue your PHV licence.",
-      "The pass mark is 60% (22 out of 36). Roughly 40% of candidates fail their first attempt, almost always on the safeguarding and equality sections. This guide covers every syllabus area and the most efficient way to prepare.",
-      "On this site you can choose a TfL-style mini mock test — 24 questions for quick practice — or switch to EXAM MODE, which mirrors the real test-day pressure with 36 questions, 45 minutes and the same 60% pass mark.",
+      "The TfL SERU assessment is mandatory for every new London private hire driver since October 2021. It covers safety, equality, regulatory understanding and passenger protection, and is based on the PHV Driver's Handbook. You must pass it before TfL will issue your PHV licence.",
+      "The official pass mark is 60%. On this site we set a practice target of 75% for our mock tests only — that extra margin builds the confidence you need for the real assessment. Roughly 40% of candidates fail their first attempt, almost always on the safeguarding and equality sections. This guide covers every syllabus area and the most efficient way to prepare.",
+      "You can choose a mini mock test — 24 questions for quick practice — or switch to EXAM MODE, which mirrors the real test-day pressure with the same 60% pass mark.",
     ],
     sections: [
       {
         heading: "Format and pass mark",
         body: [
-          "36 multiple-choice questions in 45 minutes at a TfL-approved centre. Pass mark 60% (22/36). Fee around £36 each attempt. Up to three attempts in any 18-month period before TfL pause your application.",
-          "Questions are scenario-based: 'A passenger asks you to do X — what do you do?' The right answer is almost always the safest, most legally compliant and most respectful option. Common-sense alone won't get you 60% — you need to know the specific TfL rules.",
-          "Our EXAM MODE recreates the real test-day structure exactly — 36 questions, 45 minutes, 60% pass mark — so you can practise under realistic pressure. The 24-question mini mocks are ideal for shorter, focused sessions.",
+          "The official pass mark set by TfL is 60%. Our mock tests set a higher practice target of 75% — this is for practice only and gives you a safety margin so you are comfortable on the day. Fee around £36 each attempt at a TfL-approved centre. Up to three attempts in any 18-month period before TfL pause your application.",
+          "Questions are scenario-based: 'A passenger asks you to do X — what do you do?' The right answer is almost always the safest, most legally compliant and most respectful option. Common-sense alone won't get you 60% — you need to know the specific TfL rules from the PHV Driver's Handbook.",
+          "Our EXAM MODE recreates the real test-day structure with the same 60% pass mark so you can practise under realistic pressure. The 24-question mini mocks are ideal for shorter, focused sessions.",
         ],
       },
       {
-        heading: "The 10 syllabus areas",
+        heading: "What SERU covers",
         body: [
-          "(1) Driver behaviour and conduct. (2) Driving standards. (3) Vehicle safety, security and roadworthiness. (4) Passenger safety, including disabilities and assistance dogs. (5) Equality. (6) Safeguarding. (7) Legislative requirements (Equality Act 2010, Children Act 1989). (8) Notifying TfL of changes. (9) Insurance, MOT, hire and reward. (10) Routes and London geography basics.",
-          "Safeguarding and equality usually account for 15+ of the 60 questions. Drill these areas hardest.",
+          "TfL bases SERU on the PHV Driver's Handbook and groups the content into five core areas: (1) Safety — safeguarding, passenger safety, vehicle safety and roadworthiness. (2) Equality — protected characteristics, reasonable adjustments and the Equality Act 2010. (3) Regulatory understanding — TfL licensing conditions, notification duties, insurance and MOT for hire and reward. (4) Passenger protection — assistance dogs, wheelchair accessibility, vulnerable passengers and how to report concerns. (5) Driver conduct — professional behaviour, lost property, fares and routes.",
+          "Safeguarding and equality usually carry the most weight. Drill these areas hardest.",
         ],
       },
       {
