@@ -81,7 +81,7 @@ export const Route = createFileRoute("/quiz/$slug")({
     let description: string;
     if (mockMatch && found) {
       const n = mockMatch[1];
-      const mockTitle = `${found.topic.title.replace(/\s+test$/i, "").trim()} Mock Test ${n}`;
+      const mockTitle = `${found.topic.title.replace(/\s+(mock\s+test|mock|test)$/i, "").trim()} Mock Test ${n}`;
       const withSuffix = `${mockTitle} | UK Test Hub`;
       title = withSuffix.length <= 60 ? withSuffix : mockTitle;
       description = `Practise ${mockTitle} with 24 questions, instant results and clear answer explanations.`;
