@@ -27,7 +27,7 @@ export const categorySeo: Record<string, CategorySeo> = {
         heading: "What the test actually involves",
         body: [
           "The DVSA Driving Theory Test runs for around 90 minutes from check-in to your printed result slip. You'll sit at a Pearson VUE workstation with headphones and complete two parts back to back: 50 multiple-choice questions in 57 minutes, then a short break, then 14 video clips containing 15 developing hazards.",
-          "The multiple-choice section is computer-adaptive in style: questions are drawn from a much larger bank, so two candidates sitting next to each other will see very different papers. The pass mark is 43 out of 50. Hazard perception is scored 0–5 per developing hazard depending on how early you click, with a pass mark of 44 out of 75. You must pass both parts at the same sitting — fail one and you fail the whole test.",
+          "The multiple-choice section is drawn from a large question bank, so candidates can see different questions. Questions are drawn from a much larger bank, so two candidates sitting next to each other will see very different papers. The pass mark is 43 out of 50. Hazard perception is scored 0–5 per developing hazard depending on how early you click, with a pass mark of 44 out of 75. You must pass both parts at the same sitting — fail one and you fail the whole test.",
           "Bring your provisional licence, arrive 15 minutes early, and switch your phone off completely. Late arrivals lose the £23 fee and have to rebook on gov.uk.",
         ],
       },
