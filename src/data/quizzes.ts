@@ -879,12 +879,12 @@ export const quizzes: Quiz[] = [
     slug: "seru-tfl-mock-1",
     category: "taxi-private-hire",
     topic: "seru",
-    quizTitle: "SERU TfL Assessment — Mock Test 1",
+    quizTitle: "TfL SERU Mock Test 1",
     description:
-      "Practice for the Transport for London Safety, Equality and Regulatory Understanding (SERU) assessment for private hire drivers.",
+      "24-question SERU practice mock for London private hire drivers. Covers safety, equality and regulatory understanding, with multiple-choice and missing-word style questions. Practice target: 75%.",
     timeLimit: 900,
     difficulty: "Medium",
-    passMark: 80,
+    passMark: 75,
     questions: [
       {
         id: 1,

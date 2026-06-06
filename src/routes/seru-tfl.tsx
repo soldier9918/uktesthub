@@ -39,7 +39,10 @@ function SeruPage() {
         The SERU assessment is a Transport for London requirement for private
         hire drivers in London. It covers safety, equality, regulatory
         understanding, passenger protection and the responsibilities that come
-        with the licence, all based on the PHV Driver's Handbook.
+        with the licence, all based on the PHV Driver's Handbook. TfL treats
+        SERU as a competency assessment rather than a simple percentage-pass
+        paper, and uses multiple-choice and missing-word / sentence-completion
+        style questions.
       </p>
 
       <h2>What's tested</h2>
@@ -51,12 +54,13 @@ function SeruPage() {
         <li>Driver conduct — professional behaviour, lost property, fares and routes</li>
       </ul>
 
-      <h2>Pass mark and practice target</h2>
+      <h2>Our practice target</h2>
       <p>
-        The official SERU pass mark set by TfL is 60%. Our mock tests set a
-        practice target of 75% — this is for mock tests only and builds the
-        extra confidence you need for the real assessment.
+        Each of our mocks is a 24-question SERU practice mock with a practice
+        target of 75%. This target is set for mock tests only — it gives you a
+        safety margin so you walk into the real assessment with confidence.
       </p>
+
 
       <h2>How to prepare</h2>
       <ol>
