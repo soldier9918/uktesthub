@@ -297,9 +297,9 @@ export const categories: Category[] = [
   {
     slug: "teaching",
     title: "Teaching & QTS",
-    short: "QTS Numeracy, Literacy, Professional Skills & Safeguarding",
+    short: "Teacher training literacy and numeracy practice, including legacy QTS skills test-style questions, professional skills and safeguarding.",
     description:
-      "Prepare for teacher training and QTS — QTS Numeracy and Literacy Skills Tests, Professional Skills for Teachers and Safeguarding in Schools practice.",
+      "Prepare for teacher training and QTS — literacy and numeracy practice, including legacy QTS skills test-style questions, Professional Skills for Teachers and Safeguarding in Schools.",
     icon: "BookOpen",
     accent: "gold",
     heroImage: heroTeaching,
