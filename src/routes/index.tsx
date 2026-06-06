@@ -46,7 +46,7 @@ export const Route = createFileRoute("/")({
   head: () => {
     const TITLE = "Free UK Mock Tests | UK Test Hub";
     const DESC =
-      "Practise free UK mock tests for Driving Theory, Life in the UK, English, NHS, CSCS, Taxi and more with instant results.";
+      "330,480 free practice questions across 13,770 UK mock tests — Driving Theory, Life in the UK, English, NHS, CSCS, Taxi and more, with instant results.";
     const TWITTER_DESC = DESC;
     const OG_IMAGE = "https://www.uktesthub.com/og-uk-test-hub.jpg";
     return {
@@ -165,15 +165,18 @@ function HomePage() {
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-foreground/90 md:text-lg">
               Practise UK mock tests online with instant results. Prepare for Driving Theory,
-              Life in the UK, English, CSCS, NHS, SIA and professional exams. Study anytime, anywhere across 110+ topics.
+              Life in the UK, English, CSCS, NHS, SIA and professional exams. Study anytime, anywhere across 139 tests.
             </p>
 
             <div className="mt-5 flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
-                <span className="font-bold">96,000+</span> mock questions
+                <span className="font-bold">330,480</span> mock questions
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
-                <span className="font-bold">110+</span> topics
+                <span className="font-bold">13,770</span> mock tests
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
+                <span className="font-bold">139</span> tests
               </span>
             </div>
 
@@ -213,11 +216,11 @@ function HomePage() {
 
             <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-navy-foreground/90">
               {[
-                { icon: CheckCircle2, label: "96,000+ Questions" },
-                { icon: FileCheck, label: "Realistic Exam Format" },
+                { icon: CheckCircle2, label: "330,480 Questions" },
+                { icon: FileCheck, label: "13,770 Mock Tests" },
                 { icon: Timer, label: "Instant Results" },
                 { icon: CalendarCheck, label: "Updated for 2026" },
-                { icon: ListChecks, label: "110+ Exam Categories" },
+                { icon: ListChecks, label: "139 Tests" },
               ].map((s) => (
                 <li key={s.label} className="inline-flex items-center gap-2">
                   <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#e8c07a]/40 bg-navy-deep/60 text-[#e8c07a]">

@@ -15,7 +15,7 @@ export const Route = createFileRoute("/all-tests")({
       {
         name: "description",
         content:
-          "Browse free UK mock tests across driving, English, Life in the UK, NHS, CSCS, taxi, professional and more.",
+          "Browse 139 free UK mock tests — 13,770 mock papers and 330,480 questions across driving, English, Life in the UK, NHS, CSCS, taxi, professional and more.",
       },
       {
         property: "og:title",
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/all-tests")({
       {
         property: "og:description",
         content:
-          "Browse free UK mock tests across driving, English, Life in the UK, NHS, CSCS, taxi, professional and more.",
+          "Browse 139 free UK mock tests — 13,770 mock papers and 330,480 questions across driving, English, Life in the UK, NHS, CSCS, taxi, professional and more.",
       }, { property: "og:url", content: "https://www.uktesthub.com/all-tests" }
     ],
     links: [{ rel: "canonical", href: "https://www.uktesthub.com/all-tests" }],
@@ -147,9 +147,9 @@ function AllTestsPage() {
           </h1>
           <p className="mt-4 max-w-3xl text-base text-navy-foreground/80 md:text-lg">
             Every free practice test on UK Test Hub in one place — {totalTests}{" "}
-            mock tests across Driving, Citizenship, English, Taxi &amp; Private
-            Hire, NHS, Construction, Security and more. Pick a test to start
-            instantly.
+            tests, 13,770 mock papers and 330,480 questions across Driving,
+            Citizenship, English, Taxi &amp; Private Hire, NHS, Construction,
+            Security and more. Pick a test to start instantly.
           </p>
         </div>
       </section>
