@@ -1334,7 +1334,7 @@ function ModeSelect({
             <p className="mt-1 text-sm opacity-90">
               {examConfig
                 ? `${examConfig.count} unique random questions · ${Math.round(examConfig.timeLimitSec / 60)} minutes · Pass ${examConfig.passLabel ?? `${examConfig.passScore}/${examConfig.count}`}. Fresh set every time.`
-                : "Timed practice that helps simulate test-day conditions. Results shown at the end with full review."}
+                : "Exam mode gives timed practice for revision. Official timings vary by exam provider and skill, so always check the official test format before booking."}
             </p>
             {examConfig && (
               <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
