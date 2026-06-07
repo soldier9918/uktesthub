@@ -62,7 +62,7 @@ const generic = (
       heading: "Why active practice testing works",
       body: [
         `Active recall — testing yourself rather than re-reading notes — is one of the most evidence-backed study techniques in cognitive science. Repeated mock papers expose gaps you didn't know you had, and the instant feedback after each question rewires memory faster than passive revision.`,
-        `Mocks also dismantle exam anxiety. The first time you see a real-style question shouldn't be at the test centre. By the time you've completed five to ten mocks, the format feels familiar and you can focus your mental energy on the content.`,
+        `Mocks also dismantle exam anxiety. The first time you see a DVSA-style practice question shouldn't be at the test centre. By the time you've completed five to ten mocks, the format feels familiar and you can focus your mental energy on the content rather than the interface. Completing several mock tests before the real exam can make the format feel more familiar and help you spot weak areas before test day.`,
       ],
     },
     {
