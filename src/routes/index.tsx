@@ -787,13 +787,7 @@ function HomePage() {
                 fastest ways to pick up bad habits before a UK exam.
               </p>
               <p>
-                Content is reviewed against the most recent published
-                specifications from each examining body, and we refresh
-                papers whenever a syllabus, handbook or code of practice
-                is updated. When the Highway Code changes, our hazard
-                perception and theory questions change with it. When the
-                Life in the UK handbook gets a new edition, we re-check
-                every question against the new chapters.
+                We aim to keep our practice content aligned with publicly available guidance and update topics when major syllabus, handbook or code-of-practice changes are identified. For high-trust topics such as Driving Theory, Life in the UK, SERU, CSCS and healthcare exams, we prioritise updates when official guidance changes.
               </p>
               <p>
                 Accessibility matters too. The site is keyboard-navigable,
