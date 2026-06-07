@@ -78,12 +78,12 @@ function AboutPage() {
 
       <h2>How we build our questions</h2>
       <p>
-        Our questions are written by editors who specialise in each subject
-        area. We start from the official syllabus or guidance — for example,
-        the Highway Code for driving, the Home Office handbook for Life in
-        the UK, or CITB's published outcomes for CSCS. Each question is
-        reviewed for clarity, factual accuracy and relevance before it
-        reaches the site.
+        Our questions are created from publicly available syllabuses, handbooks
+        and guidance where relevant — for example, the Highway Code for driving,
+        the Home Office handbook for Life in the UK, and published outcomes for
+        CSCS. We review questions for clarity, relevance and factual accuracy
+        before publishing, and we update content when important source material
+        changes.
       </p>
       <p>
         Our mocks are designed to reflect the format and difficulty of the
