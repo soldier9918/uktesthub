@@ -27,7 +27,7 @@ export const categorySeo: Record<string, CategorySeo> = {
         heading: "What the test actually involves",
         body: [
           "The DVSA Driving Theory Test runs for around 90 minutes from check-in to your printed result slip. You'll sit at a Pearson VUE workstation with headphones and complete two parts back to back: 50 multiple-choice questions in 57 minutes, then a short break, then 14 video clips containing 15 developing hazards.",
-          "The multiple-choice section is drawn from a large question bank, so candidates can see different questions. Questions are drawn from a much larger bank, so two candidates sitting next to each other will see very different papers. The pass mark is 43 out of 50. Hazard perception is scored 0–5 per developing hazard depending on how early you click, with a pass mark of 44 out of 75. You must pass both parts at the same sitting — fail one and you fail the whole test.",
+          "The multiple-choice section is drawn from a large question bank, so candidates may see different papers. The pass mark is 43 out of 50. Hazard perception is scored from 0–5 per developing hazard depending on how early you identify it, with a pass mark of 44 out of 75. You must pass both parts at the same sitting — if you fail one part, you fail the whole theory test.",
           "Bring your provisional licence, arrive 15 minutes early, and switch your phone off completely. Late arrivals lose the £23 fee and have to rebook on gov.uk.",
         ],
       },
@@ -59,8 +59,8 @@ export const categorySeo: Record<string, CategorySeo> = {
         heading: "Why active practice testing works",
         body: [
           "Active recall — testing yourself rather than re-reading notes — is one of the most evidence-backed study techniques in cognitive science. Repeated mock papers expose gaps you didn't know you had, and the instant feedback after each question rewires your memory faster than passive revision ever can.",
-          "Mocks also dismantle exam anxiety. The first time you see a DVSA-style practice question shouldn't be at the test centre. By the time you've completed five to ten mocks, the format feels familiar and you can focus your mental energy on the content rather than the interface. Candidates who finish 10+ free mocks before sitting the real test pass at noticeably higher rates than those who only read the Highway Code.",
-          "There's also a simple cost argument. The DVSA fee is £23 per attempt, plus the time off work and the stress of rebooking. If 10 hours of free practice raises your first-time pass probability from 50% to 75%, the expected saving is real money and several weeks of waiting list. Treat practice as a financial decision, not just an academic one.",
+          "Mocks also dismantle exam anxiety. The first time you see a DVSA-style practice question shouldn't be at the test centre. By the time you've completed five to ten mocks, the format feels familiar and you can focus your mental energy on the content rather than the interface. Completing several mock tests before the real exam can make the format feel more familiar and help you spot weak areas before test day.",
+          "There's also a simple cost argument. The DVSA fee is £23 per attempt, plus the time off work and the stress of rebooking. Because the theory test fee and rebooking delay can add up, regular free practice is a sensible way to prepare before paying for another attempt. Treat practice as a financial decision, not just an academic one.",
         ],
       },
       {
