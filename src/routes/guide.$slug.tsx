@@ -342,7 +342,9 @@ function GuidePage() {
               Frequently asked questions
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Quick answers about the {topic.title} in 2026.
+              {topic.slug === "driving-theory" || topic.slug === "hazard-perception" || topic.slug === "road-signs"
+                ? "Quick answers about UK driving theory, hazard perception and road-sign practice in 2026."
+                : `Quick answers about the ${topic.title} in 2026.`}
             </p>
             <div className="mt-6 divide-y divide-border rounded-2xl border border-border bg-card">
               {seo.faqs.map((f) => (
