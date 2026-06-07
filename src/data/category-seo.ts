@@ -34,7 +34,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       {
         heading: "What's covered in the syllabus",
         body: [
-          "Each mock paper covers the full DVSA syllabus: alertness, attitude, safety and your vehicle, safety margins, hazard awareness, vulnerable road users, other types of vehicle, vehicle handling, motorway rules, rules of the road, road and traffic signs, documents, accidents, and vehicle loading.",
+          "The full Driving Theory question bank covers the DVSA syllabus: alertness, attitude, safety and your vehicle, safety margins, hazard awareness, vulnerable road users, other types of vehicle, vehicle handling, motorway rules, rules of the road, road and traffic signs, documents, accidents, and vehicle loading.",
           "Questions are written in plain UK English and follow the same multi-choice style you'll see on test day. Some questions have a single correct answer; others ask you to select two or three options. The on-screen wording will tell you exactly how many to pick — read it carefully.",
           "The hazard perception practice helps you spot developing hazards earlier — a parked van with brake lights coming on, a child running between cars, a cyclist drifting toward a parked door. If you're a learner motorcyclist, the dedicated Motorcycle Theory section adds questions on gear, lifesaver checks, and CBT-relevant content.",
         ],
