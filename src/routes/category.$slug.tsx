@@ -321,7 +321,9 @@ function CategoryPage() {
                 ? "Quick answers about UK driving theory, hazard perception and road-sign practice in 2026."
                 : category.slug === "teaching" 
                   ? "Quick answers about teacher training, legacy QTS skills tests and safeguarding practice."
-                  : `Quick answers about the ${category.title} exam in 2026.`}
+                  : category.slug === "healthcare-entry"
+                    ? "Quick answers about UCAT, OET, PLAB and BMAT legacy practice in 2026."
+                    : `Quick answers about the ${category.title} exam in 2026.`}
             </p>
             <div className="mt-6 divide-y divide-border rounded-2xl border border-border bg-card">
               {seo.faqs.map((f) => (
