@@ -1147,7 +1147,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       "Free practice for the Army BARB, Police PIRT (Initial Recruitment), Police SEARCH Assessment and Firefighter NFSAT. Realistic UK uniformed-service questions with explanations.",
     intro: [
       "The UK uniformed services run some of the toughest entry assessments in any sector. The British Army's BARB test, the Police PIRT and SEARCH assessments, and the Firefighter NFSAT all use bespoke formats designed to flush out candidates who can't handle pressure, poor pacing or unfamiliar question types. A good score doesn't just get you in — it widens the trade or rank options open to you.",
-      "Our free military and emergency-services mocks are designed to reflect the format of each official test. UK English, current syllabuses, and content reviewed against the latest recruitment guidance from the Army's AFCO, College of Policing and National Fire Chiefs Council.",
+      "Our free military and emergency-services mocks are designed to reflect the format of each official test. Our practice content uses UK English and is reviewed against publicly available recruitment guidance where possible, including Army, police and fire-service assessment information.",
     ],
     sections: [
       {
