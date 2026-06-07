@@ -154,7 +154,7 @@ export const topicSeo: Record<string, TopicSeo> = {
       },
     ],
     faqs: [
-      { q: "What is the UK driving theory pass mark?", a: "43 out of 50 on multiple choice and 44 out of 75 on hazard perception. You must pass both at the same sitting." },
+      { q: "What is the UK driving theory pass mark?", a: "The multiple-choice section is drawn from a large question bank, so candidates may see different papers. The pass mark is 43 out of 50. Hazard perception is scored from 0–5 per developing hazard depending on how early you identify it, with a pass mark of 44 out of 75. You must pass both parts at the same sitting — if you fail one part, you fail the whole theory test." },
       { q: "How many questions are in the driving theory test?", a: "50 multiple-choice questions, then 14 hazard perception video clips containing 15 developing hazards in total." },
       { q: "How long is the driving theory test?", a: "57 minutes for multiple choice and around 20 minutes for hazard perception, plus an optional three-minute break in between." },
       { q: "How much does the driving theory test cost in 2026?", a: "£23, booked directly via gov.uk." },
