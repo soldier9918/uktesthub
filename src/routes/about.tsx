@@ -93,13 +93,12 @@ function AboutPage() {
 
       <h2>Editorial standards</h2>
       <ul>
-        <li>Every question is reviewed against current published guidance.</li>
-        <li>Reader reports are triaged within 2 working days.</li>
-        <li>Major regulatory changes trigger a full topic refresh.</li>
+        <li>We review questions against publicly available guidance where relevant.</li>
+        <li>Reader reports are reviewed and prioritised as quickly as possible.</li>
+        <li>Major syllabus, handbook or regulatory changes may trigger a topic refresh.</li>
         <li>
-          We publish a monthly{" "}
-          <Link to="/exam-updates">Exam Updates</Link> log so you can see
-          what's changed.
+          We use the <Link to="/exam-updates">Exam Updates</Link> log to record
+          important content changes when updates are made.
         </li>
       </ul>
 
