@@ -140,6 +140,7 @@ export const topicSeo: Record<string, TopicSeo> = {
       {
         heading: "Booking and on the day",
         body: [
+          "There's also a simple cost argument. The DVSA fee is £23 per attempt, plus the time off work and the stress of rebooking. Because the theory test fee and rebooking delay can add up, regular free practice is a sensible way to prepare before paying for another attempt. Treat practice as a financial decision, not just an academic one.",
           "Book only via gov.uk. The fee is £23 in 2026 and slots are usually available within two to four weeks. Avoid third-party 'fast booking' sites that add a £20–£40 markup for the same slot.",
           "Bring your provisional licence as photo ID. No phone, no watch, no bag, no notes inside the test room — there are lockers in the waiting area. Arrive 15 minutes early; latecomers forfeit the fee.",
         ],
