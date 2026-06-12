@@ -154,7 +154,7 @@ function HomePage() {
               <span aria-hidden className="h-px w-10 bg-coral" />
             </div>
 
-            <h1 className="mt-5 font-display font-black uppercase leading-[0.95] tracking-tight text-6xl md:text-7xl lg:text-8xl"
+            <h1 className="mt-5 font-serif font-bold uppercase leading-[0.95] tracking-tight text-6xl md:text-7xl lg:text-8xl"
                 style={{ textShadow: "0 2px 24px rgba(0,0,0,0.45)" }}>
               UK MOCK TESTS
               <br />
