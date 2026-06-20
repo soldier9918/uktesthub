@@ -1479,7 +1479,7 @@ function ModeSelect({
           <button
             onClick={() => onSelect("exam")}
             disabled={examLoading}
-            className="group cursor-pointer rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
+            className="group flex cursor-pointer flex-col rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
           >
             <div className="font-display text-lg font-semibold">
               {examConfig ? "Exam mode — official-style practice" : "Exam mode"}
@@ -1496,7 +1496,7 @@ function ModeSelect({
                 <span className="rounded-full bg-white/15 px-2 py-0.5">Pass {examConfig.passLabel ?? `${examConfig.passScore}/${examConfig.count}`}</span>
               </div>
             )}
-            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold">
+            <span className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold">
               {examLoading ? "Loading exam…" : "Start exam"}
               {!examLoading && (
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
