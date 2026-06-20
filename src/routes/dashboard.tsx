@@ -6,6 +6,8 @@ import { RequireAuth } from "@/components/RequireAuth";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
+const SHOW_MORE_LIMIT = 5;
+
 type Attempt = {
   id: string;
   topic_slug: string;
@@ -45,6 +47,10 @@ function DashboardInner() {
   const [progress, setProgress] = useState<Progress[]>([]);
   const [displayName, setDisplayName] = useState<string>("");
   const [loading, setLoading] = useState(true);
+
+  const [showAllProgress, setShowAllProgress] = useState(false);
+  const [showAllTopics, setShowAllTopics] = useState(false);
+  const [showAllAttempts, setShowAllAttempts] = useState(false);
 
   useEffect(() => {
     if (!user) return;
@@ -122,7 +128,7 @@ function DashboardInner() {
         <section className="mt-8">
           <h2 className="font-display text-xl font-bold">Resume in progress</h2>
           <ul className="mt-3 grid gap-2">
-            {progress.map((p) => (
+            {(showAllProgress ? progress : progress.slice(0, SHOW_MORE_LIMIT)).map((p) => (
               <li key={p.mock_slug} className="flex items-center justify-between rounded-lg border border-border bg-card p-3">
                 <div className="text-sm">
                   <div className="font-semibold">{p.mock_slug}</div>
@@ -134,6 +140,14 @@ function DashboardInner() {
               </li>
             ))}
           </ul>
+          {progress.length > SHOW_MORE_LIMIT && (
+            <button
+              onClick={() => setShowAllProgress((v) => !v)}
+              className="mt-3 rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"
+            >
+              {showAllProgress ? "Show less" : "Show all"}
+            </button>
+          )}
         </section>
       )}
 
@@ -142,19 +156,29 @@ function DashboardInner() {
         {bestByTopic.length === 0 ? (
           <p className="mt-3 text-sm text-muted-foreground">No attempts yet — finish a test to see your stats.</p>
         ) : (
-          <ul className="mt-3 space-y-2">
-            {bestByTopic.slice(0, 10).map(([topic, pct]) => (
-              <li key={topic}>
-                <div className="flex justify-between text-sm">
-                  <Link to="/topic/$slug" params={{ slug: topic }} className="font-medium hover:underline">{topic}</Link>
-                  <span className="font-semibold">{pct}%</span>
-                </div>
-                <div className="mt-1 h-2 overflow-hidden rounded-full bg-muted">
-                  <div className="h-full rounded-full bg-coral" style={{ width: `${pct}%` }} />
-                </div>
-              </li>
-            ))}
-          </ul>
+          <>
+            <ul className="mt-3 space-y-2">
+              {(showAllTopics ? bestByTopic : bestByTopic.slice(0, SHOW_MORE_LIMIT)).map(([topic, pct]) => (
+                <li key={topic}>
+                  <div className="flex justify-between text-sm">
+                    <Link to="/topic/$slug" params={{ slug: topic }} className="font-medium hover:underline">{topic}</Link>
+                    <span className="font-semibold">{pct}%</span>
+                  </div>
+                  <div className="mt-1 h-2 overflow-hidden rounded-full bg-muted">
+                    <div className="h-full rounded-full bg-coral" style={{ width: `${pct}%` }} />
+                  </div>
+                </li>
+              ))}
+            </ul>
+            {bestByTopic.length > SHOW_MORE_LIMIT && (
+              <button
+                onClick={() => setShowAllTopics((v) => !v)}
+                className="mt-3 rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"
+              >
+                {showAllTopics ? "Show less" : "Show all"}
+              </button>
+            )}
+          </>
         )}
       </section>
 
@@ -163,38 +187,48 @@ function DashboardInner() {
         {attempts.length === 0 ? (
           <p className="mt-3 text-sm text-muted-foreground">No attempts yet.</p>
         ) : (
-          <div className="mt-3 overflow-x-auto rounded-lg border border-border">
-            <table className="min-w-full text-sm">
-              <thead className="bg-muted/50 text-left">
-                <tr>
-                  <th className="px-3 py-2">Date</th>
-                  <th className="px-3 py-2">Test</th>
-                  <th className="px-3 py-2">Score</th>
-                  <th className="px-3 py-2">%</th>
-                  <th className="px-3 py-2">Result</th>
-                  <th className="px-3 py-2"></th>
-                </tr>
-              </thead>
-              <tbody>
-                {attempts.slice(0, 20).map((a) => (
-                  <tr key={a.id} className="border-t border-border">
-                    <td className="px-3 py-2 text-muted-foreground">{new Date(a.completed_at).toLocaleDateString()}</td>
-                    <td className="px-3 py-2 font-medium">{a.mock_slug}</td>
-                    <td className="px-3 py-2">{a.score}/{a.total}</td>
-                    <td className="px-3 py-2">{Number(a.percent).toFixed(0)}%</td>
-                    <td className="px-3 py-2">
-                      <span className={a.passed ? "text-emerald-700" : "text-destructive"}>
-                        {a.passed ? "Pass" : "Fail"}
-                      </span>
-                    </td>
-                    <td className="px-3 py-2 text-right">
-                      <Link to="/quiz/$slug" params={{ slug: a.mock_slug }} className="text-coral hover:underline">Retake</Link>
-                    </td>
+          <>
+            <div className="mt-3 overflow-x-auto rounded-lg border border-border">
+              <table className="min-w-full text-sm">
+                <thead className="bg-muted/50 text-left">
+                  <tr>
+                    <th className="px-3 py-2">Date</th>
+                    <th className="px-3 py-2">Test</th>
+                    <th className="px-3 py-2">Score</th>
+                    <th className="px-3 py-2">%</th>
+                    <th className="px-3 py-2">Result</th>
+                    <th className="px-3 py-2"></th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  {(showAllAttempts ? attempts : attempts.slice(0, SHOW_MORE_LIMIT)).map((a) => (
+                    <tr key={a.id} className="border-t border-border">
+                      <td className="px-3 py-2 text-muted-foreground">{new Date(a.completed_at).toLocaleDateString()}</td>
+                      <td className="px-3 py-2 font-medium">{a.mock_slug}</td>
+                      <td className="px-3 py-2">{a.score}/{a.total}</td>
+                      <td className="px-3 py-2">{Number(a.percent).toFixed(0)}%</td>
+                      <td className="px-3 py-2">
+                        <span className={a.passed ? "text-emerald-700" : "text-destructive"}>
+                          {a.passed ? "Pass" : "Fail"}
+                        </span>
+                      </td>
+                      <td className="px-3 py-2 text-right">
+                        <Link to="/quiz/$slug" params={{ slug: a.mock_slug }} className="text-coral hover:underline">Retake</Link>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {attempts.length > SHOW_MORE_LIMIT && (
+              <button
+                onClick={() => setShowAllAttempts((v) => !v)}
+                className="mt-3 rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"
+              >
+                {showAllAttempts ? "Show less" : "Show all"}
+              </button>
+            )}
+          </>
         )}
       </section>
     </main>
