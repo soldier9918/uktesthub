@@ -480,6 +480,11 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   const { user } = useAuth();
   const [progressLoaded, setProgressLoaded] = useState(false);
+  const [signupPromptOpen, setSignupPromptOpen] = useState(false);
+
+  useEffect(() => {
+    if (finished && !user) setSignupPromptOpen(true);
+  }, [finished, user]);
 
   // Always start a quiz fresh at question 1. If the user previously left a
   // quiz half way through, any saved progress is cleared on entry so they
