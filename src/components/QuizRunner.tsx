@@ -41,6 +41,15 @@ import { useOverrides, applyOverrides } from "@/lib/overrides";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth-context";
 import { trackEvent } from "@/lib/analytics";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 
 type Mode = "practice" | "exam";
