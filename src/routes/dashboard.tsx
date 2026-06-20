@@ -189,12 +189,21 @@ function DashboardInner() {
       </section>
 
       <section className="mt-8">
-        <h2 className="font-display text-xl font-bold">Recent attempts</h2>
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="font-display text-xl font-bold">Recent attempts</h2>
+          {attempts.length > SHOW_MORE_LIMIT && (
+            <button
+              onClick={() => setShowAllAttempts((v) => !v)}
+              className="shrink-0 rounded-md border border-border px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground hover:bg-muted"
+            >
+              {showAllAttempts ? "Show less" : "Show all"}
+            </button>
+          )}
+        </div>
         {attempts.length === 0 ? (
           <p className="mt-3 text-sm text-muted-foreground">No attempts yet.</p>
         ) : (
-          <>
-            <div className="mt-3 overflow-x-auto rounded-lg border border-border">
+          <div className="mt-3 overflow-x-auto rounded-lg border border-border">
               <table className="min-w-full text-sm">
                 <thead className="bg-muted/50 text-left">
                   <tr>
@@ -207,7 +216,7 @@ function DashboardInner() {
                   </tr>
                 </thead>
                 <tbody>
-                  {(showAllAttempts ? attempts : attempts.slice(0, SHOW_MORE_LIMIT)).map((a) => (
+                  {visibleAttempts.map((a) => (
                     <tr key={a.id} className="border-t border-border">
                       <td className="px-3 py-2 text-muted-foreground">{new Date(a.completed_at).toLocaleDateString()}</td>
                       <td className="px-3 py-2 font-medium">{a.mock_slug}</td>
@@ -226,15 +235,6 @@ function DashboardInner() {
                 </tbody>
               </table>
             </div>
-            {attempts.length > SHOW_MORE_LIMIT && (
-              <button
-                onClick={() => setShowAllAttempts((v) => !v)}
-                className="mt-3 rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"
-              >
-                {showAllAttempts ? "Show less" : "Show all"}
-              </button>
-            )}
-          </>
         )}
       </section>
     </main>
