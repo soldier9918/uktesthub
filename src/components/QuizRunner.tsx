@@ -41,6 +41,15 @@ import { useOverrides, applyOverrides } from "@/lib/overrides";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth-context";
 import { trackEvent } from "@/lib/analytics";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 
 type Mode = "practice" | "exam";
@@ -471,6 +480,11 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   const { user } = useAuth();
   const [progressLoaded, setProgressLoaded] = useState(false);
+  const [signupPromptOpen, setSignupPromptOpen] = useState(false);
+
+  useEffect(() => {
+    if (finished && !user) setSignupPromptOpen(true);
+  }, [finished, user]);
 
   // Always start a quiz fresh at question 1. If the user previously left a
   // quiz half way through, any saved progress is cleared on entry so they
@@ -584,20 +598,40 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   if (finished) {
     return (
-      <Results
-        quiz={quiz}
-        answers={answers}
-        score={score}
-        percent={percent}
-        passed={passed}
-        onRetry={() => {
-          setMode(null);
-          setExamOverride(null);
-          setExamIntroShown(false);
-          // The reset useEffect re-initialises question state when the
-          // active quiz switches back to the base mock.
-        }}
-      />
+      <>
+        <Results
+          quiz={quiz}
+          answers={answers}
+          score={score}
+          percent={percent}
+          passed={passed}
+          onRetry={() => {
+            setMode(null);
+            setExamOverride(null);
+            setExamIntroShown(false);
+            // The reset useEffect re-initialises question state when the
+            // active quiz switches back to the base mock.
+          }}
+        />
+        <Dialog open={signupPromptOpen} onOpenChange={setSignupPromptOpen}>
+          <DialogContent className="sm:max-w-md">
+            <DialogHeader>
+              <DialogTitle>Want to save your score and track progress?</DialogTitle>
+              <DialogDescription>
+                Create a free account to keep your results and continue practising later.
+              </DialogDescription>
+            </DialogHeader>
+            <DialogFooter className="gap-2 sm:gap-2">
+              <Button variant="outline" onClick={() => setSignupPromptOpen(false)}>
+                Not now
+              </Button>
+              <Button asChild className="bg-coral text-white hover:bg-coral/90">
+                <Link to="/signup">Sign up free</Link>
+              </Button>
+            </DialogFooter>
+          </DialogContent>
+        </Dialog>
+      </>
     );
   }
 
