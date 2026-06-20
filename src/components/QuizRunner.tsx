@@ -488,8 +488,46 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const [signupPromptOpen, setSignupPromptOpen] = useState(false);
 
   useEffect(() => {
-    if (finished && !user) setSignupPromptOpen(true);
+    if (!finished || user) return;
+    try {
+      const now = Date.now();
+      const HOUR = 60 * 60 * 1000;
+      const DAY = 24 * HOUR;
+      const SHOWS_KEY = "uk-test-hub:signup-prompt:shows";
+      const DISMISS_KEY = "uk-test-hub:signup-prompt:dismissals";
+      const parse = (k: string): number[] => {
+        try { return (JSON.parse(localStorage.getItem(k) ?? "[]") as number[]).filter((n) => typeof n === "number"); } catch { return []; }
+      };
+      const dismissals = parse(DISMISS_KEY).filter((t) => now - t < 7 * DAY);
+      if (dismissals.length >= 2) return; // 2 dismissals → wait 7 days
+      const lastDismiss = dismissals[dismissals.length - 1];
+      if (lastDismiss && now - lastDismiss < 12 * HOUR) return; // 12h cooldown after "Not now"
+      const shows = parse(SHOWS_KEY).filter((t) => now - t < DAY);
+      if (shows.length >= 2) return; // max 2 displays per 24h
+      shows.push(now);
+      localStorage.setItem(SHOWS_KEY, JSON.stringify(shows));
+      localStorage.setItem(DISMISS_KEY, JSON.stringify(dismissals));
+      setSignupPromptOpen(true);
+    } catch {
+      setSignupPromptOpen(true);
+    }
   }, [finished, user]);
+
+  const handleSignupPromptDismiss = () => {
+    setSignupPromptOpen(false);
+    try {
+      const DISMISS_KEY = "uk-test-hub:signup-prompt:dismissals";
+      const now = Date.now();
+      const DAY = 24 * 60 * 60 * 1000;
+      const existing: number[] = (() => {
+        try { return (JSON.parse(localStorage.getItem(DISMISS_KEY) ?? "[]") as number[]).filter((n) => typeof n === "number" && now - n < 7 * DAY); } catch { return []; }
+      })();
+      existing.push(now);
+      localStorage.setItem(DISMISS_KEY, JSON.stringify(existing));
+    } catch {
+      // ignore
+    }
+  };
 
   // Always start a quiz fresh at question 1. If the user previously left a
   // quiz half way through, any saved progress is cleared on entry so they
@@ -703,7 +741,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             </div>
 
             <DialogFooter className="gap-2 sm:gap-2 flex-col sm:flex-row">
-              <Button variant="outline" onClick={() => setSignupPromptOpen(false)} className="w-full sm:w-auto">
+              <Button variant="outline" onClick={handleSignupPromptDismiss} className="w-full sm:w-auto">
                 Not now
               </Button>
               <Button asChild className="w-full sm:w-auto bg-coral text-white hover:bg-coral/90">
