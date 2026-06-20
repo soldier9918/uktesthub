@@ -100,6 +100,10 @@ function DashboardInner() {
     return Array.from(m.entries()).sort((a, b) => b[1] - a[1]);
   }, [attempts]);
 
+  const visibleProgress = showAllProgress ? progress : progress.slice(0, SHOW_MORE_LIMIT);
+  const visibleBestByTopic = showAllTopics ? bestByTopic : bestByTopic.slice(0, SHOW_MORE_LIMIT);
+  const visibleAttempts = showAllAttempts ? attempts : attempts.slice(0, SHOW_MORE_LIMIT);
+
   if (loading) {
     return <div className="mx-auto max-w-5xl px-4 py-12 text-sm text-muted-foreground">Loading your dashboard…</div>;
   }
@@ -126,9 +130,19 @@ function DashboardInner() {
 
       {progress.length > 0 && (
         <section className="mt-8">
-          <h2 className="font-display text-xl font-bold">Resume in progress</h2>
+          <div className="flex items-center justify-between gap-3">
+            <h2 className="font-display text-xl font-bold">Resume in progress</h2>
+            {progress.length > SHOW_MORE_LIMIT && (
+              <button
+                onClick={() => setShowAllProgress((v) => !v)}
+                className="shrink-0 rounded-md border border-border px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground hover:bg-muted"
+              >
+                {showAllProgress ? "Show less" : "Show all"}
+              </button>
+            )}
+          </div>
           <ul className="mt-3 grid gap-2">
-            {(showAllProgress ? progress : progress.slice(0, SHOW_MORE_LIMIT)).map((p) => (
+            {visibleProgress.map((p) => (
               <li key={p.mock_slug} className="flex items-center justify-between rounded-lg border border-border bg-card p-3">
                 <div className="text-sm">
                   <div className="font-semibold">{p.mock_slug}</div>
@@ -140,25 +154,26 @@ function DashboardInner() {
               </li>
             ))}
           </ul>
-          {progress.length > SHOW_MORE_LIMIT && (
-            <button
-              onClick={() => setShowAllProgress((v) => !v)}
-              className="mt-3 rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"
-            >
-              {showAllProgress ? "Show less" : "Show all"}
-            </button>
-          )}
         </section>
       )}
 
       <section className="mt-8">
-        <h2 className="font-display text-xl font-bold">Best score per topic</h2>
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="font-display text-xl font-bold">Best score per topic</h2>
+          {bestByTopic.length > SHOW_MORE_LIMIT && (
+            <button
+              onClick={() => setShowAllTopics((v) => !v)}
+              className="shrink-0 rounded-md border border-border px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground hover:bg-muted"
+            >
+              {showAllTopics ? "Show less" : "Show all"}
+            </button>
+          )}
+        </div>
         {bestByTopic.length === 0 ? (
           <p className="mt-3 text-sm text-muted-foreground">No attempts yet — finish a test to see your stats.</p>
         ) : (
-          <>
-            <ul className="mt-3 space-y-2">
-              {(showAllTopics ? bestByTopic : bestByTopic.slice(0, SHOW_MORE_LIMIT)).map(([topic, pct]) => (
+          <ul className="mt-3 space-y-2">
+              {visibleBestByTopic.map(([topic, pct]) => (
                 <li key={topic}>
                   <div className="flex justify-between text-sm">
                     <Link to="/topic/$slug" params={{ slug: topic }} className="font-medium hover:underline">{topic}</Link>
@@ -170,25 +185,25 @@ function DashboardInner() {
                 </li>
               ))}
             </ul>
-            {bestByTopic.length > SHOW_MORE_LIMIT && (
-              <button
-                onClick={() => setShowAllTopics((v) => !v)}
-                className="mt-3 rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"
-              >
-                {showAllTopics ? "Show less" : "Show all"}
-              </button>
-            )}
-          </>
         )}
       </section>
 
       <section className="mt-8">
-        <h2 className="font-display text-xl font-bold">Recent attempts</h2>
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="font-display text-xl font-bold">Recent attempts</h2>
+          {attempts.length > SHOW_MORE_LIMIT && (
+            <button
+              onClick={() => setShowAllAttempts((v) => !v)}
+              className="shrink-0 rounded-md border border-border px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground hover:bg-muted"
+            >
+              {showAllAttempts ? "Show less" : "Show all"}
+            </button>
+          )}
+        </div>
         {attempts.length === 0 ? (
           <p className="mt-3 text-sm text-muted-foreground">No attempts yet.</p>
         ) : (
-          <>
-            <div className="mt-3 overflow-x-auto rounded-lg border border-border">
+          <div className="mt-3 overflow-x-auto rounded-lg border border-border">
               <table className="min-w-full text-sm">
                 <thead className="bg-muted/50 text-left">
                   <tr>
@@ -201,7 +216,7 @@ function DashboardInner() {
                   </tr>
                 </thead>
                 <tbody>
-                  {(showAllAttempts ? attempts : attempts.slice(0, SHOW_MORE_LIMIT)).map((a) => (
+                  {visibleAttempts.map((a) => (
                     <tr key={a.id} className="border-t border-border">
                       <td className="px-3 py-2 text-muted-foreground">{new Date(a.completed_at).toLocaleDateString()}</td>
                       <td className="px-3 py-2 font-medium">{a.mock_slug}</td>
@@ -220,15 +235,6 @@ function DashboardInner() {
                 </tbody>
               </table>
             </div>
-            {attempts.length > SHOW_MORE_LIMIT && (
-              <button
-                onClick={() => setShowAllAttempts((v) => !v)}
-                className="mt-3 rounded-md border border-border px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted"
-              >
-                {showAllAttempts ? "Show less" : "Show all"}
-              </button>
-            )}
-          </>
         )}
       </section>
     </main>
