@@ -13,6 +13,11 @@ import {
   VolumeX,
   AlertCircle,
   HelpCircle,
+  BarChart3,
+  TrendingUp,
+  LayoutDashboard,
+  Bookmark,
+  Award,
 } from "lucide-react";
 import { sounds, useSoundMuted } from "@/lib/quiz-sounds";
 import type {
@@ -614,18 +619,94 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
           }}
         />
         <Dialog open={signupPromptOpen} onOpenChange={setSignupPromptOpen}>
-          <DialogContent className="sm:max-w-md">
+          <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
             <DialogHeader>
-              <DialogTitle>Want to save your score and track progress?</DialogTitle>
-              <DialogDescription>
-                Create a free account to keep your results and continue practising later.
+              <DialogTitle className="text-xl">Want to save your score and track progress?</DialogTitle>
+              <DialogDescription className="text-sm text-muted-foreground">
+                Create a free account to unlock your personal dashboard and never lose your progress.
               </DialogDescription>
             </DialogHeader>
-            <DialogFooter className="gap-2 sm:gap-2">
-              <Button variant="outline" onClick={() => setSignupPromptOpen(false)}>
+
+            <div className="space-y-4 py-2">
+              {/* Mini dashboard preview cards */}
+              <div className="grid grid-cols-2 gap-3">
+                <div className="rounded-lg border border-border bg-muted/40 p-3">
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
+                    <BarChart3 className="h-3.5 w-3.5" />
+                    <span>Progress tracker</span>
+                  </div>
+                  <div className="text-sm font-semibold">Tests taken: 10</div>
+                  <div className="mt-2 h-2 w-full rounded-full bg-muted overflow-hidden">
+                    <div className="h-full rounded-full bg-coral" style={{ width: "65%" }} />
+                  </div>
+                  <div className="mt-1 text-xs text-muted-foreground">Average: 65%</div>
+                </div>
+
+                <div className="rounded-lg border border-border bg-muted/40 p-3">
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
+                    <TrendingUp className="h-3.5 w-3.5" />
+                    <span>Pass rate</span>
+                  </div>
+                  <div className="text-sm font-semibold">Pass rate: 80%</div>
+                  <div className="mt-2 h-2 w-full rounded-full bg-muted overflow-hidden">
+                    <div className="h-full rounded-full bg-emerald-500" style={{ width: "80%" }} />
+                  </div>
+                  <div className="mt-1 text-xs text-muted-foreground">8 of 10 passed</div>
+                </div>
+              </div>
+
+              {/* Resume in progress mockup */}
+              <div className="rounded-lg border border-border bg-muted/40 p-3">
+                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
+                  <RotateCcw className="h-3.5 w-3.5" />
+                  <span>Resume where you left off</span>
+                </div>
+                <div className="flex items-center justify-between rounded-md bg-background border border-border px-3 py-2">
+                  <div className="text-sm">
+                    <div className="font-medium">life-in-the-uk-mock-2</div>
+                    <div className="text-xs text-muted-foreground">Question 8 of 24</div>
+                  </div>
+                  <span className="rounded bg-coral px-2 py-0.5 text-xs font-semibold text-coral-foreground">Resume</span>
+                </div>
+              </div>
+
+              {/* Benefits list */}
+              <div className="space-y-2.5">
+                <div className="flex items-start gap-3">
+                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10">
+                    <LayoutDashboard className="h-3.5 w-3.5 text-coral" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium">Personal Dashboard</div>
+                    <div className="text-xs text-muted-foreground">View all your scores, streaks, and pass rates in one place.</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10">
+                    <Bookmark className="h-3.5 w-3.5 text-coral" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium">Save & Resume</div>
+                    <div className="text-xs text-muted-foreground">Pick up any test exactly where you left off, anytime.</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10">
+                    <Award className="h-3.5 w-3.5 text-coral" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium">Track Improvement</div>
+                    <div className="text-xs text-muted-foreground">See your best scores per topic and watch yourself improve.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <DialogFooter className="gap-2 sm:gap-2 flex-col sm:flex-row">
+              <Button variant="outline" onClick={() => setSignupPromptOpen(false)} className="w-full sm:w-auto">
                 Not now
               </Button>
-              <Button asChild className="bg-coral text-white hover:bg-coral/90">
+              <Button asChild className="w-full sm:w-auto bg-coral text-white hover:bg-coral/90">
                 <Link to="/signup">Sign up free</Link>
               </Button>
             </DialogFooter>
