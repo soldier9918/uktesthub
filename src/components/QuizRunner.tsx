@@ -741,7 +741,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             </div>
 
             <DialogFooter className="gap-2 sm:gap-2 flex-col sm:flex-row">
-              <Button variant="outline" onClick={() => setSignupPromptOpen(false)} className="w-full sm:w-auto">
+              <Button variant="outline" onClick={handleSignupPromptDismiss} className="w-full sm:w-auto">
                 Not now
               </Button>
               <Button asChild className="w-full sm:w-auto bg-coral text-white hover:bg-coral/90">
