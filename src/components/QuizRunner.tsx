@@ -598,20 +598,40 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   if (finished) {
     return (
-      <Results
-        quiz={quiz}
-        answers={answers}
-        score={score}
-        percent={percent}
-        passed={passed}
-        onRetry={() => {
-          setMode(null);
-          setExamOverride(null);
-          setExamIntroShown(false);
-          // The reset useEffect re-initialises question state when the
-          // active quiz switches back to the base mock.
-        }}
-      />
+      <>
+        <Results
+          quiz={quiz}
+          answers={answers}
+          score={score}
+          percent={percent}
+          passed={passed}
+          onRetry={() => {
+            setMode(null);
+            setExamOverride(null);
+            setExamIntroShown(false);
+            // The reset useEffect re-initialises question state when the
+            // active quiz switches back to the base mock.
+          }}
+        />
+        <Dialog open={signupPromptOpen} onOpenChange={setSignupPromptOpen}>
+          <DialogContent className="sm:max-w-md">
+            <DialogHeader>
+              <DialogTitle>Want to save your score and track progress?</DialogTitle>
+              <DialogDescription>
+                Create a free account to keep your results and continue practising later.
+              </DialogDescription>
+            </DialogHeader>
+            <DialogFooter className="gap-2 sm:gap-2">
+              <Button variant="outline" onClick={() => setSignupPromptOpen(false)}>
+                Not now
+              </Button>
+              <Button asChild className="bg-coral text-white hover:bg-coral/90">
+                <Link to="/signup">Sign up free</Link>
+              </Button>
+            </DialogFooter>
+          </DialogContent>
+        </Dialog>
+      </>
     );
   }
 
