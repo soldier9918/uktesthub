@@ -13,6 +13,11 @@ import {
   VolumeX,
   AlertCircle,
   HelpCircle,
+  BarChart3,
+  TrendingUp,
+  LayoutDashboard,
+  Bookmark,
+  Award,
 } from "lucide-react";
 import { sounds, useSoundMuted } from "@/lib/quiz-sounds";
 import type {
