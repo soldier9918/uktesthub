@@ -31,6 +31,10 @@ function AdminLogin() {
     setBusy(true);
     setError(null);
     setInfo(null);
+    const friendly = (msg: string) =>
+      /failed to fetch|network|load failed/i.test(msg)
+        ? "Couldn’t reach the sign-in service. Check your connection (or disable ad/tracker blockers for this site) and try again."
+        : msg;
     if (mode === "signup") {
       const { error } = await supabase.auth.signUp({
         email,
@@ -38,14 +42,14 @@ function AdminLogin() {
         options: { emailRedirectTo: `${window.location.origin}/admin-kb20` },
       });
       setBusy(false);
-      if (error) return setError(error.message);
+      if (error) return setError(friendly(error.message));
       setInfo(
         "Account created. Ask the project owner to grant your account the admin role.",
       );
     } else {
       const { error } = await supabase.auth.signInWithPassword({ email, password });
       setBusy(false);
-      if (error) return setError(error.message);
+      if (error) return setError(friendly(error.message));
     }
   };
 
