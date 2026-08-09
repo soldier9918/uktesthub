@@ -78,6 +78,7 @@ function UsersAdmin() {
           <thead className="bg-muted/40 text-left text-xs uppercase tracking-wider text-muted-foreground">
             <tr>
               <th className="px-3 py-2">User</th>
+              <th className="px-3 py-2">Exams taken</th>
               <th className="px-3 py-2">Provider</th>
               <th className="px-3 py-2">Tier</th>
               <th className="px-3 py-2">Attempts</th>
@@ -90,14 +91,14 @@ function UsersAdmin() {
           <tbody>
             {loading && (
               <tr>
-                <td colSpan={8} className="px-3 py-6 text-center text-muted-foreground">
+                <td colSpan={9} className="px-3 py-6 text-center text-muted-foreground">
                   Loading…
                 </td>
               </tr>
             )}
             {!loading && filtered.length === 0 && (
               <tr>
-                <td colSpan={8} className="px-3 py-6 text-center text-muted-foreground">
+                <td colSpan={9} className="px-3 py-6 text-center text-muted-foreground">
                   No users.
                 </td>
               </tr>
@@ -110,6 +111,19 @@ function UsersAdmin() {
                     {u.display_name ?? "—"} {u.is_admin && <Badge className="ml-1">admin</Badge>}
                   </div>
                   <div className="mt-0.5 font-mono text-[10px] text-muted-foreground/70">{u.id}</div>
+                </td>
+                <td className="px-3 py-2">
+                  {u.topics.length === 0 ? (
+                    <span className="text-xs text-muted-foreground">—</span>
+                  ) : (
+                    <div className="flex max-w-[260px] flex-wrap gap-1">
+                      {u.topics.map((t) => (
+                        <Badge key={t} variant="outline" className="text-[10px] font-normal">
+                          {t}
+                        </Badge>
+                      ))}
+                    </div>
+                  )}
                 </td>
                 <td className="px-3 py-2 text-xs">{u.provider ?? "—"}</td>
                 <td className="px-3 py-2 text-xs">{u.subscription_tier}</td>
