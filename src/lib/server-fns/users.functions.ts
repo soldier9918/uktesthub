@@ -19,6 +19,7 @@ export type AdminUserRow = {
   is_admin: boolean;
   attempts: number;
   best_percent: number | null;
+  topics: string[];
 };
 
 export const listAdminUsers = createServerFn({ method: "POST" })
@@ -52,17 +53,18 @@ export const listAdminUsers = createServerFn({ method: "POST" })
     const [profilesRes, rolesRes, attemptsRes] = await Promise.all([
       supabaseAdmin.from("profiles").select("id,display_name,avatar_url,subscription_tier").in("id", ids),
       supabaseAdmin.from("user_roles").select("user_id,role").eq("role", "admin").in("user_id", ids),
-      supabaseAdmin.from("quiz_attempts").select("user_id,percent").in("user_id", ids),
+      supabaseAdmin.from("quiz_attempts").select("user_id,percent,topic_slug").in("user_id", ids),
     ]);
 
     const profiles = new Map((profilesRes.data ?? []).map((p) => [p.id, p]));
     const adminSet = new Set((rolesRes.data ?? []).map((r) => r.user_id));
-    const attemptsByUser = new Map<string, { count: number; best: number }>();
+    const attemptsByUser = new Map<string, { count: number; best: number; topics: Set<string> }>();
     for (const a of attemptsRes.data ?? []) {
-      const cur = attemptsByUser.get(a.user_id) ?? { count: 0, best: 0 };
+      const cur = attemptsByUser.get(a.user_id) ?? { count: 0, best: 0, topics: new Set<string>() };
       cur.count += 1;
       const pct = Number(a.percent ?? 0);
       if (pct > cur.best) cur.best = pct;
+      if (a.topic_slug) cur.topics.add(a.topic_slug);
       attemptsByUser.set(a.user_id, cur);
     }
 
@@ -82,6 +84,7 @@ export const listAdminUsers = createServerFn({ method: "POST" })
         is_admin: adminSet.has(u.id),
         attempts: stats?.count ?? 0,
         best_percent: stats ? Math.round(stats.best) : null,
+        topics: stats ? [...stats.topics].sort() : [],
       };
     });
 
