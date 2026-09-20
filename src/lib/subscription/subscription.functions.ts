@@ -50,6 +50,7 @@ async function ensureCustomer(
     .from("subscriptions")
     .select("provider_customer_id")
     .eq("user_id", userId)
+    .eq("stripe_mode", await currentMode())
     .maybeSingle();
   if (row?.provider_customer_id) return row.provider_customer_id;
 
@@ -82,6 +83,7 @@ export const createCheckoutSession = createServerFn({ method: "POST" })
         .from("subscriptions")
         .select("status,provider_subscription_id")
         .eq("user_id", userId)
+    .eq("stripe_mode", await currentMode())
         .maybeSingle();
       if (
         current?.provider_subscription_id &&
@@ -177,6 +179,7 @@ export const scheduleTopicChange = createServerFn({ method: "POST" })
         .from("subscriptions")
         .select("plan_code,status,current_period_end")
         .eq("user_id", userId)
+    .eq("stripe_mode", await currentMode())
         .maybeSingle();
       if (!row || row.plan_code !== "exam_pro") {
         return { ok: false, error: "Topic changes apply to Exam Pro subscriptions only." };
@@ -184,7 +187,8 @@ export const scheduleTopicChange = createServerFn({ method: "POST" })
       const { error } = await supabaseAdmin
         .from("subscriptions")
         .update({ scheduled_topic_slug: data.topicSlug })
-        .eq("user_id", userId);
+        .eq("user_id", userId)
+    .eq("stripe_mode", await currentMode());
       if (error) return { ok: false, error: error.message };
       return { ok: true, error: null };
     } catch (e) {
@@ -205,6 +209,7 @@ export const cancelSubscription = createServerFn({ method: "POST" })
         .from("subscriptions")
         .select("provider_subscription_id")
         .eq("user_id", userId)
+    .eq("stripe_mode", await currentMode())
         .maybeSingle();
       if (!row?.provider_subscription_id) {
         return { ok: false, error: "No active subscription to cancel." };
@@ -217,7 +222,8 @@ export const cancelSubscription = createServerFn({ method: "POST" })
       await supabaseAdmin
         .from("subscriptions")
         .update({ cancel_at_period_end: true, cancelled_at: new Date().toISOString() })
-        .eq("user_id", userId);
+        .eq("user_id", userId)
+    .eq("stripe_mode", await currentMode());
       return { ok: true, error: null };
     } catch (e) {
       console.error("[subscription] cancelSubscription", e);
@@ -238,6 +244,7 @@ export const resumeSubscription = createServerFn({ method: "POST" })
         .from("subscriptions")
         .select("provider_subscription_id")
         .eq("user_id", userId)
+    .eq("stripe_mode", await currentMode())
         .maybeSingle();
       if (!row?.provider_subscription_id) {
         return { ok: false, error: "No subscription to resume." };
@@ -256,7 +263,8 @@ export const resumeSubscription = createServerFn({ method: "POST" })
             ? { current_period_end: new Date(periodEndSeconds * 1000).toISOString() }
             : {}),
         })
-        .eq("user_id", userId);
+        .eq("user_id", userId)
+    .eq("stripe_mode", await currentMode());
       return { ok: true, error: null };
     } catch (e) {
       console.error("[subscription] resumeSubscription", e);
@@ -298,6 +306,7 @@ async function loadChangeContext(accessToken: string, target: "premium_monthly" 
     .from("subscriptions")
     .select("provider_subscription_id,plan_code,status")
     .eq("user_id", userId)
+    .eq("stripe_mode", await currentMode())
     .maybeSingle();
 
   if (!row?.provider_subscription_id || !PAID_STATUSES.has(String(row.status))) {
