@@ -90,6 +90,16 @@ export function entitlementFromRow(
   };
 }
 
+/**
+ * Topics that are always fully unlocked — light-hearted trivia in the
+ * Fun & Viral Quizzes category, never paywalled.
+ */
+export const ALWAYS_FREE_TOPICS: ReadonlySet<string> = new Set(["daily", "how-british"]);
+
+export function isAlwaysFreeTopic(topicSlug: string): boolean {
+  return ALWAYS_FREE_TOPICS.has(topicSlug);
+}
+
 /** Mock tests 1–3 of every topic are open to everyone, signed in or not. */
 export function isFreeMock(mockNumber: number): boolean {
   return mockNumber >= 1 && mockNumber <= FREE_MOCKS_PER_TOPIC;
@@ -100,6 +110,7 @@ export function canAccessMock(
   topicSlug: string,
   mockNumber: number,
 ): boolean {
+  if (isAlwaysFreeTopic(topicSlug)) return true;
   if (isFreeMock(mockNumber)) return true;
   if (!entitlement.isPaid) return false;
   if (entitlement.allTopics) return true;
