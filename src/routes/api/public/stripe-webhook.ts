@@ -47,6 +47,7 @@ async function resolveUserId(sub: StripeSubscription): Promise<string | null> {
     .from("subscriptions")
     .select("user_id")
     .eq("provider_customer_id", sub.customer)
+    .eq("stripe_mode", stripeMode())
     .maybeSingle();
   return data?.user_id ?? null;
 }
@@ -77,6 +78,7 @@ async function applySubscription(sub: StripeSubscription, opts: { ended?: boolea
     .from("subscriptions")
     .select("topic_slug,scheduled_topic_slug,current_period_start,cancelled_at")
     .eq("user_id", userId)
+    .eq("stripe_mode", stripeMode())
     .maybeSingle();
 
   // Exam Pro topic: metadata wins on first purchase; on renewal any scheduled
@@ -101,6 +103,9 @@ async function applySubscription(sub: StripeSubscription, opts: { ended?: boolea
   const row = {
     user_id: userId,
     provider: "stripe",
+    // Sandbox and live records are kept apart: a record from one mode is
+    // invisible to the other, so test data can never grant live access.
+    stripe_mode: stripeMode(),
     provider_customer_id: sub.customer,
     provider_subscription_id: sub.id,
     plan_code: (plan ?? "free") as never,
@@ -117,7 +122,7 @@ async function applySubscription(sub: StripeSubscription, opts: { ended?: boolea
 
   const { error } = await supabaseAdmin
     .from("subscriptions")
-    .upsert(row, { onConflict: "user_id" });
+    .upsert(row, { onConflict: "user_id,stripe_mode" });
   if (error) console.error("[stripe-webhook] upsert failed", error.message);
 }
 
