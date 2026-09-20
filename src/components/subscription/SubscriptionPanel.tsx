@@ -159,7 +159,7 @@ export function SubscriptionPanel() {
         {periodEnd && (
           <div>
             <dt className="text-xs uppercase tracking-wide text-muted-foreground">
-              {entitlement.cancelAtPeriodEnd ? "Access ends" : "Next renewal"}
+              {cancelling ? "Access ends" : "Next renewal"}
             </dt>
             <dd className="mt-0.5 font-semibold">{periodEnd}</dd>
           </div>
