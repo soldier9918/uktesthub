@@ -34,6 +34,7 @@ const COLUMNS =
 /** Cached for the session: the payment mode the server is configured for. */
 let modePromise: Promise<"test" | "live"> | null = null;
 async function paymentMode(): Promise<"test" | "live"> {
+  return "live"; // TEMP TEST
   modePromise ??= getPaymentMode()
     .then((r) => r.mode)
     .catch(() => "test" as const);
