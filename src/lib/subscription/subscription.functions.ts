@@ -75,6 +75,25 @@ export const createCheckoutSession = createServerFn({ method: "POST" })
         return { url: null, error: "Please choose the test topic you want to unlock." };
       }
       const { userId, email, supabaseAdmin } = await requireUser(data.accessToken);
+
+      // One subscription per customer: an existing paying subscriber must change
+      // plan on the subscription they already have, never buy a second one.
+      const { data: current } = await supabaseAdmin
+        .from("subscriptions")
+        .select("status,provider_subscription_id")
+        .eq("user_id", userId)
+        .maybeSingle();
+      if (
+        current?.provider_subscription_id &&
+        (current.status === "active" || current.status === "past_due")
+      ) {
+        return {
+          url: null,
+          error:
+            "You already have an active subscription. Please change your plan from your account page so you are only charged the difference.",
+        };
+      }
+
       const { stripeRequest, priceIdForPlan } = await import("./stripe.server");
       const customerId = await ensureCustomer(supabaseAdmin, userId, email);
       const origin = siteOrigin(data.origin);
