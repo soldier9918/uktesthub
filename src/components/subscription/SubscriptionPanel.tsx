@@ -144,7 +144,7 @@ export function SubscriptionPanel() {
         </div>
         <div>
           <dt className="text-xs uppercase tracking-wide text-muted-foreground">Status</dt>
-          <dd className="mt-0.5 font-semibold">{STATUS_COPY[status] ?? status}</dd>
+          <dd className="mt-0.5 font-semibold">{statusText}</dd>
         </div>
         {entitlement.plan === "exam_pro" && (
           <div>
