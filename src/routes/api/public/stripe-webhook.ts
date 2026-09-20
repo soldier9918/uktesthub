@@ -49,7 +49,7 @@ async function resolveUserId(sub: StripeSubscription): Promise<string | null> {
   return data?.user_id ?? null;
 }
 
-async function applySubscription(sub: StripeSubscription) {
+async function applySubscription(sub: StripeSubscription, opts: { ended?: boolean } = {}) {
   const userId = await resolveUserId(sub);
   if (!userId) {
     console.error("[stripe-webhook] no user for subscription", sub.id);
