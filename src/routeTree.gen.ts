@@ -23,6 +23,7 @@ import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ReportRouteImport } from './routes/report'
 import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as NhsNumeracyTestPracticeRouteImport } from './routes/nhs-numeracy-test-practice'
 import { Route as LifeInTheUkTestPracticeRouteImport } from './routes/life-in-the-uk-test-practice'
 import { Route as HelpRouteImport } from './routes/help'
@@ -168,6 +169,11 @@ const ReportRoute = ReportRouteImport.update({
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NhsNumeracyTestPracticeRoute = NhsNumeracyTestPracticeRouteImport.update({
@@ -589,6 +595,7 @@ export interface FileRoutesByFullPath {
   '/help': typeof HelpRoute
   '/life-in-the-uk-test-practice': typeof LifeInTheUkTestPracticeRoute
   '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
@@ -678,6 +685,7 @@ export interface FileRoutesByTo {
   '/help': typeof HelpRoute
   '/life-in-the-uk-test-practice': typeof LifeInTheUkTestPracticeRoute
   '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
@@ -767,6 +775,7 @@ export interface FileRoutesById {
   '/help': typeof HelpRoute
   '/life-in-the-uk-test-practice': typeof LifeInTheUkTestPracticeRoute
   '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
@@ -860,6 +869,7 @@ export interface FileRouteTypes {
     | '/help'
     | '/life-in-the-uk-test-practice'
     | '/nhs-numeracy-test-practice'
+    | '/pricing'
     | '/privacy'
     | '/report'
     | '/reset-password'
@@ -949,6 +959,7 @@ export interface FileRouteTypes {
     | '/help'
     | '/life-in-the-uk-test-practice'
     | '/nhs-numeracy-test-practice'
+    | '/pricing'
     | '/privacy'
     | '/report'
     | '/reset-password'
@@ -1037,6 +1048,7 @@ export interface FileRouteTypes {
     | '/help'
     | '/life-in-the-uk-test-practice'
     | '/nhs-numeracy-test-practice'
+    | '/pricing'
     | '/privacy'
     | '/report'
     | '/reset-password'
@@ -1129,6 +1141,7 @@ export interface RootRouteChildren {
   HelpRoute: typeof HelpRoute
   LifeInTheUkTestPracticeRoute: typeof LifeInTheUkTestPracticeRoute
   NhsNumeracyTestPracticeRoute: typeof NhsNumeracyTestPracticeRoute
+  PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   ReportRoute: typeof ReportRoute
   ResetPasswordRoute: typeof ResetPasswordRoute
@@ -1278,6 +1291,13 @@ declare module '@tanstack/react-router' {
       path: '/privacy'
       fullPath: '/privacy'
       preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/nhs-numeracy-test-practice': {
@@ -1925,6 +1945,7 @@ const rootRouteChildren: RootRouteChildren = {
   HelpRoute: HelpRoute,
   LifeInTheUkTestPracticeRoute: LifeInTheUkTestPracticeRoute,
   NhsNumeracyTestPracticeRoute: NhsNumeracyTestPracticeRoute,
+  PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   ReportRoute: ReportRoute,
   ResetPasswordRoute: ResetPasswordRoute,
