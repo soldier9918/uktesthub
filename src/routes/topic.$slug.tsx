@@ -15,6 +15,10 @@ import { breadcrumbSchema } from "@/lib/seo";
 import { LEGACY_SLUG_REDIRECTS } from "@/data/slug-redirects";
 import { useAuth } from "@/lib/auth-context";
 import { supabase } from "@/integrations/supabase/client";
+import { useEntitlement } from "@/lib/subscription/use-entitlement";
+import { canAccessMock } from "@/lib/subscription/entitlement";
+import { UpgradeModal } from "@/components/subscription/UpgradeModal";
+
 
 type MockStats = { best: number; attempts: number };
 
@@ -190,7 +194,10 @@ function TopicPage() {
   const slots = listMockSlots(topic.slug);
   const availableCount = slots.filter((s) => s.available).length;
   const { user } = useAuth();
+  const { entitlement } = useEntitlement();
+  const [lockedMock, setLockedMock] = useState<number | null>(null);
   const [statsByMock, setStatsByMock] = useState<Record<string, MockStats>>({});
+
 
   useEffect(() => {
     if (!user) {
