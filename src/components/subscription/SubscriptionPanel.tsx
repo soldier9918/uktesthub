@@ -1,5 +1,7 @@
-import { useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { useCallback, useEffect, useState } from "react";
+import { Link, useLocation } from "@tanstack/react-router";
+
+type ChangePlan = "premium_monthly" | "premium_annual";
 import { Button } from "@/components/ui/button";
 import { TopicPicker } from "@/components/subscription/TopicPicker";
 import { supabase } from "@/integrations/supabase/client";
@@ -40,10 +42,15 @@ export function SubscriptionPanel() {
   const [newTopic, setNewTopic] = useState<string | null>(null);
   const [confirmCancel, setConfirmCancel] = useState(false);
   const [upgrade, setUpgrade] = useState<{
+    plan: ChangePlan;
     amountDue: number | null;
+    credit: number | null;
     currency: string | null;
     renewalDate: string | null;
+    intervalChanges: boolean;
   } | null>(null);
+  const location = useLocation();
+  const requestedChange = (location.search as { change?: string } | undefined)?.change;
 
   const status = subscription?.status ?? "free";
   const periodEnd = formatDate(entitlement.periodEnd);
@@ -140,49 +147,68 @@ export function SubscriptionPanel() {
     }
   }
 
-  async function startUpgrade() {
-    setBusy("preview");
+  const startUpgrade = useCallback(
+    async (plan: ChangePlan) => {
+      setBusy("preview");
+      setErr(null);
+      setMsg(null);
+      try {
+        const res = await previewUpgrade({ data: { accessToken: await token(), plan } });
+        if (res.ok) {
+          setUpgrade({
+            plan,
+            amountDue: res.amountDue,
+            credit: res.credit,
+            currency: res.currency,
+            renewalDate: res.renewalDate,
+            intervalChanges: res.intervalChanges,
+          });
+        } else setErr(res.error ?? "We couldn't work out your new price right now.");
+      } catch {
+        setErr("We couldn't work out your new price right now. Please try again shortly.");
+      } finally {
+        setBusy(null);
+      }
+    },
+    [],
+  );
+
+  async function doUpgrade() {
+    if (!upgrade) return;
+    const plan = upgrade.plan;
+    setBusy("upgrade");
     setErr(null);
     setMsg(null);
     try {
-      const res = await previewUpgrade({ data: { accessToken: await token() } });
+      const res = await confirmUpgrade({ data: { accessToken: await token(), plan } });
       if (res.ok) {
-        setUpgrade({
-          amountDue: res.amountDue,
-          currency: res.currency,
-          renewalDate: res.renewalDate,
-        });
-      } else setErr(res.error ?? "We couldn't work out your upgrade price right now.");
+        setUpgrade(null);
+        setMsg(
+          res.pending
+            ? "Your payment is being processed. Your new plan applies as soon as it is confirmed."
+            : plan === "premium_annual"
+              ? "You are now on Premium All Access (Annual) — every test topic stays unlocked and advert-free."
+              : "You are now on Premium All Access — every test topic is unlocked and your practice stays advert-free.",
+        );
+        // Access is granted by the payment confirmation, so re-read shortly after.
+        await refresh();
+        setTimeout(() => void refresh(), 4000);
+      } else setErr(res.error ?? "We couldn't complete your plan change.");
     } catch {
-      setErr("We couldn't work out your upgrade price right now. Please try again shortly.");
+      setErr("We couldn't complete your plan change. Please try again or use Manage billing.");
     } finally {
       setBusy(null);
     }
   }
 
-  async function doUpgrade() {
-    setBusy("upgrade");
-    setErr(null);
-    setMsg(null);
-    try {
-      const res = await confirmUpgrade({ data: { accessToken: await token() } });
-      if (res.ok) {
-        setUpgrade(null);
-        setMsg(
-          res.pending
-            ? "Your upgrade payment is being processed. Premium All Access opens as soon as it is confirmed."
-            : "You are now on Premium All Access — every test topic is unlocked and your practice stays advert-free.",
-        );
-        // Access is granted by the payment confirmation, so re-read shortly after.
-        await refresh();
-        setTimeout(() => void refresh(), 4000);
-      } else setErr(res.error ?? "We couldn't complete your upgrade.");
-    } catch {
-      setErr("We couldn't complete your upgrade. Please try again or use Manage billing.");
-    } finally {
-      setBusy(null);
-    }
-  }
+  // Arriving from the pricing page with a requested change opens the confirmation.
+  useEffect(() => {
+    if (requestedChange !== "premium_annual") return;
+    if (!entitlement.isPaid || entitlement.plan !== "premium_monthly" || cancelling) return;
+    if (upgrade || busy) return;
+    void startUpgrade("premium_annual");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [requestedChange, entitlement.isPaid, entitlement.plan, cancelling]);
 
   return (
     <section className="mt-6 rounded-xl border border-border bg-card p-5">
@@ -253,10 +279,19 @@ export function SubscriptionPanel() {
         {entitlement.isPaid && entitlement.plan === "exam_pro" && !cancelling && (
           <Button
             className="bg-coral text-white hover:bg-coral/90"
-            onClick={startUpgrade}
+            onClick={() => void startUpgrade("premium_monthly")}
             disabled={busy === "preview"}
           >
             {busy === "preview" ? "Checking price…" : "Upgrade to Premium All Access"}
+          </Button>
+        )}
+        {entitlement.isPaid && entitlement.plan === "premium_monthly" && !cancelling && (
+          <Button
+            className="bg-coral text-white hover:bg-coral/90"
+            onClick={() => void startUpgrade("premium_annual")}
+            disabled={busy === "preview"}
+          >
+            {busy === "preview" ? "Checking price…" : "Switch to annual billing"}
           </Button>
         )}
         {(entitlement.isPaid || subscription?.provider_customer_id) && (
@@ -278,26 +313,37 @@ export function SubscriptionPanel() {
 
       {upgrade && (
         <div className="mt-4 rounded-lg border border-coral/40 bg-coral/5 p-4">
-          <h3 className="font-display text-base font-bold">Upgrade to Premium All Access</h3>
+          <h3 className="font-display text-base font-bold">
+            {upgrade.plan === "premium_annual"
+              ? "Switch to Premium All Access (Annual)"
+              : "Upgrade to Premium All Access"}
+          </h3>
           <ul className="mt-2 space-y-1 text-sm">
+            {upgrade.credit ? (
+              <li>
+                <strong>Credit for your unused time:</strong> £{upgrade.credit.toFixed(2)}
+              </li>
+            ) : null}
             <li>
               <strong>Due today:</strong>{" "}
               {upgrade.amountDue !== null
                 ? `£${upgrade.amountDue.toFixed(2)}`
                 : "the prorated difference"}{" "}
-              — only the difference for the rest of your current period.
+              {upgrade.credit ? "after that credit." : "— only the difference for the rest of your current period."}
             </li>
             <li>
-              <strong>From then on:</strong> £24.99 per month.
+              <strong>From then on:</strong>{" "}
+              {upgrade.plan === "premium_annual" ? "£199.99 per year." : "£24.99 per month."}
             </li>
             <li>
-              <strong>Renewal date:</strong>{" "}
-              {formatDate(upgrade.renewalDate) ?? periodEnd ?? "unchanged"} (unchanged)
+              <strong>{upgrade.intervalChanges ? "New renewal date" : "Renewal date"}:</strong>{" "}
+              {formatDate(upgrade.renewalDate) ?? periodEnd ?? "unchanged"}
+              {upgrade.intervalChanges ? "" : " (unchanged)"}
             </li>
           </ul>
           <p className="mt-2 text-xs text-muted-foreground">
             Your existing subscription is switched over — you will not be charged for two
-            subscriptions. Every test topic unlocks and your practice stays advert-free.
+            subscriptions, and your Premium access continues without interruption.
           </p>
           <div className="mt-3 flex gap-3">
             <Button
@@ -305,7 +351,11 @@ export function SubscriptionPanel() {
               onClick={doUpgrade}
               disabled={busy === "upgrade"}
             >
-              {busy === "upgrade" ? "Upgrading…" : "Confirm upgrade"}
+              {busy === "upgrade"
+                ? "Applying…"
+                : upgrade.plan === "premium_annual"
+                  ? "Confirm switch to annual"
+                  : "Confirm upgrade"}
             </Button>
             <Button variant="outline" onClick={() => setUpgrade(null)}>
               Not now
