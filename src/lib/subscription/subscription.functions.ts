@@ -94,9 +94,8 @@ export const createCheckoutSession = createServerFn({ method: "POST" })
       });
       return { url: session.url, error: null };
     } catch (e) {
-      const message = e instanceof Error ? e.message : "Checkout could not be started.";
-      console.error("[subscription] createCheckoutSession", message);
-      return { url: null, error: message };
+      console.error("[subscription] createCheckoutSession", e);
+      return { url: null, error: friendly(e, "Checkout could not be started. Please try again.") };
     }
   });
 
