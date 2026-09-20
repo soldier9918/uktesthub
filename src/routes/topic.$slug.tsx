@@ -356,13 +356,23 @@ function TopicPage() {
               slug={s.slug}
               mockNumber={s.mockNumber}
               available={s.available}
+              locked={!canAccessMock(entitlement, topic.slug, s.mockNumber)}
+              onLockedClick={() => setLockedMock(s.mockNumber)}
               stats={statsByMock[s.slug] ?? null}
               minutes={topic.slug === "life-in-the-uk" ? 45 : topic.slug === "seru" ? 30 : QUESTIONS_PER_MOCK}
             />
 
           ))}
         </div>
+        <UpgradeModal
+          open={lockedMock !== null}
+          onClose={() => setLockedMock(null)}
+          topicSlug={topic.slug}
+          mockNumber={lockedMock}
+          source="locked_test"
+        />
         <IndependentDisclaimer />
+
       </main>
 
       <SiteFooter />
