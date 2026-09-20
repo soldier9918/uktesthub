@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as UkRoadSignsTestRouteImport } from './routes/uk-road-signs-test'
 import { Route as TopographicalTestLondonRouteImport } from './routes/topographical-test-london'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as SubscriptionTermsRouteImport } from './routes/subscription-terms'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SitemapRouteImport } from './routes/sitemap'
 import { Route as SignupRouteImport } from './routes/signup'
@@ -22,6 +23,7 @@ import { Route as SeruTestPracticeRouteImport } from './routes/seru-test-practic
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ReportRouteImport } from './routes/report'
+import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as NhsNumeracyTestPracticeRouteImport } from './routes/nhs-numeracy-test-practice'
@@ -38,6 +40,7 @@ import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as CscsMockTestFreeRouteImport } from './routes/cscs-mock-test-free'
 import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CancellationPolicyRouteImport } from './routes/cancellation-policy'
 import { Route as BookmarksRouteImport } from './routes/bookmarks'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AllTestsRouteImport } from './routes/all-tests'
@@ -115,6 +118,11 @@ const TermsRoute = TermsRouteImport.update({
   path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SubscriptionTermsRoute = SubscriptionTermsRouteImport.update({
+  id: '/subscription-terms',
+  path: '/subscription-terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -164,6 +172,11 @@ const ResetPasswordRoute = ResetPasswordRouteImport.update({
 const ReportRoute = ReportRouteImport.update({
   id: '/report',
   path: '/report',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RefundPolicyRoute = RefundPolicyRouteImport.update({
+  id: '/refund-policy',
+  path: '/refund-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyRoute = PrivacyRouteImport.update({
@@ -245,6 +258,11 @@ const CookiesRoute = CookiesRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CancellationPolicyRoute = CancellationPolicyRouteImport.update({
+  id: '/cancellation-policy',
+  path: '/cancellation-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BookmarksRoute = BookmarksRouteImport.update({
@@ -581,6 +599,7 @@ export interface FileRoutesByFullPath {
   '/all-tests': typeof AllTestsRoute
   '/blog': typeof BlogRouteWithChildren
   '/bookmarks': typeof BookmarksRoute
+  '/cancellation-policy': typeof CancellationPolicyRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
   '/cscs-mock-test-free': typeof CscsMockTestFreeRoute
@@ -597,6 +616,7 @@ export interface FileRoutesByFullPath {
   '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
@@ -607,6 +627,7 @@ export interface FileRoutesByFullPath {
   '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/subscription-terms': typeof SubscriptionTermsRoute
   '/terms': typeof TermsRoute
   '/topographical-test-london': typeof TopographicalTestLondonRoute
   '/uk-road-signs-test': typeof UkRoadSignsTestRoute
@@ -672,6 +693,7 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminRoute
   '/all-tests': typeof AllTestsRoute
   '/bookmarks': typeof BookmarksRoute
+  '/cancellation-policy': typeof CancellationPolicyRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
   '/cscs-mock-test-free': typeof CscsMockTestFreeRoute
@@ -687,6 +709,7 @@ export interface FileRoutesByTo {
   '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
@@ -697,6 +720,7 @@ export interface FileRoutesByTo {
   '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/subscription-terms': typeof SubscriptionTermsRoute
   '/terms': typeof TermsRoute
   '/topographical-test-london': typeof TopographicalTestLondonRoute
   '/uk-road-signs-test': typeof UkRoadSignsTestRoute
@@ -761,6 +785,7 @@ export interface FileRoutesById {
   '/all-tests': typeof AllTestsRoute
   '/blog': typeof BlogRouteWithChildren
   '/bookmarks': typeof BookmarksRoute
+  '/cancellation-policy': typeof CancellationPolicyRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
   '/cscs-mock-test-free': typeof CscsMockTestFreeRoute
@@ -777,6 +802,7 @@ export interface FileRoutesById {
   '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
@@ -787,6 +813,7 @@ export interface FileRoutesById {
   '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/subscription-terms': typeof SubscriptionTermsRoute
   '/terms': typeof TermsRoute
   '/topographical-test-london': typeof TopographicalTestLondonRoute
   '/uk-road-signs-test': typeof UkRoadSignsTestRoute
@@ -855,6 +882,7 @@ export interface FileRouteTypes {
     | '/all-tests'
     | '/blog'
     | '/bookmarks'
+    | '/cancellation-policy'
     | '/contact'
     | '/cookies'
     | '/cscs-mock-test-free'
@@ -871,6 +899,7 @@ export interface FileRouteTypes {
     | '/nhs-numeracy-test-practice'
     | '/pricing'
     | '/privacy'
+    | '/refund-policy'
     | '/report'
     | '/reset-password'
     | '/robots.txt'
@@ -881,6 +910,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
+    | '/subscription-terms'
     | '/terms'
     | '/topographical-test-london'
     | '/uk-road-signs-test'
@@ -946,6 +976,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/all-tests'
     | '/bookmarks'
+    | '/cancellation-policy'
     | '/contact'
     | '/cookies'
     | '/cscs-mock-test-free'
@@ -961,6 +992,7 @@ export interface FileRouteTypes {
     | '/nhs-numeracy-test-practice'
     | '/pricing'
     | '/privacy'
+    | '/refund-policy'
     | '/report'
     | '/reset-password'
     | '/robots.txt'
@@ -971,6 +1003,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
+    | '/subscription-terms'
     | '/terms'
     | '/topographical-test-london'
     | '/uk-road-signs-test'
@@ -1034,6 +1067,7 @@ export interface FileRouteTypes {
     | '/all-tests'
     | '/blog'
     | '/bookmarks'
+    | '/cancellation-policy'
     | '/contact'
     | '/cookies'
     | '/cscs-mock-test-free'
@@ -1050,6 +1084,7 @@ export interface FileRouteTypes {
     | '/nhs-numeracy-test-practice'
     | '/pricing'
     | '/privacy'
+    | '/refund-policy'
     | '/report'
     | '/reset-password'
     | '/robots.txt'
@@ -1060,6 +1095,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
+    | '/subscription-terms'
     | '/terms'
     | '/topographical-test-london'
     | '/uk-road-signs-test'
@@ -1127,6 +1163,7 @@ export interface RootRouteChildren {
   AllTestsRoute: typeof AllTestsRoute
   BlogRoute: typeof BlogRouteWithChildren
   BookmarksRoute: typeof BookmarksRoute
+  CancellationPolicyRoute: typeof CancellationPolicyRoute
   ContactRoute: typeof ContactRoute
   CookiesRoute: typeof CookiesRoute
   CscsMockTestFreeRoute: typeof CscsMockTestFreeRoute
@@ -1143,6 +1180,7 @@ export interface RootRouteChildren {
   NhsNumeracyTestPracticeRoute: typeof NhsNumeracyTestPracticeRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
+  RefundPolicyRoute: typeof RefundPolicyRoute
   ReportRoute: typeof ReportRoute
   ResetPasswordRoute: typeof ResetPasswordRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
@@ -1153,6 +1191,7 @@ export interface RootRouteChildren {
   SignupRoute: typeof SignupRoute
   SitemapRoute: typeof SitemapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SubscriptionTermsRoute: typeof SubscriptionTermsRoute
   TermsRoute: typeof TermsRoute
   TopographicalTestLondonRoute: typeof TopographicalTestLondonRoute
   UkRoadSignsTestRoute: typeof UkRoadSignsTestRoute
@@ -1214,6 +1253,13 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/subscription-terms': {
+      id: '/subscription-terms'
+      path: '/subscription-terms'
+      fullPath: '/subscription-terms'
+      preLoaderRoute: typeof SubscriptionTermsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -1284,6 +1330,13 @@ declare module '@tanstack/react-router' {
       path: '/report'
       fullPath: '/report'
       preLoaderRoute: typeof ReportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refund-policy': {
+      id: '/refund-policy'
+      path: '/refund-policy'
+      fullPath: '/refund-policy'
+      preLoaderRoute: typeof RefundPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy': {
@@ -1396,6 +1449,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cancellation-policy': {
+      id: '/cancellation-policy'
+      path: '/cancellation-policy'
+      fullPath: '/cancellation-policy'
+      preLoaderRoute: typeof CancellationPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/bookmarks': {
@@ -1931,6 +1991,7 @@ const rootRouteChildren: RootRouteChildren = {
   AllTestsRoute: AllTestsRoute,
   BlogRoute: BlogRouteWithChildren,
   BookmarksRoute: BookmarksRoute,
+  CancellationPolicyRoute: CancellationPolicyRoute,
   ContactRoute: ContactRoute,
   CookiesRoute: CookiesRoute,
   CscsMockTestFreeRoute: CscsMockTestFreeRoute,
@@ -1947,6 +2008,7 @@ const rootRouteChildren: RootRouteChildren = {
   NhsNumeracyTestPracticeRoute: NhsNumeracyTestPracticeRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
+  RefundPolicyRoute: RefundPolicyRoute,
   ReportRoute: ReportRoute,
   ResetPasswordRoute: ResetPasswordRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
@@ -1957,6 +2019,7 @@ const rootRouteChildren: RootRouteChildren = {
   SignupRoute: SignupRoute,
   SitemapRoute: SitemapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SubscriptionTermsRoute: SubscriptionTermsRoute,
   TermsRoute: TermsRoute,
   TopographicalTestLondonRoute: TopographicalTestLondonRoute,
   UkRoadSignsTestRoute: UkRoadSignsTestRoute,
