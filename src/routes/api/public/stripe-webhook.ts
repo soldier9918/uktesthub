@@ -22,12 +22,13 @@ function mapStatus(stripeStatus: string): Status {
     case "trialing":
       return "active";
     case "past_due":
-    case "unpaid":
       return "past_due";
+    // Stripe has stopped retrying — the paid period is over for good.
+    case "unpaid":
     case "canceled":
+    case "incomplete_expired":
       return "expired";
     case "incomplete":
-    case "incomplete_expired":
       return "incomplete";
     default:
       return "incomplete";
