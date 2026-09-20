@@ -3,6 +3,8 @@ import { X } from "lucide-react";
 import { useAdSlot } from "@/lib/admin/ad-slots";
 import { useAdminSettings } from "@/lib/admin/settings";
 import { getConsent } from "@/lib/consent";
+import { useEntitlement } from "@/lib/subscription/use-entitlement";
+
 
 /**
  * AdSense central configuration.
@@ -110,8 +112,10 @@ export function AdSlot({
   const [filled, setFilled] = useState(false);
   const settings = useAdminSettings();
   const slotRow = useAdSlot(slotKey ?? "");
+  const { entitlement } = useEntitlement();
   const effectiveSlotId = slotRow?.ad_slot_id || slotId;
   const slotEnabled = slotKey ? slotRow?.enabled === true : true;
+
 
   // Lazy-load via IntersectionObserver
   useEffect(() => {
