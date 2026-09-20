@@ -56,6 +56,8 @@ import { Route as TopicSlugRouteImport } from './routes/topic.$slug'
 import { Route as QuizSlugRouteImport } from './routes/quiz.$slug'
 import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
 import { Route as EnglishLanguageTestsTestRouteImport } from './routes/english-language-tests.$test'
+import { Route as CheckoutSuccessRouteImport } from './routes/checkout.success'
+import { Route as CheckoutCancelledRouteImport } from './routes/checkout.cancelled'
 import { Route as CategoryEnglishRouteImport } from './routes/category.english'
 import { Route as CategorySlugRouteImport } from './routes/category.$slug'
 import { Route as BlogUkRoadSignsTestRouteImport } from './routes/blog.uk-road-signs-test'
@@ -342,6 +344,16 @@ const EnglishLanguageTestsTestRoute =
     path: '/$test',
     getParentRoute: () => EnglishLanguageTestsRoute,
   } as any)
+const CheckoutSuccessRoute = CheckoutSuccessRouteImport.update({
+  id: '/checkout/success',
+  path: '/checkout/success',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CheckoutCancelledRoute = CheckoutCancelledRouteImport.update({
+  id: '/checkout/cancelled',
+  path: '/checkout/cancelled',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CategoryEnglishRoute = CategoryEnglishRouteImport.update({
   id: '/category/english',
   path: '/category/english',
@@ -665,6 +677,8 @@ export interface FileRoutesByFullPath {
   '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
   '/category/english': typeof CategoryEnglishRoute
+  '/checkout/cancelled': typeof CheckoutCancelledRoute
+  '/checkout/success': typeof CheckoutSuccessRoute
   '/english-language-tests/$test': typeof EnglishLanguageTestsTestRouteWithChildren
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
@@ -758,6 +772,8 @@ export interface FileRoutesByTo {
   '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
   '/category/english': typeof CategoryEnglishRoute
+  '/checkout/cancelled': typeof CheckoutCancelledRoute
+  '/checkout/success': typeof CheckoutSuccessRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
@@ -851,6 +867,8 @@ export interface FileRoutesById {
   '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
   '/category/english': typeof CategoryEnglishRoute
+  '/checkout/cancelled': typeof CheckoutCancelledRoute
+  '/checkout/success': typeof CheckoutSuccessRoute
   '/english-language-tests/$test': typeof EnglishLanguageTestsTestRouteWithChildren
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
@@ -948,6 +966,8 @@ export interface FileRouteTypes {
     | '/blog/uk-road-signs-test'
     | '/category/$slug'
     | '/category/english'
+    | '/checkout/cancelled'
+    | '/checkout/success'
     | '/english-language-tests/$test'
     | '/guide/$slug'
     | '/quiz/$slug'
@@ -1041,6 +1061,8 @@ export interface FileRouteTypes {
     | '/blog/uk-road-signs-test'
     | '/category/$slug'
     | '/category/english'
+    | '/checkout/cancelled'
+    | '/checkout/success'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
@@ -1133,6 +1155,8 @@ export interface FileRouteTypes {
     | '/blog/uk-road-signs-test'
     | '/category/$slug'
     | '/category/english'
+    | '/checkout/cancelled'
+    | '/checkout/success'
     | '/english-language-tests/$test'
     | '/guide/$slug'
     | '/quiz/$slug'
@@ -1220,6 +1244,8 @@ export interface RootRouteChildren {
   AdminKb20ValidatorRoute: typeof AdminKb20ValidatorRoute
   CategorySlugRoute: typeof CategorySlugRoute
   CategoryEnglishRoute: typeof CategoryEnglishRoute
+  CheckoutCancelledRoute: typeof CheckoutCancelledRoute
+  CheckoutSuccessRoute: typeof CheckoutSuccessRoute
   GuideSlugRoute: typeof GuideSlugRoute
   QuizSlugRoute: typeof QuizSlugRoute
   TopicSlugRoute: typeof TopicSlugRoute
@@ -1562,6 +1588,20 @@ declare module '@tanstack/react-router' {
       fullPath: '/english-language-tests/$test'
       preLoaderRoute: typeof EnglishLanguageTestsTestRouteImport
       parentRoute: typeof EnglishLanguageTestsRoute
+    }
+    '/checkout/success': {
+      id: '/checkout/success'
+      path: '/checkout/success'
+      fullPath: '/checkout/success'
+      preLoaderRoute: typeof CheckoutSuccessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/checkout/cancelled': {
+      id: '/checkout/cancelled'
+      path: '/checkout/cancelled'
+      fullPath: '/checkout/cancelled'
+      preLoaderRoute: typeof CheckoutCancelledRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/category/english': {
       id: '/category/english'
@@ -2048,6 +2088,8 @@ const rootRouteChildren: RootRouteChildren = {
   AdminKb20ValidatorRoute: AdminKb20ValidatorRoute,
   CategorySlugRoute: CategorySlugRoute,
   CategoryEnglishRoute: CategoryEnglishRoute,
+  CheckoutCancelledRoute: CheckoutCancelledRoute,
+  CheckoutSuccessRoute: CheckoutSuccessRoute,
   GuideSlugRoute: GuideSlugRoute,
   QuizSlugRoute: QuizSlugRoute,
   TopicSlugRoute: TopicSlugRoute,
