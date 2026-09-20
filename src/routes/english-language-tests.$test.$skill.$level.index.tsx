@@ -183,21 +183,21 @@ function MockCard({
   skillSlug: string;
   level: LevelSlug;
   mockNumber: number;
-  state: "ready" | "soon";
+  state: "ready" | "soon" | "locked";
 }) {
   const inner = (
     <div
       className={`flex h-full flex-col rounded-2xl border bg-card p-4 shadow-soft transition-all ${
-        state === "ready"
-          ? "border-coral/30 hover:-translate-y-0.5 hover:border-coral hover:shadow-elevated"
-          : "border-border opacity-75"
+        state === "soon"
+          ? "border-border opacity-75"
+          : "border-coral/30 hover:-translate-y-0.5 hover:border-coral hover:shadow-elevated"
       }`}
     >
       <div className="flex items-center justify-between">
         <h3 className="font-display text-base font-bold">Mock Test {mockNumber}</h3>
-        {state === "soon" && (
+        {state !== "ready" && (
           <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-[10px] font-semibold uppercase text-muted-foreground">
-            <Lock className="h-3 w-3" /> Soon
+            <Lock className="h-3 w-3" /> {state === "soon" ? "Soon" : "Locked"}
           </span>
         )}
       </div>
@@ -209,6 +209,10 @@ function MockCard({
           <span className="inline-flex items-center gap-1.5 rounded-lg bg-coral px-3 py-1.5 text-xs font-semibold text-white">
             Start test <ArrowRight className="h-3.5 w-3.5" />
           </span>
+        ) : state === "locked" ? (
+          <span className="inline-flex items-center gap-1.5 rounded-lg border border-coral/40 px-3 py-1.5 text-xs font-semibold text-coral">
+            Unlock this test <ArrowRight className="h-3.5 w-3.5" />
+          </span>
         ) : (
           <span className="inline-flex items-center gap-1.5 rounded-lg bg-muted px-3 py-1.5 text-xs font-semibold text-muted-foreground">
             Coming soon
@@ -218,7 +222,14 @@ function MockCard({
     </div>
   );
 
-  if (state !== "ready") return inner;
+  if (state === "soon") return inner;
+  if (state === "locked") {
+    return (
+      <Link to="/pricing" className="group block h-full">
+        {inner}
+      </Link>
+    );
+  }
   return (
     <Link
       to="/english-language-tests/$test/$skill/$level/mock-test{-$num}"
@@ -234,3 +245,4 @@ function MockCard({
     </Link>
   );
 }
+
