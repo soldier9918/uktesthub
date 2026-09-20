@@ -140,6 +140,50 @@ export function SubscriptionPanel() {
     }
   }
 
+  async function startUpgrade() {
+    setBusy("preview");
+    setErr(null);
+    setMsg(null);
+    try {
+      const res = await previewUpgrade({ data: { accessToken: await token() } });
+      if (res.ok) {
+        setUpgrade({
+          amountDue: res.amountDue,
+          currency: res.currency,
+          renewalDate: res.renewalDate,
+        });
+      } else setErr(res.error ?? "We couldn't work out your upgrade price right now.");
+    } catch {
+      setErr("We couldn't work out your upgrade price right now. Please try again shortly.");
+    } finally {
+      setBusy(null);
+    }
+  }
+
+  async function doUpgrade() {
+    setBusy("upgrade");
+    setErr(null);
+    setMsg(null);
+    try {
+      const res = await confirmUpgrade({ data: { accessToken: await token() } });
+      if (res.ok) {
+        setUpgrade(null);
+        setMsg(
+          res.pending
+            ? "Your upgrade payment is being processed. Premium All Access opens as soon as it is confirmed."
+            : "You are now on Premium All Access — every test topic is unlocked and your practice stays advert-free.",
+        );
+        // Access is granted by the payment confirmation, so re-read shortly after.
+        await refresh();
+        setTimeout(() => void refresh(), 4000);
+      } else setErr(res.error ?? "We couldn't complete your upgrade.");
+    } catch {
+      setErr("We couldn't complete your upgrade. Please try again or use Manage billing.");
+    } finally {
+      setBusy(null);
+    }
+  }
+
   return (
     <section className="mt-6 rounded-xl border border-border bg-card p-5">
       <h2 className="font-display text-lg font-bold">Subscription</h2>
