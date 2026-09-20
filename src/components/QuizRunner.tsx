@@ -55,6 +55,8 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { ResultsUpgradeCard } from "@/components/subscription/ResultsUpgradeCard";
+
 
 
 type Mode = "practice" | "exam";
