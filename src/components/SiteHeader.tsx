@@ -36,18 +36,20 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-gradient-to-r from-[#06172e] via-[#0a2540] to-[#06172e] text-white shadow-[0_8px_24px_-12px_rgba(0,0,0,0.6)]">
       <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
       <div aria-hidden className="pointer-events-none absolute inset-x-0 -bottom-1 h-1 bg-coral shadow-[0_2px_6px_rgba(239,68,68,0.45)]" />
-      <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-4 md:px-6">
-        <Logo variant="light" showTagline={false} />
+      <div className="relative mx-auto flex h-20 max-w-[1480px] items-center gap-3 px-4 md:px-6">
+        <div className="shrink-0 pr-3">
+          <Logo variant="light" showTagline={false} size="sm" />
+        </div>
 
-        <nav className="hidden min-w-0 flex-1 items-center justify-center gap-0 xl:flex">
+        <nav className="hidden min-w-0 flex-1 items-center justify-between gap-0 min-[1360px]:flex">
           {nav.map((item) =>
             item.slug ? (
               <Link
                 key={item.label}
                 to={item.to as "/category/$slug"}
                 params={{ slug: item.slug }}
-                className="relative whitespace-nowrap px-2.5 py-2 text-[13px] font-semibold uppercase leading-none tracking-wider text-white/75 transition-colors hover:text-white 2xl:px-3 2xl:text-sm"
-                activeProps={{ className: "!text-white after:absolute after:inset-x-2.5 after:-bottom-1 after:h-0.5 after:bg-coral 2xl:after:inset-x-3" }}
+                className="relative whitespace-nowrap px-1.5 py-2 text-xs font-semibold uppercase leading-none tracking-wider text-white/75 transition-colors hover:text-white 2xl:px-2.5 2xl:text-[13px]"
+                activeProps={{ className: "!text-white after:absolute after:inset-x-1.5 after:-bottom-1 after:h-0.5 after:bg-coral 2xl:after:inset-x-2.5" }}
               >
                 {item.label}
               </Link>
@@ -55,9 +57,9 @@ export function SiteHeader() {
               <Link
                 key={item.label}
                 to={item.to as "/"}
-                className="relative whitespace-nowrap px-2.5 py-2 text-[13px] font-semibold uppercase leading-none tracking-wider text-white/75 transition-colors hover:text-white 2xl:px-3 2xl:text-sm"
+                className="relative whitespace-nowrap px-1.5 py-2 text-xs font-semibold uppercase leading-none tracking-wider text-white/75 transition-colors hover:text-white 2xl:px-2.5 2xl:text-[13px]"
                 activeOptions={{ exact: true }}
-                activeProps={{ className: "!text-white after:absolute after:inset-x-2.5 after:-bottom-1 after:h-0.5 after:bg-coral 2xl:after:inset-x-3" }}
+                activeProps={{ className: "!text-white after:absolute after:inset-x-1.5 after:-bottom-1 after:h-0.5 after:bg-coral 2xl:after:inset-x-2.5" }}
               >
                 {item.label}
               </Link>
@@ -65,7 +67,7 @@ export function SiteHeader() {
           )}
         </nav>
 
-        <div className="flex shrink-0 items-center justify-end gap-2 xl:w-[116px] 2xl:w-[148px]">
+        <div className="ml-2 flex shrink-0 items-center justify-end gap-2 min-[1360px]:w-[88px] 2xl:w-[104px]">
           {loading ? (
             <div className="h-7 w-[72px] animate-pulse rounded bg-white/10" aria-hidden />
           ) : user ? (
@@ -102,7 +104,7 @@ export function SiteHeader() {
             type="button"
             aria-label="Toggle menu"
             onClick={() => setMobileOpen((o) => !o)}
-            className="inline-flex h-10 w-10 items-center justify-center text-white/80 transition-colors hover:bg-white/10 hover:text-white xl:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center text-white/80 transition-colors hover:bg-white/10 hover:text-white min-[1360px]:hidden"
           >
             {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -110,7 +112,7 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-white/10 bg-[#06172e] xl:hidden">
+        <div className="border-t border-white/10 bg-[#06172e] min-[1360px]:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 md:px-6">
             {nav.map((item) =>
               item.slug ? (
