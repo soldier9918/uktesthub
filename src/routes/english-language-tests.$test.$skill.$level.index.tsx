@@ -141,6 +141,7 @@ function LevelPage() {
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {slots.map((s, i) => {
               const isReady = i < ready;
+              const unlocked = canAccessMock(entitlement, test.slug, s.mockNumber);
               return (
                 <li key={s.mockNumber}>
                   <MockCard
@@ -148,11 +149,12 @@ function LevelPage() {
                     skillSlug={skill.slug}
                     level={level}
                     mockNumber={s.mockNumber}
-                    state={isReady ? "ready" : "soon"}
+                    state={!isReady ? "soon" : unlocked ? "ready" : "locked"}
                   />
                 </li>
               );
             })}
+
 
           </ul>
         </section>
