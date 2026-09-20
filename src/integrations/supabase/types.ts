@@ -133,6 +133,7 @@ export type Database = {
           payload: Json | null
           processed_at: string
           provider: string
+          stripe_mode: string
           user_id: string | null
         }
         Insert: {
@@ -142,6 +143,7 @@ export type Database = {
           payload?: Json | null
           processed_at?: string
           provider?: string
+          stripe_mode?: string
           user_id?: string | null
         }
         Update: {
@@ -151,6 +153,7 @@ export type Database = {
           payload?: Json | null
           processed_at?: string
           provider?: string
+          stripe_mode?: string
           user_id?: string | null
         }
         Relationships: []
@@ -776,6 +779,7 @@ export type Database = {
           provider_subscription_id: string | null
           scheduled_topic_slug: string | null
           status: Database["public"]["Enums"]["subscription_status"]
+          stripe_mode: string
           topic_slug: string | null
           updated_at: string
           user_id: string
@@ -794,6 +798,7 @@ export type Database = {
           provider_subscription_id?: string | null
           scheduled_topic_slug?: string | null
           status?: Database["public"]["Enums"]["subscription_status"]
+          stripe_mode?: string
           topic_slug?: string | null
           updated_at?: string
           user_id: string
@@ -812,6 +817,7 @@ export type Database = {
           provider_subscription_id?: string | null
           scheduled_topic_slug?: string | null
           status?: Database["public"]["Enums"]["subscription_status"]
+          stripe_mode?: string
           topic_slug?: string | null
           updated_at?: string
           user_id?: string
