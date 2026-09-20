@@ -22,7 +22,12 @@ type EventType =
   | "quiz_start"
   | "quiz_complete"
   | "quiz_abandon"
-  | "question_answered";
+  | "question_answered"
+  | "upgrade_prompt_view"
+  | "upgrade_prompt_click"
+  | "begin_checkout"
+  | "purchase";
+
 
 type EventInput = {
   event_type: EventType;
