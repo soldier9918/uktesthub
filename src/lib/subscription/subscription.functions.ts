@@ -197,4 +197,35 @@ export const cancelSubscription = createServerFn({ method: "POST" })
     }
   });
 
+/** Removes a scheduled cancellation so the subscription renews again. */
+export const resumeSubscription = createServerFn({ method: "POST" })
+  .inputValidator((d: unknown) => CancelSchema.parse(d))
+  .handler(async ({ data }): Promise<{ ok: boolean; error: string | null }> => {
+    try {
+      const { userId, supabaseAdmin } = await requireUser(data.accessToken);
+      const { data: row } = await supabaseAdmin
+        .from("subscriptions")
+        .select("provider_subscription_id")
+        .eq("user_id", userId)
+        .maybeSingle();
+      if (!row?.provider_subscription_id) {
+        return { ok: false, error: "No subscription to resume." };
+      }
+      const { stripeRequest } = await import("./stripe.server");
+      await stripeRequest(`/subscriptions/${row.provider_subscription_id}`, {
+        method: "POST",
+        body: { cancel_at_period_end: false, cancel_at: "" },
+      });
+      await supabaseAdmin
+        .from("subscriptions")
+        .update({ cancel_at_period_end: false, cancelled_at: null })
+        .eq("user_id", userId);
+      return { ok: true, error: null };
+    } catch (e) {
+      const message = e instanceof Error ? e.message : "The subscription could not be resumed.";
+      console.error("[subscription] resumeSubscription", message);
+      return { ok: false, error: message };
+    }
+  });
+
 export type PaidPlanCode = Exclude<PlanCode, "free">;

@@ -9,6 +9,7 @@ import { topicTitle } from "@/lib/subscription/topics";
 import {
   cancelSubscription,
   createBillingPortalSession,
+  resumeSubscription,
   scheduleTopicChange,
 } from "@/lib/subscription/subscription.functions";
 
@@ -39,6 +40,12 @@ export function SubscriptionPanel() {
 
   const status = subscription?.status ?? "free";
   const periodEnd = formatDate(entitlement.periodEnd);
+  const cancelling = entitlement.isPaid && entitlement.cancelAtPeriodEnd;
+  const statusText = cancelling
+    ? periodEnd
+      ? `Cancels on ${periodEnd} — access continues until then`
+      : "Cancels at the end of your paid period"
+    : (STATUS_COPY[status] ?? status);
 
   async function token() {
     const { data } = await supabase.auth.getSession();
@@ -109,6 +116,23 @@ export function SubscriptionPanel() {
     }
   }
 
+  async function doResume() {
+    setBusy("resume");
+    setErr(null);
+    setMsg(null);
+    try {
+      const res = await resumeSubscription({ data: { accessToken: await token() } });
+      if (res.ok) {
+        setMsg("Your subscription is active again and will renew as normal.");
+        await refresh();
+      } else setErr(res.error ?? "The subscription could not be resumed.");
+    } catch (e) {
+      setErr(e instanceof Error ? e.message : "Something went wrong.");
+    } finally {
+      setBusy(null);
+    }
+  }
+
   return (
     <section className="mt-6 rounded-xl border border-border bg-card p-5">
       <h2 className="font-display text-lg font-bold">Subscription</h2>
@@ -120,7 +144,7 @@ export function SubscriptionPanel() {
         </div>
         <div>
           <dt className="text-xs uppercase tracking-wide text-muted-foreground">Status</dt>
-          <dd className="mt-0.5 font-semibold">{STATUS_COPY[status] ?? status}</dd>
+          <dd className="mt-0.5 font-semibold">{statusText}</dd>
         </div>
         {entitlement.plan === "exam_pro" && (
           <div>
@@ -135,16 +159,23 @@ export function SubscriptionPanel() {
         {periodEnd && (
           <div>
             <dt className="text-xs uppercase tracking-wide text-muted-foreground">
-              {entitlement.cancelAtPeriodEnd ? "Access ends" : "Next renewal"}
+              {cancelling ? "Access ends" : "Next renewal"}
             </dt>
             <dd className="mt-0.5 font-semibold">{periodEnd}</dd>
           </div>
         )}
       </dl>
 
-      {entitlement.isPaid && entitlement.plan !== "free" && (
+      {entitlement.isPaid && entitlement.plan !== "free" && !cancelling && (
         <p className="mt-3 text-xs text-muted-foreground">
           {RENEWAL_COPY[entitlement.plan as keyof typeof RENEWAL_COPY]}
+        </p>
+      )}
+      {cancelling && (
+        <p className="mt-3 text-xs text-muted-foreground">
+          This subscription will not renew. You keep full access until
+          {periodEnd ? ` ${periodEnd}` : " the end of your paid period"}, then your account returns
+          to Free Practice with your progress, best scores and bookmarks intact.
         </p>
       )}
 
@@ -178,7 +209,12 @@ export function SubscriptionPanel() {
             {busy === "portal" ? "Opening…" : "Manage billing"}
           </Button>
         )}
-        {entitlement.isPaid && !entitlement.cancelAtPeriodEnd && (
+        {cancelling && (
+          <Button onClick={doResume} disabled={busy === "resume"}>
+            {busy === "resume" ? "Resuming…" : "Resume subscription"}
+          </Button>
+        )}
+        {entitlement.isPaid && !cancelling && (
           <Button variant="ghost" onClick={() => setConfirmCancel(true)}>
             Cancel subscription
           </Button>
@@ -203,7 +239,7 @@ export function SubscriptionPanel() {
         </div>
       )}
 
-      {entitlement.isPaid && entitlement.plan === "exam_pro" && (
+      {entitlement.isPaid && entitlement.plan === "exam_pro" && !cancelling && (
         <div className="mt-6 border-t border-border pt-5">
           <h3 className="font-display text-base font-bold">Change topic at next renewal</h3>
           <p className="mt-1 text-sm text-muted-foreground">

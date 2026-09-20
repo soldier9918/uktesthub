@@ -118,7 +118,9 @@ export type StripeSubscription = {
   customer: string;
   status: string;
   cancel_at_period_end?: boolean;
+  cancel_at?: number | null;
   canceled_at?: number | null;
+  cancellation_details?: { reason?: string | null } | null;
   current_period_start?: number;
   current_period_end?: number;
   metadata?: Record<string, string>;
@@ -130,6 +132,17 @@ export type StripeSubscription = {
     }[];
   };
 };
+
+/**
+ * Newer Stripe API versions report a scheduled cancellation as `cancel_at`
+ * (a timestamp) and leave the legacy `cancel_at_period_end` flag false, so
+ * both shapes must be considered.
+ */
+export function isCancelling(sub: StripeSubscription, now = Date.now()): boolean {
+  if (sub.cancel_at_period_end) return true;
+  if (sub.cancel_at && sub.cancel_at * 1000 > now) return true;
+  return sub.cancellation_details?.reason === "cancellation_requested" && sub.status === "active";
+}
 
 export async function fetchStripeSubscription(id: string) {
   return stripeRequest<StripeSubscription>(`/subscriptions/${id}`, {

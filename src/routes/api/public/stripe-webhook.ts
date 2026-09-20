@@ -7,6 +7,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { supabaseAdmin } from "@/integrations/supabase/client.server";
 import {
   fetchStripeSubscription,
+  isCancelling,
   planForPriceId,
   verifyStripeSignature,
   type StripeSubscription,
@@ -48,7 +49,7 @@ async function resolveUserId(sub: StripeSubscription): Promise<string | null> {
   return data?.user_id ?? null;
 }
 
-async function applySubscription(sub: StripeSubscription) {
+async function applySubscription(sub: StripeSubscription, opts: { ended?: boolean } = {}) {
   const userId = await resolveUserId(sub);
   if (!userId) {
     console.error("[stripe-webhook] no user for subscription", sub.id);
@@ -58,15 +59,21 @@ async function applySubscription(sub: StripeSubscription) {
   const priceId = sub.items?.data?.[0]?.price?.id ?? null;
   const interval = sub.items?.data?.[0]?.price?.recurring?.interval ?? null;
   const plan = planForPriceId(priceId) ?? (sub.metadata?.["plan_code"] as never) ?? null;
-  const status = mapStatus(sub.status);
+  // A deletion event is final: the paid period is over, whatever Stripe's
+  // cached subscription object still says.
+  const status = opts.ended ? "expired" : mapStatus(sub.status);
   // Newer Stripe API versions carry the billing period on the subscription item.
   const item = sub.items?.data?.[0];
   const periodStart = iso(sub.current_period_start ?? item?.current_period_start);
-  const periodEnd = iso(sub.current_period_end ?? item?.current_period_end);
+  // A scheduled cancellation date is the true end of access when present.
+  const cancelling = !opts.ended && isCancelling(sub);
+  const periodEnd = iso(
+    (cancelling ? sub.cancel_at : null) ?? sub.current_period_end ?? item?.current_period_end,
+  );
 
   const { data: existing } = await supabaseAdmin
     .from("subscriptions")
-    .select("topic_slug,scheduled_topic_slug,current_period_start")
+    .select("topic_slug,scheduled_topic_slug,current_period_start,cancelled_at")
     .eq("user_id", userId)
     .maybeSingle();
 
@@ -101,8 +108,9 @@ async function applySubscription(sub: StripeSubscription) {
     billing_interval: interval,
     current_period_start: periodStart,
     current_period_end: periodEnd,
-    cancel_at_period_end: Boolean(sub.cancel_at_period_end),
-    cancelled_at: iso(sub.canceled_at ?? null),
+    cancel_at_period_end: cancelling,
+    // Keep the timestamp we already recorded if Stripe doesn't send one back.
+    cancelled_at: iso(sub.canceled_at ?? null) ?? (cancelling ? (existing?.cancelled_at ?? null) : null),
   };
 
   const { error } = await supabaseAdmin
@@ -160,7 +168,9 @@ export const Route = createFileRoute("/api/public/stripe-webhook")({
             case "customer.subscription.deleted": {
               const object = event.data.object as StripeSubscription;
               const sub = await fetchStripeSubscription(object.id);
-              await applySubscription(sub);
+              await applySubscription(sub, {
+                ended: event.type === "customer.subscription.deleted",
+              });
               break;
             }
             case "invoice.payment_succeeded":
