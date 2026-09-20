@@ -85,13 +85,11 @@ export function priceIdForPlan(plan: Exclude<PlanCode, "free">): string {
   return price;
 }
 
+/** Only the active mode's prices resolve — a price from the other mode never does. */
 export function planForPriceId(priceId: string | null | undefined): PlanCode | null {
   if (!priceId) return null;
-  // Match against both sets: historic test rows must still resolve after a switch.
-  for (const config of [stripeConfig(), testConfig(), liveConfig()]) {
-    for (const [plan, id] of Object.entries(config.prices)) {
-      if (id && id === priceId) return plan as PlanCode;
-    }
+  for (const [plan, id] of Object.entries(stripeConfig().prices)) {
+    if (id && id === priceId) return plan as PlanCode;
   }
   return null;
 }
