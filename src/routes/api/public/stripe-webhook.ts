@@ -7,6 +7,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { supabaseAdmin } from "@/integrations/supabase/client.server";
 import {
   fetchStripeSubscription,
+  isCancelling,
   planForPriceId,
   verifyStripeSignature,
   type StripeSubscription,
