@@ -7,28 +7,92 @@ import type { PlanCode } from "./plans";
 
 const STRIPE_API = "https://api.stripe.com/v1";
 
+export type StripeMode = "test" | "live";
+
+type PriceMap = Record<Exclude<PlanCode, "free">, string | undefined>;
+
+export type StripeConfig = {
+  mode: StripeMode;
+  secretKey: string | undefined;
+  webhookSecret: string | undefined;
+  prices: PriceMap;
+};
+
+/** Absent or unrecognised mode always means test — live must be opted into. */
+export function stripeMode(): StripeMode {
+  return process.env["STRIPE_MODE"]?.trim().toLowerCase() === "live" ? "live" : "test";
+}
+
+function testConfig(): StripeConfig {
+  return {
+    mode: "test",
+    secretKey: process.env["STRIPE_SECRET_KEY"],
+    webhookSecret: process.env["STRIPE_WEBHOOK_SECRET"],
+    prices: {
+      exam_pro: process.env["STRIPE_PRICE_EXAM_PRO_MONTHLY"],
+      premium_monthly: process.env["STRIPE_PRICE_PREMIUM_MONTHLY"],
+      premium_annual: process.env["STRIPE_PRICE_PREMIUM_ANNUAL"],
+    },
+  };
+}
+
+function liveConfig(): StripeConfig {
+  return {
+    mode: "live",
+    secretKey: process.env["STRIPE_LIVE_SECRET_KEY"],
+    webhookSecret: process.env["STRIPE_LIVE_WEBHOOK_SECRET"],
+    prices: {
+      exam_pro: process.env["STRIPE_LIVE_PRICE_EXAM_PRO_MONTHLY"],
+      premium_monthly: process.env["STRIPE_LIVE_PRICE_PREMIUM_MONTHLY"],
+      premium_annual: process.env["STRIPE_LIVE_PRICE_PREMIUM_ANNUAL"],
+    },
+  };
+}
+
+/** The active credential set. Live and test values live under separate names. */
+export function stripeConfig(): StripeConfig {
+  return stripeMode() === "live" ? liveConfig() : testConfig();
+}
+
+/**
+ * Refuses a live key paired with test prices (and the reverse), so a partial
+ * switch can never charge against the wrong account.
+ */
+function assertConsistent(config: StripeConfig) {
+  const keyIsLive = config.secretKey?.includes("_live_") ?? false;
+  if (config.mode === "live" && !keyIsLive) {
+    throw new Error("Stripe live mode is on but the configured secret key is not a live key.");
+  }
+  if (config.mode === "test" && keyIsLive) {
+    throw new Error("Stripe test mode is on but a live secret key is configured.");
+  }
+}
+
 export function stripeSecret(): string {
-  const key = process.env["STRIPE_SECRET_KEY"];
-  if (!key) throw new Error("Stripe is not configured yet (missing STRIPE_SECRET_KEY).");
-  return key;
+  const config = stripeConfig();
+  if (!config.secretKey) {
+    throw new Error(`Stripe is not configured yet (missing ${config.mode} secret key).`);
+  }
+  assertConsistent(config);
+  return config.secretKey;
 }
 
 export function priceIdForPlan(plan: Exclude<PlanCode, "free">): string {
-  const map: Record<Exclude<PlanCode, "free">, string | undefined> = {
-    exam_pro: process.env["STRIPE_PRICE_EXAM_PRO_MONTHLY"],
-    premium_monthly: process.env["STRIPE_PRICE_PREMIUM_MONTHLY"],
-    premium_annual: process.env["STRIPE_PRICE_PREMIUM_ANNUAL"],
-  };
-  const price = map[plan];
-  if (!price) throw new Error(`No Stripe price configured for plan "${plan}".`);
+  const config = stripeConfig();
+  assertConsistent(config);
+  const price = config.prices[plan];
+  if (!price) throw new Error(`No Stripe ${config.mode} price configured for plan "${plan}".`);
   return price;
 }
 
 export function planForPriceId(priceId: string | null | undefined): PlanCode | null {
   if (!priceId) return null;
-  if (priceId === process.env["STRIPE_PRICE_EXAM_PRO_MONTHLY"]) return "exam_pro";
-  if (priceId === process.env["STRIPE_PRICE_PREMIUM_MONTHLY"]) return "premium_monthly";
-  if (priceId === process.env["STRIPE_PRICE_PREMIUM_ANNUAL"]) return "premium_annual";
+  // Match against both sets: historic test rows must still resolve after a switch.
+  for (const config of [stripeConfig(), testConfig(), liveConfig()]) {
+    for (const [plan, id] of Object.entries(config.prices)) {
+      if (id && id === priceId) return plan as PlanCode;
+    }
+  }
   return null;
 }
 
@@ -83,9 +147,13 @@ export async function stripeRequest<T = Record<string, unknown>>(
   return JSON.parse(text) as T;
 }
 
-/** Verifies a Stripe webhook signature (t=…,v1=…) against the raw body. */
+/**
+ * Verifies a Stripe webhook signature (t=…,v1=…) against the raw body using the
+ * active mode's signing secret. Test today; the live secret takes over the same
+ * endpoint once STRIPE_MODE=live.
+ */
 export function verifyStripeSignature(rawBody: string, signatureHeader: string | null): boolean {
-  const secret = process.env["STRIPE_WEBHOOK_SECRET"];
+  const secret = stripeConfig().webhookSecret;
   if (!secret || !signatureHeader) return false;
 
   const parts = signatureHeader.split(",").reduce<Record<string, string[]>>((acc, piece) => {
