@@ -76,8 +76,9 @@ export async function stripeRequest<T = Record<string, unknown>>(
   });
   const text = await res.text();
   if (!res.ok) {
+    // Technical detail stays in server logs only — never shown to customers.
     console.error(`[stripe] ${method} ${path} failed [${res.status}]: ${text}`);
-    throw new Error(`Stripe request failed [${res.status}]: ${text}`);
+    throw new Error("Your payment provider rejected the request.");
   }
   return JSON.parse(text) as T;
 }
@@ -149,4 +150,24 @@ export async function fetchStripeSubscription(id: string) {
     method: "GET",
     body: { "expand[]": "items.data.price" },
   });
+}
+
+/**
+ * Removes a scheduled cancellation. Stripe rejects `cancel_at` and
+ * `cancel_at_period_end` in the same request, so they are sent separately:
+ * clear the cancel date first, then only clear the legacy flag if it is
+ * still set afterwards.
+ */
+export async function resumeStripeSubscription(id: string): Promise<StripeSubscription> {
+  let sub = await stripeRequest<StripeSubscription>(`/subscriptions/${id}`, {
+    method: "POST",
+    body: { cancel_at: "" },
+  });
+  if (sub.cancel_at_period_end) {
+    sub = await stripeRequest<StripeSubscription>(`/subscriptions/${id}`, {
+      method: "POST",
+      body: { cancel_at_period_end: false },
+    });
+  }
+  return fetchStripeSubscription(id);
 }

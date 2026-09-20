@@ -14,6 +14,15 @@ function siteOrigin(origin?: string | null): string {
   return process.env["SITE_URL"]?.replace(/\/$/, "") || SITE_FALLBACK;
 }
 
+/**
+ * Keeps our own plain-English messages, but never leaks a payment-provider
+ * response (status codes, JSON, request-log URLs) to a customer.
+ */
+function friendly(e: unknown, fallback: string): string {
+  const message = e instanceof Error ? e.message : "";
+  return message === "Please sign in again to continue." ? message : fallback;
+}
+
 const PaidPlan = z.enum(["exam_pro", "premium_monthly", "premium_annual"]);
 
 const CheckoutSchema = z.object({
@@ -94,9 +103,8 @@ export const createCheckoutSession = createServerFn({ method: "POST" })
       });
       return { url: session.url, error: null };
     } catch (e) {
-      const message = e instanceof Error ? e.message : "Checkout could not be started.";
-      console.error("[subscription] createCheckoutSession", message);
-      return { url: null, error: message };
+      console.error("[subscription] createCheckoutSession", e);
+      return { url: null, error: friendly(e, "Checkout could not be started. Please try again.") };
     }
   });
 
@@ -123,9 +131,11 @@ export const createBillingPortalSession = createServerFn({ method: "POST" })
       });
       return { url: session.url, error: null };
     } catch (e) {
-      const message = e instanceof Error ? e.message : "The billing portal is unavailable.";
-      console.error("[subscription] createBillingPortalSession", message);
-      return { url: null, error: message };
+      console.error("[subscription] createBillingPortalSession", e);
+      return {
+        url: null,
+        error: friendly(e, "The billing portal is unavailable right now. Please try again shortly."),
+      };
     }
   });
 
@@ -191,9 +201,11 @@ export const cancelSubscription = createServerFn({ method: "POST" })
         .eq("user_id", userId);
       return { ok: true, error: null };
     } catch (e) {
-      const message = e instanceof Error ? e.message : "The cancellation could not be completed.";
-      console.error("[subscription] cancelSubscription", message);
-      return { ok: false, error: message };
+      console.error("[subscription] cancelSubscription", e);
+      return {
+        ok: false,
+        error: "We couldn't cancel your subscription. Please try again or use Manage billing.",
+      };
     }
   });
 
@@ -211,20 +223,28 @@ export const resumeSubscription = createServerFn({ method: "POST" })
       if (!row?.provider_subscription_id) {
         return { ok: false, error: "No subscription to resume." };
       }
-      const { stripeRequest } = await import("./stripe.server");
-      await stripeRequest(`/subscriptions/${row.provider_subscription_id}`, {
-        method: "POST",
-        body: { cancel_at_period_end: false, cancel_at: "" },
-      });
+      const { resumeStripeSubscription } = await import("./stripe.server");
+      const sub = await resumeStripeSubscription(row.provider_subscription_id);
+      const item = sub.items?.data?.[0];
+      const periodEndSeconds = sub.current_period_end ?? item?.current_period_end ?? null;
       await supabaseAdmin
         .from("subscriptions")
-        .update({ cancel_at_period_end: false, cancelled_at: null })
+        .update({
+          cancel_at_period_end: false,
+          cancelled_at: null,
+          status: "active" as never,
+          ...(periodEndSeconds
+            ? { current_period_end: new Date(periodEndSeconds * 1000).toISOString() }
+            : {}),
+        })
         .eq("user_id", userId);
       return { ok: true, error: null };
     } catch (e) {
-      const message = e instanceof Error ? e.message : "The subscription could not be resumed.";
-      console.error("[subscription] resumeSubscription", message);
-      return { ok: false, error: message };
+      console.error("[subscription] resumeSubscription", e);
+      return {
+        ok: false,
+        error: "We couldn't resume your subscription. Please try again or use Manage billing.",
+      };
     }
   });
 
