@@ -7,6 +7,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { SubscriptionPanel } from "@/components/subscription/SubscriptionPanel";
+
 
 export const Route = createFileRoute("/account")({
   head: () => ({ meta: [{ title: "Account — UK Test Hub" }, { name: "robots", content: "noindex, nofollow" },
@@ -108,6 +110,10 @@ function AccountInner() {
           <Button type="submit" disabled={busy}>Save</Button>
         </form>
       </section>
+
+      <SubscriptionPanel />
+
+
 
       <section className="mt-6 rounded-xl border border-border bg-card p-5">
         <h2 className="font-display text-lg font-bold">Change password</h2>
