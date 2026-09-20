@@ -59,12 +59,14 @@ async function applySubscription(sub: StripeSubscription, opts: { ended?: boolea
   const priceId = sub.items?.data?.[0]?.price?.id ?? null;
   const interval = sub.items?.data?.[0]?.price?.recurring?.interval ?? null;
   const plan = planForPriceId(priceId) ?? (sub.metadata?.["plan_code"] as never) ?? null;
-  const status = mapStatus(sub.status);
+  // A deletion event is final: the paid period is over, whatever Stripe's
+  // cached subscription object still says.
+  const status = opts.ended ? "expired" : mapStatus(sub.status);
   // Newer Stripe API versions carry the billing period on the subscription item.
   const item = sub.items?.data?.[0];
   const periodStart = iso(sub.current_period_start ?? item?.current_period_start);
   // A scheduled cancellation date is the true end of access when present.
-  const cancelling = isCancelling(sub);
+  const cancelling = !opts.ended && isCancelling(sub);
   const periodEnd = iso(
     (cancelling ? sub.cancel_at : null) ?? sub.current_period_end ?? item?.current_period_end,
   );
