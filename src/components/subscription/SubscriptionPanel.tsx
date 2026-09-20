@@ -8,7 +8,9 @@ import { planLabel, RENEWAL_COPY } from "@/lib/subscription/plans";
 import { topicTitle } from "@/lib/subscription/topics";
 import {
   cancelSubscription,
+  confirmUpgrade,
   createBillingPortalSession,
+  previewUpgrade,
   resumeSubscription,
   scheduleTopicChange,
 } from "@/lib/subscription/subscription.functions";
@@ -37,6 +39,11 @@ export function SubscriptionPanel() {
   const [err, setErr] = useState<string | null>(null);
   const [newTopic, setNewTopic] = useState<string | null>(null);
   const [confirmCancel, setConfirmCancel] = useState(false);
+  const [upgrade, setUpgrade] = useState<{
+    amountDue: number | null;
+    currency: string | null;
+    renewalDate: string | null;
+  } | null>(null);
 
   const status = subscription?.status ?? "free";
   const periodEnd = formatDate(entitlement.periodEnd);
