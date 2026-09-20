@@ -211,20 +211,28 @@ export const resumeSubscription = createServerFn({ method: "POST" })
       if (!row?.provider_subscription_id) {
         return { ok: false, error: "No subscription to resume." };
       }
-      const { stripeRequest } = await import("./stripe.server");
-      await stripeRequest(`/subscriptions/${row.provider_subscription_id}`, {
-        method: "POST",
-        body: { cancel_at_period_end: false, cancel_at: "" },
-      });
+      const { resumeStripeSubscription } = await import("./stripe.server");
+      const sub = await resumeStripeSubscription(row.provider_subscription_id);
+      const item = sub.items?.data?.[0];
+      const periodEndSeconds = sub.current_period_end ?? item?.current_period_end ?? null;
       await supabaseAdmin
         .from("subscriptions")
-        .update({ cancel_at_period_end: false, cancelled_at: null })
+        .update({
+          cancel_at_period_end: false,
+          cancelled_at: null,
+          status: "active" as never,
+          ...(periodEndSeconds
+            ? { current_period_end: new Date(periodEndSeconds * 1000).toISOString() }
+            : {}),
+        })
         .eq("user_id", userId);
       return { ok: true, error: null };
     } catch (e) {
-      const message = e instanceof Error ? e.message : "The subscription could not be resumed.";
-      console.error("[subscription] resumeSubscription", message);
-      return { ok: false, error: message };
+      console.error("[subscription] resumeSubscription", e);
+      return {
+        ok: false,
+        error: "We couldn't resume your subscription. Please try again or use Manage billing.",
+      };
     }
   });
 
