@@ -231,6 +231,8 @@ export function StickyAdSlot({ slotId }: { slotId?: string } = {}) {
   }, []);
 
   if (dismissed) return null;
+  if (entitlement.adFree) return null;
+
   if (!ADSENSE_ENABLED || !slotId) return null;
   if (!getConsent()?.advertising) return null;
 
