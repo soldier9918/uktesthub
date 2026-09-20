@@ -40,6 +40,12 @@ export function SubscriptionPanel() {
 
   const status = subscription?.status ?? "free";
   const periodEnd = formatDate(entitlement.periodEnd);
+  const cancelling = entitlement.isPaid && entitlement.cancelAtPeriodEnd;
+  const statusText = cancelling
+    ? periodEnd
+      ? `Cancels on ${periodEnd} — access continues until then`
+      : "Cancels at the end of your paid period"
+    : (STATUS_COPY[status] ?? status);
 
   async function token() {
     const { data } = await supabase.auth.getSession();
