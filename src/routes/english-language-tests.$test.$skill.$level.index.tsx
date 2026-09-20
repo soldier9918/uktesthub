@@ -17,6 +17,9 @@ import {
   listEnglishMockSlots,
 } from "@/data/english/mocks";
 import { breadcrumbSchema } from "@/lib/seo";
+import { useEntitlement } from "@/lib/subscription/use-entitlement";
+import { canAccessMock } from "@/lib/subscription/entitlement";
+
 
 export const Route = createFileRoute(
   "/english-language-tests/$test/$skill/$level/",
@@ -85,6 +88,8 @@ function LevelPage() {
   const { test, skill, level, readyCount } = Route.useLoaderData();
   const slots = listEnglishMockSlots();
   const ready = readyCount;
+  const { entitlement } = useEntitlement();
+
 
 
   return (
