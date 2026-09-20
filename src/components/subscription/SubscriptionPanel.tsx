@@ -116,6 +116,23 @@ export function SubscriptionPanel() {
     }
   }
 
+  async function doResume() {
+    setBusy("resume");
+    setErr(null);
+    setMsg(null);
+    try {
+      const res = await resumeSubscription({ data: { accessToken: await token() } });
+      if (res.ok) {
+        setMsg("Your subscription is active again and will renew as normal.");
+        await refresh();
+      } else setErr(res.error ?? "The subscription could not be resumed.");
+    } catch (e) {
+      setErr(e instanceof Error ? e.message : "Something went wrong.");
+    } finally {
+      setBusy(null);
+    }
+  }
+
   return (
     <section className="mt-6 rounded-xl border border-border bg-card p-5">
       <h2 className="font-display text-lg font-bold">Subscription</h2>
