@@ -166,9 +166,16 @@ export function SubscriptionPanel() {
         )}
       </dl>
 
-      {entitlement.isPaid && entitlement.plan !== "free" && (
+      {entitlement.isPaid && entitlement.plan !== "free" && !cancelling && (
         <p className="mt-3 text-xs text-muted-foreground">
           {RENEWAL_COPY[entitlement.plan as keyof typeof RENEWAL_COPY]}
+        </p>
+      )}
+      {cancelling && (
+        <p className="mt-3 text-xs text-muted-foreground">
+          This subscription will not renew. You keep full access until
+          {periodEnd ? ` ${periodEnd}` : " the end of your paid period"}, then your account returns
+          to Free Practice with your progress, best scores and bookmarks intact.
         </p>
       )}
 
