@@ -89,6 +89,7 @@ import { Route as AdminKb20AdsRouteImport } from './routes/admin-kb20.ads'
 import { Route as EnglishLanguageTestsTestIndexRouteImport } from './routes/english-language-tests.$test.index'
 import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20.questions.index'
 import { Route as EnglishLanguageTestsTestSkillRouteImport } from './routes/english-language-tests.$test.$skill'
+import { Route as ApiPublicStripeWebhookRouteImport } from './routes/api/public/stripe-webhook'
 import { Route as AdminKb20QuestionsBulkDuplicateRouteImport } from './routes/admin-kb20.questions.bulk-duplicate'
 import { Route as AdminKb20QuestionsTopicRouteImport } from './routes/admin-kb20.questions.$topic'
 import { Route as EnglishLanguageTestsTestSkillIndexRouteImport } from './routes/english-language-tests.$test.$skill.index'
@@ -511,6 +512,11 @@ const EnglishLanguageTestsTestSkillRoute =
     path: '/$skill',
     getParentRoute: () => EnglishLanguageTestsTestRoute,
   } as any)
+const ApiPublicStripeWebhookRoute = ApiPublicStripeWebhookRouteImport.update({
+  id: '/api/public/stripe-webhook',
+  path: '/api/public/stripe-webhook',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20QuestionsBulkDuplicateRoute =
   AdminKb20QuestionsBulkDuplicateRouteImport.update({
     id: '/admin-kb20/questions/bulk-duplicate',
@@ -640,6 +646,7 @@ export interface FileRoutesByFullPath {
   '/english-language-tests/': typeof EnglishLanguageTestsIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
+  '/api/public/stripe-webhook': typeof ApiPublicStripeWebhookRoute
   '/english-language-tests/$test/$skill': typeof EnglishLanguageTestsTestSkillRouteWithChildren
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
   '/english-language-tests/$test/': typeof EnglishLanguageTestsTestIndexRoute
@@ -727,6 +734,7 @@ export interface FileRoutesByTo {
   '/english-language-tests': typeof EnglishLanguageTestsIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
+  '/api/public/stripe-webhook': typeof ApiPublicStripeWebhookRoute
   '/admin-kb20/questions': typeof AdminKb20QuestionsIndexRoute
   '/english-language-tests/$test': typeof EnglishLanguageTestsTestIndexRoute
   '/api/admin/ga-oauth/callback': typeof ApiAdminGaOauthCallbackRoute
@@ -816,6 +824,7 @@ export interface FileRoutesById {
   '/english-language-tests/': typeof EnglishLanguageTestsIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
+  '/api/public/stripe-webhook': typeof ApiPublicStripeWebhookRoute
   '/english-language-tests/$test/$skill': typeof EnglishLanguageTestsTestSkillRouteWithChildren
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
   '/english-language-tests/$test/': typeof EnglishLanguageTestsTestIndexRoute
@@ -908,6 +917,7 @@ export interface FileRouteTypes {
     | '/english-language-tests/'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
+    | '/api/public/stripe-webhook'
     | '/english-language-tests/$test/$skill'
     | '/admin-kb20/questions/'
     | '/english-language-tests/$test/'
@@ -995,6 +1005,7 @@ export interface FileRouteTypes {
     | '/english-language-tests'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
+    | '/api/public/stripe-webhook'
     | '/admin-kb20/questions'
     | '/english-language-tests/$test'
     | '/api/admin/ga-oauth/callback'
@@ -1083,6 +1094,7 @@ export interface FileRouteTypes {
     | '/english-language-tests/'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
+    | '/api/public/stripe-webhook'
     | '/english-language-tests/$test/$skill'
     | '/admin-kb20/questions/'
     | '/english-language-tests/$test/'
@@ -1162,6 +1174,7 @@ export interface RootRouteChildren {
   AdminKb20IndexRoute: typeof AdminKb20IndexRoute
   AdminKb20QuestionsTopicRoute: typeof AdminKb20QuestionsTopicRoute
   AdminKb20QuestionsBulkDuplicateRoute: typeof AdminKb20QuestionsBulkDuplicateRoute
+  ApiPublicStripeWebhookRoute: typeof ApiPublicStripeWebhookRoute
   AdminKb20QuestionsIndexRoute: typeof AdminKb20QuestionsIndexRoute
   ApiAdminGaOauthCallbackRoute: typeof ApiAdminGaOauthCallbackRoute
   LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
@@ -1729,6 +1742,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EnglishLanguageTestsTestSkillRouteImport
       parentRoute: typeof EnglishLanguageTestsTestRoute
     }
+    '/api/public/stripe-webhook': {
+      id: '/api/public/stripe-webhook'
+      path: '/api/public/stripe-webhook'
+      fullPath: '/api/public/stripe-webhook'
+      preLoaderRoute: typeof ApiPublicStripeWebhookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/questions/bulk-duplicate': {
       id: '/admin-kb20/questions/bulk-duplicate'
       path: '/admin-kb20/questions/bulk-duplicate'
@@ -1950,6 +1970,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminKb20IndexRoute: AdminKb20IndexRoute,
   AdminKb20QuestionsTopicRoute: AdminKb20QuestionsTopicRoute,
   AdminKb20QuestionsBulkDuplicateRoute: AdminKb20QuestionsBulkDuplicateRoute,
+  ApiPublicStripeWebhookRoute: ApiPublicStripeWebhookRoute,
   AdminKb20QuestionsIndexRoute: AdminKb20QuestionsIndexRoute,
   ApiAdminGaOauthCallbackRoute: ApiAdminGaOauthCallbackRoute,
   LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
