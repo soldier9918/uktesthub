@@ -168,11 +168,15 @@ export function AdSlot({
       mo.disconnect();
       window.clearTimeout(t);
     };
-  }, [visible, effectiveSlotId, settings, slotKey, slotEnabled]);
+  }, [visible, effectiveSlotId, settings, slotKey, slotEnabled, entitlement.adFree]);
+
+  // Paid subscribers never see advertisements — and no empty space is left behind.
+  if (entitlement.adFree) return null;
 
   // Admin kill-switches
   if (settings?.hide_ads_globally) return null;
   if (settings?.preview_without_ads) return null;
+
   // Slot-level disable
   if (slotKey && !slotEnabled) return null;
 
