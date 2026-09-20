@@ -63,11 +63,15 @@ async function applySubscription(sub: StripeSubscription) {
   // Newer Stripe API versions carry the billing period on the subscription item.
   const item = sub.items?.data?.[0];
   const periodStart = iso(sub.current_period_start ?? item?.current_period_start);
-  const periodEnd = iso(sub.current_period_end ?? item?.current_period_end);
+  // A scheduled cancellation date is the true end of access when present.
+  const cancelling = isCancelling(sub);
+  const periodEnd = iso(
+    (cancelling ? sub.cancel_at : null) ?? sub.current_period_end ?? item?.current_period_end,
+  );
 
   const { data: existing } = await supabaseAdmin
     .from("subscriptions")
-    .select("topic_slug,scheduled_topic_slug,current_period_start")
+    .select("topic_slug,scheduled_topic_slug,current_period_start,cancelled_at")
     .eq("user_id", userId)
     .maybeSingle();
 
