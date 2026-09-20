@@ -122,7 +122,13 @@ export type StripeSubscription = {
   current_period_start?: number;
   current_period_end?: number;
   metadata?: Record<string, string>;
-  items?: { data: { price?: { id?: string; recurring?: { interval?: string } } }[] };
+  items?: {
+    data: {
+      current_period_start?: number;
+      current_period_end?: number;
+      price?: { id?: string; recurring?: { interval?: string } };
+    }[];
+  };
 };
 
 export async function fetchStripeSubscription(id: string) {

@@ -59,8 +59,10 @@ async function applySubscription(sub: StripeSubscription) {
   const interval = sub.items?.data?.[0]?.price?.recurring?.interval ?? null;
   const plan = planForPriceId(priceId) ?? (sub.metadata?.["plan_code"] as never) ?? null;
   const status = mapStatus(sub.status);
-  const periodStart = iso(sub.current_period_start);
-  const periodEnd = iso(sub.current_period_end);
+  // Newer Stripe API versions carry the billing period on the subscription item.
+  const item = sub.items?.data?.[0];
+  const periodStart = iso(sub.current_period_start ?? item?.current_period_start);
+  const periodEnd = iso(sub.current_period_end ?? item?.current_period_end);
 
   const { data: existing } = await supabaseAdmin
     .from("subscriptions")
