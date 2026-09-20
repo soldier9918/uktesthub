@@ -239,7 +239,7 @@ export function SubscriptionPanel() {
         </div>
       )}
 
-      {entitlement.isPaid && entitlement.plan === "exam_pro" && (
+      {entitlement.isPaid && entitlement.plan === "exam_pro" && !cancelling && (
         <div className="mt-6 border-t border-border pt-5">
           <h3 className="font-display text-base font-bold">Change topic at next renewal</h3>
           <p className="mt-1 text-sm text-muted-foreground">
