@@ -217,6 +217,8 @@ export function AdSlot({
  */
 export function StickyAdSlot({ slotId }: { slotId?: string } = {}) {
   const [dismissed, setDismissed] = useState(false);
+  const { entitlement } = useEntitlement();
+
 
   useEffect(() => {
     try {
