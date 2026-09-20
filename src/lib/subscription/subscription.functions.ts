@@ -14,6 +14,15 @@ function siteOrigin(origin?: string | null): string {
   return process.env["SITE_URL"]?.replace(/\/$/, "") || SITE_FALLBACK;
 }
 
+/**
+ * Keeps our own plain-English messages, but never leaks a payment-provider
+ * response (status codes, JSON, request-log URLs) to a customer.
+ */
+function friendly(e: unknown, fallback: string): string {
+  const message = e instanceof Error ? e.message : "";
+  return message === "Please sign in again to continue." ? message : fallback;
+}
+
 const PaidPlan = z.enum(["exam_pro", "premium_monthly", "premium_annual"]);
 
 const CheckoutSchema = z.object({
