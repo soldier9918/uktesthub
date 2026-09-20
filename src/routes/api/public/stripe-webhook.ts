@@ -144,6 +144,7 @@ export const Route = createFileRoute("/api/public/stripe-webhook")({
           provider: "stripe",
           event_id: event.id,
           event_type: event.type,
+          stripe_mode: stripeMode(),
         });
         if (dupeError) {
           if (dupeError.code === "23505") return new Response("ok (duplicate)");
