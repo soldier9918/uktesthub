@@ -267,46 +267,102 @@ export const resumeSubscription = createServerFn({ method: "POST" })
     }
   });
 
-const UpgradeSchema = z.object({ accessToken: z.string().min(20).max(4096) });
+/** Plan changes applied in place on an existing subscription. */
+const ChangeTarget = z.enum(["premium_monthly", "premium_annual"]);
+
+const UpgradeSchema = z.object({
+  accessToken: z.string().min(20).max(4096),
+  plan: ChangeTarget.optional(),
+});
 
 type UpgradePreview = {
   ok: boolean;
+  plan: "premium_monthly" | "premium_annual" | null;
   amountDue: number | null;
+  credit: number | null;
   currency: string | null;
   renewalDate: string | null;
+  intervalChanges: boolean;
   error: string | null;
 };
 
-/** Read-only: what an in-place upgrade to Premium Monthly costs today. */
+const PAID_STATUSES = new Set(["active", "past_due"]);
+
+/**
+ * Loads the caller's subscription and checks the requested plan change is a
+ * valid in-place move on the subscription they already have.
+ */
+async function loadChangeContext(accessToken: string, target: "premium_monthly" | "premium_annual") {
+  const { userId, supabaseAdmin } = await requireUser(accessToken);
+  const { data: row } = await supabaseAdmin
+    .from("subscriptions")
+    .select("provider_subscription_id,plan_code,status")
+    .eq("user_id", userId)
+    .maybeSingle();
+
+  if (!row?.provider_subscription_id || !PAID_STATUSES.has(String(row.status))) {
+    throw new Error("You do not have an active subscription to change.");
+  }
+  if (row.plan_code === target) {
+    throw new Error("This is already your current plan.");
+  }
+  return { userId, supabaseAdmin, subscriptionId: row.provider_subscription_id };
+}
+
+/** Read-only: what changing to the requested plan costs today. */
 export const previewUpgrade = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => UpgradeSchema.parse(d))
   .handler(async ({ data }): Promise<UpgradePreview> => {
-    const empty = { amountDue: null, currency: null, renewalDate: null };
+    const target = data.plan ?? "premium_monthly";
+    const empty = {
+      plan: null,
+      amountDue: null,
+      credit: null,
+      currency: null,
+      renewalDate: null,
+      intervalChanges: false,
+    };
     try {
-      const { userId, supabaseAdmin } = await requireUser(data.accessToken);
-      const { data: row } = await supabaseAdmin
-        .from("subscriptions")
-        .select("provider_subscription_id,plan_code,status")
-        .eq("user_id", userId)
-        .maybeSingle();
-      if (!row?.provider_subscription_id || row.plan_code !== "exam_pro") {
-        return { ok: false, ...empty, error: "This upgrade applies to Exam Pro subscriptions only." };
-      }
-      const { fetchStripeSubscription, previewPlanChange, priceIdForPlan } = await import(
-        "./stripe.server"
-      );
-      const sub = await fetchStripeSubscription(row.provider_subscription_id);
-      const { amountDue, currency } = await previewPlanChange(
+      const { subscriptionId } = await loadChangeContext(data.accessToken, target);
+      const {
+        fetchStripeSubscription,
+        previewPlanChange,
+        priceIdForPlan,
+        subscriptionInterval,
+      } = await import("./stripe.server");
+
+      const sub = await fetchStripeSubscription(subscriptionId);
+      const targetInterval = target === "premium_annual" ? "year" : "month";
+      const intervalChanges = subscriptionInterval(sub) !== targetInterval;
+      const anchor = intervalChanges ? "now" : "unchanged";
+
+      const { amountDue, credit, currency } = await previewPlanChange(
         sub,
-        priceIdForPlan("premium_monthly"),
+        priceIdForPlan(target),
+        anchor,
       );
+
       const item = sub.items?.data?.[0];
       const periodEnd = sub.current_period_end ?? item?.current_period_end ?? null;
+      const renewal = intervalChanges
+        ? (() => {
+            const d = new Date();
+            d.setFullYear(d.getFullYear() + (targetInterval === "year" ? 1 : 0));
+            if (targetInterval === "month") d.setMonth(d.getMonth() + 1);
+            return d.toISOString();
+          })()
+        : periodEnd
+          ? new Date(periodEnd * 1000).toISOString()
+          : null;
+
       return {
         ok: true,
+        plan: target,
         amountDue,
+        credit,
         currency,
-        renewalDate: periodEnd ? new Date(periodEnd * 1000).toISOString() : null,
+        renewalDate: renewal,
+        intervalChanges,
         error: null,
       };
     } catch (e) {
@@ -314,41 +370,41 @@ export const previewUpgrade = createServerFn({ method: "POST" })
       return {
         ok: false,
         ...empty,
-        error: friendly(e, "We couldn't work out your upgrade price right now. Please try again shortly."),
+        error: friendly(
+          e,
+          "We couldn't work out your new price right now. Please try again shortly.",
+        ),
       };
     }
   });
 
 /**
- * Swaps the existing subscription from Exam Pro to Premium All Access. Access is
- * NOT granted here — the webhook applies it once the prorated payment succeeds.
+ * Moves the existing subscription onto the requested plan. Access is NOT granted
+ * here — the webhook applies it once the prorated payment succeeds.
  */
 export const confirmUpgrade = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => UpgradeSchema.parse(d))
   .handler(async ({ data }): Promise<{ ok: boolean; pending: boolean; error: string | null }> => {
+    const target = data.plan ?? "premium_monthly";
     try {
-      const { userId, supabaseAdmin } = await requireUser(data.accessToken);
-      const { data: row } = await supabaseAdmin
-        .from("subscriptions")
-        .select("provider_subscription_id,plan_code")
-        .eq("user_id", userId)
-        .maybeSingle();
-      if (!row?.provider_subscription_id || row.plan_code !== "exam_pro") {
-        return {
-          ok: false,
-          pending: false,
-          error: "This upgrade applies to Exam Pro subscriptions only.",
-        };
-      }
-      const { fetchStripeSubscription, changeSubscriptionPrice, priceIdForPlan } = await import(
-        "./stripe.server"
-      );
-      const sub = await fetchStripeSubscription(row.provider_subscription_id);
+      const { userId, subscriptionId } = await loadChangeContext(data.accessToken, target);
+      const {
+        fetchStripeSubscription,
+        changeSubscriptionPrice,
+        priceIdForPlan,
+        subscriptionInterval,
+      } = await import("./stripe.server");
+
+      const sub = await fetchStripeSubscription(subscriptionId);
+      const targetInterval = target === "premium_annual" ? "year" : "month";
+      const anchor = subscriptionInterval(sub) !== targetInterval ? "now" : "unchanged";
+
       const updated = await changeSubscriptionPrice(
         sub,
-        priceIdForPlan("premium_monthly"),
-        { supabase_user_id: userId, plan_code: "premium_monthly", topic_slug: "" },
-        `upgrade:${userId}:premium_monthly:${sub.id}`,
+        priceIdForPlan(target),
+        { supabase_user_id: userId, plan_code: target, topic_slug: "" },
+        `change:${userId}:${target}:${sub.id}`,
+        anchor,
       );
       const paid = updated.status === "active" || updated.status === "trialing";
       return { ok: true, pending: !paid, error: null };
@@ -357,7 +413,10 @@ export const confirmUpgrade = createServerFn({ method: "POST" })
       return {
         ok: false,
         pending: false,
-        error: friendly(e, "We couldn't complete your upgrade. Please try again or use Manage billing."),
+        error: friendly(
+          e,
+          "We couldn't complete your plan change. Please try again or use Manage billing.",
+        ),
       };
     }
   });
