@@ -106,8 +106,9 @@ async function applySubscription(sub: StripeSubscription) {
     billing_interval: interval,
     current_period_start: periodStart,
     current_period_end: periodEnd,
-    cancel_at_period_end: Boolean(sub.cancel_at_period_end),
-    cancelled_at: iso(sub.canceled_at ?? null),
+    cancel_at_period_end: cancelling,
+    // Keep the timestamp we already recorded if Stripe doesn't send one back.
+    cancelled_at: iso(sub.canceled_at ?? null) ?? (cancelling ? (existing?.cancelled_at ?? null) : null),
   };
 
   const { error } = await supabaseAdmin
