@@ -147,9 +147,13 @@ export async function stripeRequest<T = Record<string, unknown>>(
   return JSON.parse(text) as T;
 }
 
-/** Verifies a Stripe webhook signature (t=…,v1=…) against the raw body. */
+/**
+ * Verifies a Stripe webhook signature (t=…,v1=…) against the raw body using the
+ * active mode's signing secret. Test today; the live secret takes over the same
+ * endpoint once STRIPE_MODE=live.
+ */
 export function verifyStripeSignature(rawBody: string, signatureHeader: string | null): boolean {
-  const secret = process.env["STRIPE_WEBHOOK_SECRET"];
+  const secret = stripeConfig().webhookSecret;
   if (!secret || !signatureHeader) return false;
 
   const parts = signatureHeader.split(",").reduce<Record<string, string[]>>((acc, piece) => {
