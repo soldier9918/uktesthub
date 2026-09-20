@@ -12,6 +12,10 @@ import { listMockSlots } from "@/data/mocks";
 import { captureMockBaseUrl } from "@/lib/mock-base-url";
 import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { getMockIntro } from "@/data/mock-intros";
+import { useEntitlement } from "@/lib/subscription/use-entitlement";
+import { canAccessMock } from "@/lib/subscription/entitlement";
+import { LockedMockScreen } from "@/components/subscription/LockedMockScreen";
+
 
 
 
@@ -200,6 +204,18 @@ function ClientMockQuizPage({ slug }: { slug: string }) {
 function QuizContent({ quiz }: { quiz: Quiz }) {
   const category = getCategory(quiz.category);
   const isMock = quiz.slug.includes("-mock-");
+  const { entitlement, loading: entitlementLoading } = useEntitlement();
+  const mockNumber = Number(/-mock-(\d+)$/.exec(quiz.slug)?.[1] ?? 0);
+  const locked =
+    isMock &&
+    mockNumber > 0 &&
+    !entitlementLoading &&
+    !canAccessMock(entitlement, quiz.topic, mockNumber);
+
+  if (locked) {
+    return <LockedMockScreen topicSlug={quiz.topic} mockNumber={mockNumber} />;
+  }
+
 
   type RelatedItem = { slug: string; title: string; subtitle: string };
 
