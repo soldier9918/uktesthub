@@ -201,9 +201,11 @@ export const cancelSubscription = createServerFn({ method: "POST" })
         .eq("user_id", userId);
       return { ok: true, error: null };
     } catch (e) {
-      const message = e instanceof Error ? e.message : "The cancellation could not be completed.";
-      console.error("[subscription] cancelSubscription", message);
-      return { ok: false, error: message };
+      console.error("[subscription] cancelSubscription", e);
+      return {
+        ok: false,
+        error: "We couldn't cancel your subscription. Please try again or use Manage billing.",
+      };
     }
   });
 
