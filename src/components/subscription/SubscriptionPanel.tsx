@@ -276,6 +276,44 @@ export function SubscriptionPanel() {
         )}
       </div>
 
+      {upgrade && (
+        <div className="mt-4 rounded-lg border border-coral/40 bg-coral/5 p-4">
+          <h3 className="font-display text-base font-bold">Upgrade to Premium All Access</h3>
+          <ul className="mt-2 space-y-1 text-sm">
+            <li>
+              <strong>Due today:</strong>{" "}
+              {upgrade.amountDue !== null
+                ? `£${upgrade.amountDue.toFixed(2)}`
+                : "the prorated difference"}{" "}
+              — only the difference for the rest of your current period.
+            </li>
+            <li>
+              <strong>From then on:</strong> £24.99 per month.
+            </li>
+            <li>
+              <strong>Renewal date:</strong>{" "}
+              {formatDate(upgrade.renewalDate) ?? periodEnd ?? "unchanged"} (unchanged)
+            </li>
+          </ul>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Your existing subscription is switched over — you will not be charged for two
+            subscriptions. Every test topic unlocks and your practice stays advert-free.
+          </p>
+          <div className="mt-3 flex gap-3">
+            <Button
+              className="bg-coral text-white hover:bg-coral/90"
+              onClick={doUpgrade}
+              disabled={busy === "upgrade"}
+            >
+              {busy === "upgrade" ? "Upgrading…" : "Confirm upgrade"}
+            </Button>
+            <Button variant="outline" onClick={() => setUpgrade(null)}>
+              Not now
+            </Button>
+          </div>
+        </div>
+      )}
+
       {confirmCancel && (
         <div className="mt-4 rounded-lg border border-border bg-muted/40 p-4">
           <p className="text-sm">
