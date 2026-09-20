@@ -55,6 +55,8 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { ResultsUpgradeCard } from "@/components/subscription/ResultsUpgradeCard";
+
 
 
 type Mode = "practice" | "exam";
@@ -656,6 +658,8 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             // active quiz switches back to the base mock.
           }}
         />
+        <ResultsUpgradeCard topicSlug={quiz.topic} />
+
         <Dialog open={signupPromptOpen} onOpenChange={setSignupPromptOpen}>
           <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
             <DialogHeader>

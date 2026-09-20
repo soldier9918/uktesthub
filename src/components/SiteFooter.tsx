@@ -45,6 +45,7 @@ const popularTests: FooterLink[] = [
 
 const company: StaticLink[] = [
   { label: "About Us", to: "/about" },
+  { label: "Pricing", to: "/pricing" },
   { label: "All Tests", to: "/all-tests" },
   { label: "Study Guides", to: "/blog" },
   { label: "Contact Us", to: "/contact" },
@@ -63,9 +64,13 @@ const legal: StaticLink[] = [
   { label: "Privacy Policy", to: "/privacy" },
   { label: "Cookie Policy", to: "/cookies" },
   { label: "Terms and Conditions", to: "/terms" },
+  { label: "Subscription Terms", to: "/subscription-terms" },
+  { label: "Cancellation Policy", to: "/cancellation-policy" },
+  { label: "Refund Policy", to: "/refund-policy" },
   { label: "Disclaimer", to: "/disclaimer" },
   { label: "Accessibility Statement", to: "/accessibility" },
 ];
+
 
 function FooterColumn({ title, items }: { title: string; items: FooterLink[] }) {
   return (

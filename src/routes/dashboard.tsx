@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth-context";
+import { PlanBanner } from "@/components/subscription/PlanBanner";
+
 import { RequireAuth } from "@/components/RequireAuth";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -120,6 +122,10 @@ function DashboardInner() {
           <Link to="/bookmarks" className="rounded-md border border-border px-3 py-2 text-sm hover:bg-muted">Bookmarks</Link>
         </div>
       </div>
+
+      <PlanBanner />
+
+
 
       <section className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard label="Tests taken" value={stats.count} />
