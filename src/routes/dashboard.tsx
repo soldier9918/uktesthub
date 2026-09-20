@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth-context";
 import { PlanBanner } from "@/components/subscription/PlanBanner";
+import { PaymentWarning } from "@/components/subscription/PaymentWarning";
 
 import { RequireAuth } from "@/components/RequireAuth";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -122,6 +123,8 @@ function DashboardInner() {
           <Link to="/bookmarks" className="rounded-md border border-border px-3 py-2 text-sm hover:bg-muted">Bookmarks</Link>
         </div>
       </div>
+
+      <PaymentWarning className="mt-6" />
 
       <PlanBanner />
 

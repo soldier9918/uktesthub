@@ -4,6 +4,7 @@ import { Link, useLocation } from "@tanstack/react-router";
 type ChangePlan = "premium_monthly" | "premium_annual";
 import { Button } from "@/components/ui/button";
 import { TopicPicker } from "@/components/subscription/TopicPicker";
+import { PaymentWarning } from "@/components/subscription/PaymentWarning";
 import { supabase } from "@/integrations/supabase/client";
 import { useEntitlement } from "@/lib/subscription/use-entitlement";
 import { planLabel, RENEWAL_COPY } from "@/lib/subscription/plans";
@@ -213,6 +214,8 @@ export function SubscriptionPanel() {
   return (
     <section className="mt-6 rounded-xl border border-border bg-card p-5">
       <h2 className="font-display text-lg font-bold">Subscription</h2>
+
+      <PaymentWarning className="mt-4" />
 
       <dl className="mt-4 grid gap-3 sm:grid-cols-2">
         <div>
