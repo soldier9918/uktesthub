@@ -5,6 +5,7 @@
 import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth-context";
+import { getPaymentMode } from "./subscription.functions";
 import {
   entitlementFromRow,
   FREE_ENTITLEMENT,
