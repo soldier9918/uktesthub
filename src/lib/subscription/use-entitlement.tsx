@@ -30,6 +30,15 @@ const EntitlementContext = createContext<EntitlementState>({
 const COLUMNS =
   "plan_code,status,topic_slug,scheduled_topic_slug,billing_interval,current_period_start,current_period_end,cancel_at_period_end,cancelled_at,provider_customer_id,provider_subscription_id";
 
+/** Cached for the session: the payment mode the server is configured for. */
+let modePromise: Promise<"test" | "live"> | null = null;
+async function paymentMode(): Promise<"test" | "live"> {
+  modePromise ??= getPaymentMode()
+    .then((r) => r.mode)
+    .catch(() => "test" as const);
+  return modePromise;
+}
+
 export function EntitlementProvider({ children }: { children: ReactNode }) {
   const { user, loading: authLoading } = useAuth();
   const [subscription, setSubscription] = useState<SubscriptionRow | null>(null);
@@ -41,10 +50,14 @@ export function EntitlementProvider({ children }: { children: ReactNode }) {
       setLoading(false);
       return;
     }
+    // Only records created in the mode the server is running in count — a
+    // sandbox subscription never grants access on a live site, or vice versa.
+    const mode = await paymentMode();
     const { data } = await supabase
       .from("subscriptions")
       .select(COLUMNS)
       .eq("user_id", user.id)
+      .eq("stripe_mode", mode)
       .maybeSingle();
     setSubscription((data as SubscriptionRow | null) ?? null);
     setLoading(false);
