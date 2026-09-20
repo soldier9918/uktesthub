@@ -15,6 +15,10 @@ import { loadEnglishMock } from "@/data/english/mocks";
 import { captureMockBaseUrl } from "@/lib/mock-base-url";
 import type { Quiz } from "@/data/quizzes";
 import { breadcrumbSchema } from "@/lib/seo";
+import { useEntitlement } from "@/lib/subscription/use-entitlement";
+import { canAccessMock } from "@/lib/subscription/entitlement";
+import { LockedMockScreen } from "@/components/subscription/LockedMockScreen";
+
 
 export const Route = createFileRoute(
   "/english-language-tests/$test/$skill/$level/mock-test{-$num}",
@@ -101,6 +105,8 @@ export const Route = createFileRoute(
 function EnglishMockPage() {
   const { test, skill, level, num, quiz: ssrQuiz } = Route.useLoaderData();
   const [quiz, setQuiz] = useState<Quiz | null | undefined>(ssrQuiz);
+  const { entitlement, loading: entitlementLoading } = useEntitlement();
+  const locked = !entitlementLoading && !canAccessMock(entitlement, test.slug, num);
 
   useEffect(() => {
     if (quiz !== null) return;
@@ -113,6 +119,11 @@ function EnglishMockPage() {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [test.slug, skill.slug, level, num]);
+
+  if (locked) {
+    return <LockedMockScreen topicSlug={test.slug} mockNumber={num} />;
+  }
+
 
   if (quiz) {
     return (
