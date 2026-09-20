@@ -250,9 +250,13 @@ export function SubscriptionPanel() {
             <Link to="/pricing">See plans and subscribe</Link>
           </Button>
         )}
-        {entitlement.isPaid && entitlement.plan === "exam_pro" && (
-          <Button asChild className="bg-coral text-white hover:bg-coral/90">
-            <Link to="/pricing">Upgrade to Premium All Access</Link>
+        {entitlement.isPaid && entitlement.plan === "exam_pro" && !cancelling && (
+          <Button
+            className="bg-coral text-white hover:bg-coral/90"
+            onClick={startUpgrade}
+            disabled={busy === "preview"}
+          >
+            {busy === "preview" ? "Checking price…" : "Upgrade to Premium All Access"}
           </Button>
         )}
         {(entitlement.isPaid || subscription?.provider_customer_id) && (
