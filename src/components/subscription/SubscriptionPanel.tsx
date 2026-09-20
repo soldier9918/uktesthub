@@ -8,7 +8,9 @@ import { planLabel, RENEWAL_COPY } from "@/lib/subscription/plans";
 import { topicTitle } from "@/lib/subscription/topics";
 import {
   cancelSubscription,
+  confirmUpgrade,
   createBillingPortalSession,
+  previewUpgrade,
   resumeSubscription,
   scheduleTopicChange,
 } from "@/lib/subscription/subscription.functions";
@@ -37,6 +39,11 @@ export function SubscriptionPanel() {
   const [err, setErr] = useState<string | null>(null);
   const [newTopic, setNewTopic] = useState<string | null>(null);
   const [confirmCancel, setConfirmCancel] = useState(false);
+  const [upgrade, setUpgrade] = useState<{
+    amountDue: number | null;
+    currency: string | null;
+    renewalDate: string | null;
+  } | null>(null);
 
   const status = subscription?.status ?? "free";
   const periodEnd = formatDate(entitlement.periodEnd);
@@ -133,6 +140,50 @@ export function SubscriptionPanel() {
     }
   }
 
+  async function startUpgrade() {
+    setBusy("preview");
+    setErr(null);
+    setMsg(null);
+    try {
+      const res = await previewUpgrade({ data: { accessToken: await token() } });
+      if (res.ok) {
+        setUpgrade({
+          amountDue: res.amountDue,
+          currency: res.currency,
+          renewalDate: res.renewalDate,
+        });
+      } else setErr(res.error ?? "We couldn't work out your upgrade price right now.");
+    } catch {
+      setErr("We couldn't work out your upgrade price right now. Please try again shortly.");
+    } finally {
+      setBusy(null);
+    }
+  }
+
+  async function doUpgrade() {
+    setBusy("upgrade");
+    setErr(null);
+    setMsg(null);
+    try {
+      const res = await confirmUpgrade({ data: { accessToken: await token() } });
+      if (res.ok) {
+        setUpgrade(null);
+        setMsg(
+          res.pending
+            ? "Your upgrade payment is being processed. Premium All Access opens as soon as it is confirmed."
+            : "You are now on Premium All Access — every test topic is unlocked and your practice stays advert-free.",
+        );
+        // Access is granted by the payment confirmation, so re-read shortly after.
+        await refresh();
+        setTimeout(() => void refresh(), 4000);
+      } else setErr(res.error ?? "We couldn't complete your upgrade.");
+    } catch {
+      setErr("We couldn't complete your upgrade. Please try again or use Manage billing.");
+    } finally {
+      setBusy(null);
+    }
+  }
+
   return (
     <section className="mt-6 rounded-xl border border-border bg-card p-5">
       <h2 className="font-display text-lg font-bold">Subscription</h2>
@@ -199,9 +250,13 @@ export function SubscriptionPanel() {
             <Link to="/pricing">See plans and subscribe</Link>
           </Button>
         )}
-        {entitlement.isPaid && entitlement.plan === "exam_pro" && (
-          <Button asChild className="bg-coral text-white hover:bg-coral/90">
-            <Link to="/pricing">Upgrade to Premium All Access</Link>
+        {entitlement.isPaid && entitlement.plan === "exam_pro" && !cancelling && (
+          <Button
+            className="bg-coral text-white hover:bg-coral/90"
+            onClick={startUpgrade}
+            disabled={busy === "preview"}
+          >
+            {busy === "preview" ? "Checking price…" : "Upgrade to Premium All Access"}
           </Button>
         )}
         {(entitlement.isPaid || subscription?.provider_customer_id) && (
@@ -220,6 +275,44 @@ export function SubscriptionPanel() {
           </Button>
         )}
       </div>
+
+      {upgrade && (
+        <div className="mt-4 rounded-lg border border-coral/40 bg-coral/5 p-4">
+          <h3 className="font-display text-base font-bold">Upgrade to Premium All Access</h3>
+          <ul className="mt-2 space-y-1 text-sm">
+            <li>
+              <strong>Due today:</strong>{" "}
+              {upgrade.amountDue !== null
+                ? `£${upgrade.amountDue.toFixed(2)}`
+                : "the prorated difference"}{" "}
+              — only the difference for the rest of your current period.
+            </li>
+            <li>
+              <strong>From then on:</strong> £24.99 per month.
+            </li>
+            <li>
+              <strong>Renewal date:</strong>{" "}
+              {formatDate(upgrade.renewalDate) ?? periodEnd ?? "unchanged"} (unchanged)
+            </li>
+          </ul>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Your existing subscription is switched over — you will not be charged for two
+            subscriptions. Every test topic unlocks and your practice stays advert-free.
+          </p>
+          <div className="mt-3 flex gap-3">
+            <Button
+              className="bg-coral text-white hover:bg-coral/90"
+              onClick={doUpgrade}
+              disabled={busy === "upgrade"}
+            >
+              {busy === "upgrade" ? "Upgrading…" : "Confirm upgrade"}
+            </Button>
+            <Button variant="outline" onClick={() => setUpgrade(null)}>
+              Not now
+            </Button>
+          </div>
+        </div>
+      )}
 
       {confirmCancel && (
         <div className="mt-4 rounded-lg border border-border bg-muted/40 p-4">

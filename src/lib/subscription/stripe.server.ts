@@ -158,6 +158,78 @@ export async function fetchStripeSubscription(id: string) {
  * clear the cancel date first, then only clear the legacy flag if it is
  * still set afterwards.
  */
+type InvoicePreview = { amount_due?: number; total?: number; currency?: string };
+
+/**
+ * Previews what changing the subscription's single item to `priceId` would cost
+ * today. Newer API versions expose /invoices/create_preview; older ones only
+ * /invoices/upcoming, so both are attempted.
+ */
+export async function previewPlanChange(
+  sub: StripeSubscription,
+  priceId: string,
+): Promise<{ amountDue: number; currency: string }> {
+  const itemId = sub.items?.data?.[0] ? (sub.items.data[0] as { id?: string }).id : undefined;
+  if (!itemId) throw new Error("This subscription has no billable item to change.");
+
+  let preview: InvoicePreview | null = null;
+  try {
+    preview = await stripeRequest<InvoicePreview>("/invoices/create_preview", {
+      method: "POST",
+      body: {
+        customer: sub.customer,
+        subscription: sub.id,
+        "subscription_details[proration_behavior]": "always_invoice",
+        "subscription_details[items][0][id]": itemId,
+        "subscription_details[items][0][price]": priceId,
+      },
+    });
+  } catch {
+    preview = await stripeRequest<InvoicePreview>("/invoices/upcoming", {
+      method: "GET",
+      body: {
+        customer: sub.customer,
+        subscription: sub.id,
+        subscription_proration_behavior: "always_invoice",
+        "subscription_items[0][id]": itemId,
+        "subscription_items[0][price]": priceId,
+      },
+    });
+  }
+
+  const amount = preview?.amount_due ?? preview?.total ?? 0;
+  return { amountDue: amount / 100, currency: (preview?.currency ?? "gbp").toUpperCase() };
+}
+
+/**
+ * Replaces the subscription's existing item with `priceId` (so the old price is
+ * removed), keeps the billing cycle where it is and invoices the prorated
+ * difference immediately.
+ */
+export async function changeSubscriptionPrice(
+  sub: StripeSubscription,
+  priceId: string,
+  metadata: Record<string, string>,
+  idempotencyKey?: string,
+): Promise<StripeSubscription> {
+  const itemId = sub.items?.data?.[0] ? (sub.items.data[0] as { id?: string }).id : undefined;
+  if (!itemId) throw new Error("This subscription has no billable item to change.");
+
+  await stripeRequest<StripeSubscription>(`/subscriptions/${sub.id}`, {
+    method: "POST",
+    body: {
+      "items[0][id]": itemId,
+      "items[0][price]": priceId,
+      proration_behavior: "always_invoice",
+      payment_behavior: "pending_if_incomplete",
+      billing_cycle_anchor: "unchanged",
+      ...Object.fromEntries(Object.entries(metadata).map(([k, v]) => [`metadata[${k}]`, v])),
+    },
+    idempotencyKey,
+  });
+  return fetchStripeSubscription(sub.id);
+}
+
 export async function resumeStripeSubscription(id: string): Promise<StripeSubscription> {
   let sub = await stripeRequest<StripeSubscription>(`/subscriptions/${id}`, {
     method: "POST",

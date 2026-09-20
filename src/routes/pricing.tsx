@@ -200,17 +200,29 @@ function PricingPage() {
             )}
             <FeatureList items={PREMIUM_FEATURES} />
             <div className="mt-auto pt-6">
-              <Button
-                className="w-full"
-                disabled={busyPlan === premiumPlan}
-                onClick={() => void start(premiumPlan)}
-              >
-                {busyPlan === premiumPlan
-                  ? "Opening secure checkout…"
-                  : annual
-                    ? "Subscribe annually"
-                    : "Subscribe monthly"}
-              </Button>
+              {entitlement.isPaid ? (
+                <>
+                  <Button asChild className="w-full">
+                    <Link to="/account">Upgrade from your account</Link>
+                  </Button>
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    You already have a subscription, so upgrading happens on your account page —
+                    you only pay the difference for the rest of your current period.
+                  </p>
+                </>
+              ) : (
+                <Button
+                  className="w-full"
+                  disabled={busyPlan === premiumPlan}
+                  onClick={() => void start(premiumPlan)}
+                >
+                  {busyPlan === premiumPlan
+                    ? "Opening secure checkout…"
+                    : annual
+                      ? "Subscribe annually"
+                      : "Subscribe monthly"}
+                </Button>
+              )}
             </div>
           </section>
         </div>

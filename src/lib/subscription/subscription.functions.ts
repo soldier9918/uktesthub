@@ -75,6 +75,25 @@ export const createCheckoutSession = createServerFn({ method: "POST" })
         return { url: null, error: "Please choose the test topic you want to unlock." };
       }
       const { userId, email, supabaseAdmin } = await requireUser(data.accessToken);
+
+      // One subscription per customer: an existing paying subscriber must change
+      // plan on the subscription they already have, never buy a second one.
+      const { data: current } = await supabaseAdmin
+        .from("subscriptions")
+        .select("status,provider_subscription_id")
+        .eq("user_id", userId)
+        .maybeSingle();
+      if (
+        current?.provider_subscription_id &&
+        (current.status === "active" || current.status === "past_due")
+      ) {
+        return {
+          url: null,
+          error:
+            "You already have an active subscription. Please change your plan from your account page so you are only charged the difference.",
+        };
+      }
+
       const { stripeRequest, priceIdForPlan } = await import("./stripe.server");
       const customerId = await ensureCustomer(supabaseAdmin, userId, email);
       const origin = siteOrigin(data.origin);
@@ -244,6 +263,101 @@ export const resumeSubscription = createServerFn({ method: "POST" })
       return {
         ok: false,
         error: "We couldn't resume your subscription. Please try again or use Manage billing.",
+      };
+    }
+  });
+
+const UpgradeSchema = z.object({ accessToken: z.string().min(20).max(4096) });
+
+type UpgradePreview = {
+  ok: boolean;
+  amountDue: number | null;
+  currency: string | null;
+  renewalDate: string | null;
+  error: string | null;
+};
+
+/** Read-only: what an in-place upgrade to Premium Monthly costs today. */
+export const previewUpgrade = createServerFn({ method: "POST" })
+  .inputValidator((d: unknown) => UpgradeSchema.parse(d))
+  .handler(async ({ data }): Promise<UpgradePreview> => {
+    const empty = { amountDue: null, currency: null, renewalDate: null };
+    try {
+      const { userId, supabaseAdmin } = await requireUser(data.accessToken);
+      const { data: row } = await supabaseAdmin
+        .from("subscriptions")
+        .select("provider_subscription_id,plan_code,status")
+        .eq("user_id", userId)
+        .maybeSingle();
+      if (!row?.provider_subscription_id || row.plan_code !== "exam_pro") {
+        return { ok: false, ...empty, error: "This upgrade applies to Exam Pro subscriptions only." };
+      }
+      const { fetchStripeSubscription, previewPlanChange, priceIdForPlan } = await import(
+        "./stripe.server"
+      );
+      const sub = await fetchStripeSubscription(row.provider_subscription_id);
+      const { amountDue, currency } = await previewPlanChange(
+        sub,
+        priceIdForPlan("premium_monthly"),
+      );
+      const item = sub.items?.data?.[0];
+      const periodEnd = sub.current_period_end ?? item?.current_period_end ?? null;
+      return {
+        ok: true,
+        amountDue,
+        currency,
+        renewalDate: periodEnd ? new Date(periodEnd * 1000).toISOString() : null,
+        error: null,
+      };
+    } catch (e) {
+      console.error("[subscription] previewUpgrade", e);
+      return {
+        ok: false,
+        ...empty,
+        error: friendly(e, "We couldn't work out your upgrade price right now. Please try again shortly."),
+      };
+    }
+  });
+
+/**
+ * Swaps the existing subscription from Exam Pro to Premium All Access. Access is
+ * NOT granted here — the webhook applies it once the prorated payment succeeds.
+ */
+export const confirmUpgrade = createServerFn({ method: "POST" })
+  .inputValidator((d: unknown) => UpgradeSchema.parse(d))
+  .handler(async ({ data }): Promise<{ ok: boolean; pending: boolean; error: string | null }> => {
+    try {
+      const { userId, supabaseAdmin } = await requireUser(data.accessToken);
+      const { data: row } = await supabaseAdmin
+        .from("subscriptions")
+        .select("provider_subscription_id,plan_code")
+        .eq("user_id", userId)
+        .maybeSingle();
+      if (!row?.provider_subscription_id || row.plan_code !== "exam_pro") {
+        return {
+          ok: false,
+          pending: false,
+          error: "This upgrade applies to Exam Pro subscriptions only.",
+        };
+      }
+      const { fetchStripeSubscription, changeSubscriptionPrice, priceIdForPlan } = await import(
+        "./stripe.server"
+      );
+      const sub = await fetchStripeSubscription(row.provider_subscription_id);
+      const updated = await changeSubscriptionPrice(
+        sub,
+        priceIdForPlan("premium_monthly"),
+        { supabase_user_id: userId, plan_code: "premium_monthly", topic_slug: "" },
+        `upgrade:${userId}:premium_monthly:${sub.id}`,
+      );
+      const paid = updated.status === "active" || updated.status === "trialing";
+      return { ok: true, pending: !paid, error: null };
+    } catch (e) {
+      console.error("[subscription] confirmUpgrade", e);
+      return {
+        ok: false,
+        pending: false,
+        error: friendly(e, "We couldn't complete your upgrade. Please try again or use Manage billing."),
       };
     }
   });
