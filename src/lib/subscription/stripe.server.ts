@@ -158,17 +158,29 @@ export async function fetchStripeSubscription(id: string) {
  * clear the cancel date first, then only clear the legacy flag if it is
  * still set afterwards.
  */
-type InvoicePreview = { amount_due?: number; total?: number; currency?: string };
+type InvoicePreview = {
+  amount_due?: number;
+  total?: number;
+  currency?: string;
+  lines?: { data?: { amount?: number }[] };
+};
+
+/** The interval a Stripe price bills on, used to decide the billing anchor. */
+export function subscriptionInterval(sub: StripeSubscription): string | null {
+  return sub.items?.data?.[0]?.price?.recurring?.interval ?? null;
+}
 
 /**
  * Previews what changing the subscription's single item to `priceId` would cost
  * today. Newer API versions expose /invoices/create_preview; older ones only
  * /invoices/upcoming, so both are attempted.
+ * `anchor` mirrors what the real change will send so the figures match.
  */
 export async function previewPlanChange(
   sub: StripeSubscription,
   priceId: string,
-): Promise<{ amountDue: number; currency: string }> {
+  anchor: "unchanged" | "now" = "unchanged",
+): Promise<{ amountDue: number; credit: number; currency: string }> {
   const itemId = sub.items?.data?.[0] ? (sub.items.data[0] as { id?: string }).id : undefined;
   if (!itemId) throw new Error("This subscription has no billable item to change.");
 
@@ -180,6 +192,7 @@ export async function previewPlanChange(
         customer: sub.customer,
         subscription: sub.id,
         "subscription_details[proration_behavior]": "always_invoice",
+        "subscription_details[billing_cycle_anchor]": anchor,
         "subscription_details[items][0][id]": itemId,
         "subscription_details[items][0][price]": priceId,
       },
@@ -191,6 +204,7 @@ export async function previewPlanChange(
         customer: sub.customer,
         subscription: sub.id,
         subscription_proration_behavior: "always_invoice",
+        subscription_billing_cycle_anchor: anchor,
         "subscription_items[0][id]": itemId,
         "subscription_items[0][price]": priceId,
       },
@@ -198,19 +212,29 @@ export async function previewPlanChange(
   }
 
   const amount = preview?.amount_due ?? preview?.total ?? 0;
-  return { amountDue: amount / 100, currency: (preview?.currency ?? "gbp").toUpperCase() };
+  const credit = (preview?.lines?.data ?? []).reduce(
+    (sum, line) => sum + (line.amount && line.amount < 0 ? -line.amount : 0),
+    0,
+  );
+  return {
+    amountDue: amount / 100,
+    credit: credit / 100,
+    currency: (preview?.currency ?? "gbp").toUpperCase(),
+  };
 }
 
 /**
  * Replaces the subscription's existing item with `priceId` (so the old price is
- * removed), keeps the billing cycle where it is and invoices the prorated
- * difference immediately.
+ * removed) and invoices the prorated difference immediately. `anchor` stays
+ * `unchanged` for same-interval moves; an interval change (monthly to annual)
+ * must restart the cycle with `now`, which Stripe requires.
  */
 export async function changeSubscriptionPrice(
   sub: StripeSubscription,
   priceId: string,
   metadata: Record<string, string>,
   idempotencyKey?: string,
+  anchor: "unchanged" | "now" = "unchanged",
 ): Promise<StripeSubscription> {
   const itemId = sub.items?.data?.[0] ? (sub.items.data[0] as { id?: string }).id : undefined;
   if (!itemId) throw new Error("This subscription has no billable item to change.");
@@ -222,7 +246,7 @@ export async function changeSubscriptionPrice(
       "items[0][price]": priceId,
       proration_behavior: "always_invoice",
       payment_behavior: "pending_if_incomplete",
-      billing_cycle_anchor: "unchanged",
+      billing_cycle_anchor: anchor,
       ...Object.fromEntries(Object.entries(metadata).map(([k, v]) => [`metadata[${k}]`, v])),
     },
     idempotencyKey,

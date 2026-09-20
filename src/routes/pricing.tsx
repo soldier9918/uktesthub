@@ -56,6 +56,10 @@ function PricingPage() {
   const { entitlement } = useEntitlement();
 
   const premiumPlan = annual ? "premium_annual" : "premium_monthly";
+  // Paying customers never see a checkout button: plan changes must happen on the
+  // subscription they already have, so a second one can't be created.
+  const paid = entitlement.isPaid;
+  const currentPlan = entitlement.plan;
 
   return (
     <div className="min-h-screen bg-background">
@@ -120,9 +124,15 @@ function PricingPage() {
             <p className="text-xs text-muted-foreground">No card required</p>
             <FeatureList items={FREE_FEATURES} />
             <div className="mt-auto pt-6">
-              <Button asChild variant="outline" className="w-full">
-                <Link to="/all-tests">Start practising free</Link>
-              </Button>
+              {paid ? (
+                <Button className="w-full" variant="outline" disabled>
+                  Included in your plan
+                </Button>
+              ) : (
+                <Button asChild variant="outline" className="w-full">
+                  <Link to="/all-tests">Start practising free</Link>
+                </Button>
+              )}
             </div>
           </section>
 
@@ -143,30 +153,57 @@ function PricingPage() {
             </p>
             <FeatureList items={EXAM_PRO_FEATURES} />
             <div className="mt-auto space-y-3 pt-6">
-              {showPicker && (
-                <TopicPicker value={topicSlug} onChange={setTopicSlug} />
+              {paid ? (
+                currentPlan === "exam_pro" ? (
+                  <>
+                    <Button className="w-full" disabled>
+                      Current plan
+                    </Button>
+                    <p className="text-xs text-muted-foreground">
+                      This is the plan you are subscribed to. Change your topic or upgrade from your{" "}
+                      <Link to="/account" className="font-semibold text-coral hover:underline">
+                        account page
+                      </Link>
+                      .
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <Button asChild variant="outline" className="w-full">
+                      <Link to="/account">Manage your plan</Link>
+                    </Button>
+                    <p className="text-xs text-muted-foreground">
+                      You are on {planLabel(currentPlan)}, which already includes every topic. Any plan
+                      change is made on your existing subscription from your account page.
+                    </p>
+                  </>
+                )
+              ) : (
+                <>
+                  {showPicker && <TopicPicker value={topicSlug} onChange={setTopicSlug} />}
+                  <Button
+                    className="w-full bg-coral text-white hover:bg-coral/90"
+                    disabled={busyPlan === "exam_pro"}
+                    onClick={() => {
+                      if (!showPicker || !topicSlug) {
+                        setShowPicker(true);
+                        return;
+                      }
+                      void start("exam_pro", topicSlug);
+                    }}
+                  >
+                    {busyPlan === "exam_pro"
+                      ? "Opening secure checkout…"
+                      : showPicker && topicSlug
+                        ? `Subscribe — ${topicTitle(topicSlug)}`
+                        : "Choose your topic"}
+                  </Button>
+                  <p className="text-xs text-muted-foreground">
+                    Your chosen topic stays fixed for the billing period. You can schedule a
+                    change that starts at your next renewal.
+                  </p>
+                </>
               )}
-              <Button
-                className="w-full bg-coral text-white hover:bg-coral/90"
-                disabled={busyPlan === "exam_pro"}
-                onClick={() => {
-                  if (!showPicker || !topicSlug) {
-                    setShowPicker(true);
-                    return;
-                  }
-                  void start("exam_pro", topicSlug);
-                }}
-              >
-                {busyPlan === "exam_pro"
-                  ? "Opening secure checkout…"
-                  : showPicker && topicSlug
-                    ? `Subscribe — ${topicTitle(topicSlug)}`
-                    : "Choose your topic"}
-              </Button>
-              <p className="text-xs text-muted-foreground">
-                Your chosen topic stays fixed for the billing period. You can schedule a
-                change that starts at your next renewal.
-              </p>
             </div>
           </section>
 
@@ -200,16 +237,54 @@ function PricingPage() {
             )}
             <FeatureList items={PREMIUM_FEATURES} />
             <div className="mt-auto pt-6">
-              {entitlement.isPaid ? (
-                <>
-                  <Button asChild className="w-full">
-                    <Link to="/account">Upgrade from your account</Link>
-                  </Button>
-                  <p className="mt-2 text-xs text-muted-foreground">
-                    You already have a subscription, so upgrading happens on your account page —
-                    you only pay the difference for the rest of your current period.
-                  </p>
-                </>
+              {paid ? (
+                currentPlan === premiumPlan ? (
+                  <>
+                    <Button className="w-full" disabled>
+                      Current plan
+                    </Button>
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      This is the plan you are subscribed to.{" "}
+                      <Link to="/account" className="font-semibold text-coral hover:underline">
+                        Manage it on your account page
+                      </Link>
+                      .
+                    </p>
+                  </>
+                ) : currentPlan === "premium_monthly" && annual ? (
+                  <>
+                    <Button asChild className="w-full bg-coral text-white hover:bg-coral/90">
+                      <Link to="/account" search={{ change: "premium_annual" } as never}>
+                        Switch to annual
+                      </Link>
+                    </Button>
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      Your existing subscription moves to annual billing. You will see the credit for
+                      your unused time, the amount due today and your new renewal date before anything
+                      is charged.
+                    </p>
+                  </>
+                ) : currentPlan === "exam_pro" ? (
+                  <>
+                    <Button asChild className="w-full bg-coral text-white hover:bg-coral/90">
+                      <Link to="/account">Upgrade to Premium</Link>
+                    </Button>
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      Your existing subscription is switched over on your account page — you only pay
+                      the difference for the rest of your current period.
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <Button asChild variant="outline" className="w-full">
+                      <Link to="/account">Manage your plan</Link>
+                    </Button>
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      Plan changes are made on the subscription you already have, so you are never
+                      charged for two.
+                    </p>
+                  </>
+                )
               ) : (
                 <Button
                   className="w-full"
