@@ -141,9 +141,11 @@ export function AdSlot({
   // Push to AdSense queue once visible
   useEffect(() => {
     if (!ADSENSE_ENABLED || !visible || !effectiveSlotId) return;
+    if (entitlement.adFree) return;
     if (settings?.hide_ads_globally || settings?.preview_without_ads) return;
     if (slotKey && !slotEnabled) return;
     if (!getConsent()?.advertising) return;
+
     loadAdsenseScript();
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
