@@ -121,6 +121,10 @@ function DashboardInner() {
         </div>
       </div>
 
+      <PlanBanner />
+
+
+
       <section className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard label="Tests taken" value={stats.count} />
         <StatCard label="Average score" value={`${stats.avg}%`} />
