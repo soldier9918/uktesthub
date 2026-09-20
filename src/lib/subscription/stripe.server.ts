@@ -76,8 +76,9 @@ export async function stripeRequest<T = Record<string, unknown>>(
   });
   const text = await res.text();
   if (!res.ok) {
+    // Technical detail stays in server logs only — never shown to customers.
     console.error(`[stripe] ${method} ${path} failed [${res.status}]: ${text}`);
-    throw new Error(`Stripe request failed [${res.status}]: ${text}`);
+    throw new Error("Your payment provider rejected the request.");
   }
   return JSON.parse(text) as T;
 }
