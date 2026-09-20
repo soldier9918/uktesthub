@@ -32,6 +32,12 @@ const CheckoutSchema = z.object({
   origin: z.string().max(200).nullable().optional(),
 });
 
+/** The payment mode the server is currently configured for ("test" or "live"). */
+async function currentMode(): Promise<"test" | "live"> {
+  const { stripeMode } = await import("./stripe.server");
+  return stripeMode();
+}
+
 async function requireUser(accessToken: string) {
   const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
   const { data, error } = await supabaseAdmin.auth.getUser(accessToken);
@@ -62,8 +68,13 @@ async function ensureCustomer(
   await supabaseAdmin
     .from("subscriptions")
     .upsert(
-      { user_id: userId, provider: "stripe", provider_customer_id: customer.id },
-      { onConflict: "user_id" },
+      {
+        user_id: userId,
+        provider: "stripe",
+        stripe_mode: await currentMode(),
+        provider_customer_id: customer.id,
+      },
+      { onConflict: "user_id,stripe_mode" },
     );
   return customer.id;
 }
@@ -431,3 +442,11 @@ export const confirmUpgrade = createServerFn({ method: "POST" })
   });
 
 export type PaidPlanCode = Exclude<PlanCode, "free">;
+
+/**
+ * Non-secret: which payment mode the site is running in, so the interface can
+ * ignore records belonging to the other mode. No keys are ever exposed.
+ */
+export const getPaymentMode = createServerFn({ method: "GET" }).handler(
+  async (): Promise<{ mode: "test" | "live" }> => ({ mode: await currentMode() }),
+);
