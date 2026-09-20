@@ -168,7 +168,9 @@ export const Route = createFileRoute("/api/public/stripe-webhook")({
             case "customer.subscription.deleted": {
               const object = event.data.object as StripeSubscription;
               const sub = await fetchStripeSubscription(object.id);
-              await applySubscription(sub);
+              await applySubscription(sub, {
+                ended: event.type === "customer.subscription.deleted",
+              });
               break;
             }
             case "invoice.payment_succeeded":
