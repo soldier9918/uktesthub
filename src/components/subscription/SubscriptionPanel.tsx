@@ -9,6 +9,7 @@ import { topicTitle } from "@/lib/subscription/topics";
 import {
   cancelSubscription,
   createBillingPortalSession,
+  resumeSubscription,
   scheduleTopicChange,
 } from "@/lib/subscription/subscription.functions";
 
