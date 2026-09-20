@@ -125,6 +125,36 @@ export type Database = {
         }
         Relationships: []
       }
+      billing_events: {
+        Row: {
+          event_id: string
+          event_type: string
+          id: string
+          payload: Json | null
+          processed_at: string
+          provider: string
+          user_id: string | null
+        }
+        Insert: {
+          event_id: string
+          event_type: string
+          id?: string
+          payload?: Json | null
+          processed_at?: string
+          provider?: string
+          user_id?: string | null
+        }
+        Update: {
+          event_id?: string
+          event_type?: string
+          id?: string
+          payload?: Json | null
+          processed_at?: string
+          provider?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       bookmarks: {
         Row: {
           created_at: string
@@ -731,6 +761,63 @@ export type Database = {
         }
         Relationships: []
       }
+      subscriptions: {
+        Row: {
+          billing_interval: string | null
+          cancel_at_period_end: boolean
+          cancelled_at: string | null
+          created_at: string
+          current_period_end: string | null
+          current_period_start: string | null
+          id: string
+          plan_code: Database["public"]["Enums"]["subscription_plan"]
+          provider: string
+          provider_customer_id: string | null
+          provider_subscription_id: string | null
+          scheduled_topic_slug: string | null
+          status: Database["public"]["Enums"]["subscription_status"]
+          topic_slug: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          billing_interval?: string | null
+          cancel_at_period_end?: boolean
+          cancelled_at?: string | null
+          created_at?: string
+          current_period_end?: string | null
+          current_period_start?: string | null
+          id?: string
+          plan_code?: Database["public"]["Enums"]["subscription_plan"]
+          provider?: string
+          provider_customer_id?: string | null
+          provider_subscription_id?: string | null
+          scheduled_topic_slug?: string | null
+          status?: Database["public"]["Enums"]["subscription_status"]
+          topic_slug?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          billing_interval?: string | null
+          cancel_at_period_end?: boolean
+          cancelled_at?: string | null
+          created_at?: string
+          current_period_end?: string | null
+          current_period_start?: string | null
+          id?: string
+          plan_code?: Database["public"]["Enums"]["subscription_plan"]
+          provider?: string
+          provider_customer_id?: string | null
+          provider_subscription_id?: string | null
+          scheduled_topic_slug?: string | null
+          status?: Database["public"]["Enums"]["subscription_status"]
+          topic_slug?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       suppressed_emails: {
         Row: {
           created_at: string
@@ -817,6 +904,18 @@ export type Database = {
     }
     Enums: {
       app_role: "admin" | "user"
+      subscription_plan:
+        | "free"
+        | "exam_pro"
+        | "premium_monthly"
+        | "premium_annual"
+      subscription_status:
+        | "free"
+        | "active"
+        | "past_due"
+        | "cancelled"
+        | "expired"
+        | "incomplete"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -945,6 +1044,20 @@ export const Constants = {
   public: {
     Enums: {
       app_role: ["admin", "user"],
+      subscription_plan: [
+        "free",
+        "exam_pro",
+        "premium_monthly",
+        "premium_annual",
+      ],
+      subscription_status: [
+        "free",
+        "active",
+        "past_due",
+        "cancelled",
+        "expired",
+        "incomplete",
+      ],
     },
   },
 } as const
