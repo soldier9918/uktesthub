@@ -209,7 +209,12 @@ export function SubscriptionPanel() {
             {busy === "portal" ? "Opening…" : "Manage billing"}
           </Button>
         )}
-        {entitlement.isPaid && !entitlement.cancelAtPeriodEnd && (
+        {cancelling && (
+          <Button onClick={doResume} disabled={busy === "resume"}>
+            {busy === "resume" ? "Resuming…" : "Resume subscription"}
+          </Button>
+        )}
+        {entitlement.isPaid && !cancelling && (
           <Button variant="ghost" onClick={() => setConfirmCancel(true)}>
             Cancel subscription
           </Button>
