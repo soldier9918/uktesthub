@@ -131,9 +131,11 @@ export const createBillingPortalSession = createServerFn({ method: "POST" })
       });
       return { url: session.url, error: null };
     } catch (e) {
-      const message = e instanceof Error ? e.message : "The billing portal is unavailable.";
-      console.error("[subscription] createBillingPortalSession", message);
-      return { url: null, error: message };
+      console.error("[subscription] createBillingPortalSession", e);
+      return {
+        url: null,
+        error: friendly(e, "The billing portal is unavailable right now. Please try again shortly."),
+      };
     }
   });
 
