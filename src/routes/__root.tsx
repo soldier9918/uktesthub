@@ -8,6 +8,8 @@ import { StickyAdSlot } from "@/components/AdSlot";
 import { AuthProvider } from "@/lib/auth-context";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { CookieConsent } from "@/components/CookieConsent";
+import { EntitlementProvider } from "@/lib/subscription/use-entitlement";
+
 
 // Inline boot script: if the React app hasn't mounted within 5s (i.e. the
 // preview is stuck on a blank/loading screen), automatically reload and keep
@@ -160,11 +162,14 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <PageViewTracker />
-        <Outlet />
-        <StickyAdSlot />
-        <CookieConsent />
+        <EntitlementProvider>
+          <PageViewTracker />
+          <Outlet />
+          <StickyAdSlot />
+          <CookieConsent />
+        </EntitlementProvider>
       </AuthProvider>
     </QueryClientProvider>
   );
 }
+

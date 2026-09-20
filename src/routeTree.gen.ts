@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as UkRoadSignsTestRouteImport } from './routes/uk-road-signs-test'
 import { Route as TopographicalTestLondonRouteImport } from './routes/topographical-test-london'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as SubscriptionTermsRouteImport } from './routes/subscription-terms'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SitemapRouteImport } from './routes/sitemap'
 import { Route as SignupRouteImport } from './routes/signup'
@@ -22,7 +23,9 @@ import { Route as SeruTestPracticeRouteImport } from './routes/seru-test-practic
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ReportRouteImport } from './routes/report'
+import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
 import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as NhsNumeracyTestPracticeRouteImport } from './routes/nhs-numeracy-test-practice'
 import { Route as LifeInTheUkTestPracticeRouteImport } from './routes/life-in-the-uk-test-practice'
 import { Route as HelpRouteImport } from './routes/help'
@@ -37,6 +40,7 @@ import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as CscsMockTestFreeRouteImport } from './routes/cscs-mock-test-free'
 import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CancellationPolicyRouteImport } from './routes/cancellation-policy'
 import { Route as BookmarksRouteImport } from './routes/bookmarks'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AllTestsRouteImport } from './routes/all-tests'
@@ -52,6 +56,8 @@ import { Route as TopicSlugRouteImport } from './routes/topic.$slug'
 import { Route as QuizSlugRouteImport } from './routes/quiz.$slug'
 import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
 import { Route as EnglishLanguageTestsTestRouteImport } from './routes/english-language-tests.$test'
+import { Route as CheckoutSuccessRouteImport } from './routes/checkout.success'
+import { Route as CheckoutCancelledRouteImport } from './routes/checkout.cancelled'
 import { Route as CategoryEnglishRouteImport } from './routes/category.english'
 import { Route as CategorySlugRouteImport } from './routes/category.$slug'
 import { Route as BlogUkRoadSignsTestRouteImport } from './routes/blog.uk-road-signs-test'
@@ -89,6 +95,7 @@ import { Route as AdminKb20AdsRouteImport } from './routes/admin-kb20.ads'
 import { Route as EnglishLanguageTestsTestIndexRouteImport } from './routes/english-language-tests.$test.index'
 import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20.questions.index'
 import { Route as EnglishLanguageTestsTestSkillRouteImport } from './routes/english-language-tests.$test.$skill'
+import { Route as ApiPublicStripeWebhookRouteImport } from './routes/api/public/stripe-webhook'
 import { Route as AdminKb20QuestionsBulkDuplicateRouteImport } from './routes/admin-kb20.questions.bulk-duplicate'
 import { Route as AdminKb20QuestionsTopicRouteImport } from './routes/admin-kb20.questions.$topic'
 import { Route as EnglishLanguageTestsTestSkillIndexRouteImport } from './routes/english-language-tests.$test.$skill.index'
@@ -111,6 +118,11 @@ const TopographicalTestLondonRoute = TopographicalTestLondonRouteImport.update({
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SubscriptionTermsRoute = SubscriptionTermsRouteImport.update({
+  id: '/subscription-terms',
+  path: '/subscription-terms',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -164,9 +176,19 @@ const ReportRoute = ReportRouteImport.update({
   path: '/report',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RefundPolicyRoute = RefundPolicyRouteImport.update({
+  id: '/refund-policy',
+  path: '/refund-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NhsNumeracyTestPracticeRoute = NhsNumeracyTestPracticeRouteImport.update({
@@ -238,6 +260,11 @@ const CookiesRoute = CookiesRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CancellationPolicyRoute = CancellationPolicyRouteImport.update({
+  id: '/cancellation-policy',
+  path: '/cancellation-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BookmarksRoute = BookmarksRouteImport.update({
@@ -317,6 +344,16 @@ const EnglishLanguageTestsTestRoute =
     path: '/$test',
     getParentRoute: () => EnglishLanguageTestsRoute,
   } as any)
+const CheckoutSuccessRoute = CheckoutSuccessRouteImport.update({
+  id: '/checkout/success',
+  path: '/checkout/success',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CheckoutCancelledRoute = CheckoutCancelledRouteImport.update({
+  id: '/checkout/cancelled',
+  path: '/checkout/cancelled',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CategoryEnglishRoute = CategoryEnglishRouteImport.update({
   id: '/category/english',
   path: '/category/english',
@@ -511,6 +548,11 @@ const EnglishLanguageTestsTestSkillRoute =
     path: '/$skill',
     getParentRoute: () => EnglishLanguageTestsTestRoute,
   } as any)
+const ApiPublicStripeWebhookRoute = ApiPublicStripeWebhookRouteImport.update({
+  id: '/api/public/stripe-webhook',
+  path: '/api/public/stripe-webhook',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20QuestionsBulkDuplicateRoute =
   AdminKb20QuestionsBulkDuplicateRouteImport.update({
     id: '/admin-kb20/questions/bulk-duplicate',
@@ -569,6 +611,7 @@ export interface FileRoutesByFullPath {
   '/all-tests': typeof AllTestsRoute
   '/blog': typeof BlogRouteWithChildren
   '/bookmarks': typeof BookmarksRoute
+  '/cancellation-policy': typeof CancellationPolicyRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
   '/cscs-mock-test-free': typeof CscsMockTestFreeRoute
@@ -583,7 +626,9 @@ export interface FileRoutesByFullPath {
   '/help': typeof HelpRoute
   '/life-in-the-uk-test-practice': typeof LifeInTheUkTestPracticeRoute
   '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
@@ -594,6 +639,7 @@ export interface FileRoutesByFullPath {
   '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/subscription-terms': typeof SubscriptionTermsRoute
   '/terms': typeof TermsRoute
   '/topographical-test-london': typeof TopographicalTestLondonRoute
   '/uk-road-signs-test': typeof UkRoadSignsTestRoute
@@ -631,6 +677,8 @@ export interface FileRoutesByFullPath {
   '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
   '/category/english': typeof CategoryEnglishRoute
+  '/checkout/cancelled': typeof CheckoutCancelledRoute
+  '/checkout/success': typeof CheckoutSuccessRoute
   '/english-language-tests/$test': typeof EnglishLanguageTestsTestRouteWithChildren
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
@@ -640,6 +688,7 @@ export interface FileRoutesByFullPath {
   '/english-language-tests/': typeof EnglishLanguageTestsIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
+  '/api/public/stripe-webhook': typeof ApiPublicStripeWebhookRoute
   '/english-language-tests/$test/$skill': typeof EnglishLanguageTestsTestSkillRouteWithChildren
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
   '/english-language-tests/$test/': typeof EnglishLanguageTestsTestIndexRoute
@@ -658,6 +707,7 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminRoute
   '/all-tests': typeof AllTestsRoute
   '/bookmarks': typeof BookmarksRoute
+  '/cancellation-policy': typeof CancellationPolicyRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
   '/cscs-mock-test-free': typeof CscsMockTestFreeRoute
@@ -671,7 +721,9 @@ export interface FileRoutesByTo {
   '/help': typeof HelpRoute
   '/life-in-the-uk-test-practice': typeof LifeInTheUkTestPracticeRoute
   '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
@@ -682,6 +734,7 @@ export interface FileRoutesByTo {
   '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/subscription-terms': typeof SubscriptionTermsRoute
   '/terms': typeof TermsRoute
   '/topographical-test-london': typeof TopographicalTestLondonRoute
   '/uk-road-signs-test': typeof UkRoadSignsTestRoute
@@ -719,6 +772,8 @@ export interface FileRoutesByTo {
   '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
   '/category/english': typeof CategoryEnglishRoute
+  '/checkout/cancelled': typeof CheckoutCancelledRoute
+  '/checkout/success': typeof CheckoutSuccessRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
@@ -727,6 +782,7 @@ export interface FileRoutesByTo {
   '/english-language-tests': typeof EnglishLanguageTestsIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
+  '/api/public/stripe-webhook': typeof ApiPublicStripeWebhookRoute
   '/admin-kb20/questions': typeof AdminKb20QuestionsIndexRoute
   '/english-language-tests/$test': typeof EnglishLanguageTestsTestIndexRoute
   '/api/admin/ga-oauth/callback': typeof ApiAdminGaOauthCallbackRoute
@@ -745,6 +801,7 @@ export interface FileRoutesById {
   '/all-tests': typeof AllTestsRoute
   '/blog': typeof BlogRouteWithChildren
   '/bookmarks': typeof BookmarksRoute
+  '/cancellation-policy': typeof CancellationPolicyRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
   '/cscs-mock-test-free': typeof CscsMockTestFreeRoute
@@ -759,7 +816,9 @@ export interface FileRoutesById {
   '/help': typeof HelpRoute
   '/life-in-the-uk-test-practice': typeof LifeInTheUkTestPracticeRoute
   '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
+  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
@@ -770,6 +829,7 @@ export interface FileRoutesById {
   '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/subscription-terms': typeof SubscriptionTermsRoute
   '/terms': typeof TermsRoute
   '/topographical-test-london': typeof TopographicalTestLondonRoute
   '/uk-road-signs-test': typeof UkRoadSignsTestRoute
@@ -807,6 +867,8 @@ export interface FileRoutesById {
   '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
   '/category/english': typeof CategoryEnglishRoute
+  '/checkout/cancelled': typeof CheckoutCancelledRoute
+  '/checkout/success': typeof CheckoutSuccessRoute
   '/english-language-tests/$test': typeof EnglishLanguageTestsTestRouteWithChildren
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
@@ -816,6 +878,7 @@ export interface FileRoutesById {
   '/english-language-tests/': typeof EnglishLanguageTestsIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
+  '/api/public/stripe-webhook': typeof ApiPublicStripeWebhookRoute
   '/english-language-tests/$test/$skill': typeof EnglishLanguageTestsTestSkillRouteWithChildren
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
   '/english-language-tests/$test/': typeof EnglishLanguageTestsTestIndexRoute
@@ -837,6 +900,7 @@ export interface FileRouteTypes {
     | '/all-tests'
     | '/blog'
     | '/bookmarks'
+    | '/cancellation-policy'
     | '/contact'
     | '/cookies'
     | '/cscs-mock-test-free'
@@ -851,7 +915,9 @@ export interface FileRouteTypes {
     | '/help'
     | '/life-in-the-uk-test-practice'
     | '/nhs-numeracy-test-practice'
+    | '/pricing'
     | '/privacy'
+    | '/refund-policy'
     | '/report'
     | '/reset-password'
     | '/robots.txt'
@@ -862,6 +928,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
+    | '/subscription-terms'
     | '/terms'
     | '/topographical-test-london'
     | '/uk-road-signs-test'
@@ -899,6 +966,8 @@ export interface FileRouteTypes {
     | '/blog/uk-road-signs-test'
     | '/category/$slug'
     | '/category/english'
+    | '/checkout/cancelled'
+    | '/checkout/success'
     | '/english-language-tests/$test'
     | '/guide/$slug'
     | '/quiz/$slug'
@@ -908,6 +977,7 @@ export interface FileRouteTypes {
     | '/english-language-tests/'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
+    | '/api/public/stripe-webhook'
     | '/english-language-tests/$test/$skill'
     | '/admin-kb20/questions/'
     | '/english-language-tests/$test/'
@@ -926,6 +996,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/all-tests'
     | '/bookmarks'
+    | '/cancellation-policy'
     | '/contact'
     | '/cookies'
     | '/cscs-mock-test-free'
@@ -939,7 +1010,9 @@ export interface FileRouteTypes {
     | '/help'
     | '/life-in-the-uk-test-practice'
     | '/nhs-numeracy-test-practice'
+    | '/pricing'
     | '/privacy'
+    | '/refund-policy'
     | '/report'
     | '/reset-password'
     | '/robots.txt'
@@ -950,6 +1023,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
+    | '/subscription-terms'
     | '/terms'
     | '/topographical-test-london'
     | '/uk-road-signs-test'
@@ -987,6 +1061,8 @@ export interface FileRouteTypes {
     | '/blog/uk-road-signs-test'
     | '/category/$slug'
     | '/category/english'
+    | '/checkout/cancelled'
+    | '/checkout/success'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
@@ -995,6 +1071,7 @@ export interface FileRouteTypes {
     | '/english-language-tests'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
+    | '/api/public/stripe-webhook'
     | '/admin-kb20/questions'
     | '/english-language-tests/$test'
     | '/api/admin/ga-oauth/callback'
@@ -1012,6 +1089,7 @@ export interface FileRouteTypes {
     | '/all-tests'
     | '/blog'
     | '/bookmarks'
+    | '/cancellation-policy'
     | '/contact'
     | '/cookies'
     | '/cscs-mock-test-free'
@@ -1026,7 +1104,9 @@ export interface FileRouteTypes {
     | '/help'
     | '/life-in-the-uk-test-practice'
     | '/nhs-numeracy-test-practice'
+    | '/pricing'
     | '/privacy'
+    | '/refund-policy'
     | '/report'
     | '/reset-password'
     | '/robots.txt'
@@ -1037,6 +1117,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
+    | '/subscription-terms'
     | '/terms'
     | '/topographical-test-london'
     | '/uk-road-signs-test'
@@ -1074,6 +1155,8 @@ export interface FileRouteTypes {
     | '/blog/uk-road-signs-test'
     | '/category/$slug'
     | '/category/english'
+    | '/checkout/cancelled'
+    | '/checkout/success'
     | '/english-language-tests/$test'
     | '/guide/$slug'
     | '/quiz/$slug'
@@ -1083,6 +1166,7 @@ export interface FileRouteTypes {
     | '/english-language-tests/'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
+    | '/api/public/stripe-webhook'
     | '/english-language-tests/$test/$skill'
     | '/admin-kb20/questions/'
     | '/english-language-tests/$test/'
@@ -1103,6 +1187,7 @@ export interface RootRouteChildren {
   AllTestsRoute: typeof AllTestsRoute
   BlogRoute: typeof BlogRouteWithChildren
   BookmarksRoute: typeof BookmarksRoute
+  CancellationPolicyRoute: typeof CancellationPolicyRoute
   ContactRoute: typeof ContactRoute
   CookiesRoute: typeof CookiesRoute
   CscsMockTestFreeRoute: typeof CscsMockTestFreeRoute
@@ -1117,7 +1202,9 @@ export interface RootRouteChildren {
   HelpRoute: typeof HelpRoute
   LifeInTheUkTestPracticeRoute: typeof LifeInTheUkTestPracticeRoute
   NhsNumeracyTestPracticeRoute: typeof NhsNumeracyTestPracticeRoute
+  PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
+  RefundPolicyRoute: typeof RefundPolicyRoute
   ReportRoute: typeof ReportRoute
   ResetPasswordRoute: typeof ResetPasswordRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
@@ -1128,6 +1215,7 @@ export interface RootRouteChildren {
   SignupRoute: typeof SignupRoute
   SitemapRoute: typeof SitemapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SubscriptionTermsRoute: typeof SubscriptionTermsRoute
   TermsRoute: typeof TermsRoute
   TopographicalTestLondonRoute: typeof TopographicalTestLondonRoute
   UkRoadSignsTestRoute: typeof UkRoadSignsTestRoute
@@ -1156,12 +1244,15 @@ export interface RootRouteChildren {
   AdminKb20ValidatorRoute: typeof AdminKb20ValidatorRoute
   CategorySlugRoute: typeof CategorySlugRoute
   CategoryEnglishRoute: typeof CategoryEnglishRoute
+  CheckoutCancelledRoute: typeof CheckoutCancelledRoute
+  CheckoutSuccessRoute: typeof CheckoutSuccessRoute
   GuideSlugRoute: typeof GuideSlugRoute
   QuizSlugRoute: typeof QuizSlugRoute
   TopicSlugRoute: typeof TopicSlugRoute
   AdminKb20IndexRoute: typeof AdminKb20IndexRoute
   AdminKb20QuestionsTopicRoute: typeof AdminKb20QuestionsTopicRoute
   AdminKb20QuestionsBulkDuplicateRoute: typeof AdminKb20QuestionsBulkDuplicateRoute
+  ApiPublicStripeWebhookRoute: typeof ApiPublicStripeWebhookRoute
   AdminKb20QuestionsIndexRoute: typeof AdminKb20QuestionsIndexRoute
   ApiAdminGaOauthCallbackRoute: typeof ApiAdminGaOauthCallbackRoute
   LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
@@ -1188,6 +1279,13 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/subscription-terms': {
+      id: '/subscription-terms'
+      path: '/subscription-terms'
+      fullPath: '/subscription-terms'
+      preLoaderRoute: typeof SubscriptionTermsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -1260,11 +1358,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ReportRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/refund-policy': {
+      id: '/refund-policy'
+      path: '/refund-policy'
+      fullPath: '/refund-policy'
+      preLoaderRoute: typeof RefundPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
       fullPath: '/privacy'
       preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/nhs-numeracy-test-practice': {
@@ -1363,6 +1475,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cancellation-policy': {
+      id: '/cancellation-policy'
+      path: '/cancellation-policy'
+      fullPath: '/cancellation-policy'
+      preLoaderRoute: typeof CancellationPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/bookmarks': {
@@ -1469,6 +1588,20 @@ declare module '@tanstack/react-router' {
       fullPath: '/english-language-tests/$test'
       preLoaderRoute: typeof EnglishLanguageTestsTestRouteImport
       parentRoute: typeof EnglishLanguageTestsRoute
+    }
+    '/checkout/success': {
+      id: '/checkout/success'
+      path: '/checkout/success'
+      fullPath: '/checkout/success'
+      preLoaderRoute: typeof CheckoutSuccessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/checkout/cancelled': {
+      id: '/checkout/cancelled'
+      path: '/checkout/cancelled'
+      fullPath: '/checkout/cancelled'
+      preLoaderRoute: typeof CheckoutCancelledRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/category/english': {
       id: '/category/english'
@@ -1729,6 +1862,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EnglishLanguageTestsTestSkillRouteImport
       parentRoute: typeof EnglishLanguageTestsTestRoute
     }
+    '/api/public/stripe-webhook': {
+      id: '/api/public/stripe-webhook'
+      path: '/api/public/stripe-webhook'
+      fullPath: '/api/public/stripe-webhook'
+      preLoaderRoute: typeof ApiPublicStripeWebhookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/questions/bulk-duplicate': {
       id: '/admin-kb20/questions/bulk-duplicate'
       path: '/admin-kb20/questions/bulk-duplicate'
@@ -1891,6 +2031,7 @@ const rootRouteChildren: RootRouteChildren = {
   AllTestsRoute: AllTestsRoute,
   BlogRoute: BlogRouteWithChildren,
   BookmarksRoute: BookmarksRoute,
+  CancellationPolicyRoute: CancellationPolicyRoute,
   ContactRoute: ContactRoute,
   CookiesRoute: CookiesRoute,
   CscsMockTestFreeRoute: CscsMockTestFreeRoute,
@@ -1905,7 +2046,9 @@ const rootRouteChildren: RootRouteChildren = {
   HelpRoute: HelpRoute,
   LifeInTheUkTestPracticeRoute: LifeInTheUkTestPracticeRoute,
   NhsNumeracyTestPracticeRoute: NhsNumeracyTestPracticeRoute,
+  PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
+  RefundPolicyRoute: RefundPolicyRoute,
   ReportRoute: ReportRoute,
   ResetPasswordRoute: ResetPasswordRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
@@ -1916,6 +2059,7 @@ const rootRouteChildren: RootRouteChildren = {
   SignupRoute: SignupRoute,
   SitemapRoute: SitemapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SubscriptionTermsRoute: SubscriptionTermsRoute,
   TermsRoute: TermsRoute,
   TopographicalTestLondonRoute: TopographicalTestLondonRoute,
   UkRoadSignsTestRoute: UkRoadSignsTestRoute,
@@ -1944,12 +2088,15 @@ const rootRouteChildren: RootRouteChildren = {
   AdminKb20ValidatorRoute: AdminKb20ValidatorRoute,
   CategorySlugRoute: CategorySlugRoute,
   CategoryEnglishRoute: CategoryEnglishRoute,
+  CheckoutCancelledRoute: CheckoutCancelledRoute,
+  CheckoutSuccessRoute: CheckoutSuccessRoute,
   GuideSlugRoute: GuideSlugRoute,
   QuizSlugRoute: QuizSlugRoute,
   TopicSlugRoute: TopicSlugRoute,
   AdminKb20IndexRoute: AdminKb20IndexRoute,
   AdminKb20QuestionsTopicRoute: AdminKb20QuestionsTopicRoute,
   AdminKb20QuestionsBulkDuplicateRoute: AdminKb20QuestionsBulkDuplicateRoute,
+  ApiPublicStripeWebhookRoute: ApiPublicStripeWebhookRoute,
   AdminKb20QuestionsIndexRoute: AdminKb20QuestionsIndexRoute,
   ApiAdminGaOauthCallbackRoute: ApiAdminGaOauthCallbackRoute,
   LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,

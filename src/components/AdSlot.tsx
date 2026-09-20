@@ -3,6 +3,8 @@ import { X } from "lucide-react";
 import { useAdSlot } from "@/lib/admin/ad-slots";
 import { useAdminSettings } from "@/lib/admin/settings";
 import { getConsent } from "@/lib/consent";
+import { useEntitlement } from "@/lib/subscription/use-entitlement";
+
 
 /**
  * AdSense central configuration.
@@ -110,8 +112,10 @@ export function AdSlot({
   const [filled, setFilled] = useState(false);
   const settings = useAdminSettings();
   const slotRow = useAdSlot(slotKey ?? "");
+  const { entitlement } = useEntitlement();
   const effectiveSlotId = slotRow?.ad_slot_id || slotId;
   const slotEnabled = slotKey ? slotRow?.enabled === true : true;
+
 
   // Lazy-load via IntersectionObserver
   useEffect(() => {
@@ -137,9 +141,11 @@ export function AdSlot({
   // Push to AdSense queue once visible
   useEffect(() => {
     if (!ADSENSE_ENABLED || !visible || !effectiveSlotId) return;
+    if (entitlement.adFree) return;
     if (settings?.hide_ads_globally || settings?.preview_without_ads) return;
     if (slotKey && !slotEnabled) return;
     if (!getConsent()?.advertising) return;
+
     loadAdsenseScript();
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -162,11 +168,15 @@ export function AdSlot({
       mo.disconnect();
       window.clearTimeout(t);
     };
-  }, [visible, effectiveSlotId, settings, slotKey, slotEnabled]);
+  }, [visible, effectiveSlotId, settings, slotKey, slotEnabled, entitlement.adFree]);
+
+  // Paid subscribers never see advertisements — and no empty space is left behind.
+  if (entitlement.adFree) return null;
 
   // Admin kill-switches
   if (settings?.hide_ads_globally) return null;
   if (settings?.preview_without_ads) return null;
+
   // Slot-level disable
   if (slotKey && !slotEnabled) return null;
 
@@ -207,6 +217,8 @@ export function AdSlot({
  */
 export function StickyAdSlot({ slotId }: { slotId?: string } = {}) {
   const [dismissed, setDismissed] = useState(false);
+  const { entitlement } = useEntitlement();
+
 
   useEffect(() => {
     try {
@@ -219,6 +231,8 @@ export function StickyAdSlot({ slotId }: { slotId?: string } = {}) {
   }, []);
 
   if (dismissed) return null;
+  if (entitlement.adFree) return null;
+
   if (!ADSENSE_ENABLED || !slotId) return null;
   if (!getConsent()?.advertising) return null;
 

@@ -9,12 +9,16 @@ import { BookmarkButton } from "@/components/BookmarkButton";
 import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { findTopic } from "@/data/categories";
 import { listMockSlots, QUESTIONS_PER_MOCK } from "@/data/mocks";
-import { Home, ChevronRight, ArrowRight, Clock } from "lucide-react";
+import { Home, ChevronRight, ArrowRight, Clock, Lock } from "lucide-react";
 import { IndependentDisclaimer } from "@/components/IndependentDisclaimer";
 import { breadcrumbSchema } from "@/lib/seo";
 import { LEGACY_SLUG_REDIRECTS } from "@/data/slug-redirects";
 import { useAuth } from "@/lib/auth-context";
 import { supabase } from "@/integrations/supabase/client";
+import { useEntitlement } from "@/lib/subscription/use-entitlement";
+import { canAccessMock } from "@/lib/subscription/entitlement";
+import { UpgradeModal } from "@/components/subscription/UpgradeModal";
+
 
 type MockStats = { best: number; attempts: number };
 
@@ -68,6 +72,8 @@ function MockCard({
   slug,
   mockNumber,
   available,
+  locked = false,
+  onLockedClick,
   stats,
   questionsCount = QUESTIONS_PER_MOCK,
   minutes = QUESTIONS_PER_MOCK,
@@ -75,6 +81,8 @@ function MockCard({
   slug: string;
   mockNumber: number;
   available: boolean;
+  locked?: boolean;
+  onLockedClick?: () => void;
   stats: MockStats | null;
   questionsCount?: number;
   minutes?: number;
@@ -88,27 +96,33 @@ function MockCard({
   const inner = (
     <div
       className={`flex h-full flex-col rounded-2xl border bg-card p-4 shadow-soft transition-all ${
-        available
+        available && !locked
           ? "border-coral/30 hover:-translate-y-0.5 hover:border-coral hover:shadow-elevated"
-          : "border-border opacity-75"
+          : locked
+            ? "border-border hover:-translate-y-0.5 hover:border-coral/50"
+            : "border-border opacity-75"
       }`}
     >
       <div className="flex items-center justify-between">
         <h3 className="font-display text-base font-bold text-foreground">
           Mock Test {mockNumber}
         </h3>
-        {!available && (
+        {!available ? (
           <span className="rounded-full bg-muted px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
             Soon
           </span>
-        )}
+        ) : locked ? (
+          <span className="inline-flex items-center gap-1 rounded-full bg-coral/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-coral">
+            <Lock className="h-3 w-3" /> Locked
+          </span>
+        ) : null}
       </div>
       <p className="mt-1 text-xs text-muted-foreground">
         {questionsCount} questions ·{" "}
         <Clock className="inline h-3 w-3" /> ~{minutes} min
       </p>
 
-      {available && (
+      {available && !locked && (
         <div className="mt-3">
           <div className="flex items-center justify-between text-[11px] font-semibold">
             <span className="text-muted-foreground">
@@ -134,15 +148,25 @@ function MockCard({
         </div>
       )}
 
+      {locked && available && (
+        <p className="mt-3 text-[11px] text-muted-foreground">
+          Included with Exam Pro and Premium All Access.
+        </p>
+      )}
+
       <div className="mt-3">
-        {available ? (
+        {!available ? (
+          <span className="inline-flex items-center gap-1.5 rounded-lg bg-muted px-3 py-1.5 text-xs font-semibold text-muted-foreground">
+            Coming soon
+          </span>
+        ) : locked ? (
+          <span className="inline-flex items-center gap-1.5 rounded-lg border border-coral/40 bg-coral/10 px-3 py-1.5 text-xs font-semibold text-coral">
+            <Lock className="h-3.5 w-3.5" /> Unlock this test
+          </span>
+        ) : (
           <span className="inline-flex items-center gap-1.5 rounded-lg bg-coral px-3 py-1.5 text-xs font-semibold text-white">
             {bestScore != null ? "Retake test" : "Start test"}{" "}
             <ArrowRight className="h-3.5 w-3.5" />
-          </span>
-        ) : (
-          <span className="inline-flex items-center gap-1.5 rounded-lg bg-muted px-3 py-1.5 text-xs font-semibold text-muted-foreground">
-            Coming soon
           </span>
         )}
       </div>
@@ -150,6 +174,13 @@ function MockCard({
   );
 
   if (!available) return <div className="cursor-not-allowed">{inner}</div>;
+  if (locked) {
+    return (
+      <button type="button" onClick={onLockedClick} className="group block h-full w-full text-left">
+        {inner}
+      </button>
+    );
+  }
   return (
     <Link to="/quiz/$slug" params={{ slug }} className="group block h-full">
       {inner}
@@ -157,12 +188,16 @@ function MockCard({
   );
 }
 
+
 function TopicPage() {
   const { category, topic } = Route.useLoaderData();
   const slots = listMockSlots(topic.slug);
   const availableCount = slots.filter((s) => s.available).length;
   const { user } = useAuth();
+  const { entitlement } = useEntitlement();
+  const [lockedMock, setLockedMock] = useState<number | null>(null);
   const [statsByMock, setStatsByMock] = useState<Record<string, MockStats>>({});
+
 
   useEffect(() => {
     if (!user) {
@@ -321,13 +356,23 @@ function TopicPage() {
               slug={s.slug}
               mockNumber={s.mockNumber}
               available={s.available}
+              locked={!canAccessMock(entitlement, topic.slug, s.mockNumber)}
+              onLockedClick={() => setLockedMock(s.mockNumber)}
               stats={statsByMock[s.slug] ?? null}
               minutes={topic.slug === "life-in-the-uk" ? 45 : topic.slug === "seru" ? 30 : QUESTIONS_PER_MOCK}
             />
 
           ))}
         </div>
+        <UpgradeModal
+          open={lockedMock !== null}
+          onClose={() => setLockedMock(null)}
+          topicSlug={topic.slug}
+          mockNumber={lockedMock}
+          source="locked_test"
+        />
         <IndependentDisclaimer />
+
       </main>
 
       <SiteFooter />

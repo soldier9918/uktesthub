@@ -1,0 +1,2 @@
+ALTER TABLE public.quiz_events DROP CONSTRAINT IF EXISTS quiz_events_event_type_check;
+ALTER TABLE public.quiz_events ADD CONSTRAINT quiz_events_event_type_check CHECK (event_type = ANY (ARRAY['page_view'::text, 'quiz_start'::text, 'quiz_complete'::text, 'quiz_abandon'::text, 'question_answered'::text, 'upgrade_prompt_view'::text, 'upgrade_prompt_click'::text, 'begin_checkout'::text, 'purchase'::text]));
