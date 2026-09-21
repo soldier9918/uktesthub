@@ -589,9 +589,12 @@ function HomePage() {
             <div className="flex flex-col items-center text-center">
               <SectionTitle>What is UK Test Hub?</SectionTitle>
               <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
-                UK Test Hub is a free, independent practice platform built to
-                help learners across Britain prepare for UK tests and
-                assessments — no accounts, no paywalls, no surprises.
+                UK Test Hub is an independent practice platform built to help
+                learners across Britain prepare for UK tests and assessments.
+                The first three mock tests in every topic are free, with no
+                account or payment required. Optional subscriptions unlock the
+                complete question bank, saved progress across devices and
+                advert-free practice.
               </p>
             </div>
 
@@ -610,8 +613,10 @@ function HomePage() {
                   DVSA Driving Theory Test
                 </Link>
                 , a parent helping a child through the 11+, or an adult
-                applying for British citizenship, you can practise here for
-                free, on any device, without ever creating an account.
+                applying for British citizenship, you can try the first three
+                mock tests in every topic free — no account or payment needed
+                to start — and an account unlocks the full question bank,
+                progress saved across devices and advert-free practice.
               </p>
             </div>
 
@@ -798,8 +803,10 @@ function HomePage() {
                 has strong colour contrast, scales properly on small
                 screens, and avoids the cluttered pop-ups and forced
                 sign-ups that make so many revision sites painful to use.
-                And it's free — genuinely free, supported by unobtrusive
-                advertising rather than locked-down paid tiers.
+                Everyone can try the first three mock tests in every topic
+                free, supported by unobtrusive advertising. Optional paid
+                plans unlock the remaining mock tests, cross-device progress
+                and an advert-free experience.
               </p>
             </div>
 
@@ -837,9 +844,10 @@ function HomePage() {
                 brush up on safeguarding and food hygiene.
               </p>
               <p>
-                Teachers, tutors and parents use UK Test Hub as a free
-                homework resource, setting topic mocks for students and
-                reviewing the explanations together. And quite a few
+                Teachers, tutors and parents use UK Test Hub as a
+                free-to-start homework resource, setting topic mocks for
+                students and reviewing the explanations together. And quite a
+                few
                 people simply enjoy testing themselves on British history,
                 geography and trivia — which is exactly what our Fun
                 category is there for.
@@ -1027,7 +1035,9 @@ function HomePage() {
                 Proudly helping learners across the UK and worldwide
               </h3>
               <p className="mt-1 text-xs text-muted-foreground sm:text-sm">
-                Free practice questions, mock exams, instant results and detailed explanations.
+                Start free in every topic — mock exams, instant results and
+                detailed explanations — with optional plans for the full
+                question bank and advert-free practice.
               </p>
             </div>
           </div>
